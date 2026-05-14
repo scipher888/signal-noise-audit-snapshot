@@ -1,8 +1,8 @@
 # Signal & Noise — Editorial Constitution v1.0
 
-**Public snapshot:** v1.0 candidate  
+**Public snapshot:** v1.0  
 **Snapshot date:** 2026-05-13  
-**Status:** public-safe snapshot candidate; final publication requires J approval  
+**Status:** published 2026-05-13  
 **Scope:** public-facing editorial and epistemic rules for Signal & Noise
 
 This snapshot is a public-safe version of the internal editorial constitution. It omits internal paths, raw working notes, private operational details, and identifying personal information.

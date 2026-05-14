@@ -1,6 +1,6 @@
 # Snapshot Cadence and Versioning
 
-**Status:** public-snapshot candidate  
+**Status:** public snapshot v1.0 — published 2026-05-13  
 **Snapshot date:** 2026-05-13
 
 This repository uses milestone snapshots, not a raw live mirror of internal working files.

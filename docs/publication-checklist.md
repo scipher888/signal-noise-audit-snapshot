@@ -1,6 +1,6 @@
 # Public Snapshot Publication Checklist
 
-**Status:** draft operational checklist  
+**Status:** operational checklist v1 — published 2026-05-13  
 **Snapshot date:** 2026-05-13
 
 Use this before publishing the GitHub repository or updating a public snapshot.

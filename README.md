@@ -1,6 +1,6 @@
 # Signal & Noise — Public Audit Snapshot
 
-**Status:** public-snapshot candidate; not published until J gives final approval.  
+**Status:** public snapshot v1.0 — published 2026-05-13  
 **Snapshot date:** 2026-05-13  
 **Publication:** Signal & Noise — https://www.signalandnoise.email
 
@@ -30,11 +30,6 @@ The standard is: **can a reader see what the process claims to require, what cha
 
 If not, the process is theater.
 
-## Publication status
+## Publication
 
-This local candidate has not been pushed to GitHub. A public repository should be created only after:
-
-1. J approves the content.
-2. Redaction checks pass.
-3. Links are verified.
-4. The snapshot is marked as public v1.0 rather than draft/candidate.
+This snapshot is published as **v1.0** at https://github.com/scipher888/signal-noise-audit-snapshot, approved 2026-05-13 after redaction checks, link verification, and snapshot-cadence review. Material changes follow [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md).

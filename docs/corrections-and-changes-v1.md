@@ -1,6 +1,6 @@
 # Signal & Noise — Corrections, Changes, and Tracked Claims v1
 
-**Status:** public-snapshot candidate; not published until J approval  
+**Status:** public snapshot v1.0 — published 2026-05-13  
 **Snapshot date:** 2026-05-13  
 **Scope:** public-safe version of the current claim ledger and change surface
 
