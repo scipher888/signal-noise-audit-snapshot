@@ -117,19 +117,19 @@ Not every entry below is a correction. Some are active claims being tracked beca
 
 ---
 
-### CL-007 — Trust evaluation may be source-first
+### CL-007 — Context collapse in AI-mediated writing
 
-**Claim:** Trust evaluation of AI-mediated work may be processed source-first: without a locatable origin and accountable role, readers may reject the work before evaluating its content. Anchors may operate downstream of this layer.  
+**Claim:** AI writing creates context collapse: readers can see the words, but not the situation that produced them. Trust evaluation of AI-mediated work is processed context-first: without enough context to interpret the work — including source-world and answerability/accountability when those categories matter — readers may reject it before evaluating its content. Anchors operate downstream as context-restoration tools, not substitutes.  
 **Type:** hypothesis  
 **Status:** active, provisional  
 **Current confidence:** medium  
 **Public issue connection:** candidate Issue 11 claim; not yet published as of this snapshot.
 
-**Current form:** Rejection of AI-mediated writing can be rational when readers cannot see where the work came from or who is accountable for it.
+**Current form:** AI writing creates context collapse: readers can see the words, but not the situation that produced them. Rejection of AI-mediated writing can be rational when readers cannot infer the context that would tell them how to interpret it.
 
-**What changed:** this became a formal trust-stack layer in the editorial constitution: source-location and answerability come before artifact-level anchors.
+**What changed:** this became a formal trust-stack layer in the editorial constitution: context is Layer 0; source-world/source-location and answerability/accountability are context components, not the name of the layer and not universal priorities.
 
-**What would change this:** reader testing showing artifact-level anchors dominate first-encounter trust independent of source signals; provenance standards satisfying first-encounter trust without accountability cues; or evidence that institutional reputation fully explains the rejection pattern.
+**What would change this:** reader testing showing artifact-level anchors dominate first-encounter trust independent of context signals; provenance standards satisfying first-encounter trust without context cues; evidence that institutional reputation fully explains the rejection pattern; or evidence that the relevant context categories are not stable across writing types and reader environments (treating this as a hypothesis, not a settled taxonomy).
 
 ## Open items for next snapshot
 

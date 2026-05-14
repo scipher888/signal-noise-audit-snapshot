@@ -148,16 +148,21 @@ A good warning helps the reader check the work. It does not merely say “this m
 
 Signal & Noise uses three trust layers.
 
-### Layer 0 — Source-location and answerability
+### Layer 0 — Context
 
-Before readers can evaluate whether AI-mediated work is well anchored, they first have to know where it comes from and what or who is answerable if it is wrong.
+Before readers can evaluate whether AI-mediated work is well anchored, they first have to infer the situation that produced it — what shaped it, what kind of writing it is, and which context categories matter in this reader environment.
 
-Reader-facing version: rejection of AI-mediated writing can be rational when nobody is standing behind it.
+AI writing creates context collapse: readers can see the words, but not the situation that produced them.
+
+Reader-facing version: rejection of AI-mediated writing can be rational when you can see the words but not the context that would tell you how to interpret them.
+
+Context categories may include agenda, source-world, human/model contribution, relational distance, response cost, skin in the game, and answerability/accountability. Their priority depends on writing type and reader operating environment. Answerability/accountability is often important for trust-bearing argument and analysis, but it is one context category, not the definition of the layer.
 
 Rules:
 
-- Source-location must be legible to a first-time reader.
-- Do not solve source-location by inventing authority, insider status, or parasocial host framing.
+- The work's relevant context must be legible to a first-time reader.
+- Do not solve context by inventing authority, insider status, or parasocial host framing.
+- Source-location/source-world and answerability/accountability are context components. Treat source-world as the answer to "where does this come from" and answerability as the answer to "what can correct it or impose consequence if it is wrong" — both when relevant to the reader's environment.
 - Do not solve answerability with disclosure language alone.
 - Real answerability requires a route to consequence: correction, track record, public scrutiny, named operator, or relationship over time.
 
