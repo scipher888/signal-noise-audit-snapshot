@@ -1,4 +1,6 @@
-/* Reader Orientation Card — production styles
+/* Issue Origin Card — production styles
+   (Surface renamed 2026-05-26 from "Reader Orientation Card"; see
+   projects/newsletter/decisions/2026-05-26-taxonomy-consolidation-lock.md.)
    Anti-badge spec: projects/newsletter/drafts/layer-0-card-variants-v4-2026-05-24.md
    Smoke test: if this would look at home next to a "Top 100 Newsletters" badge,
    a "Verified Publication" mark, or a podcast network bug, it has failed. */
