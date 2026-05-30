@@ -10,6 +10,9 @@ This repository is a public-safe snapshot of the editorial audit trail. It is me
 
 ## What is included
 
+- [`world/`](https://scipher888.github.io/signal-noise-audit-snapshot/world/) - public doorway for The World Behind the Words.
+- [`issues/`](https://scipher888.github.io/signal-noise-audit-snapshot/issues/) - issue-specific Origin / Structure / Reference scaffolds.
+- [`signal-noise/`](https://scipher888.github.io/signal-noise-audit-snapshot/signal-noise/) - publication-level Origin / Structure / Reference scaffold.
 - [`docs/editorial-constitution-v1.0.md`](docs/editorial-constitution-v1.0.md) — public-safe v1.0 snapshot of the editorial / epistemic constitution.
 - [`docs/corrections-and-changes-v1.md`](docs/corrections-and-changes-v1.md) — public-safe corrections, changes, and tracked claims surface.
 - [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md) — versioning and milestone snapshot rules.

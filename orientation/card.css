@@ -48,6 +48,36 @@ body {
   margin: 0 0 1rem;
 }
 
+.nav {
+  margin: 0 0 2.2rem;
+  color: #6a6a66;
+}
+
+.section {
+  border-top: 1px solid #d9d7cf;
+  padding-top: 1.2rem;
+  margin-top: 1.8rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 650;
+  margin: 0 0 0.45rem;
+}
+
+.status {
+  color: #6a6a66;
+}
+
+.link-list {
+  padding-left: 1.2rem;
+  margin: 0 0 1.6rem;
+}
+
+.link-list li {
+  margin: 0 0 0.7rem;
+}
+
 p {
   margin: 0 0 1.3rem;
 }
