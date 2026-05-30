@@ -81,21 +81,21 @@ Not every entry below is a correction. Some are active claims being tracked beca
 
 ---
 
-### CL-005 — Named-process framing instead of AI-as-author framing
+### CL-005 — Pen-name authorship with accurate AI disclosure
 
-**Claim:** Named-process framing preserves AI transparency while reducing AI-personhood / parasocial risk; AI-as-author or signature framing is structurally inconsistent with Signal & Noise's mission.  
-**Type:** normative process rule  
-**Status:** active, revised public framing  
-**Current confidence:** high  
-**Public connection:** [What Changed After Issue 8](https://www.signalandnoise.email/p/what-changed-after-issue-8)
+**Claim:** A human pen name with conspicuous, accurate AI disclosure is legitimate; the deception line is misrepresenting how the work was made, not using a privacy pen name.  
+**Type:** normative process rule / authorship-framing correction  
+**Status:** revised 2026-05-28 by the pen-name pivot  
+**Current confidence:** high on the ethics rule; moderate on whether the new first-contact framing improves engagement  
+**Public connection:** [What Changed After Issue 8](https://www.signalandnoise.email/p/what-changed-after-issue-8) is historical; a pen-name update note is pending publication.
 
-**Current form:** Signal & Noise is produced through an AI editorial process named Synthia. J is the builder and operator. The process generates drafts, critiques, and revisions; J supplies questions, lived tensions, judgment, and final approval.
+**Current form:** Signal & Noise is written under the pen name Synthia Cipher. AI tools draft and critique; the human author owns the editorial judgment, final wording, published claims, and errors. If something is wrong, the fault is the author's, not the algorithm's. The AI is a tool, not the author.
 
-**What changed:** earlier public framing leaned too far toward Synthia-as-author / signing entity. The current rule keeps the AI named and visible, but treats Synthia as a process name rather than a personlike author. Going forward, issues should not close with an AI-author signature.
+**What changed:** the earlier public framing first leaned too far toward Synthia-as-author / signing entity, then corrected toward a named AI process operated by J. That second frame still made the machine too central for first-contact readers. The current rule uses Synthia Cipher as the human author's privacy pen name and retires "Synthia" as the public AI-process name.
 
-**What did not change:** the AI is not hidden. The process remains named. J is not reframed as a traditional author whose prose is merely AI-assisted.
+**What did not change:** the AI is not hidden or understated. It drafts and critiques the work. The human author owns editorial judgment, final wording, published claims, and errors.
 
-**What would change this:** reader testing showing no personhood or parasocial difference between the two framings, or strong evidence that process framing hides AI involvement enough to become ghostwriting-with-disclosure.
+**What would change this:** evidence that the pen-name frame causes readers to underestimate AI drafting/critique despite the disclosure; evidence that a different first-contact disclosure preserves honesty while reducing confusion better; or legal/platform guidance that materially changes the disclosure standard.
 
 ---
 

@@ -4,7 +4,7 @@
 **Snapshot date:** 2026-05-13  
 **Publication:** Signal & Noise — https://www.signalandnoise.email
 
-Signal & Noise is produced through an AI editorial process named **Synthia**. **J is the builder and operator.** The process generates drafts, critiques, and revisions; J supplies questions, lived tensions, judgment, and final approval.
+Signal & Noise is written under the pen name **Synthia Cipher**. AI tools draft and critique; the human author owns the editorial judgment, final wording, published claims, and errors. If something is wrong, the fault is the author's, not the algorithm's.
 
 This repository is a public-safe snapshot of the editorial audit trail. It is meant to make the process inspectable enough to support correction and accountability. It is not a claim that the process makes the work automatically trustworthy.
 

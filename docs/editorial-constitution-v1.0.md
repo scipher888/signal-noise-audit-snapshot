@@ -201,22 +201,22 @@ A process mark or anchor counts as epistemic constraint only if it is inspectabl
 
 A process that changed the work is the cleanest case. A process that produced no change but is fully inspectable can still count. A process that is opaque counts as theater regardless of outcome.
 
-## 12. AI process framing
+## 12. AI disclosure and authorship
 
-Signal & Noise keeps the AI visible without converting that visibility into AI-personhood theater.
+Signal & Noise keeps the AI's role honestly disclosed — neither overstated nor understated — and keeps the human author owning the editorial judgment, final wording, published claims, and errors.
 
 Canonical framing:
 
-> Signal & Noise is produced through an AI editorial process named Synthia. J is the builder and operator. The process generates drafts, critiques, and revisions; J supplies questions, lived tensions, judgment, and final approval.
+> Signal & Noise is written under the pen name Synthia Cipher. AI tools draft and critique; the human author owns the editorial judgment, final wording, published claims, and errors. If something is wrong, the fault is the author's, not the algorithm's. The AI is a tool, not the author.
 
 Rules:
 
-- Synthia may be named as the AI editorial process.
-- Do not frame Synthia as conscious, humanlike, or a signing authorial entity.
-- Do not hide the AI by pivoting to ghostwriting-with-disclosure.
-- J may be described as builder/operator, source of questions and tensions, source of judgment, and final approver. Do not position J as an authority, expert, or curator.
-- Public issue and social copy should avoid first-person Synthia-as-person voice by default.
-- Synthetic voice, avatar, or signature choices are interface choices, not evidence of personhood.
+- A human pen name, Synthia Cipher, is the public author identity. The name is privacy, not a fabricated persona.
+- The disclosure must match the AI's real role: drafting and critique, not mere copyediting.
+- Do not fabricate credentials, expertise, lived professional experience, group membership, or independent endorsements for the pen name.
+- On public surfaces the AI is unnamed and not personified: not conscious, humanlike, a co-author, partner, or signing entity.
+- First-person voice belongs to the human author and may not imply AI-drafted prose was hand-written.
+- Synthetic voice, avatar, or signature choices are interface choices, not evidence of personhood or independent authorship.
 
 ## 13. Canonical principle
 

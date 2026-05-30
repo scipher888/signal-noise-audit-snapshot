@@ -27,7 +27,8 @@ Confirm the snapshot does not claim:
 - having a constitution is itself evidence of truth;
 - disclosure alone creates trust;
 - AI involvement is either automatically good or automatically bad;
-- Synthia is a personlike author or conscious entity;
+- Synthia Cipher is a fabricated persona, credential, or authority claim rather than a privacy pen name;
+- AI tools are a personlike author, co-author, conscious entity, or signing identity;
 - J's identity or expertise is the reason to trust the publication.
 
 Preferred framing:
