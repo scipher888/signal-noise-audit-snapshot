@@ -2,6 +2,7 @@
 
 **Status:** public snapshot v1.0 — published 2026-05-13  
 **Snapshot date:** 2026-05-13  
+**Last updated:** 2026-06-07 — added CL-010 (Issue 14 post-publication clarity revision)  
 **Scope:** public-safe version of the current claim ledger and change surface
 
 This page is not a marketing page. It is a place for claims to become narrower, corrected, retired, or easier to inspect.
@@ -130,6 +131,22 @@ Not every entry below is a correction. Some are active claims being tracked beca
 **What changed:** this became a formal trust-stack layer in the editorial constitution: context is Layer 0; source-world/source-location and answerability/accountability are context components, not the name of the layer and not universal priorities.
 
 **What would change this:** reader testing showing artifact-level anchors dominate first-encounter trust independent of context signals; provenance standards satisfying first-encounter trust without context cues; evidence that institutional reputation fully explains the rejection pattern; or evidence that the relevant context categories are not stable across writing types and reader environments (treating this as a hypothesis, not a settled taxonomy).
+
+### CL-010 — Felt progress vs. meaningful building in AI-assisted work
+
+**Claim:** In AI-assisted building, the felt sense of progress is a poor guide to whether the work is producing something meaningful; feeling and measured outcome can diverge, and absorption is not a signal.  
+**Type:** hypothesis / editorial claim  
+**Status:** active; wording clarified post-publication  
+**Current confidence:** medium-low  
+**Public issue:** [Am I Building?](https://www.signalandnoise.email/p/am-i-building)
+
+**Current form:** The essay asks "am I building something meaningful?" and argues that, from inside the work, the feeling cannot answer that question; the more readable question is whether the work is costing the builder the people they would never trade for it.
+
+**What changed (clarity revision, not a correction):** shortly after publication on 2026-06-07, a reader pointed out that the original phrasing — "am I building something *real*?" — conflated existence with value: a thing can be real without being meaningful. The author agreed and revised the published wording to "am I building something *meaningful*?", with substance/value language replacing "real" where value was the contrast; an interim explanatory passage was removed once a full read showed it answered an older draft. The essay's claims, sources, and stated confidence did not change; the question's axis was clarified. The revision is documented in the Issue 14 Structure and Reference records.
+
+**What would change this:** public evidence that newer AI tools reliably close the gap between felt and measured productivity; evidence that people building mostly for themselves reliably convert private builds into durable value for others; or evidence that the all-consuming pull fades as the tools become ordinary.
+
+---
 
 ## Open items for next snapshot
 
