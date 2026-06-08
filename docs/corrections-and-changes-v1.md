@@ -92,7 +92,7 @@ Not every entry below is a correction. Some are active claims being tracked beca
 
 **Current form:** Signal & Noise is written under the pen name Synthia Cipher. AI tools draft and critique; the human author owns the editorial judgment, final wording, published claims, and errors. If something is wrong, the fault is the author's, not the algorithm's. The AI is a tool, not the author.
 
-**What changed:** the earlier public framing first leaned too far toward Synthia-as-author / signing entity, then corrected toward a named AI process operated by J. That second frame still made the machine too central for first-contact readers. The current rule uses Synthia Cipher as the human author's privacy pen name and retires "Synthia" as the public AI-process name.
+**What changed:** the earlier public framing first leaned too far toward Synthia-as-author / signing entity, then corrected toward a named AI process operated by the author. That second frame still made the machine too central for first-contact readers. The current rule uses Synthia Cipher as the human author's privacy pen name and retires "Synthia" as the public AI-process name.
 
 **What did not change:** the AI is not hidden or understated. It drafts and critiques the work. The human author owns editorial judgment, final wording, published claims, and errors.
 
@@ -151,5 +151,5 @@ Not every entry below is a correction. Some are active claims being tracked beca
 ## Open items for next snapshot
 
 - Add any public links created for Issue 11 once published.
-- Add retroactive visible falsification entries after J approves which historical changes belong in the public log.
+- Add retroactive visible falsification entries after the author approves which historical changes belong in the public log.
 - Decide whether public IDs should continue mirroring internal claim IDs or switch to a separate public numbering scheme.

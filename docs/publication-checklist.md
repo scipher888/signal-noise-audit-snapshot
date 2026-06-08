@@ -9,7 +9,7 @@ Use this before publishing the GitHub repository or updating a public snapshot.
 
 Confirm the snapshot contains no:
 
-- real name for J;
+- the author's real name;
 - specific profession, employer, role, training, credentials, location, or workplace detail;
 - family member details or family operations;
 - private third-party details;
@@ -29,7 +29,7 @@ Confirm the snapshot does not claim:
 - AI involvement is either automatically good or automatically bad;
 - Synthia Cipher is a fabricated persona, credential, or authority claim rather than a privacy pen name;
 - AI tools are a personlike author, co-author, conscious entity, or signing identity;
-- J's identity or expertise is the reason to trust the publication.
+- the author's identity or expertise is the reason to trust the publication.
 
 Preferred framing:
 
@@ -55,7 +55,7 @@ Before public push:
 
 ## 5. Approval check
 
-No public GitHub repository creation or push until J explicitly approves the exact snapshot.
+No public GitHub repository creation or push until the author explicitly approves the exact snapshot.
 
 Approval should cover:
 
@@ -82,4 +82,4 @@ Public, only after approval.
 
 Recommended license posture for v1:
 
-All rights reserved unless J chooses a reuse license later.
+All rights reserved unless the author chooses a reuse license later.
