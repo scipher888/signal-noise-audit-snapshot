@@ -201,3 +201,54 @@ details[open] > summary {
   color: #6a6a66;
   font-size: 0.95rem;
 }
+
+/* Crosswalk link — sits above the global nav, separate from it. */
+.crosswalk-link {
+  border-top: 1px solid #d9d7cf;
+  padding-top: 1.2rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Global navigation — same block at the bottom of every World Behind page,
+   so a reader can reorient from anywhere. Quiet, anti-badge. */
+.wb-nav {
+  border-top: 1px solid #d9d7cf;
+  margin-top: 2.2rem;
+  padding-top: 1rem;
+  font-size: 0.92rem;
+  color: #6a6a66;
+}
+.wb-nav p {
+  margin: 0 0 0.5rem;
+}
+.wb-nav .wb-here {
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+/* Crosswalk table */
+.xwalk {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin: 0 0 1.6rem;
+}
+.xwalk th, .xwalk td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid #ece9e0;
+}
+.xwalk th {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6a6a66;
+  font-weight: 600;
+}
+.xwalk .rowid {
+  color: #6a6a66;
+  font-size: 0.82rem;
+}
+.xwalk .st-unresolved { color: #8a6d3b; }
