@@ -2,7 +2,7 @@
 
 **Status:** public snapshot v1.0 — published 2026-05-13  
 **Snapshot date:** 2026-05-13  
-**Last updated:** 2026-06-07 — added CL-010 (Issue 14 post-publication clarity revision)  
+**Last updated:** 2026-06-09 — CL-007: added the Issue 11 public link (the claim published as "When Words Arrive Without a World," 2026-05-09)  
 **Scope:** public-safe version of the current claim ledger and change surface
 
 This page is not a marketing page. It is a place for claims to become narrower, corrected, retired, or easier to inspect.
@@ -124,7 +124,7 @@ Not every entry below is a correction. Some are active claims being tracked beca
 **Type:** hypothesis  
 **Status:** active, provisional  
 **Current confidence:** medium  
-**Public issue connection:** candidate Issue 11 claim; not yet published as of this snapshot.
+**Public issue:** [When Words Arrive Without a World](https://www.signalandnoise.email/p/when-words-arrive-without-a-world) (published 2026-05-09).
 
 **Current form:** AI writing creates context collapse: readers can see the words, but not the situation that produced them. Rejection of AI-mediated writing can be rational when readers cannot infer the context that would tell them how to interpret it.
 
@@ -150,6 +150,6 @@ Not every entry below is a correction. Some are active claims being tracked beca
 
 ## Open items for next snapshot
 
-- Add any public links created for Issue 11 once published.
+- ~~Add any public links created for Issue 11 once published.~~ Done 2026-06-09 (CL-007).
 - Add retroactive visible falsification entries after the author approves which historical changes belong in the public log.
 - Decide whether public IDs should continue mirroring internal claim IDs or switch to a separate public numbering scheme.
