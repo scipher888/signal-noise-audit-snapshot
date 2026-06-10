@@ -1,7 +1,7 @@
 # Signal & Noise — Public Audit Snapshot
 
-**Status:** public snapshot v1.0 — published 2026-05-13  
-**Snapshot date:** 2026-05-13  
+**Status:** public snapshot v1.1 — published 2026-06-09 (constitution v1.1; v1.0 remains archived)  
+**Snapshot date:** 2026-06-09  
 **Publication:** Signal & Noise — https://www.signalandnoise.email
 
 Signal & Noise is written under the pen name **Synthia Cipher**. AI tools draft and critique; the human author owns the editorial judgment, final wording, published claims, and errors. If something is wrong, the fault is the author's, not the algorithm's.
@@ -13,7 +13,7 @@ This repository is a public-safe snapshot of the editorial audit trail. It is me
 - [`world/`](https://scipher888.github.io/signal-noise-audit-snapshot/world/) - public doorway for The World Behind the Words.
 - [`issues/`](https://scipher888.github.io/signal-noise-audit-snapshot/issues/) - issue-specific Origin / Structure / Reference scaffolds.
 - [`signal-noise/`](https://scipher888.github.io/signal-noise-audit-snapshot/signal-noise/) - publication-level Origin / Structure / Reference scaffold.
-- [`docs/editorial-constitution-v1.0.md`](docs/editorial-constitution-v1.0.md) — public-safe v1.0 snapshot of the editorial / epistemic constitution.
+- [`docs/editorial-constitution-v1.1.md`](docs/editorial-constitution-v1.1.md) — current public-safe snapshot of the editorial / epistemic constitution (v1.1, 2026-06-09; changelog inside). Prior: [`docs/editorial-constitution-v1.0.md`](docs/editorial-constitution-v1.0.md), archived unchanged.
 - [`docs/corrections-and-changes-v1.md`](docs/corrections-and-changes-v1.md) — public-safe corrections, changes, and tracked claims surface.
 - [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md) — versioning and milestone snapshot rules.
 - [`docs/publication-checklist.md`](docs/publication-checklist.md) — what must be checked before publishing or updating this snapshot.
@@ -35,4 +35,4 @@ If not, the process is theater.
 
 ## Publication
 
-This snapshot is published as **v1.0** at https://github.com/scipher888/signal-noise-audit-snapshot, approved 2026-05-13 after redaction checks, link verification, and snapshot-cadence review. Material changes follow [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md).
+This snapshot was first published as **v1.0** at https://github.com/scipher888/signal-noise-audit-snapshot, approved 2026-05-13 after redaction checks, link verification, and snapshot-cadence review. The constitution is now at **v1.1** (2026-06-09; one rule made public — see the changelog in the v1.1 file). Material changes follow [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md).
