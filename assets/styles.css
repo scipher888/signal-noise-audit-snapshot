@@ -24,6 +24,21 @@
   --coral: #d9795b;
   --rose: #f4dfda;
   --white: #ffffff;
+
+  /* Night — Signal & Noise named palette tokens (alias the established generics; values unchanged) */
+  --sn-navy: var(--navy);
+  --sn-ink: var(--ink);
+  --sn-signal-blue: var(--sky-strong);
+  --sn-calibration-gold: var(--sun);
+  --sn-audit-paper: var(--paper);
+  --sn-context-mint: var(--mint);
+
+  /* Twilight — Synthia Cipher author-mark tokens. Author byline + cipher glyph ONLY; never page chrome. */
+  --sc-aubergine: #211827;
+  --sc-iris: #7664a6;
+  --sc-copper: #c47855;
+  --sc-bone: #f4efe6;
+
   --shadow-sm: 0 8px 30px rgba(21, 47, 62, 0.07);
   --shadow-lg: 0 24px 70px rgba(21, 47, 62, 0.13);
   --radius-sm: 6px;
@@ -2242,6 +2257,21 @@ a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   color: rgba(255, 255, 255, 0.53);
   font-size: 0.76rem;
+}
+
+/* Author byline + cipher glyph — Synthia Cipher signs the footer (glyph only; never a portrait). */
+.footer-bottom .author-byline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: rgba(255, 255, 255, 0.53);
+}
+.footer-bottom .cipher-glyph {
+  flex: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: center / contain no-repeat url("cipher-glyph.svg");
 }
 
 /* Utilities */
