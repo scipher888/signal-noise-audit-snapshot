@@ -1428,6 +1428,35 @@ a:hover {
 .callout.mint { --callout: var(--mint-strong); }
 .callout.coral { --callout: var(--coral); }
 
+/* "The conversation behind this" — author–AI attribution entry (Origin pages). */
+.convo-card {
+  margin: 1.7rem 0 0;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sky-strong);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  background: color-mix(in srgb, var(--sky-strong) 8%, var(--paper-bright));
+}
+.convo-card .eyebrow { margin: 0 0 0.4rem; }
+.convo-card h3 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--navy);
+}
+.convo-card .convo-desc { margin: 0 0 0.75rem; color: var(--ink-soft); }
+.convo-card .convo-go { margin: 0; }
+.convo-card .convo-go a {
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--sky-strong) 55%, transparent);
+  padding-bottom: 1px;
+}
+.convo-card .convo-go a:hover { border-bottom-color: var(--sky-strong); }
+
 .quote-block {
   margin: 2rem 0;
   padding: clamp(1.5rem, 4vw, 2.5rem);
