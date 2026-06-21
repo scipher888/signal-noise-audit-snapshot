@@ -46,15 +46,4 @@
   });
 
   filterIssues();
-
-  // Keep long process pages calm: opening one check closes the others.
-  const checkCards = [...document.querySelectorAll('details[data-exclusive-check]')];
-  checkCards.forEach((card) => {
-    card.addEventListener('toggle', () => {
-      if (!card.open) return;
-      checkCards.forEach((other) => {
-        if (other !== card) other.open = false;
-      });
-    });
-  });
 })();
