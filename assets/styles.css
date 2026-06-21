@@ -1541,9 +1541,27 @@ a:hover {
 .process-flow {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 0.7rem;
-  margin: 2rem 0 2.5rem;
+  margin: 2rem 0 1.4rem;
+}
+
+.process-dot .dot-glyph {
+  width: 26px;
+  height: 26px;
+  background: center / contain no-repeat url("cipher-glyph.svg");
+}
+
+.flow-note {
+  max-width: 70ch;
+  margin: 0 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.flow-note strong {
+  color: var(--ink);
 }
 
 .process-flow::before {
@@ -1717,7 +1735,10 @@ a:hover {
   color: var(--navy);
   background: var(--sky);
   font-family: var(--font-serif);
+  font-size: 1.05rem;
   font-weight: 700;
+  line-height: 1;
+  text-align: center;
 }
 
 .check-card summary strong {
@@ -2233,27 +2254,21 @@ a:hover {
     var(--navy);
 }
 
+.footer-disclaimer {
+  max-width: 74ch;
+  margin: 0 0 2.6rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(240px, 1.3fr) repeat(auto-fit, minmax(150px, 0.7fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, max-content));
+  justify-content: start;
   gap: clamp(2rem, 6vw, 5rem);
-}
-
-.footer-brand {
-  max-width: 38ch;
-}
-
-.footer-brand h2 {
-  margin: 0 0 0.8rem;
-  color: var(--white);
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.footer-brand p {
-  margin: 0;
-  font-size: 0.9rem;
 }
 
 .footer-column h3 {
@@ -2745,4 +2760,41 @@ a:hover {
   a {
     color: #111;
   }
+}
+
+/* Reading pages without a table-of-contents collapse to a single centred column. */
+.reading-layout:not(:has(.on-this-page)) {
+  display: block;
+}
+
+.reading-layout:not(:has(.on-this-page)) > .reading-content {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+/* World "same simple lens" block — centred intro sitting above the inspection links. */
+.lens-block {
+  text-align: center;
+}
+
+.lens-block .section-title {
+  max-width: 26ch;
+  margin: 0 auto;
+}
+
+.lens-intro {
+  max-width: 56ch;
+  margin: 1.3rem auto 0;
+  color: var(--ink-soft);
+  font-size: 1.2rem;
+  line-height: 1.58;
+}
+
+.lens-block .lens-links {
+  margin-top: 1.9rem;
+}
+
+/* Two-card variant of the three-up grid (e.g. Reference inspection surfaces). */
+.three-up.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }

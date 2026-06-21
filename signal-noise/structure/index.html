@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The editorial structure behind Signal & Noise: roles, bright lines, failure routes, and limits.">
   <title>Structure — Signal & Noise Publication Record</title>
-  <link rel="stylesheet" href="../../assets/styles.css?v=20260618">
-  <script src="../../assets/site.js?v=20260618" defer></script>
+  <link rel="stylesheet" href="../../assets/styles.css?v=20260621">
+  <script src="../../assets/site.js?v=20260621" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,11 +37,6 @@
           <p class="eyebrow">Publication record · Layer 02</p>
           <h1 class="page-title">How every issue is pressure-tested.</h1>
           <p class="lede">A repeatable sequence of admission rules, adversarial checks, decision rights, and outside review—designed to make failure routes visible.</p>
-          <div class="snapshot-note">
-            <span><strong>Snapshot:</strong> June 2026</span>
-            <span><strong>Internal roles:</strong> Opus 4.8 Max or ChatGPT 5.5 Pro Extended Thinking</span>
-            <span><strong>Outside review:</strong> ChatGPT 5.5 Pro Extended Thinking</span>
-          </div>
         </div>
         <div class="hero-seal" aria-hidden="true"></div>
       </div>
@@ -74,7 +69,12 @@
           <p class="lede">The same model may perform several internal roles, so these are not independent inspectors. The value lies in explicit constraints, recorded decisions, and the ability to route work backward—or stop it.</p>
         </div>
 
-        <div class="process-flow" aria-label="Editorial process: admission, builder, critic, referee, editor, outside review">
+        <div class="process-flow" aria-label="Editorial process: the human author initiates, then admission, builder, critic, referee, editor, outside review, then the author's final edit and approval">
+          <div class="process-step">
+            <div class="process-dot"><span class="dot-glyph" aria-hidden="true"></span></div>
+            <strong>Author</strong>
+            <small>Initiates the work</small>
+          </div>
           <div class="process-step">
             <div class="process-dot">A</div>
             <strong>Admission</strong>
@@ -105,11 +105,14 @@
             <strong>Outside review</strong>
             <small>Near-final challenge</small>
           </div>
+          <div class="process-step">
+            <div class="process-dot"><span class="dot-glyph" aria-hidden="true"></span></div>
+            <strong>Author</strong>
+            <small>Final edit &amp; approval</small>
+          </div>
         </div>
 
-        <div class="callout mint">
-          <p><strong>The final call stays human.</strong> AI roles recommend, challenge, and route. The human author decides whether to publish and remains responsible for the result.</p>
-        </div>
+        <p class="flow-note"><strong>The human author is in the loop throughout.</strong> They initiate the work before admission, edit and approve between the gates, and give the final edit and approval after outside review.</p>
       </div>
     </section>
 
@@ -120,7 +123,7 @@
             <p class="eyebrow">What the system is for</p>
             <h2 class="section-title" id="rules-and-limits">Constraints, protections, and limits.</h2>
           </div>
-          <p class="lede">The structure is meant to keep confidence from outrunning evidence. It does not make the work safe, correct, or independent by virtue of existing.</p>
+          <p class="lede">The structure is meant to keep confidence from outrunning evidence. It does not make the work safe, correct, or true by virtue of existing.</p>
         </div>
 
         <div class="three-up">
@@ -175,15 +178,6 @@
 
     <section class="section" aria-labelledby="checks-in-detail">
       <div class="shell reading-layout">
-        <aside class="on-this-page" aria-label="On this page">
-          <p>On this page</p>
-          <ol>
-            <li><a href="#checks-in-detail">Checks in detail</a></li>
-            <li><a href="#bright-lines">Bright lines</a></li>
-            <li><a href="#independence">Independence</a></li>
-            <li><a href="#record">What the record proves</a></li>
-          </ol>
-        </aside>
 
         <div class="reading-content">
           <section class="content-section">
@@ -350,16 +344,13 @@
               <li>Process claims are not inspectable.</li>
               <li>AI is framed as a person, co-author, or signing author.</li>
             </ul>
-            <div class="callout sun">
-              <p><strong>Two hardened rules:</strong> a framework that can explain any outcome is dangerous; clarity cannot override validity.</p>
-            </div>
           </section>
 
           <section class="content-section" id="independence">
             <h2>Where independence exists—and where it does not.</h2>
             <div class="prose">
               <p>The builder, critic, referee, and editor are often roles played by one model. Different prompts and decision rights may create useful friction, but they do not create independent evidence or independent cognition.</p>
-              <p>The optional cross-model panel and outside review are the only points intended to add a separate perspective. Even then, outside review may use the same model in a different context. The record names that limitation instead of calling the roles a panel of independent experts.</p>
+              <p>The optional cross-model panel and outside review are the only points intended to add a separate perspective. Even then, outside review may use the same model in a different context.</p>
             </div>
             <div class="callout coral">
               <p><strong>Practical implication:</strong> more weight belongs on outside anchors, recorded changes, reader challenge, and correction—not on the number of internal passes.</p>
@@ -372,13 +363,6 @@
               <p>It establishes the intended constraints, role boundaries, and known failure routes as of this dated snapshot. It makes the process inspectable only to the degree that traces are actually recorded.</p>
               <p>It does not establish that any published claim is true, that the checks worked in a particular case, or that the system is free of shared blind spots.</p>
             </div>
-            <div class="principle">
-              <div class="principle-mark" aria-hidden="true">≠</div>
-              <div>
-                <h3>A gate is not a guarantee.</h3>
-                <p>The structure can narrow claims and make risk more visible. The evidence for an essay still has to live outside the process that produced it.</p>
-              </div>
-            </div>
           </section>
         </div>
       </div>
@@ -387,11 +371,8 @@
 
   <footer class="site-footer">
     <div class="shell">
+      <p class="footer-disclaimer">A map, not a certification of truth. These records expose choices, constraints, and open questions. Trust is useful here only when it leads to closer inspection rather than closure.</p>
       <div class="footer-grid">
-        <div class="footer-brand">
-          <h2>Signal &amp; Noise Structure</h2>
-          <p>The editorial sequence, role boundaries, bright lines, and known failure modes behind Signal &amp; Noise.</p>
-        </div>
         <div class="footer-column">
           <h3>Layers</h3>
           <a href="../../signal-noise/">Origin</a>
@@ -410,7 +391,6 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>A map, not a certification of truth.</span>
         <span class="author-byline"><span class="cipher-glyph" aria-hidden="true"></span> by Synthia Cipher</span>
         <span>Public snapshot · June 2026</span>
       </div>
