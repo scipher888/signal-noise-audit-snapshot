@@ -2,7 +2,7 @@
 
 **Status:** public snapshot v1.0 — published 2026-05-13  
 **Snapshot date:** 2026-05-13  
-**Last updated:** 2026-06-09 — CL-007: added the Issue 11 public link (the claim published as "When Words Arrive Without a World," 2026-05-09)  
+**Last updated:** 2026-06-21 — CL-002 reframed ("dangerous" → "explains nothing"); public-surface simplification recorded (see *Public surface changes* below)  
 **Scope:** public-safe version of the current claim ledger and change surface
 
 This page is not a marketing page. It is a place for claims to become narrower, corrected, retired, or easier to inspect.
@@ -34,17 +34,19 @@ Not every entry below is a correction. Some are active claims being tracked beca
 
 ---
 
-### CL-002 — A framework that explains everything is dangerous
+### CL-002 — A framework that explains everything explains nothing
 
-**Claim:** Frameworks become dangerous when they explain nearly any outcome.  
+**Claim:** A framework that can explain nearly any outcome is empty rather than dangerous: if it fits success, failure, contradiction, and delay equally well, it discriminates nothing and carries no evidentiary weight.  
 **Type:** hypothesis  
-**Status:** active  
+**Status:** revised 2026-06-21 (framing corrected)  
 **Current confidence:** high  
 **Public issue connection:** process-level standard; public issue link to be added if surfaced in a specific post.
 
 **Current form:** A useful framework must discriminate. If the same frame can explain success, failure, contradiction, and delay equally well, it may be coherence theater.
 
 **What changed:** this claim became a hard no-publish gate: a piece that can explain any outcome must be reworked or downgraded.
+
+**What changed (2026-06-21):** the framing was corrected from "dangerous" to "explains nothing." A frame that explains every outcome is worthless as evidence, not hazardous; the no-publish gate is unchanged, only the rationale is sharpened. The public Structure page now states the rule as "the argument can explain any outcome and therefore risks explaining none."
 
 **What would change this:** a demonstrated framework practice that remains broad but makes clear, checkable, prospective distinctions.
 
@@ -147,6 +149,17 @@ Not every entry below is a correction. Some are active claims being tracked beca
 **What would change this:** public evidence that newer AI tools reliably close the gap between felt and measured productivity; evidence that people building mostly for themselves reliably convert private builds into durable value for others; or evidence that the all-consuming pull fades as the tools become ordinary.
 
 ---
+
+## Public surface changes
+
+These are presentation and framing changes to the public *World Behind the Words* records (2026-06-19 → 2026-06-21). They do not change any published claim, but they change how the process is described, so they are logged here.
+
+- **Trust disclaimer standardized.** The various "this is a map, not a certification of truth" warnings were consolidated into one short line at the top of the site footer. The big stand-alone trust bubbles on the Origin, Structure, and Reference pages were removed.
+- **"AI is not framed as a person" reclassified.** This was previously listed among the per-issue bright lines that "force a hold or rework." It is now treated as a standing identity principle (the AI is always a tool, never a person, co-author, or signing author), not a topic risk evaluated essay by essay. The no-publish standard is unchanged; only its classification moved.
+- **CL-002 reframe.** "A framework that can explain any outcome is *dangerous*" was corrected to "*explains nothing*" (see CL-002). The redundant public pairing with "clarity cannot override validity" (CL-003 / "narrative confidence exceeds evidentiary confidence") was dropped from the public bright-lines list.
+- **Human author made visible in the editorial path.** The public Structure diagram now shows the human author initiating the work before admission, editing and approving between gates, and giving the final edit and approval after outside review. The independence section is now explicit that the internal roles are one AI model and that cross-model panel / outside review are the only separate-perspective points.
+- **"Independent" → "true."** The Structure constraints line now reads that the process "does not make the work safe, correct, or *true* by virtue of existing."
+- **One attribution source per issue.** The Issue 15 "Live Attribution Log" was consolidated into the single Extended Development Record; the standalone attribution-log page now redirects there.
 
 ## Open items for next snapshot
 
