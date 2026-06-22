@@ -729,6 +729,57 @@ a:hover {
 .layer-tab.structure { --tab-color: var(--sky-strong); }
 .layer-tab.reference { --tab-color: var(--mint-strong); }
 
+/* Crosswalk node — a 4th layer link that sits below and midway between
+   Structure and Reference, bracketed up to both to show it maps them. */
+.layer-nav.has-crosswalk {
+  padding-bottom: clamp(3.4rem, 6vw, 4.2rem);
+}
+
+.layer-bridge {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  position: relative;
+  height: 1.4rem;
+}
+
+.layer-bridge::before {
+  content: "";
+  position: absolute;
+  inset: 0 16.667% 0 50%;
+  border: 1px solid var(--line-strong);
+  border-top: 0;
+  border-radius: 0 0 9px 9px;
+}
+
+.layer-bridge::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 66.667%;
+  width: 1px;
+  height: 0.9rem;
+  background: var(--line-strong);
+}
+
+.layer-tab.crosswalk {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  justify-self: center;
+  align-items: center;
+  margin-top: 0.9rem;
+  padding: 0.5rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.72);
+  --tab-color: var(--navy);
+}
+
+.layer-tab.crosswalk .layer-number {
+  width: 30px;
+  height: 30px;
+  font-size: 0.9rem;
+}
+
 /* Sections */
 .section {
   padding: clamp(4rem, 8vw, 7rem) 0;
