@@ -20,9 +20,6 @@
 .artifact-output .bubble-text{font-size:.9rem;line-height:1.55}
 .logged-output .bubble-text{font-size:.96rem}
 .external-review{background:#fbfbfb;border-style:dashed}
-details.turn summary{cursor:pointer;list-style:none}
-details.turn summary::-webkit-details-marker{display:none}
-details.turn summary .who{display:block;margin-bottom:.3rem}
 .navline{font-size:.9rem;color:var(--muted);margin:1.4rem 0}
 .navline a{margin-right:.45rem}
 @media(max-width:720px){body{padding-left:1rem;padding-right:1rem}.turn,.ai,.human,.artifact-output{max-width:100%;margin-left:0;margin-right:0}}</style>
@@ -414,8 +411,8 @@ issue-016-intuition-002-combined-marcus-adversarial-nir-prompt-2026-06-20.md [lo
 It asks ChatGPT 5.5 Pro Extended Thinking to browse and check all four targets: Marcus source fidelity, current AI/architecture fidelity, internal/cross-issue coherence, and Light NIR prose refinement. It includes both current drafts plus the Issue 16 footer/source package candidate.
 
 I also logged the new gate in both edit logs and updated canonical state so this combined prompt supersedes the Issue 16-only NIR as the next external review step. Verification passed: `git diff --check`, balanced markdown fences, and prompt/path sanity checks.</div>
-</div><details open class="turn ai artifact-output external-review" id="turn-846">
-<summary><span class="who">External model review pasted by the author · turn 846 · excerpt</span></summary>
+</div><div class="turn ai artifact-output external-review" id="turn-846">
+<div class="who">External model review pasted by the author · turn 846 · excerpt</div>
 <div class="bubble-text">Here is the Chat GPT Adversarial Review: # 1. **Review Brief**
 
 ## What documents are being reviewed
@@ -462,7 +459,7 @@ I concentrated on six pressure points:
 ---
 
 [Public-page note: the author pasted a much longer external ChatGPT review at this point. The full paste functioned as an outside critique artifact; this page preserves the review brief and pressure points that shaped adjudication, while the next assistant turn records what was accepted.]</div>
-</details><div class="turn ai logged-output" id="turn-977">
+</div><div class="turn ai logged-output" id="turn-977">
 <div class="who">AI editorial process · returned review adjudicated · turn 977</div>
 <div class="bubble-text">Adjudicated and applied.
 
@@ -626,8 +623,8 @@ Public state: no Spotify replacement, feed edit, Beehiiv audio-link change, or p
 <div class="frame"><span class="label">Verbatim-layer note</span>
 <p>This layer uses the live edit-log as the spine, then restores preserved author and assistant turns from the message archive. Local artifact paths, mode tags, and tool traces are redacted. Because both essays were revised together, the same author turns legitimately appear in both records.</p>
 </div>
-<details class="turn human author-input" id="june22-verbatim-intake-full">
-<summary><span class="who">The author · post-publication revision intake · June 22 · verbatim note, private file preamble omitted</span></summary>
+<div class="turn human author-input" id="june22-verbatim-intake-full">
+<div class="who">The author · post-publication revision intake · June 22 · verbatim note, private file preamble omitted</div>
 <div class="bubble-text">Hey Synthia,
 
 Please record all of this verbatim (and restart the live logging) for incorporation into Intuition Issue 2 and S&amp;N Issue 16 revisions (after publication) that will follow.
@@ -761,7 +758,7 @@ Due to a few issues that have become apparent to me after publication and due to
 Once we are done revising the issues, we may need to do one last NIR end-to-end for both issues to make sure we don’t have narrative drift/entropy.
 
 And finally, we need to update our canonical docs and all of our world behind the words documents for both Intuition and Signal &amp; Noise.</div>
-</details>
+</div>
 <div class="turn ai logged-output" id="june22-verbatim-intake-logged">
 <div class="who">AI editorial process · records intake and restarts live logging · June 22</div>
 <div class="bubble-text">Recorded and restarted.
@@ -866,8 +863,8 @@ Logged:
 
 Validation: `git diff --check` passed. No draft prose or live pages changed.</div>
 </div>
-<details class="turn human author-input external-review" id="june22-verbatim-returned-nir">
-<summary><span class="who">The author · returns paired Narrative Integrity Review · June 22 · public excerpt</span></summary>
+<div class="turn human author-input external-review" id="june22-verbatim-returned-nir">
+<div class="who">The author · returns paired Narrative Integrity Review · June 22 · public excerpt</div>
 <div class="bubble-text">Here is the NIR result: # Paired Narrative Integrity Review
 
 ## Verdict
@@ -1125,7 +1122,7 @@ The pair now has the correct two-stage shape:
 The endings are no longer the problem. Intuition ends in **epistemic restraint**; Issue 16 ends in **an adjudicated split verdict followed by distribution irony**. The remaining entropy is upstream: Issue 16 repeats too much of Intuition at the front, while Intuition briefly previews too much of Issue 16 near the back.
 
 “Usefulness has been overconverted into reliability” is clear because the next sentence immediately translates it into authority and access. Keep that explanation. “Hard low ceiling” needs only earlier placement and a shorter second appearance.</div>
-</details>
+</div>
 <div class="turn ai logged-output" id="june22-verbatim-nir-adjudicated">
 <div class="who">AI editorial process · adjudicates paired NIR into local drafts · June 22</div>
 <div class="bubble-text">Applied the NIR result as an external input and adjudicated it into the local drafts.
