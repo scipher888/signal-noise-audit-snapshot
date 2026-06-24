@@ -298,46 +298,14 @@ a:hover {
 }
 
 .brand-mark {
-  position: relative;
-  display: grid;
   width: 38px;
   height: 38px;
-  place-items: center;
-  overflow: hidden;
-  border: 1px solid rgba(16, 40, 58, 0.22);
-  border-radius: 50%;
-  background: var(--paper-bright);
-}
-
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-}
-
-.brand-mark::before {
-  width: 24px;
-  height: 24px;
-  border: 1.5px solid var(--navy);
-}
-
-.brand-mark::after {
-  right: -4px;
-  bottom: -4px;
-  width: 24px;
-  height: 24px;
-  background: var(--sun);
+  /* World Behind the Words mark: mapped rings (the context-map motif). Eclipse stays on Signal & Noise. */
+  background: center / contain no-repeat url("mapped-rings.svg");
 }
 
 .brand-mark span {
-  position: relative;
-  z-index: 1;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--navy);
-  box-shadow: -8px 0 0 var(--navy), 8px 0 0 var(--navy);
+  display: none;
 }
 
 .brand-copy {
@@ -2353,6 +2321,22 @@ a:hover {
   color: var(--white);
 }
 
+.footer-column .footer-social {
+  display: inline-flex;
+  margin: 0.5rem auto;
+  color: rgba(255, 255, 255, 0.76);
+  transition: color 150ms ease;
+}
+
+.footer-column .footer-social:hover {
+  color: var(--white);
+}
+
+.footer-column .footer-social svg {
+  width: 18px;
+  height: 18px;
+}
+
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -2372,6 +2356,11 @@ a:hover {
   align-items: center;
   gap: 0.4em;
   color: rgba(255, 255, 255, 0.53);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+.footer-bottom a.author-byline:hover {
+  color: rgba(255, 255, 255, 0.85);
 }
 .footer-bottom .cipher-glyph {
   flex: none;
