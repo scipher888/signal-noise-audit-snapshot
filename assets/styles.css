@@ -338,22 +338,26 @@ a:hover {
 }
 
 .primary-nav a {
-  padding: 0.45rem 0.72rem;
+  padding: 0.45rem 0.82rem;
+  border: 1px solid var(--line-strong);
   border-radius: 999px;
   color: var(--ink-soft);
   font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
 }
 
 .primary-nav a:hover {
   color: var(--ink);
-  background: rgba(16, 40, 58, 0.055);
+  background: rgba(16, 40, 58, 0.06);
+  border-color: var(--ink-soft);
 }
 
 .primary-nav a[aria-current="page"] {
   color: var(--navy);
   background: var(--sky);
+  border-color: var(--sky-strong);
 }
 
 .header-cta,
