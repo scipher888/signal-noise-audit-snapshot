@@ -1,0 +1,1579 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extended Development Record - Unseen and Unenforced</title>
+<link rel="stylesheet" href="../conversation/conversation.css">
+<style>body{max-width:900px}.frame{border:1px solid var(--line);border-radius:10px;padding:.95rem 1.05rem;margin:1.2rem 0 1.6rem;background:#fcfcfc}.frame p{margin:.45rem 0}.frame .label{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}.session{border-top:1px solid var(--line);padding-top:1.15rem;margin-top:2.1rem;color:#333}.thread{margin-top:1.35rem}.turn{max-width:92%;border-radius:16px;margin:.72rem 0;padding:.8rem .95rem}.human{margin-right:16%}.ai{margin-left:8%;max-width:96%}.logged-output .who::after{content:" \00b7 public-safe";font-style:italic;text-transform:none;letter-spacing:0}.bubble-text{white-space:pre-wrap;overflow-wrap:anywhere}.logged-output .bubble-text{font-size:.96rem}.navline{font-size:.9rem;color:var(--muted);margin:1.4rem 0}.navline a{margin-right:.45rem}@media(max-width:720px){body{padding-left:1rem;padding-right:1rem}.turn,.ai,.human{max-width:100%;margin-left:0;margin-right:0}}</style>
+</head>
+<body>
+<p class="kicker">The World Behind the Words &middot; Issue 19 - Unseen and Unenforced &middot; Verbatim layer</p>
+<h1>Extended Development Record - Unseen and Unenforced</h1>
+<p class="lede">A public-safe transcript layer from the preserved author-AI development conversation: the question chosen before any thesis, four rival endings, a mid-issue correction to the process itself, three manually run outside reviews, and the corrections, in chronological order.</p>
+
+<div class="frame"><span class="label">Reader note</span>
+<p>Author bubbles intentionally preserve rough wording, typos, false starts, and mid-thought changes where the preserved session logs contain them. This issue&#x27;s record spans four working coding-agent sessions between July 7 and July 11, 2026, merged in time order.</p>
+<p>It is still not a raw machine export. Tool calls, shell traces, background verification agents, private file paths, unrelated conversations, and private operational details are omitted or redacted. Long third-party review pastes are summarized in place because they are not the author-AI conversation; the review artifacts themselves remain preserved in the issue&#x27;s working files. The author&#x27;s sealed pre-process note is not published, by standing rule; the conversation about its unsealing appears as it happened, and the <a href="../../../world/probe-match-methods/">probe-match methods note</a> carries the public framing.</p>
+<p>The record shows process load and constraint. It does not prove that the published essay is true, safe, or trustworthy.</p>
+</div>
+
+<div class="frame"><span class="label">Completeness note</span>
+<p>Complete here means complete as preserved and public-safe across the July 7-11 Issue 19 source-session logs used for this page, ending at the author&#x27;s confirmation of the post-publication disclosure-line fix. The point is not to make the process look clean. It is to show that the finished issue came from a messy, revision-heavy exchange - a landing selected against rivals, a category error caught in the essay&#x27;s own headline numbers, an absence claim falsified and narrowed, a process rule corrected mid-issue by the author, and an author who paused, redirected, and overruled where it was his call to make.</p>
+</div>
+
+<p class="navline"><a href="../">Origin</a> &middot; <a href="../structure/">Structure</a> &middot; <a href="../reference/">Reference</a> &middot; <a href="../crosswalk/">Crosswalk</a></p>
+<p class="meta">Sources: July 7-11 coding-agent session logs, the Issue 19 live edit-log, and saved draft/review artifacts. Private operational details are omitted.</p>
+
+<div class="thread">
+<h2 class="session">Session 1 - Question first: the probe seals, the dossier builds, four landings fight, the author fuses two</h2>
+<div class="turn human author-input" id="turn-001">
+<div class="who">The author &middot; development turn &middot; July 7, 2026, 5:37 PM PT</div>
+<div class="bubble-text">Hey Claude, what&#x27;s our next step for S&amp;N Issue 19 development?     * ~/.openclaw/workspace/projects/newsletter/PROCESS-MAP.md
+    * ~/.openclaw/workspace/projects/newsletter/canonical-state.md
+    * ~/.openclaw/workspace/projects/newsletter/canonical-diagnostic-matrix.csv
+    * ~/.openclaw/workspace/projects/newsletter/decisions</div>
+</div>
+<div class="turn ai logged-output" id="turn-002">
+<div class="who">AI editorial process &middot; July 7, 2026, 5:37 PM PT</div>
+<div class="bubble-text">I&#x27;ll read the newsletter project&#x27;s canonical state and process docs to find where Issue 19 stands.</div>
+</div>
+<div class="turn ai logged-output" id="turn-003">
+<div class="who">AI editorial process &middot; July 7, 2026, 5:38 PM PT</div>
+<div class="bubble-text">Issue 19 is exactly where the docs say it is — paused after Step 1 — and the next step is unambiguous across all four sources: **Step 1C**. Here&#x27;s the picture.
+
+## Where Issue 19 stands (paused 2026-07-06)
+
+Issue 19 is **Landing Slate Protocol Pilot 1** (&quot;Paying for Intelligence&quot; working-title family). Step 1 is complete:
+
+- **Question selected** (not a thesis): when private AI data-center demand requires public-grid expansion, how should public policy decide which costs belong to AI companies, utilities, ordinary ratepayers, taxpayers, or shared public infrastructure? — recorded in [issue-019-question-brief-2026-07-06.md](newsletter/future-issues/issue-019-question-brief-2026-07-06.md)
+- **Sealed default-prior probe** exists at `drafts/issue-019-sealed-default-prior-probe-2026-07-06.md` — must stay unread until after Step 1B landing selection
+- **J&#x27;s declared prior/capture risk** is recorded: no financial conflict; the live risk is narrative/forecast capture (expectation that public pushback forces AI companies to bear more cost or slows buildout, pressuring ROI, especially if open-source Chinese models keep improving)
+- Nothing downstream exists yet: no Emotional Legibility list, no research dossier, no landing slate, no landing, no arc, no Builder draft
+
+## Next step: Step 1C (arc-blind)
+
+Per the question brief&#x27;s Next Gate section and the resume point in [canonical-state.md](newsletter/canonical-state.md) and the [PROCESS-MAP.md](newsletter/PROCESS-MAP.md) banner:
+
+1. **Build the arc-blind Emotional Legibility Essentials List** — five seeds already exist in the brief (household bill anxiety, builder legitimacy, local consent, strategic urgency, fairness test), but the real list gets built fresh and J approves the protected set.
+2. **Adversarial Emotional Steelman** for both major live positions — the ratepayer-protection side *and* the pro-build/pro-data-center side — in language a serious advocate would recognize as fair.
+3. **Landing-grade research dossier** that explicitly tests J&#x27;s declared prior rather than decorating it. The brief names four tests: (a) is data-center cost-shifting to ordinary ratepayers actually happening, and where; (b) is public pushback materially changing tariffs, interconnection rules, siting, or direct-pay requirements; (c) are AI companies already absorbing enough cost to weaken the &quot;hidden public bill&quot; frame; (d) does the ROI/open-source-China point belong in Issue 19 at all, or is it a separate adjacent issue.
+
+Only after 1C completes does **Step 1D** (slate of 2–4 rival landings) run, then **Step 1B** (Contestability selector, J adjudicates), then **Step 1A** (arc), then Builder.
+
+Two standing guardrails while working 1C: the prior is an input to test, not the thesis — and no landing candidate may be generated during this phase. Also worth remembering for later: Issue 19 is in the Reader Translation + Entropy Compression pilot, so Steps 8A/8B run before Final NIR downstream.
+
+The pause rule says resume happens when you explicitly reopen — so I haven&#x27;t started 1C. Say the word and I&#x27;ll kick off the Emotional Legibility list, steelmen, and research dossier.</div>
+</div>
+<div class="turn human author-input" id="turn-004">
+<div class="who">The author &middot; development turn &middot; July 7, 2026, 6:35 PM PT</div>
+<div class="bubble-text">Excellent. Looking at the Emotional Legibility Seeds list, numbers 2 and 4 are important and need to be a part of this essay, but I&#x27;m thinking they probably don&#x27;t belong in the emotional legibility list because I kind-of doubt Builder legitimacy and strategic urgency they trigger strong emotions with the general public.  With that being said, please proceed to Step 1C.</div>
+</div>
+<div class="turn ai logged-output" id="turn-005">
+<div class="who">AI editorial process &middot; July 7, 2026, 6:37 PM PT</div>
+<div class="bubble-text">Issue 19 reopens at Step 1C, with your classification direction applied: seeds 2 (Builder legitimacy) and 4 (Strategic urgency) move out of the emotional-essentials candidate list and into required analytic/structural coverage — same split you made on Issue 18. I&#x27;ll log that direction, then build the three 1C artifacts (arc-blind essentials list, both steelmen, landing-grade research dossier).</div>
+</div>
+<div class="turn ai logged-output" id="turn-006">
+<div class="who">AI editorial process &middot; July 7, 2026, 6:37 PM PT</div>
+<div class="bubble-text">Naming conventions confirmed. Now I&#x27;ll log the reopen and your seeds-2/4 reclassification in the live edit-log, then launch the research.</div>
+</div>
+<div class="turn ai logged-output" id="turn-007">
+<div class="who">AI editorial process &middot; July 7, 2026, 6:39 PM PT</div>
+<div class="bubble-text">The Issue 18 template and steelman requirements are clear. One more input to pull while research runs: the parked candidate&#x27;s original framing in the Issue 18 selection brief, which the question brief names as a primary input.</div>
+</div>
+<div class="turn human author-input" id="turn-008">
+<div class="who">The author &middot; development turn &middot; July 7, 2026, 7:59 PM PT</div>
+<div class="bubble-text">Hey Claude, what is the next step?</div>
+</div>
+<div class="turn ai logged-output" id="turn-009">
+<div class="who">AI editorial process &middot; July 7, 2026, 7:59 PM PT</div>
+<div class="bubble-text">Round 1 landed clean and is already written into the dossier (§1–§3 verified). Round 2 (the gap-fill) died on a Fable-5 credit exhaustion mid-run — all five search agents failed before fetching anything, so §4/§5/§6 of the dossier are still empty placeholders. You&#x27;ve since switched to Opus 4.8, so credits are available again. The blocking next step is re-running that round-2 pass, because the Emotional Legibility steelman sections must be scan-grounded (the Issue 18 rule), and I can&#x27;t write them from an empty §5. Relaunching now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-010">
+<div class="who">AI editorial process &middot; July 7, 2026, 8:00 PM PT</div>
+<div class="bubble-text">Relaunched as a fresh run on Opus 4.8 (Task `whq9g8e4c`) — resuming the dead one wouldn&#x27;t help since all five agents failed before caching anything. It&#x27;ll notify me when it lands (~40–45 min based on round 1); I won&#x27;t poll it.
+
+Here&#x27;s where things stand and what&#x27;s next.
+
+## What&#x27;s done
+- **Round 1 research: complete and verified.** 25 claims, all confirmed 3-0 against downloaded primary PDFs (PJM IMM counterfactuals, the PA price cap, Ohio&#x27;s AEP tariff, FERC RM26-4 and EL25-49, the 24-state tariff wave).
+- **Dossier drafted** at [issue-019-landing-grade-research-dossier-2026-07-07.md](newsletter/research/issue-019-landing-grade-research-dossier-2026-07-07.md), §1–§3 populated with the verified record. Headline finding, stated plainly: your prior&#x27;s **cost-bearing half is strongly supported** (companies are being pushed to internalize costs), but its **slow-buildout / ROI-compression half is so far contradicted** — the verified policy direction is &quot;pay your own way *and connect faster*,&quot; not restraint. That&#x27;s exactly the kind of prior/evidence tension Step 1C is supposed to surface before any landing exists.
+- **Your seeds-2/4 reclassification is logged** (edit-log row 4): Builder legitimacy and Strategic urgency are now required analytic/structural coverage, not emotional essentials.
+
+## What&#x27;s blocked on round 2
+The dossier&#x27;s §4 (are AI companies already absorbing costs?), §5 (advocate voices + emotional register), and §6 (buildout/ROI + the Chinese-open-source question) are empty placeholders. I can&#x27;t write the **Adversarial Emotional Steelman** yet because the Issue 18 rule requires it to be scan-grounded, not invented — and §5 is the scan. So the Emotional Legibility Essentials artifact waits for round 2.
+
+## The sequence from here (all still Step 1C)
+1. Round 2 lands → finish dossier §4–§6, finalize the four prior-test verdicts.
+2. Build the **Emotional Legibility Essentials List** (arc-blind) — emotional seeds 1/3/5 as candidate protected beats, 2/4 carried as analytic obligations, plus both steelmen and an asymmetry-of-salience note.
+3. Update canonical-state / EIP state / edit-log.
+
+Then I&#x27;ll **stop at the 1C→1D boundary for your review** — that&#x27;s the natural checkpoint, since Step 1D (the landing slate) and 1B (selection) are where you adjudicate the landing, and the sealed probe stays unread until after that selection. I&#x27;ll bring you the completed 1C package rather than auto-generating landings past it.</div>
+</div>
+<div class="turn ai logged-output" id="turn-011">
+<div class="who">AI editorial process &middot; July 7, 2026, 8:20 PM PT</div>
+<div class="bubble-text">Round 2 landed clean. Let me read the full output to capture all verified findings before completing the dossier.</div>
+</div>
+<div class="turn ai logged-output" id="turn-012">
+<div class="who">AI editorial process &middot; July 7, 2026, 8:21 PM PT</div>
+<div class="bubble-text">Both rounds are in and verified (round 2: 24 confirmed, 1 refuted — the Meta &quot;no subsidy&quot; claim was killed 0-3). The record now tells a genuinely two-sided story that cuts across your prior in an interesting way. Let me complete the dossier&#x27;s pending sections with the round-2 findings.</div>
+</div>
+<div class="turn ai logged-output" id="turn-013">
+<div class="who">AI editorial process &middot; July 7, 2026, 8:21 PM PT</div>
+<div class="bubble-text">Now the §1 prior-test verdict table — the two pending rows can now be filled:</div>
+</div>
+<div class="turn ai logged-output" id="turn-014">
+<div class="who">AI editorial process &middot; July 7, 2026, 8:21 PM PT</div>
+<div class="bubble-text">Now the three big pending sections — §4, §5, §6 — replaced with the verified round-2 content:</div>
+</div>
+<div class="turn human author-input" id="turn-015">
+<div class="who">The author &middot; development turn &middot; July 8, 2026, 5:52 AM PT</div>
+<div class="bubble-text">Hey Claude, can you pick up work where you left off when we hit rate limits?</div>
+</div>
+<div class="turn human author-input" id="turn-016">
+<div class="who">The author &middot; development turn &middot; July 8, 2026, 5:53 AM PT</div>
+<div class="bubble-text">Hey Claude, can you pick up work where you left off when we hit rate limits?</div>
+</div>
+<div class="turn ai logged-output" id="turn-017">
+<div class="who">AI editorial process &middot; July 8, 2026, 5:53 AM PT</div>
+<div class="bubble-text">Picking up right where the rate limit cut in. I&#x27;d finished writing the dossier&#x27;s §4/§5/§6 with the round-2 findings; what remains is to finalize the verdict synthesis and open-questions, append round-2 sources, then build the second Step 1C deliverable (the Emotional Legibility Essentials + both steelmen, now scan-grounded). Let me check the current tail of the dossier before editing.</div>
+</div>
+<div class="turn ai logged-output" id="turn-018">
+<div class="who">AI editorial process &middot; July 8, 2026, 5:54 AM PT</div>
+<div class="bubble-text">The dossier tail is as I left it. Let me finalize §7 (verdict synthesis), append §9b (round-2 sources), and update §10 (open questions — several now answered).</div>
+</div>
+<div class="turn ai logged-output" id="turn-019">
+<div class="who">AI editorial process &middot; July 8, 2026, 5:55 AM PT</div>
+<div class="bubble-text">Dossier complete. Now the second Step 1C deliverable — the arc-blind Emotional Legibility Essentials with both (three) steelmen, now scan-grounded to the verified record, with your seeds-2/4 reclassification applied.</div>
+</div>
+<div class="turn ai logged-output" id="turn-020">
+<div class="who">AI editorial process &middot; July 8, 2026, 5:57 AM PT</div>
+<div class="bubble-text">Both Step 1C artifacts are drafted. Following the Issue 18 discipline (and since this is load-bearing, capture-sensitive material), I&#x27;ll run an adversarial fidelity check on the Emotional Legibility artifact before handing it to you — three critics with distinct lenses, each verifying against the dossier and the governing decisions. The Issue 18 failure mode I most want caught: any emotional claim attributed to a side the verified record doesn&#x27;t actually support.</div>
+</div>
+<div class="turn ai logged-output" id="turn-021">
+<div class="who">AI editorial process &middot; July 8, 2026, 5:58 AM PT</div>
+<div class="bubble-text">While the fidelity check runs, let me log the Step 1C research and artifact work in the live edit-log.</div>
+</div>
+<div class="turn ai logged-output" id="turn-022">
+<div class="who">AI editorial process &middot; July 8, 2026, 5:59 AM PT</div>
+<div class="bubble-text">Picked up cleanly and carried Step 1C to near-completion. Here&#x27;s the state.
+
+## Done since the rate limit
+- **Research dossier finalized** — [issue-019-landing-grade-research-dossier-2026-07-07.md](newsletter/research/issue-019-landing-grade-research-dossier-2026-07-07.md), all sections populated from both verified passes (round 2 added the hyperscaler-absorption, residential-bill, advocate-voice, and buildout/ROI evidence), with final prior-test verdicts and both source tables.
+- **Emotional Legibility Essentials + steelman built arc-blind** — [issue-019-emotional-legibility-essentials-data-center-grid-costs-2026-07-07.md](newsletter/drafts/issue-019-emotional-legibility-essentials-data-center-grid-costs-2026-07-07.md), with your seeds-2/4 reclassification applied and three scan-grounded steelman positions.
+- **Edit-log updated** (rows 5–6). Probe remains sealed and unread; no landing/thesis/arc created.
+
+## The substantive finding worth your attention
+The verified record splits your prior cleanly: its **cost-bearing half is well-supported** (cost-shifting is real — IMM&#x27;s $9.3–23.1B, Virginia JLARC&#x27;s $14–$37/month, Maryland&#x27;s ~$2B fight — and companies are being pushed, and partly volunteering, to internalize costs), but its **slow-buildout / ROI half is actively resisted** by the evidence. Policy direction is &quot;pay your own way *and connect faster*,&quot; the &quot;half of 2026 delayed&quot; narrative is rebutted at its source as methodologically naive, and the Chinese-open-source-ROI thread appears *nowhere* in the serious record — so I&#x27;ve flagged that thread as a separate future essay, out of scope for Issue 19. The sharpest non-tautological tension the slate can exploit: the reassurance consensus (&quot;the grown-ups have this&quot;) and the ratepayer opacity fear (&quot;I&#x27;m billed in rooms I can&#x27;t see&quot;) are the *same fact from opposite ends*.
+
+## Running now
+A three-lens adversarial fidelity check on the Emotional Legibility artifact (fairness/scan-grounding, capture-risk, essentials-discipline) — the main thing I want it to catch is the Issue 18 failure mode of attributing a feeling to a constituency the scan doesn&#x27;t support. It&#x27;ll notify when done.
+
+## After it lands (no action needed from you yet)
+Apply any blocking findings → update canonical-state / EIP / Process Map banner to &quot;1C complete&quot; → present you the full 1C package. Then I **stop at the 1C→1D boundary**: you approve the protected emotional set (including my two new candidate beats — opacity, trust-a-promise), and only then does the landing slate get built and the probe stay sealed until 1B selection.</div>
+</div>
+<div class="turn ai logged-output" id="turn-023">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:01 AM PT</div>
+<div class="bubble-text">Good — the check caught real defects, including a subtle cousin of the Issue 18 failure mode. Let me read the full output before applying fixes.</div>
+</div>
+<div class="turn ai logged-output" id="turn-024">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:02 AM PT</div>
+<div class="bubble-text">The three lenses converged on a clear, fair set of fixes — and caught something important: an arc-blind leak where I&#x27;d repeatedly crowned the A/C &quot;opacity-vs-reassurance&quot; pairing as the favorite spine before the slate exists (that&#x27;s 1D/1B work bleeding into 1C), plus a subtle Gallup-scope overreach (71% measures *local-siting* opposition, not the ratepayer-*cost* register, so it can&#x27;t certify a &quot;breadth asymmetry&quot; against the pro-build side). Both are real. Let me apply all the should-fix and nit findings.
+
+First, the essentials table — renumber cleanly, add an origin column, recast the two new items on purely felt grounds, fix source pointers:</div>
+</div>
+<div class="turn ai logged-output" id="turn-025">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:03 AM PT</div>
+<div class="bubble-text">Now strip the arc-blind pre-selection language from the Author Prior section and give the overcorrection risk a concrete anchor for parity:</div>
+</div>
+<div class="turn ai logged-output" id="turn-026">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:03 AM PT</div>
+<div class="bubble-text">Now the steelman preamble — re-scope the Gallup claim to what it actually measured and rewrite &quot;breadth asymmetry&quot; as an asymmetry of *available evidence*, not demonstrated felt breadth:</div>
+</div>
+<div class="turn ai logged-output" id="turn-027">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:03 AM PT</div>
+<div class="bubble-text">Now fix Position A&#x27;s enforcement argument — the critics flagged that I&#x27;d miscast Pennsylvania&#x27;s blanket price cap as a cost-*assignment* tool (it isn&#x27;t — it capped what all load paid) and let a contested government per-household figure stand as settled:</div>
+</div>
+<div class="turn ai logged-output" id="turn-028">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:04 AM PT</div>
+<div class="bubble-text">Position B&#x27;s core claim — soften the &quot;polling runs against it&quot; overreach (the poll measures local siting, not the strategic case):</div>
+</div>
+<div class="turn ai logged-output" id="turn-029">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:04 AM PT</div>
+<div class="bubble-text">Position C — remove the superlative that crowns the A/C pairing as the favorite spine, and caveat the ~$13B as an IMM counterfactual:</div>
+</div>
+<div class="turn ai logged-output" id="turn-030">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:04 AM PT</div>
+<div class="bubble-text">Now drop the self-asserted &quot;protected-grade&quot; label (J owns protection, not the AI), fix the Emotional Balance Test bullets to match the scope correction, and neutralize the landing-slate notes into an even-handed tension inventory:</div>
+</div>
+<div class="turn ai logged-output" id="turn-031">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:05 AM PT</div>
+<div class="bubble-text">Now the dossier needs a body home for the JLARC residential-bill figure that the essentials table points to (§2.6). Let me add it and update the stale &quot;not yet established&quot; note:</div>
+</div>
+<div class="turn ai logged-output" id="turn-032">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:06 AM PT</div>
+<div class="bubble-text">All eleven fidelity findings applied across both artifacts. Now let me record the fidelity check in the edit-log and update the canonical resume anchors to reflect Step 1C complete.</div>
+</div>
+<div class="turn ai logged-output" id="turn-033">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:06 AM PT</div>
+<div class="bubble-text">Now the two load-bearing resume anchors — the canonical-state Issue 19 paragraph and the Process Map banner:</div>
+</div>
+<div class="turn ai logged-output" id="turn-034">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:07 AM PT</div>
+<div class="bubble-text">Both resume anchors and the edit-log are updated. Let me quickly confirm the EIP canonical-state doesn&#x27;t carry a stale Issue 19 status line that would mislead a future resume.</div>
+</div>
+<div class="turn ai logged-output" id="turn-035">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:07 AM PT</div>
+<div class="bubble-text">The EIP state carries two stale Issue 19 lines. Let me update both to match the new resume point:</div>
+</div>
+<div class="turn ai logged-output" id="turn-036">
+<div class="who">AI editorial process &middot; July 8, 2026, 6:09 AM PT</div>
+<div class="bubble-text">Step 1C is complete, adversarially checked, and I&#x27;ve stopped exactly at the 1C→1D boundary for your review. Everything from the rate-limit interruption forward is done and the canonical docs (canonical-state, Process Map, EIP state, edit-log through row 7) all reflect the new resume point.
+
+## What Step 1C found — your prior, tested against a verified record
+
+Two adversarially verified research passes (49 confirmed claims, 1 refuted) split your prior cleanly:
+
+- **Cost-bearing half — supported.** Cost-shifting is real and multi-sourced: PJM&#x27;s market monitor attributes $9.3–23.1B in capacity costs to data centers, Virginia&#x27;s JLARC projects **$14–$37/month** onto a typical Dominion bill by 2040, and Maryland&#x27;s consumer advocate is in a live FERC fight over ~$2B. Companies are being pushed — and are partly volunteering (Amazon-Talen, the Three Mile Island restart, Meta&#x27;s funded buildout) — to internalize costs.
+- **Slow-buildout / ROI half — resisted.** The verified policy direction is &quot;pay your own way *and connect faster*,&quot; not restraint. The &quot;half of 2026 capacity delayed&quot; narrative is rebutted *at its source* (SemiAnalysis calls it &quot;vibe-coded&quot;). And the Chinese-open-source-ROI thread appears **nowhere** in the serious record across ~50 sources — so I&#x27;ve ruled it out of scope for Issue 19 and flagged it as a separate future candidate. Forcing it in would smuggle an unverified market forecast into a cost-allocation essay.
+
+The most useful thing this surfaces for the slate: the sharpest non-decorative tension is that the reassurance consensus (&quot;the grown-ups have this — companies pledged to pay&quot;) and the ratepayer opacity fear (&quot;I&#x27;m billed in rooms I can&#x27;t see&quot;) are *the same fact from opposite ends* — the pledge a nonpartisan assessor calls &quot;legally toothless.&quot; I deliberately did **not** let that become a pre-chosen landing (the fidelity check caught me crowning it and I neutralized it — it&#x27;s one of six live tensions handed to 1D, not ranked).
+
+## The two Step 1C deliverables
+
+- **Research dossier** — [issue-019-landing-grade-research-dossier-2026-07-07.md](newsletter/research/issue-019-landing-grade-research-dossier-2026-07-07.md)
+- **Emotional Legibility Essentials + three-position steelman** — [issue-019-emotional-legibility-essentials-data-center-grid-costs-2026-07-07.md](newsletter/drafts/issue-019-emotional-legibility-essentials-data-center-grid-costs-2026-07-07.md)
+
+Your seeds-2/4 direction is applied throughout: Builder legitimacy and Strategic urgency are analytic/structural obligations, not protected emotional beats. A three-lens adversarial check (fairness, capture-risk, discipline) ran on the emotional artifact; it caught real defects — a subtle Issue-18-style Gallup overreach (71% measures *local-siting* opposition, not the cost register, so it can&#x27;t certify the pro-build side is &quot;narrow&quot;), the arc-blind leak above, and a mischaracterized Pennsylvania price cap — all fixed.
+
+## The decision that unblocks Step 1D — your call
+
+The protected emotional set is author-owned, so I need your approval before the slate. My recommendation is **5 candidate beats**: household-bill anxiety, local consent (&quot;built anyway&quot;), the fairness test (all three carried from your seeds), plus two the research surfaced —
+
+1. **Opacity** — being billed through auctions and dockets you can&#x27;t read; the loss is *voice*, not just dollars. **Recommend keep** — it&#x27;s the felt core of the whole cost-*visibility* question.
+2. **Trust-a-promise-not-a-rule** — being told &quot;we&#x27;ll pay our way&quot; by a party with no binding obligation. **Recommend keep but flagged first-to-demote** — it&#x27;s the most analytic-adjacent of the five.
+
+Tell me: approve all five, demote #5 (or #4), or modify — and whether the steelman/prior framing reads right to you. Once you sign off on the protected set, Step 1D builds the 2–4 rival landing slate (I&#x27;ll ensure at least one candidate lands where the evidence *resists* your prior), then the 1B selector, then you adjudicate the landing. The probe stays sealed until after that selection.</div>
+</div>
+<div class="turn human author-input" id="turn-037">
+<div class="who">The author &middot; development turn &middot; July 8, 2026, 7:48 PM PT</div>
+<div class="bubble-text">Approve all 5</div>
+</div>
+<div class="turn ai logged-output" id="turn-038">
+<div class="who">AI editorial process &middot; July 8, 2026, 7:50 PM PT</div>
+<div class="bubble-text">Locked in. Let me record the approval — first updating the artifact from CANDIDATE to J-approved, then the edit-log — and then I&#x27;ll proceed into Step 1D (the rival-landing slate) and the 1B Contestability selector, stopping at your landing selection.</div>
+</div>
+<div class="turn ai logged-output" id="turn-039">
+<div class="who">AI editorial process &middot; July 8, 2026, 7:51 PM PT</div>
+<div class="bubble-text">Step 1C is fully closed. Now I&#x27;ll build Step 1D + the 1B selector. Let me pull the exact apparatus — the protocol&#x27;s slate rules and selector-card fields, the Contestability five-questions/burden-inversion mechanics, and the Issue 18 selector card as the format precedent.</div>
+</div>
+<div class="turn ai logged-output" id="turn-040">
+<div class="who">AI editorial process &middot; July 8, 2026, 7:51 PM PT</div>
+<div class="bubble-text">The apparatus is clear. Let me read the Issue 18 slate and selector card as format precedents before building Issue 19&#x27;s.</div>
+</div>
+<div class="turn ai logged-output" id="turn-041">
+<div class="who">AI editorial process &middot; July 8, 2026, 7:54 PM PT</div>
+<div class="bubble-text">I have the full apparatus and the Issue 18 precedent. Now I&#x27;ll build the Step 1D slate. Given four genuinely distinct live directions in the dossier (ratepayer cost-causation, pro-build/shared-investment, consensus-adequacy, and the visibility reframe), I&#x27;ll build a 4-candidate slate — with at least two candidates (P, C) landing where the evidence *resists* your prior, per the capture-discipline requirement. Let me write it.</div>
+</div>
+<div class="turn ai logged-output" id="turn-042">
+<div class="who">AI editorial process &middot; July 8, 2026, 7:56 PM PT</div>
+<div class="bubble-text">Slate built. Now the 1B Contestability selector — the adversarial pass. This is a natural fan-out: each candidate gets an independent adversarial stress-test (the five questions + burden-inversion + bland-survival + tautological-concession, all content-based against the verified dossier), plus a slate-integrity critic checking for the protocol&#x27;s own failure modes (designated-winner-plus-fillers, a symmetric candidate winning without rent, a missing live direction). Survival records report — they never rank.</div>
+</div>
+<div class="turn ai logged-output" id="turn-043">
+<div class="who">AI editorial process &middot; July 8, 2026, 7:57 PM PT</div>
+<div class="bubble-text">The 1B selector is running (4 candidate stress-tests + a slate-integrity critic, in parallel). It&#x27;ll notify me when done. Here&#x27;s where Issue 19 stands.
+
+## Locked
+- **Protected emotional set — all 5 beats, J-approved 2026-07-08.** Artifact, edit-log (row 8), and all three canonical anchors updated.
+
+## Built (Step 1D)
+The rival-landing slate — [issue-019-landing-slate-2026-07-08.md](newsletter/drafts/issue-019-landing-slate-2026-07-08.md) — **4 candidates spanning the live directions**, each at steelman grade (sharp thesis, ≤8 source-labeled premises, burden assignment + inversion vulnerability, declared kill-evidence, concessions, protected-item tensions):
+
+- **R — &quot;A Promise Is Not a Rate&quot;** (ratepayer / cost-causation): the causer pays in a *filed, enforceable tariff*, not a toothless pledge. *Closest to your prior — burden-inversion runs hardest here.*
+- **P — &quot;The Grid the Model Forces&quot;** (pro-build): the transfer is real-but-overstated and the buildout finances shared supply and a strategic capability; the reliability shortfall says build faster. *Resists your prior.*
+- **C — &quot;Watch the Tariff, Not the Pledge&quot;** (consensus/process): the boring apparatus is already assigning cost across 24 states; watch tariffs not pledges, distrust both panics. *Resists your prior; flagged as highest bland-survival risk.*
+- **V — &quot;The Bill You Can&#x27;t See&quot;** (visibility reframe, pays rent): before who-pays, ask can-anyone-see — the allocation is decided in venues no citizen can check in time, so &quot;ratepayer protection&quot; is unfalsifiable by construction. *Orthogonal to your prior; the question brief&#x27;s own angle.*
+
+The capture-discipline requirement is satisfied: R sits closest to your prior, **P and C deliberately land where the evidence resists it**, V relocates the question. The probe stays sealed until after you select.
+
+## Next
+When the selector lands, I&#x27;ll write the Contestability selector card (survival records — reports, never ranks) and bring you the full package for **your landing selection** — the genuine next decision. Per protocol you can pick any survivor, a killed candidate, or a landing not on the slate, as a normal authored decision.</div>
+</div>
+<div class="turn ai logged-output" id="turn-044">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:01 PM PT</div>
+<div class="bubble-text">The selector completed. Let me read the full survival records before writing the card.</div>
+</div>
+<div class="turn ai logged-output" id="turn-045">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:02 PM PT</div>
+<div class="bubble-text">All five records are in. The result is a genuine, non-degenerate outcome — exactly what the protocol wants: **C was killed** on content (its falsifiable core contradicted by the record; bland-survival flag voids the residue), while **R, P, and V survive-wounded**. The slate-integrity critic passed the slate 5/6 (two anti-prior candidates present, no filler, V pays rent) with two conditions to lock. Let me write the selector card, then apply the integrity fixes to the slate.</div>
+</div>
+<div class="turn ai logged-output" id="turn-046">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:04 PM PT</div>
+<div class="bubble-text">Now apply the slate-integrity critic&#x27;s two locked conditions to the slate — the §7 decomposition note and the protected-beat conditions:</div>
+</div>
+<div class="turn ai logged-output" id="turn-047">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:04 PM PT</div>
+<div class="bubble-text">Now the edit-log and canonical resume anchors, reflecting 1D + 1B complete and awaiting J&#x27;s landing selection:</div>
+</div>
+<div class="turn ai logged-output" id="turn-048">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:06 PM PT</div>
+<div class="bubble-text">All Step 1D + 1B artifacts and every canonical anchor are updated. The full package is ready for your landing selection — the genuine next decision, and yours alone.
+
+## The result
+
+A clean, non-degenerate outcome — the apparatus fired for real on its first Pilot-1 run:
+
+| Candidate | Direction | Verdict | Why |
+|---|---|---|---|
+| **R** — A Promise Is Not a Rate | ratepayer / cost-causation (*closest to your prior*) | **survives-wounded** | Burden-inversion **broke symmetry** — cost-causation holds for a smelter as for a data center, so it&#x27;s not prior-confirmation; R can be *won* by a company that files a tariff |
+| **P** — The Grid the Model Forces | pro-build (*resists your prior*) | **survives-wounded** | The required anti-prior candidate; tautological-concession flagged but curable |
+| **C** — Watch the Tariff, Not the Pledge | process/consensus (*resists your prior*) | **KILLED** | Bland-survival flag voids it + free-inversion; its &quot;tariffs bind and hold&quot; core is contradicted by FERC&#x27;s denial of the load-gating complaint, Ohio on appeal, accelerate-not-restrain |
+| **V** — The Bill You Can&#x27;t See | visibility reframe (*orthogonal*) | **survives-wounded** | Rent paid; strongest attack (self-void into C) survived on the general-vs-jurisdiction-specific-standard distinction |
+
+The slate-integrity critic passed the slate 5/6 (no filler; two genuine anti-prior candidates; V pays rent; candidates distinct) — so this isn&#x27;t a rigged &quot;one favorite plus fillers&quot; slate. C&#x27;s death is a real content finding, and **its substance survives as a guardrail**: any winner must carry C&#x27;s anti-crisis correction (no verified ROI crisis, no verified slowdown — it&#x27;s the routine apparatus, not a revolt, assigning cost) or it decorates your prior.
+
+**The single most cross-cutting constraint the selector surfaced:** every surviving landing must *answer* protected beats 4 (opacity) and 5 (trust-a-promise), not soothe them. And R + V are explicitly compatible — &quot;a promise is not a rate&quot; (R) plus &quot;and the rate must be citizen-legible, not just filed&quot; (V) — if you want a fusion.
+
+Full reasoning is in the [selector card](newsletter/drafts/issue-019-contestability-selector-card-2026-07-08.md) and the [slate](newsletter/drafts/issue-019-landing-slate-2026-07-08.md). Records report — they don&#x27;t rank; the pick is yours.</div>
+</div>
+<div class="turn ai logged-output" id="turn-049">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:18 PM PT</div>
+<div class="bubble-text">You selected **R + V** — the fused landing the selector flagged as compatible (R&#x27;s &quot;a promise is not a rate&quot; + V&#x27;s &quot;and a filed rate must be citizen-legible, not just filed&quot;). That&#x27;s a modified/authored landing under the protocol. Two things happen now: I unseal the default-prior probe (selection has occurred, so the seal lifts) and record the match, and I draft the fused landing precisely so you can confirm I&#x27;ve combined them the way you intend before I build the arc.
+
+First, unsealing the probe.</div>
+</div>
+<div class="turn ai logged-output" id="turn-050">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:20 PM PT</div>
+<div class="bubble-text">The probe is unsealed — and it&#x27;s a significant diagnostic result I need to surface honestly. Let me record it and draft the fused landing, then bring both to you.
+
+**Probe-match: strong / same-direction.** The raw, unscaffolded prior (written 2026-07-06 by a context-free agent, sealed since) independently landed on almost exactly the R+V fusion you selected: its core principle is R&#x27;s cost-causation, and it repeatedly demands the public visibility V names [the working session quoted the sealed note directly here; those quotations are redacted from this public record, by standing rule]. It even folds in P&#x27;s shared-benefit exception and R&#x27;s instrument family.
+
+Per the protocol&#x27;s honest ceiling, this is **recorded both ways and is not validation** — the apparatus&#x27;s job was never to produce a *different* direction than your prior, but to make the prior legible and give you a real choice among genuine rivals (P, C, V were live and anti-prior/orthogonal; you chose the prior-matching direction with them visible). That&#x27;s the process working as designed. But a same-direction match is exactly what the outcome ledger exists to catch, and on Pilot 1 it&#x27;s worth flagging prominently. Let me write it all down.</div>
+</div>
+<div class="turn ai logged-output" id="turn-051">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:21 PM PT</div>
+<div class="bubble-text">Now let me record the unseal on the probe file, fill the selector card&#x27;s selection block, and log it.</div>
+</div>
+<div class="turn ai logged-output" id="turn-052">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:22 PM PT</div>
+<div class="bubble-text">Now the resume anchors — landing selected, probe unsealed, awaiting confirmation of the fused spine:</div>
+</div>
+<div class="turn ai logged-output" id="turn-053">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:23 PM PT</div>
+<div class="bubble-text">Everything&#x27;s recorded and the fused landing is drafted. I&#x27;m stopping here for your confirmation before I build the arc — because &quot;R + V&quot; is a fusion I authored from your two-word pick, and (as Issue 18 showed) it&#x27;s worth making sure the spine is right before prose momentum sets in.
+
+## The fused landing, in one statement
+**Two tests, not one.** When a private load forces a public grid to expand, the public has only really *consented* to how the bill lands if the cost is (1) **assigned to the causer by an enforceable rule** — a filed tariff a regulator can hold, not a pledge a company can revise — *and* (2) **legible enough that an ordinary ratepayer can check it against their own bill**, not just filed in a docket no one reads. Today neither holds: the flagship instrument is a &quot;legally toothless&quot; pledge, and even where a real tariff assigns cost (Ohio), no public standard lets a household verify which of its costs are load-caused. *A cost that is either unenforced or unseeable was never consented to.*
+
+It&#x27;s a genuinely coherent fusion, not a mashup: **beat 5 (trust-a-promise) is R&#x27;s spine, beat 4 (opacity) is V&#x27;s spine** — this is the one landing that discharges both protected beats at once, and R&#x27;s concrete &quot;filed tariff&quot; cures V&#x27;s evasion risk. Full detail, carry-conditions, and the P/C steelman obligations are in the [landing proposal](newsletter/drafts/issue-019-landing-proposal-r-plus-v-2026-07-08.md).
+
+## The honest finding you should weigh: the probe matched — strongly
+I unsealed the default-prior probe (selection triggers it). The raw, unscaffolded prior from 2026-07-06 independently produced **cost-causation *and* transparency *and* the shared-benefit exception** — essentially the R+V fusion you just picked. Per the protocol this is **recorded both ways and is never validation**: the apparatus&#x27;s job was to make the prior legible and give you a real choice among rivals, and P, C, V were live, genuinely anti-prior/orthogonal alternatives you saw and declined. Choosing the prior-matching direction with the alternatives in front of you is the process working — but it&#x27;s a strong same-direction match, stronger than Issue 18&#x27;s &quot;partial,&quot; and on Pilot 1 that&#x27;s a data point worth naming rather than burying. I&#x27;ve logged it to the outcome ledger&#x27;s staging.
+
+## Confirm before I build the arc (Step 1A)
+1. **Is this the fusion you meant** — cost-causation-with-teeth *and* citizen-legibility as a two-test standard for consent, ratepayer-direction, with the firewall that it lands as an *allocation-and-visibility standard*, not &quot;the pushback is winning&quot;?
+2. **Title** — *Filed and Visible* · *A Promise Is Not a Rate, and a Rate Is Not a Receipt* · *Pay It, and Show It* · *The Bill Nobody Signed* · or your own.
+3. **The shared-benefit exception** (some grid costs are legitimately shared — which the prior *and* P&#x27;s dissent both require): a bounded caveat, or a co-equal third test?
+4. **The strong probe-match** — any direction on whether/how to surface it, or just keep it as an internal diagnostic?
+
+Once you confirm, Step 1A builds the arc from this landing + the P/C dissent ledgers + the five protected beats, then Builder v0.1.</div>
+</div>
+<div class="turn human author-input" id="turn-054">
+<div class="who">The author &middot; development turn &middot; July 8, 2026, 8:38 PM PT</div>
+<div class="bubble-text">1. Yes, 2. Maybe something closer to &quot;Unseen and Unenforced: Why Current Grid Cost Allocations Fail the Public&quot;, 3. A bounded caveat = Limited exception: A clearly defined and quantified portion may be socialized only when there is demonstrable, incremental, broad public benefit — and only through the same enforceable + legible process required by the two tests. 4. Surface it, but tightly scoped and explicitly non-validating. The protocol’s credibility comes from showing its actual behavior — including when priors reappear — rather than from presenting a perfectly clean, match-free record. A short, well-framed methodological note serves the goal of legibility better than either full suppression or celebratory highlighting.</div>
+</div>
+<div class="turn ai logged-output" id="turn-055">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:39 PM PT</div>
+<div class="bubble-text">All four confirmed — thank you, that&#x27;s clear direction, and point 4 in particular is the right instinct (the protocol&#x27;s credibility comes from showing its real behavior, prior-reappearance included). Let me lock these into the landing proposal, then build the arc.</div>
+</div>
+<div class="turn ai logged-output" id="turn-056">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:40 PM PT</div>
+<div class="bubble-text">Now Step 1A — building the arc from the R+V landing, the P/C dissent ledgers (mandatory steelman), the five protected beats, and the fused carry-conditions.</div>
+</div>
+<div class="turn ai logged-output" id="turn-057">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:41 PM PT</div>
+<div class="bubble-text">Arc drafted. Now the pre-Builder adversarial critique — three lenses (landing/carry-condition fidelity, force-preserving argument critique, and S&amp;N voice + Anchors-and-Ropes source discipline). Output is input, not authority: a proposed revision is accepted only if demonstrably stronger.</div>
+</div>
+<div class="turn ai logged-output" id="turn-058">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:42 PM PT</div>
+<div class="bubble-text">The arc is built and under adversarial critique. Here&#x27;s the shape of it.
+
+## The arc — &quot;Unseen and Unenforced&quot;
+Five movements, landing on your two-test standard:
+
+1. **The bill nobody signed for** — open on the felt experience (a rise you can&#x27;t itemize, decided where you can&#x27;t see), not &quot;data centers bad.&quot; Turn: *did the public actually agree to how this bill lands?*
+2. **The two answers at full strength** — the pro-build case gets full justice (the buildout is real, the reliability shortfall says build faster, companies *are* paying real dollars), carried *with* C&#x27;s anti-crisis guardrail (no verified ROI crisis or slowdown — this is the guard against decorating your prior). The strongest case against the reader&#x27;s unease is genuine.
+3. **Test one: a promise is not a rate** (beat 5) — the pledge is &quot;legally toothless&quot;; only a filed tariff survives a company&#x27;s change of mind. Ohio proves it&#x27;s possible.
+4. **Test two: a rate is not a receipt** (beat 4) — even a filed cost can be one you can&#x27;t check; both sides&#x27; headline numbers are citizen-unverifiable artifacts.
+5. **The standard + the bounded exception** — filed *and* visible, with your exception subordinated to the two tests (a socialized portion must itself pass them). Closes on the fairness the reader feels, made operational.
+
+It&#x27;s a standard argumentative arc, not the Implementation-Integrity format (the landing is a *standard*, not an audit of two programs) — full arc at [issue-019-narrative-arc-2026-07-08.md](newsletter/drafts/issue-019-narrative-arc-2026-07-08.md).
+
+## Running now
+Three-lens critique: landing/carry-condition/protected-beat **fidelity** (esp. the Direction Firewall — does it anywhere imply the pushback is winning?), **force-preservation** (is &quot;filed AND visible&quot; genuinely non-obvious, or does &quot;citizen-legible&quot; set an impossible bar?), and **voice + Anchors-and-Ropes** source discipline. Output is input — I&#x27;ll adjudicate, accept only demonstrably stronger revisions, then bring you the verified arc for review before Builder. It&#x27;ll notify me when it lands.</div>
+</div>
+<div class="turn ai logged-output" id="turn-059">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:44 PM PT</div>
+<div class="bubble-text">The critique landed with mostly-convergent, targeted findings. Let me read all three lenses in full before adjudicating.</div>
+</div>
+<div class="turn ai logged-output" id="turn-060">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:45 PM PT</div>
+<div class="bubble-text">The critique is high-quality and convergent — I&#x27;m accepting essentially all of it. Nothing proposed is safer-by-hedging; the biggest moves are genuine strengthenings. Three matter most:
+
+1. **A real hole closed:** &quot;citizen-legible&quot; was drifting toward the unfalsifiable/utopian (and collided with the arc&#x27;s own concession that JLARC/consumer reporting *do* make costs visible). Fix: operationalize it as a concrete deliverable — a plain statement, on or one click from your *own bill*, of which cost components are attributed to large-load growth and under what rule (the bill-line analogue of a docket). That distinguishes &quot;studies *about* the system&quot; from &quot;a standard applied to *your* bill.&quot;
+2. **A sharper payload (within your confirmed landing):** the two tests aren&#x27;t symmetric — test one (enforceable rule) has been met *exactly once* (Ohio), so its absence everywhere else is a *choice*; test two (citizen-legible) has been met *nowhere*, so it&#x27;s not a hard problem being worked on but a bar no one has been asked to clear. Dereliction vs. absence. This lands far harder than a symmetric &quot;filed AND visible&quot; and is fully faithful to R+V.
+3. **Overclaim narrowed:** &quot;a promise is not a rate&quot; was proving too much (a signed 20-year PPA isn&#x27;t a mere promise) — narrowed to *enforceable-and-assigned-to-the-causer vs. voluntary-and-revocable*, which aligns M3 with M2&#x27;s concession that companies pay real dollars.
+
+Plus precision fixes (Ohio&#x27;s &gt;25 MW threshold; EEI trade-tracker grade; Carnegie single-source; &quot;consent&quot; tightened to legitimacy-through-contestability so it doesn&#x27;t invite &quot;no utility cost ever meets this bar&quot;) and voice recasts (the two tests as things a household *wants*, not commands). Let me write arc rev. 2.</div>
+</div>
+<div class="turn ai logged-output" id="turn-061">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:46 PM PT</div>
+<div class="bubble-text">Now the edit-log and resume anchors, then I&#x27;ll bring you the arc for review before Builder.</div>
+</div>
+<div class="turn ai logged-output" id="turn-062">
+<div class="who">AI editorial process &middot; July 8, 2026, 8:47 PM PT</div>
+<div class="bubble-text">Arc rev. 2 is adjudicated and every canonical anchor is current. Here&#x27;s what I need your eyes on before Builder.
+
+## The sharpened spine (the one thing that most needs your sign-off)
+The critique&#x27;s strongest move keeps your two-test standard exactly but reframes *how the two tests fail* — and it&#x27;s noticeably sharper than the symmetric &quot;filed AND visible&quot;:
+
+&gt; A cost the public can neither **check** nor **contest** is a cost it never truly agreed to carry — and the two things that would make a grid bill checkable fail in **different ways**: the enforceable-rule bar has been cleared **exactly once** (Ohio) and ignored everywhere else, and the make-it-legible-to-the-household bar has been built **nowhere at all**. One failure is a *choice*; the other is a *bar no one has been asked to clear*.
+
+That &quot;dereliction vs. absence&quot; asymmetry is faithful to R (the instrument exists — Ohio) and V (the instrument is absent everywhere), it&#x27;s empirical and checkable rather than a &quot;be fair and transparent&quot; truism, and it inoculates against the tautology charge. It&#x27;s a content-increasing refinement *within* the landing you confirmed — no direction change, no re-selection — but because it moves the essay&#x27;s center of gravity, I want your explicit yes rather than adopting it silently.
+
+Two supporting choices worth flagging:
+- **&quot;Consent&quot; → legitimacy-through-contestability.** The arc no longer claims a household personally *agreed* (which invites &quot;nobody itemizes their share of a highway&quot;); it claims the cost should be assigned by a rule a household could *check and challenge* — which today it can&#x27;t. This preserves the fairness beat while closing a real objection.
+- **The standard is explicitly not anti-build.** A data center that files an enforceable, readable tariff *satisfies* the standard — so the strong pro-build case (M2) is routed *through* legitimacy, not defeated by it. This honors the Direction Firewall and makes M2&#x27;s steelman a genuine peer rather than a setup.
+
+Full arc: [issue-019-narrative-arc-v2-2026-07-08.md](newsletter/drafts/issue-019-narrative-arc-v2-2026-07-08.md) — five movements, all five protected beats discharged (beat 5 is M3&#x27;s spine, beat 4 is M4&#x27;s), P/C dissent ledgers carried as full-justice steelman, the bounded exception anchored to the net-offset gap so it&#x27;s a real constraint not a safety valve.
+
+## Your call
+- **Approve arc rev. 2 for Builder** (with the dereliction-vs-absence sharpening), or redirect any movement?
+- Once you approve, I build **Builder v0.1** from this arc + the fused carry-conditions, then it goes to the Step 2A outside review with the landing-drift check.
+
+One process note per your point 4 earlier: I&#x27;ve logged the same-direction probe-match as a standing to-do for a tightly-scoped, non-validating methodological note on the public World Behind surface — it stays out of the essay body, and I&#x27;ll draft it when we reach the World Behind slice.</div>
+</div>
+<div class="turn human author-input" id="turn-063">
+<div class="who">The author &middot; development turn &middot; July 8, 2026, 9:26 PM PT</div>
+<div class="bubble-text">Excellent. Will pause here. Please update our canonical docs.</div>
+</div>
+<div class="turn ai logged-output" id="turn-064">
+<div class="who">AI editorial process &middot; July 8, 2026, 9:27 PM PT</div>
+<div class="bubble-text">On it. I&#x27;ll add the explicit PAUSED marker to the resume anchors (the bodies are already current from the arc adjudication — I just need to mark the stop state cleanly and log it). Let me check the current opening of the canonical-state Issue 19 block first.</div>
+</div>
+<div class="turn ai logged-output" id="turn-065">
+<div class="who">AI editorial process &middot; July 8, 2026, 9:27 PM PT</div>
+<div class="bubble-text">The bodies are all current from the arc adjudication; I just need to flip the header to a clean PAUSED state and log the pause. Let me update the three anchors&#x27; headers and add the edit-log row.</div>
+</div>
+<div class="turn ai logged-output" id="turn-066">
+<div class="who">AI editorial process &middot; July 8, 2026, 9:28 PM PT</div>
+<div class="bubble-text">Done — Issue 19 is cleanly paused and all canonical docs record the stop state.
+
+## Where Issue 19 rests
+**PAUSED 2026-07-08 at the arc-review gate.** Steps 1, 1C, 1D, 1B, and 1A are complete. Arc rev. 2 ([issue-019-narrative-arc-v2-2026-07-08.md](newsletter/drafts/issue-019-narrative-arc-v2-2026-07-08.md)) is drafted, adversarially critiqued, and adjudicated — **awaiting your sign-off before Builder.**
+
+## Updated (durable resume anchors all consistent)
+- **[canonical-state.md](newsletter/canonical-state.md)** — header flipped to the PAUSED marker; full gate history preserved below it.
+- **[PROCESS-MAP.md](newsletter/PROCESS-MAP.md)** — banner updated.
+- **[epistemic-integrity-program/canonical-state.md](newsletter/epistemic-integrity-program/canonical-state.md)** — Pilot-1 line updated.
+- **[edit-log](newsletter/drafts/issue-019-edit-log.md)** — row 13 records the pause.
+
+All three anchors now say the same thing: **the only open action on resume is your arc sign-off** (approve rev. 2 including the dereliction-vs-absence sharpening, or redirect a movement) → then Builder v0.1 → Step 2A outside review with the landing-drift check. No Builder draft has been started.
+
+## Two carried-forward notes so nothing is lost
+- The **Direction Firewall** stays in force (the essay lands as an allocation-and-visibility standard; it never implies the pushback is winning or the buildout is slowing).
+- The **probe-match methods note** — tightly scoped, non-validating, prior-reappearance-included — is logged as a standing to-do for the public World Behind/methods surface, not the essay body.
+
+Whenever you pick it back up, start from arc rev. 2. Nice work today — this was a full clean run of the Landing Slate Protocol from question to a critique-hardened arc.</div>
+</div>
+<div class="turn human author-input" id="turn-067">
+<div class="who">The author &middot; development turn &middot; July 9, 2026, 4:46 PM PT</div>
+<div class="bubble-text">Hey Claude, 
+
+My thoughts on the essay so far:
+
+We are arguing that for these costs to feel fair and legitimate, two things need to be true:
+1. There has to be a real, enforceable rule that makes the big users (data centers) pay for the extra grid costs they create. 
+2. The costs have to be visible and understandable on a normal household&#x27;s bill. 
+
+The problem is, #2 is kind-of a non-sequitur if the big users/developers/data centers/AI companies are paying for the extra grid costs because if this is true, why would consumers need to see the extra costs (that will never materialize since the big users are covering them)? In my opinion, the potential value of visible and understandable costs, if any, would be prospective. In other words, allow people to say “this is how much this data center will increase my electric bill, and this is how it may (or may not) improve my life” and then vote whether or not to accept these terms (whether or not to install the data center). 
+
+So if we are going to argue that big users should cover the costs, why would “cost transparency” be relevant? If anything, it might be relevant in terms of an “audit” if the bill showed the increase in cost due to data centers (extra grid costs and, if possible, any increase in the cost of electricity due to increased demand from the data center) *and* this cost being completely “offset” by the big users so they net effect on one’s electricity bill is zero. 
+
+Also, this portion of the sharpened main claim “A cost the public can neither check nor contest is a cost it never truly agreed to carry” glosses over, in my opinion, the fact that whether or not people can check the cost, there is almost zero way (as far as I know) that they can realistically “contest” the cost in any meaningful way once these costs are established. In other words, how exactly could the average person “challenge” a charge on his/her electric bill? If there is a meaningful/substantive way to do this, I am unaware of it.
+
+And I’m not entirely sure we should move the question entirely we should move the question from “is the buildout good or bad?” To “was the resulting cost assigned by a rule a household could check and challenge and is that true today?” because it’s not so much that people want to be able to see the extra cost outlined in their bill - what they wan’t is for their bill NOT to go up, and again, I don’t think most people have a meaningful way to “challenge” any portion of their electric bill.
+
+And regarding the strongest case for moving forward anyway, I’m not sure we have presented the strongest case, which is probably something closer to we should build data centers at any cost in an attempt to build ASI which could/would then solve all our problems and move humanity into an era of post monetary universal “wealth”. I suppose the main problem with floating this case is that it is highly speculative and unfalsifiable. 
+
+What do you think?</div>
+</div>
+<div class="turn ai logged-output" id="turn-068">
+<div class="who">AI editorial process &middot; July 9, 2026, 4:48 PM PT</div>
+<div class="bubble-text">These are strong catches — three of the four land, and the fourth (ASI) is includable with the right structure. Honest adjudication, point by point:
+
+## 1. The non-sequitur — you&#x27;re right, and the fix makes test 2 sharper, not weaker
+
+As arced, test 2 quietly presupposes test 1 has *failed* (there&#x27;s a residual cost on your bill worth seeing) — which puts the two tests in tension rather than in series. Your reframe fixes it: **visibility&#x27;s honest function is the audit — the receipt that proves the rule is working.** &quot;Companies will pay their own way&quot; is a claim about a *net*; today that net is checkable by no one — the dossier&#x27;s hardest finding is that no source, anywhere, nets the companies&#x27; real payments against the attributed costs. So the bill-line deliverable shouldn&#x27;t be &quot;here&#x27;s what data centers cost you&quot; but &quot;here&#x27;s what large-load growth added, here&#x27;s what large users paid, here&#x27;s the residual.&quot; If it nets to zero, the audit *proves the system works* — that&#x27;s not pointless transparency, that&#x27;s the only way anyone would ever know.
+
+One residual that actually strengthens your audit frame: even perfect cost-assignment can&#x27;t reach the **demand-price channel**. A tariff assigns infrastructure costs; it cannot stop market-clearing prices rising when demand surges — that&#x27;s exactly the IMM capacity finding (bills rose ~$13.8B *even with* the Pennsylvania cap). So under a working test 1, the audit line isn&#x27;t guaranteed to read zero — part of the cost may be unassignable in principle. Which means the audit has real content either way, and it feeds directly into your prospective point: if some cost can only be disclosed, never assigned, then the honest place to weigh it is **before siting** — &quot;this is what it will add to your bill, this is what it pays you; decide.&quot; That&#x27;s also where protected beat 2 (71% oppose, built anyway) finally gets a lever instead of just a grievance.
+
+So test 2 becomes: **proven after (the receipt) and previewed before (the siting estimate)** — not &quot;watch your bill go up transparently.&quot;
+
+## 2. &quot;Contest&quot; — you&#x27;re right at the individual level, and we should concede it outright
+
+There is no meaningful way an individual challenges a line on their electric bill — no dispute mechanism, no chargeback, nothing. The honest version of contestation is: **representative** (Maryland&#x27;s People&#x27;s Counsel is literally in a ~$2B FERC fight on ratepayers&#x27; behalf right now) and **prospective** (the siting decision — your point). And here&#x27;s the thing that keeps the essay&#x27;s shape intact: *both of those fight blind without the receipt* — even the OPC is litigating over counterfactuals nobody can verify. So the spine&#x27;s &quot;check nor contest&quot; should go; the individual-level powerlessness isn&#x27;t a bar the standard clears, it&#x27;s part of the grievance itself (beat 4). The claim becomes: your advocate can&#x27;t audit what isn&#x27;t accounted, and your one real decision-point (siting) arrives without the numbers.
+
+## 3. The reframed question — agree, it drifted from what people want
+
+People don&#x27;t want a legible increase; they want **no increase**. The M1 pivot should stay off &quot;is the buildout good or bad&quot; (that part was right — reader-placement rules) but land on the bill-protection question people actually have: **&quot;what would make &#x27;they&#x27;ll pay their own way&#x27; actually true — and how would you ever know?&quot;** The rule is what protects the bill; the receipt is how you&#x27;d know; the siting estimate is when you had a say. Legibility stops being the point and becomes the proof.
+
+## 4. The ASI case — yes, include it, and there&#x27;s a judo move that makes it safe to steelman at full strength
+
+You&#x27;ve named the *actual* maximal case — the sincere belief of many of the people building this (the Altman/Amodei abundance essays are the public form). You&#x27;re also right it&#x27;s unfalsifiable, which is exactly why it can be included without capture: **an unfalsifiable infinite upside is the strongest possible argument *for* the two-test standard, not against it.** If the wager pays off, the filed costs were trivially affordable — a bet on infinite returns can afford its own bill. If it doesn&#x27;t, households should never have been its involuntary underwriters. Speculative benefits are precisely when measurable costs most need a rule and a receipt, because the wager is being run partly on other people&#x27;s money, without their books. That lets M2 carry the ASI case at full sincerity (labeled as a moral wager, not laundered as an empirical claim) and lets the landing *absorb* it rather than dodge it. Process note: this is an author-directed addition to the pro-build steelman register — your right, I&#x27;ll log it — and if we quote the abundance texts they&#x27;ll need light source-settling at Reference Link.
+
+## Proposed rev. 3 shape
+
+Spine candidate: **&quot;When a private load makes the public grid grow, a household&#x27;s bill should be protected by a rule, proven by a receipt, and preceded by a real say — today it has none of the three.&quot;** (Or keep the two-test form with test 2 = receipt + preview; your call — the three-beat version is more felt, the two-test version is closer to the confirmed landing&#x27;s wording.)
+
+- **M1:** open on the bill-protection question (&quot;what would make &#x27;they&#x27;ll pay their way&#x27; true, and how would you know?&quot;), not procedural fairness.
+- **M2:** add the ASI/abundance register as the named maximal case, unfalsifiable-labeled, alongside the existing capability/tax-base steelman.
+- **M3 (rule):** essentially unchanged — Ohio, the toothless pledge, enforceable-and-assigned vs voluntary-and-revocable.
+- **M4 (receipt):** reframed from opacity-of-the-charge to absence-of-the-audit; the net-offset gap is the proof the receipt doesn&#x27;t exist; the demand-price channel disclosed as assignable-vs-only-disclosable; prospective siting estimate as the receipt&#x27;s forward face (beat 2&#x27;s lever).
+- **M5:** the standard absorbs the ASI wager (infinite upside can afford filed costs); &quot;contest&quot; recast as representative + prospective, both blind without the receipt; bounded exception unchanged.
+
+Direction unchanged — still the R+V ratepayer-asym standard, Direction Firewall intact, so no 1B re-route; this is a content-increasing refinement within your confirmed landing (V&#x27;s strongest verified pillar was always the net-offset gap — the audit was hiding in it all along; even M4&#x27;s title, &quot;a rate is not a receipt,&quot; was reaching for your point before the body caught up).
+
+Want me to apply this as arc rev. 3 and log your direction round, or hold here and just record the direction in the edit-log for the next session?</div>
+</div>
+<div class="turn human author-input" id="turn-069">
+<div class="who">The author &middot; development turn &middot; July 9, 2026, 5:07 PM PT</div>
+<div class="bubble-text">This is excellent. Strongly leaning towards applying this as arc rev. 3 and log direction round, but one more question first. The spine candidate is quite strong. My only question is how much, if any, of this is actually practical - as in something that we could realistically do in the US? What is the likelihood/probability that we could establish a nationwide rule (or majority of states rule) to ensure the private load is paid by the private companies? Moreover, is it even possible to generate a meaningful &quot;receipt&quot; with reasonably accurate predictions/models of future costs per user/person/household? And  could people actually have a real vote on this - that actually makes a difference in real life?    In other words, it&#x27;s great and all to point out &quot;how things should be&quot;, but if &quot;how things should be&quot; is completely disconnected from &quot;how things are&quot;, we should probably point this out as well.</div>
+</div>
+<div class="turn ai logged-output" id="turn-070">
+<div class="who">AI editorial process &middot; July 9, 2026, 5:09 PM PT</div>
+<div class="bubble-text">This is exactly the right question to ask before committing the spine — and the honest answer is that **the three legs have very different feasibility grades**, which properly handled isn&#x27;t a weakness: it extends the dereliction-vs-absence asymmetry into a three-rung ladder and becomes the essay&#x27;s honesty layer. But it does mean the spine as drafted (&quot;today it has none of the three&quot;) is imprecise on one leg and must change. Here&#x27;s my assessment, with what&#x27;s dossier-verified vs. my labeled judgment.
+
+## Leg 1 — The rule: already the direction of travel, not a utopia
+
+This is the most practical leg by far, and the verified record says so:
+
+- **24 states have approved at least one large-load tariff, 4 more pending** (EEI, trade-tracker grade); the independent SEPA/NCCETC count is 77 tariffs across 36 states, **29 approved in 2025 alone vs 14 in all of 2018–2024**. Majority-of-states with *some* rule is essentially already true.
+- **The federal machinery is actively moving:** FERC&#x27;s June 2026 show-cause orders to all six RTOs, with DOE&#x27;s own principles assigning 100% of network-upgrade costs to the interconnecting load. FERC can&#x27;t set retail rates (states own those; ERCOT sits outside), but it *can* set wholesale interconnection cost-assignment nationally — and is visibly heading there.
+- **The political economy is unusually favorable:** this isn&#x27;t left-right coded. Ohio&#x27;s template came from a Republican commission; all 13 PJM governors + the White House signed the January statement demanding data centers bear their own load-growth costs.
+
+My calibration (judgment, not verified fact): majority-of-states-with-some-tariff — effectively now. Majority at **Ohio strength** (85% minimum demand, exit fees, financial assurance) — genuinely uncertain, maybe a coin flip over several years; it depends on the Ohio appeal (2025-1458) and how much industry negotiates terms down. A FERC interconnection-cost rule within ~2 years — more likely than not given the show-cause posture.
+
+**One honest ceiling the essay must carry:** even a perfect rule cannot reach the *demand-price channel* — no tariff stops market-clearing prices rising with demand (bills rose ~$13.8B in PJM even under the Pennsylvania cap). So &quot;the rule&quot; protects the assignable part of the bill, never all of it. No rule makes you whole; the rule covers what&#x27;s assignable — the receipt shows the rest.
+
+## Leg 2 — The receipt: buildable from parts that all exist, assembled nowhere
+
+Is a meaningful receipt technically possible? **Yes, as a modeled range with error bars — not as exact arithmetic.** The components already exist:
+
+- The attribution modeling exists at institutional grade — the IMM&#x27;s counterfactuals and JLARC&#x27;s $14–37/month *are* receipts, just system-level, contested, and buried in reports.
+- Allocating a system-level number down to rate classes is bread-and-butter ratemaking (utilities run cost-of-service studies for every rate case). *(General domain knowledge — needs source-settling if it enters prose.)*
+- The disclosure vehicle exists: bills already itemize riders and surcharges, and many states already mandate fuel-mix disclosure — a load-growth cost line is the same *kind* of instrument, one of the cheapest policy types there is. *(Also needs settlement at Builder.)*
+- The netting side (what large users actually paid) is knowable from tariff revenues and contracts — utilities have the data; no one has ever been required to assemble it.
+
+The honest caveats: any receipt is a *counterfactual claim* (what would bills have been without the load?), so it prints a **disputed range, not a fact** — per-household precision would be spurious; per-rate-class ranges are realistic. But that&#x27;s still meaningful: JLARC&#x27;s range moved the Virginia debate. And this is where &quot;a bar no one has been asked to clear&quot; gets teeth — the receipt isn&#x27;t hard, it&#x27;s *unasked-for*. Probability anyone mandates one near-term absent pressure: low. Cost if demanded: small. That gap is the essay&#x27;s point.
+
+## Leg 3 — The say: the weakest leg, and the essay should say so plainly
+
+Here&#x27;s the structural problem, and it&#x27;s worse than &quot;people rarely get referenda&quot;: **the venues are mismatched.** Where people *can* vote or show up (local land-use boards, county rezonings) doesn&#x27;t control the grid costs; where the costs are set (PUCs, RTOs, FERC dockets) has no vote at all. No jurisdiction currently pairs a bill-impact estimate with any binding local decision — your prospective-consent mechanism exists nowhere. Probability of that institution emerging near-term: low, single digits in my judgment.
+
+So the essay should *not* pretend leg 3 is an available lever. The honest treatment: **name the venue mismatch as the democratic gap itself** — the one place you get a say has no numbers and no jurisdiction; the place with jurisdiction has no you. That&#x27;s a diagnostic, not a prescription, and it&#x27;s truer to your original point (people can&#x27;t meaningfully contest) than implying a vote is on offer.
+
+## What this does to rev. 3
+
+The spine becomes graded rather than absolute — something like:
+
+&gt; **&quot;A household&#x27;s bill should be protected by a rule, proven by a receipt, and preceded by a real say. Today the rule exists in one strong form and two dozen partial ones; the receipt exists nowhere, though every part of it already does; and the say has no address at all — the one place you get a vote has no numbers, and the place with the numbers has no vote.&quot;**
+
+Three rungs, three different failure kinds: *partial delivery* (rule — finish and strengthen what&#x27;s begun), *assembly gap* (receipt — cheap, precedented, simply never demanded), *institutional void* (say — name it honestly, don&#x27;t prescribe it falsely). &quot;How things should be&quot; stays tethered to &quot;how things are&quot; at every rung, which also disarms the utopian attack the force-critic flagged.
+
+**Process note:** the rule-leg assessment is fully dossier-grounded; the receipt/say legs lean partly on general ratemaking and land-use knowledge (cost-of-service practice, bill riders, fuel-mix disclosure mandates, siting mechanics). Before Builder I&#x27;d run one small targeted scan to source-settle those — the Issue 18 pattern — so nothing enters prose on my say-so.
+
+Want me to proceed on that basis: apply **rev. 3** (receipt/audit reframe + ASI-wager steelman + graded feasibility ladder + repaired spine), log your direction round, and queue the targeted feasibility mini-scan as the pre-Builder verification step?</div>
+</div>
+<div class="turn human author-input" id="turn-071">
+<div class="who">The author &middot; development turn &middot; July 9, 2026, 5:19 PM PT</div>
+<div class="bubble-text">Yes, please proceed with your plan.</div>
+</div>
+<div class="turn ai logged-output" id="turn-072">
+<div class="who">AI editorial process &middot; July 9, 2026, 5:20 PM PT</div>
+<div class="bubble-text">Proceeding. First I&#x27;ll launch the targeted feasibility mini-scan (it grounds the receipt/say legs before they enter the arc), then log your direction round and the steelman addition while it runs, then write rev. 3 on the scan-settled floor.</div>
+</div>
+<div class="turn ai logged-output" id="turn-073">
+<div class="who">AI editorial process &middot; July 9, 2026, 5:21 PM PT</div>
+<div class="bubble-text">And the landing-proposal amendment recording the J-adjudicated refinement of test 2:</div>
+</div>
+<div class="turn ai logged-output" id="turn-074">
+<div class="who">AI editorial process &middot; July 9, 2026, 5:21 PM PT</div>
+<div class="bubble-text">Direction round fully logged — edit-log row 14, the J-directed ASI-wager addition to the steelman (Position B, boundary-disciplined, protected beats untouched), and the test-2 amendment block on the landing proposal.
+
+The feasibility mini-scan is running in the background across the six settlement targets (cost-allocation practice, bill line-item precedent, fuel-mix disclosure mandates, siting venue mechanics + any prospective-disclosure precedent, Texas SB 6 + tariff-strength variance, and the Altman/Amodei abundance texts). When it lands I&#x27;ll write the scan file into `research/`, fold verified findings into the dossier, and build **arc rev. 3** on that settled floor — receipt/audit reframe, bill-protection recentering, ASI wager in M2 with the affordability answer in M5, the graded feasibility ladder, and the repaired spine. Then canonical docs, and rev. 3 comes to you for the pre-Builder sign-off.</div>
+</div>
+<div class="turn human author-input" id="turn-075">
+<div class="who">The author &middot; development turn &middot; July 9, 2026, 6:46 PM PT</div>
+<div class="bubble-text">Looks like we hit rate limits. Usage credits purchased. Please continue.</div>
+</div>
+<div class="turn ai logged-output" id="turn-076">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:47 PM PT</div>
+<div class="bubble-text">The scan&#x27;s verification actually completed — 105 of 112 agents done, 23 claims verified; only the final *merge* step hit the limit. The verified claims are all there, just unsynthesized. Let me pull the full set from the output rather than re-running.</div>
+</div>
+<div class="turn ai logged-output" id="turn-077">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:48 PM PT</div>
+<div class="bubble-text">Q1 (cost-allocation practice) and Q2 (bill line-item precedent) came back **fully verified at primary grade** — which is exactly the load-bearing part: the &quot;receipt&quot; is now demonstrably buildable from established instruments (NARUC cost-of-service class allocation + named bill riders like Georgia&#x27;s NCCR line, Tampa&#x27;s storm surcharge, Kentucky&#x27;s codified FAC). The verification budget clustered there; Q3–Q6 got strong primary *sources* but weren&#x27;t in the triple-verified top 25. Let me pull the Q3–Q6 search findings precisely before writing the scan file.</div>
+</div>
+<div class="turn ai logged-output" id="turn-078">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:48 PM PT</div>
+<div class="bubble-text">I have what I need from the search-phase findings already in context. The key result: the **receipt&#x27;s feasibility core (Q1/Q2) is fully verified** — a &quot;receipt&quot; is buildable from instruments that already exist and appear on bills today. Q3–Q6 came back as strong primary *sources* but search/fetch-grade (verification budget skewed to Q1/Q2), so I&#x27;ll label them honestly as leads for Reference Link settlement. Let me write the scan file.</div>
+</div>
+<div class="turn ai logged-output" id="turn-079">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:49 PM PT</div>
+<div class="bubble-text">Now fold the feasibility ladder into the dossier as a new section so it&#x27;s part of the canonical evidence floor, then build arc rev. 3.</div>
+</div>
+<div class="turn ai logged-output" id="turn-080">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:50 PM PT</div>
+<div class="bubble-text">The evidence floor is set — the receipt&#x27;s feasibility is now verified precedent, not assertion. Now arc rev. 3 with the full J direction round applied: the three-rung ladder (rule / receipt / say), each graded for realism.</div>
+</div>
+<div class="turn ai logged-output" id="turn-081">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:52 PM PT</div>
+<div class="bubble-text">Arc rev. 3 is written. Let me update the log and resume anchors, then bring it to you.</div>
+</div>
+<div class="turn ai logged-output" id="turn-082">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:52 PM PT</div>
+<div class="bubble-text">I placed row 15 before row 14 — let me fix the ordering.</div>
+</div>
+<div class="turn ai logged-output" id="turn-083">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:54 PM PT</div>
+<div class="bubble-text">Rows are ordered. Now bump the three resume anchors from rev. 2 to rev. 3 and note the feasibility scan.</div>
+</div>
+<div class="turn ai logged-output" id="turn-084">
+<div class="who">AI editorial process &middot; July 9, 2026, 6:55 PM PT</div>
+<div class="bubble-text">Everything recovered and rev. 3 is ready. All four of your points from the direction round are now built in, on a scan-settled floor.
+
+## Arc rev. 3 — the three-rung ladder
+[issue-019-narrative-arc-v3-2026-07-08.md](newsletter/drafts/issue-019-narrative-arc-v3-2026-07-08.md). Spine:
+
+&gt; A household&#x27;s bill should be **protected by a rule, proven by a receipt, and preceded by a real say.** Today it has a rule in one strong form and two dozen partial ones; a receipt that could be built from parts already printed on the bill but has been assembled nowhere; and no real say at all — the one place a household gets a vote has no numbers, and the place with the numbers has no vote.
+
+Each rung is a demand *and* a feasibility grade, so &quot;how it should be&quot; never floats free of &quot;how it is&quot;:
+
+- **Rule → partial delivery.** Ohio proves it&#x27;s buildable; 24 states of varying strength + FERC momentum. **The ceiling you&#x27;d want me to keep honest:** even a perfect rule can&#x27;t reach the demand-price channel — PA capped prices and bills *still* rose ~$13.8B — so the rule protects the assignable cost, never all of it. Which is exactly why you&#x27;d need the receipt.
+- **Receipt → assembly gap, now *verified* feasible.** The non-sequitur is fixed: the receipt isn&#x27;t &quot;see the residual charge,&quot; it&#x27;s the audit that proves the rule works (what large-load growth added / what large users paid / the net; a zero is the proof). And the scan converted this from my assertion to verified precedent — allocating costs to classes is textbook ratemaking (NARUC), and a named bill line is an established instrument (Georgia&#x27;s 4.1562% nuclear rider, Tampa&#x27;s storm surcharge, Kentucky&#x27;s codified fuel clause). Cheap, precedented, assembled nowhere.
+- **Say → institutional void.** Your point, held: no individual can meaningfully contest a bill line; real contestation is representative (Maryland OPC) and prospective (siting) — both blind without the receipt. The scan found binding local siting votes (Monterey Park&#x27;s 88% ban) but **no jurisdiction that requires a bill-impact estimate before siting.** The honest move is to name the venue mismatch, not invent a lever.
+
+The **ASI/abundance wager** now anchors M2&#x27;s steelman at full sincerity (Altman/Amodei, labeled unfalsifiable) and gets absorbed in M5: a bet on infinite returns can afford its own filed costs, and an unfalsifiable upside is exactly when measurable costs need a rule and a receipt — households mustn&#x27;t be its involuntary underwriters.
+
+## Two honesty flags
+- **Verification tiers:** the receipt-feasibility backbone is **[P-verified]**. The SB 6 specifics, disclosure-mandate precedent, ballot outcomes, and Altman/Amodei quotes are **[P-lead]** — real primary sources, but the run&#x27;s verification budget skewed to Q1/Q2, so they settle at Reference Link before final prose. Nothing lead-grade carries weight at Builder.
+- Direction unchanged; the feasibility grading actually *reinforces* the Direction Firewall (grading the rule &quot;partial&quot; and the say &quot;void&quot; is the opposite of &quot;the pushback is winning&quot;).
+
+## Your call
+Review rev. 3 — approve or redirect any rung. Once you&#x27;re happy with the shape, I&#x27;ll run the final pre-Builder adversarial critique **on the version you&#x27;ve settled**, then build Builder v0.1. (Running it on your settled version avoids critiquing something that might still move.)</div>
+</div>
+<div class="turn human author-input" id="turn-085">
+<div class="who">The author &middot; development turn &middot; July 9, 2026, 7:06 PM PT</div>
+<div class="bubble-text">Will pause here for now. Please the canonical docs with our progress here and next steps.</div>
+</div>
+<div class="turn ai logged-output" id="turn-086">
+<div class="who">AI editorial process &middot; July 9, 2026, 7:06 PM PT</div>
+<div class="bubble-text">On it — the bodies are current from rev. 3; I&#x27;ll add the explicit PAUSED marker to the three anchors and log the pause.</div>
+</div>
+<div class="turn ai logged-output" id="turn-087">
+<div class="who">AI editorial process &middot; July 9, 2026, 7:07 PM PT</div>
+<div class="bubble-text">Done — Issue 19 is cleanly paused and all canonical docs record the current state and next steps.
+
+## Where Issue 19 rests
+**PAUSED 2026-07-08 at the arc-review gate.** Steps 1, 1C, 1D, 1B, and 1A complete. Live arc is **rev. 3** ([issue-019-narrative-arc-v3-2026-07-08.md](newsletter/drafts/issue-019-narrative-arc-v3-2026-07-08.md)) — your direction round built in on a feasibility-scan-settled floor, awaiting your review.
+
+## Updated (all anchors consistent)
+- **[canonical-state.md](newsletter/canonical-state.md)** — PAUSED header + resume point on rev. 3.
+- **[PROCESS-MAP.md](newsletter/PROCESS-MAP.md)** — banner.
+- **[epistemic-integrity-program/canonical-state.md](newsletter/epistemic-integrity-program/canonical-state.md)** — Pilot-1 line.
+- **[edit-log](newsletter/drafts/issue-019-edit-log.md)** — rows 14 (your direction round), 15 (scan + rev. 3), 16 (this pause).
+- New artifacts on disk: the [feasibility mini-scan](newsletter/research/issue-019-feasibility-mini-scan-2026-07-08.md) and dossier **§12** (feasibility ladder).
+
+## Next steps on resume (one open action)
+**Your arc rev. 3 review** — approve, or redirect any rung of the ladder. Then: final pre-Builder adversarial critique *on the version you settle* → Builder v0.1 → Step 2A outside review with the landing-drift check. Nothing is started ahead of your sign-off.
+
+## Two carried-forward debts so they aren&#x27;t lost
+- **[P-lead] items owe Reference Link settlement** before final prose: Texas SB 6 specifics, the state disclosure-mandate precedent, the Monterey Park/ballot outcomes, and the Altman/Amodei quotes. The receipt-feasibility backbone (NARUC + bill riders) is already [P-verified].
+- The **non-validating probe-match methods note** remains a standing to-do for the public World Behind/methods surface (never a survival badge; the essay body stays clear of it).
+
+Whenever you&#x27;re ready, start from rev. 3. Genuinely productive run today — question → verified dossier → protected beats → four-candidate slate → adversarial selector → your R+V fusion → critique-hardened arc → your feasibility-graded rev. 3.</div>
+</div>
+<h2 class="session">Session 2 - The plain-language rule: rework the arc for a smart 12-year-old</h2>
+<div class="turn human author-input" id="turn-088">
+<div class="who">The author &middot; development turn &middot; July 10, 2026, 8:32 PM PT</div>
+<div class="bubble-text">Regarding my thoughts below, please take a look at the canonical documents below and narrative arc Revision 4.
+
+Using language a smart 12yo could understand makes this development process much easier for me because I don’t need to try to figure our lingo that I am unfamiliar with. I’m almost wondering if we should experiment with making this a rule for all future S&amp;N Issue development.
+
+Overall revision 4 narrative arc lands, but it feels like it starts to lose energy &amp; perhaps get too deep into the weeds in movement 6 - mainly starting in the “What could change soon section and more so in the public-financing section. Ideally, we should try to make these sections as clear, concise, and low cognitive load as possible. 
+
+What do you think? 
+
+
+    * ~/.openclaw/workspace/projects/newsletter/PROCESS-MAP.md
+    * ~/.openclaw/workspace/projects/newsletter/canonical-state.md
+    * ~/.openclaw/workspace/projects/newsletter/decisions</div>
+</div>
+<div class="turn ai logged-output" id="turn-089">
+<div class="who">AI editorial process &middot; July 10, 2026, 8:32 PM PT</div>
+<div class="bubble-text">I&#x27;ll read the canonical docs and track down the Revision 4 narrative arc before giving you my take.</div>
+</div>
+<div class="turn ai logged-output" id="turn-090">
+<div class="who">AI editorial process &middot; July 10, 2026, 8:37 PM PT</div>
+<div class="bubble-text">I&#x27;ve read the canonical docs and rev. 4 closely. My take: **yes on both counts — and they&#x27;re actually the same finding.** The two sections you flagged are precisely where rev. 4 slips out of the 12-year-old register and back into policy-memo writing. The rule you&#x27;re proposing is the tool that fixes the movement you flagged.
+
+## The 12yo language rule: adopt it
+
+Three reasons beyond your own experience of it:
+
+1. **It attacks the declared target of the 8A/8B pilot, but earlier and cheaper.** The Reader Translation pass you adopted on 2026-07-05 treats plain language as a *late transform* on the final draft. Rev. 4 shows it works better as an *upstream authoring rule*: you review at the arc gate, where direction gets decided, so jargon there taxes exactly the person whose judgment is the gate. If the arc is born plain, Builder inherits it and 8A becomes a residue check instead of a translation — which is the pilot&#x27;s own success metric (&quot;reduce J&#x27;s late cleanup burden&quot;).
+2. **It surfaces errors, not just comfort.** Rev. 4&#x27;s changelog is the evidence: the &quot;households vote on zoning&quot; claim died during the plain-language rewrite. You can&#x27;t explain the approval chain in common words without discovering nobody actually votes. Jargon lets a wrong claim hide; plain words force the mechanism into the open.
+3. **The cost is low if precision keeps an escape hatch.** The rule should be a floor on explanation, not a ceiling on precision — where the exact term is load-bearing (tariff, Issue 18&#x27;s judgment-vs-holding, source labels), keep the term and define it once. Rev. 4 already models this with the glossary and the &quot;explain in the same sentence&quot; rule. The one place never to relax: Reference Link and legal wording.
+
+Recommended shape: make it the default for **internal dev artifacts you read** (arcs, briefs, steelmen, selector cards, adjudication summaries), review it at the same Issue-20 keep/trim/kill checkpoint as the 8A/8B pilot so there&#x27;s one decision moment. Public essay prose keeps the style-guide voice — there the 12yo test is a comprehension floor, not a voice target; S&amp;N shouldn&#x27;t *sound* like a kids&#x27; explainer. One small addition: the external critique prompt should declare the register deliberate, so a SOTA critic doesn&#x27;t burn findings on &quot;unsophisticated prose.&quot; I&#x27;ve recorded the preference in memory either way, so future artifacts default plain regardless of the formal decision.
+
+## Movement 6: your diagnosis is right, and it&#x27;s fixable without losing substance
+
+The first half of M6 is the strongest part of the movement — the decision-chain table and the &quot;each body can truthfully say the choice belongs to someone else&quot; riff are the payoff of the whole essay. The sag is specifically the back half, and here&#x27;s the mechanical reason: **Movements 1–5 each carry one question and one image** (bill, case, test, rule, receipt). The back half of M6 asks the reader to hold a 5-step reform procedure, two legal caveats, a certificate idea, a 3-way financing fork, and a 5-bullet disclosure list — roughly two dozen items after the table. It&#x27;s list fatigue plus a register shift from story to memo.
+
+The fix that preserves everything: **the flagged sections are re-deriving material the essay already owns, in new vocabulary.** 
+
+- &quot;What could change soon&quot; — steps 1–2 are the receipt (M5) published *in advance*; step 3 is the rule (M4) locked *before construction*; steps 4–5 are the say. The whole reform compresses to one sentence the reader already understands: *the three rungs, moved before the vote.* Add one honesty caveat (some places can do this today; the bill estimate needs new state law elsewhere) and the certificate in one line (the state doesn&#x27;t say yes until all three rungs are done). That&#x27;s ~40% of the words with nothing lost — and more energy, because it reuses the ladder instead of introducing a procedure.
+- &quot;The public-financing fork&quot; — keep the three options (that&#x27;s the landing&#x27;s boundary) but tighten each to a line, open with the steelman&#x27;s own tension instead of &quot;Suppose...&quot; (*what if paying their own way isn&#x27;t enough to build as fast as the country wants?*), and **cut the 5-bullet disclosure list entirely** — it&#x27;s the receipt applied to public money, and the closing blockquote already performs it dramatically. Right now the list preempts and dilutes your best close. &quot;No public subsidy by stealth&quot; should land as the section&#x27;s spine, not sit buried mid-section.
+
+Safety check: the protected beats in M6 (powerlessness, opacity) live in the chain/table half, which stays untouched; the sag sections are analytic material, so compression is legal under the essentials rule, and the landing actually gets sharper.
+
+On your go, I&#x27;ll cut a rev. 5 that compresses only those two M6 sections (everything else frozen), plus draft the plain-language rule block for the Process Map. Per the gate, rev. 4 stays the live arc and the final pre-Builder critique stays parked until you sign off.</div>
+</div>
+<div class="turn human author-input" id="turn-091">
+<div class="who">The author &middot; development turn &middot; July 10, 2026, 8:44 PM PT</div>
+<div class="bubble-text">Go ahead with rev. 5 and the process-map rule block.</div>
+</div>
+<div class="turn ai logged-output" id="turn-092">
+<div class="who">AI editorial process &middot; July 10, 2026, 8:46 PM PT</div>
+<div class="bubble-text">Cutting rev. 5 and wiring the rule now. First, three quick reads to match house formats: the Issue 19 edit-log (row format), the 8A/8B pilot decision doc (template for the rule&#x27;s decision record), and the Process Map&#x27;s step sections (where the rule wires in).</div>
+</div>
+<div class="turn ai logged-output" id="turn-093">
+<div class="who">AI editorial process &middot; July 10, 2026, 8:47 PM PT</div>
+<div class="bubble-text">Now reading the Process Map&#x27;s pipeline sections (authority map through Builder) to place the rule wiring correctly.</div>
+</div>
+<div class="turn ai logged-output" id="turn-094">
+<div class="who">AI editorial process &middot; July 10, 2026, 8:49 PM PT</div>
+<div class="bubble-text">All surfaces mapped. Now writing the deliverables — first the rev. 5 arc itself.</div>
+</div>
+<div class="turn ai logged-output" id="turn-095">
+<div class="who">AI editorial process &middot; July 10, 2026, 8:57 PM PT</div>
+<div class="bubble-text">Both deliverables are done. **Rev. 5 is cut and is now the live arc awaiting your review, and the Plain-Language Development Artifacts rule is adopted and wired in.** Nothing was committed — all changes sit in the working tree, and the gate holds: no final pre-Builder critique, no Builder until you sign off.
+
+**The arc — [issue-019-narrative-arc-v5-2026-07-10.md](newsletter/drafts/issue-019-narrative-arc-v5-2026-07-10.md).** Only Movement 6&#x27;s back half moved; rev. 4 is a superseded checkpoint. The changes, as discussed:
+
+- **&quot;What could change soon&quot;** is now one sequencing rule — *the vote comes after the numbers* — built from rungs the reader already holds: the rule locked before construction, the receipt published early as an estimate, publicly challengeable, then the board votes. &quot;What is unlikely soon&quot; is folded in, so the referendum disclaimer is said once. The special-permit/state-law honesty caveat and the large-load certificate each survive in one sentence.
+- **The financing fork** opens on Movement 2&#x27;s unfinished question (&quot;what if paying their own way is not enough to build as fast as national leaders want?&quot;) instead of &quot;Suppose…&quot;; the three options are one line each; the five-bullet disclosure list is one sentence (Movement 3&#x27;s three questions applied to public money), leaving the closing household quote to perform the disclosure — that quote is unchanged.
+- Measured honestly: the two sections went from 440 to 369 words (the reform stretch alone dropped 26%), and the structural load fell harder — three sections to two, and the 5-step procedure, 5-bullet list, and duplicated disclaimer are all gone. Movements 1–5, the decision-chain table, the zoning correction, protected beats, R+V, &quot;no public subsidy by stealth&quot; (verbatim), and the Builder language rules are untouched.
+
+**The rule.** Adopted as the default for internal artifacts you review (arcs, briefs, steelmen, slates, selector cards, adjudications): smart-12-year-old language, terms defined in-sentence, glossary where needed, no unexplained acronyms — a floor on explanation, not a ceiling on precision (exact terms stay where load-bearing), internal artifacts only, external critics told the register is deliberate, reviewed at the Issue-20 checkpoint alongside the 8A/8B pilot. It lives in three places: a standard block at the head of the [Process Map](newsletter/PROCESS-MAP.md) pipeline plus a Step 1A rule, the decision record [2026-07-10-plain-language-dev-artifacts.md](newsletter/decisions/2026-07-10-plain-language-dev-artifacts.md), and my persistent memory (so I default to it regardless).
+
+**Bookkeeping:** edit-log row 19, the canonical-state Issue 19 block and governance list, the EIP Pilot-1 line, and the Process Map banner are all updated to rev. 5; a sweep confirms no doc still names rev. 4 as live.
+
+When you review rev. 5, the three calls at the bottom of the file: (1) does M6&#x27;s back half now hold energy at the altitude of Movements 4–5; (2) should any cut material return in Builder prose instead; (3) the two carried rev. 4 calls if your last review didn&#x27;t settle them — Virginia/PJM as the worked example, and whether &quot;no public subsidy by stealth&quot; keeps the democratic choice genuinely open. On your sign-off, the next step is the final pre-Builder adversarial critique on the settled arc.</div>
+</div>
+<div class="turn human author-input" id="turn-096">
+<div class="who">The author &middot; development turn &middot; July 10, 2026, 9:26 PM PT</div>
+<div class="bubble-text">Will pause for now. Please update our canonical docs with our progress here and next steps.</div>
+</div>
+<div class="turn ai logged-output" id="turn-097">
+<div class="who">AI editorial process &middot; July 10, 2026, 9:27 PM PT</div>
+<div class="bubble-text">Updating the canonical docs to record the pause. Since rev. 5 exists but hasn&#x27;t been reviewed yet, the key thing to make explicit is that the pause point is at *your* review of rev. 5&#x27;s content — the rule itself is already adopted, but the arc&#x27;s substance is still open.</div>
+</div>
+<div class="turn ai logged-output" id="turn-098">
+<div class="who">AI editorial process &middot; July 10, 2026, 9:27 PM PT</div>
+<div class="bubble-text">Canonical docs updated and Issue 19 is marked paused. Summary of where things stand:
+
+**Paused at:** the arc-review gate on rev. 5. Two things are deliberately kept distinct in the docs so a future session (or you, resuming later) can&#x27;t conflate them: the **Plain-Language Development Artifacts rule is adopted** — that was your own &quot;go ahead,&quot; a settled process decision — but **rev. 5&#x27;s Movement 6 compression has had no content review yet**. Nothing beyond that changed this turn.
+
+**On resume, the only open action is your rev. 5 review** — the three calls at the foot of [issue-019-narrative-arc-v5-2026-07-10.md](newsletter/drafts/issue-019-narrative-arc-v5-2026-07-10.md):
+1. Does M6&#x27;s back half now hold energy at the altitude of Movements 4–5?
+2. Should any cut material return in Builder prose instead?
+3. The two calls carried from rev. 4 if not already settled: Virginia/PJM as the worked example, and whether &quot;no public subsidy by stealth&quot; leaves the democratic choice genuinely open.
+
+After sign-off: final pre-Builder adversarial critique → Builder v0.1 → Step 2A landing-drift check. Updated: [canonical-state.md](newsletter/canonical-state.md), [PROCESS-MAP.md](newsletter/PROCESS-MAP.md), [epistemic-integrity-program/canonical-state.md](newsletter/epistemic-integrity-program/canonical-state.md), and the [edit-log](newsletter/drafts/issue-019-edit-log.md) (row 20).</div>
+</div>
+<h2 class="session">Session 3 - Staging arc revision 7</h2>
+<div class="turn human author-input" id="turn-099">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 7:53 AM PT</div>
+<div class="bubble-text">What is the next step in S&amp;N?      * ~/.openclaw/workspace/projects/newsletter/PROCESS-MAP.md
+    * ~/.openclaw/workspace/projects/newsletter/canonical-state.md
+    * ~/.openclaw/workspace/projects/newsletter/decisions</div>
+</div>
+<div class="turn ai logged-output" id="turn-100">
+<div class="who">AI editorial process &middot; July 11, 2026, 7:54 AM PT</div>
+<div class="bubble-text">Both files exist and confirm the state. Here&#x27;s where S&amp;N stands:
+
+**Blocked on your review — Issue 19, arc rev. 6** (`newsletter/drafts/issue-019-narrative-arc-v6-2026-07-10.md`)
+
+Steps 1/1C/1D/1B/1A are done. Rev. 6 cut the three-option public-financing taxonomy from rev. 5 (you&#x27;d flagged it read as a non sequitur, two of the three options collapsed to the same practical branch, and it made readers do policy bookkeeping right at the landing). It&#x27;s replaced with one plain question: if leaders ask the public to help pay, they have to state the amount, the public benefit, and who eats the loss — no burying it in an electricity bill. Everything else holds: R+V direction, the closing household quote, &quot;no public subsidy by stealth,&quot; the five protected beats, Direction Firewall.
+
+**Next step is yours, not mine**: review/sign off on rev. 6. Once you do, the chain is:
+1. Final pre-Builder adversarial critique on the settled arc
+2. Builder v0.1
+3. Step 2A landing-drift check
+
+Per the process rule, I can&#x27;t run the critique or start Builder before your sign-off — that&#x27;s an explicit gate.
+
+Everything else is quiet: Issue 18 is closed/shipped, Issues 16/17 and Intuition 2 are in passive monitoring only.
+
+Want me to pull up rev. 6 here so you can review it now, or point you to a diff against rev. 5?</div>
+</div>
+<h2 class="session">Session 4 - Approval to publication: the manual-execution correction, three outside gates, and the ship</h2>
+<div class="turn human author-input" id="turn-101">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 9:34 AM PT</div>
+<div class="bubble-text">* ~/.openclaw/workspace/projects/newsletter/PROCESS-MAP.md
+    * ~/.openclaw/workspace/projects/newsletter/canonical-state.md
+    * ~/.openclaw/workspace/projects/newsletter/decisions
+Hey Claude, What are the next steps for S&amp;N?</div>
+</div>
+<div class="turn ai logged-output" id="turn-102">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:34 AM PT</div>
+<div class="bubble-text">I&#x27;ll check the newsletter project&#x27;s canonical state and recent activity to give you an accurate picture.</div>
+</div>
+<div class="turn ai logged-output" id="turn-103">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:34 AM PT</div>
+<div class="bubble-text">Here&#x27;s where S&amp;N stands right now, per [canonical-state.md](newsletter/canonical-state.md) and [PROCESS-MAP.md](newsletter/PROCESS-MAP.md):
+
+**Issue 19 is the active work** (Landing Slate Protocol Pilot 1), and it&#x27;s sitting at a review gate:
+
+- You just cut arc rev. 7 today (2026-07-11), which removed Movement 3&#x27;s financing-breakdown section per your rev. 6 review — the &quot;capital-provider / risk-bearer / upside-recipient&quot; list was too granular and its only necessary residue got folded into the ladder hinge (even huge benefits don&#x27;t make households the default payer; public financing needs a rule, a receipt, and a say).
+- Live arc: [issue-019-narrative-arc-v7-2026-07-11.md](newsletter/drafts/issue-019-narrative-arc-v7-2026-07-11.md)
+- **Status: awaiting your review/sign-off on rev. 7.**
+
+**The actual next step is yours, not mine:** review rev. 7. Once you sign off, the queue is:
+1. Final pre-Builder adversarial critique on the settled arc
+2. Builder v0.1
+3. Step 2A landing-drift check
+
+Explicit rule in the docs: don&#x27;t run the critique or start Builder before that sign-off.
+
+Everything else is quiet:
+- **Issue 18** — shipped and closed (web, email, audio, World Behind all live 2026-07-05); only reopens if you want post-publication edits or outreach follow-through (Tangle reply watch, X traction, Kling/Zvi judgment calls).
+- **Issues 17, 16, Intuition 2** — passive monitoring only.
+- Older World Behind backfill — opportunistic, not a bottleneck.
+
+So: the ball&#x27;s in your court on rev. 7. Want me to pull it up for you to review now, or do you already have feedback?</div>
+</div>
+<div class="turn human author-input" id="turn-104">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 9:35 AM PT</div>
+<div class="bubble-text">I approve rev. 7. Please proceed to the next steps.</div>
+</div>
+<div class="turn ai logged-output" id="turn-105">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:36 AM PT</div>
+<div class="bubble-text">rev. 7 is approved — I&#x27;ll proceed through the gate sequence: final pre-Builder adversarial critique → adjudication → Builder v0.1 → Step 2A landing-drift check. First, per the Start-here rule, I need to load the process definitions and the live Issue 19 artifacts.</div>
+</div>
+<div class="turn ai logged-output" id="turn-106">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:39 AM PT</div>
+<div class="bubble-text">Style guide loaded. Setting up the run plan, then staging the critique packet.</div>
+</div>
+<div class="turn ai logged-output" id="turn-107">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:41 AM PT</div>
+<div class="bubble-text">The critique run finished. Let me inspect the output.</div>
+</div>
+<div class="turn ai logged-output" id="turn-108">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:42 AM PT</div>
+<div class="bubble-text">While GPT-5.5 works, I&#x27;ll read the research dossier — the verified evidence floor for adjudication and Builder.</div>
+</div>
+<div class="turn ai logged-output" id="turn-109">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:42 AM PT</div>
+<div class="bubble-text">Dossier loaded — I now have the full verified evidence floor. Let me check on the critique run.</div>
+</div>
+<div class="turn ai logged-output" id="turn-110">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:43 AM PT</div>
+<div class="bubble-text">v0.1 conventions confirmed: inline source labels, header with word-count target and label legend. Checking the critique run again.</div>
+</div>
+<div class="turn ai logged-output" id="turn-111">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:47 AM PT</div>
+<div class="bubble-text">All doc anchors mapped. Now polling the GPT-5.5 Pro run.</div>
+</div>
+<div class="turn ai logged-output" id="turn-112">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:01 AM PT</div>
+<div class="bubble-text">The critique is in. Let me extract it and save the verbatim output artifact.</div>
+</div>
+<div class="turn ai logged-output" id="turn-113">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:06 AM PT</div>
+<div class="bubble-text">Now arc rev. 8 — rev. 7 with the eight accepted edits applied, otherwise verbatim.</div>
+</div>
+<div class="turn ai logged-output" id="turn-114">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:11 AM PT</div>
+<div class="bubble-text">Builder v0.1 is written. Logging row 24, then checking the Issue 18 Step 2A packet format before staging this one.</div>
+</div>
+<div class="turn ai logged-output" id="turn-115">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:15 AM PT</div>
+<div class="bubble-text">Now polling the 2A review run.</div>
+</div>
+<div class="turn ai logged-output" id="turn-116">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:26 AM PT</div>
+<div class="bubble-text">Now Builder v0.2 — v0.1 with the accepted 2A fixes applied.</div>
+</div>
+<div class="turn ai logged-output" id="turn-117">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:30 AM PT</div>
+<div class="bubble-text">Now the PROCESS-MAP.md banner:</div>
+</div>
+<div class="turn ai logged-output" id="turn-118">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:30 AM PT</div>
+<div class="bubble-text">Now the EIP canonical-state — let me get the exact current text at the three anchors.</div>
+</div>
+<div class="turn ai logged-output" id="turn-119">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:32 AM PT</div>
+<div class="bubble-text">All four steps ran to completion. Here&#x27;s where Issue 19 stands now:
+
+## The sequence ran end-to-end — Issue 19 is now waiting on your review of Builder v0.2
+
+**1. Final pre-Builder critique → arc rev. 8.** I staged the packet from your approved rev. 7 and ran it through GPT-5.5 at xhigh reasoning via OpenRouter. (One transport note, recorded in the artifact headers: the GPT-5.5 **Pro** tier failed three times today — a gateway allowlist block, then repeated upstream 500s — so the run of record is the same model family at maximum reasoning effort, not the Pro parallel-compute tier.) The critic explicitly recommended **no direction change**. I adjudicated its 10 findings: eight accepted as precision/honesty gains (opening no longer presupposes causation; &quot;the part it caused&quot; gets three plain boundary sentences; Ohio bounded as &quot;one strong tool&quot;; the receipt admits its first number is a contested estimate and the net can be negative; the 6,623 MW gets a &quot;planning warning, not a blackout&quot; label). I **rejected the critic&#x27;s wholesale rewritten arc** — it reintroduced a numbered seven-cost taxonomy, which is exactly the list form you cut in rev. 6 and rev. 7 — and its title change. Result: [arc rev. 8](newsletter/drafts/issue-019-narrative-arc-v8-2026-07-11.md), with the [adjudication record](newsletter/drafts/issue-019-arc-critique-adjudication-2026-07-11.md).
+
+**2. Builder v0.1.** Full essay from rev. 8 (~3,090-word body), plain-language register, all five protected beats mapped, internal source labels carried.
+
+**3. Step 2A → Builder v0.2.** The outside review&#x27;s verdict: **revise, do not recast — and no landing drift.** It confirmed the draft lands where the Contestability Card lands; the only drift it found was &quot;procedural idealization&quot; (making the receipt and approval chain sound easier than they are), which is a precision problem, not hedging. I accepted all 5 critical and 8 of 9 material findings — the sharpest ones scope the absence claims (&quot;no *public source found in this research* publishes the combined receipt&quot;), reframe receipt feasibility as *contested-but-checkable*, and close the by-right zoning loophole by making it the argument *for* the state large-load certificate. **[Builder v0.2](newsletter/drafts/issue-019-builder-draft-v0.2-step2a-adjudicated-2026-07-11.md) is the live draft.**
+
+**Four calls are yours at this review** (listed in the draft&#x27;s Builder notes):
+1. **Gallup relocation veto** — the 71% stat moved from Movement 1 to Movement 6 (it measures siting consent, not bill causation). It&#x27;s grounding under protected beat 2, so your veto restores it.
+2. **Title** — the critic suggested &quot;Unenforceable&quot;; I recommend keeping **&quot;Unseen and Unenforced&quot;** (a filed tariff *is* enforceable — the point is the chosen instruments go unenforced).
+3. **Length** — ~3,150 body vs. Issue 18&#x27;s accepted ~2,950; trim candidates are named if you want it shorter.
+4. **Optional wording** — the critic flagged &quot;Build at any cost&quot; as a possible strawman; I kept your approved arc language and recorded the alternative.
+
+Everything is logged (edit-log rows 23–25) and the canonical docs ([canonical-state.md](newsletter/canonical-state.md), [PROCESS-MAP.md](newsletter/PROCESS-MAP.md) banner, EIP state) all point at the same resume anchor: **J reviews v0.2 → then Step 5 Core Battery** (the 2A review&#x27;s three smart-critic ledgers are already staged as Battery inputs). Nothing runs past this gate without you.</div>
+</div>
+<div class="turn human author-input" id="turn-120">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 11:25 AM PT</div>
+<div class="bubble-text">Excellent. Before we proceed however, all of the adversarial critique steps are supposed to be run as a &quot;cut and paste&quot; prompt for me to manually place into Chat GTP Pro. Is there a way to reinforce this in our process documents? Also, we need to update our process to reflect the fact that the adversarial critiques are also just supposed to be run in the latest (most up to date) model released by Chat GPT at the highest thinking setting. Currently, this would be Chat GTP 5.6 Ultra.</div>
+</div>
+<div class="turn ai logged-output" id="turn-121">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:26 AM PT</div>
+<div class="bubble-text">Understood — that&#x27;s an important correction. Before I touch the docs, let me check the remaining process sections (Step 2A, 8A/8B, 9) and the constitution to make sure the new rule lands consistently everywhere it needs to.</div>
+</div>
+<div class="turn ai logged-output" id="turn-122">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:29 AM PT</div>
+<div class="bubble-text">Good — this confirms Step 9 already had a manual-execution allowance, but conditional and pinned to a stale model name. That&#x27;s the seam to close. Let me pull in the decision-doc format and make all the edits now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-123">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:30 AM PT</div>
+<div class="bubble-text">Now the pipeline-head callout block (the standing rule itself, parallel to the Plain-Language standard):</div>
+</div>
+<div class="turn ai logged-output" id="turn-124">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:30 AM PT</div>
+<div class="bubble-text">Now Steps 1A, 2A, 8A, 8B, and 9. Let me re-read their current text since line numbers have shifted, and apply the edits.</div>
+</div>
+<div class="turn ai logged-output" id="turn-125">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:30 AM PT</div>
+<div class="bubble-text">Now I have exact text for all five steps. Applying the edits:</div>
+</div>
+<div class="turn ai logged-output" id="turn-126">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:31 AM PT</div>
+<div class="bubble-text">All five PROCESS-MAP.md steps updated. Now the Constitution&#x27;s role bullet, canonical-state.md, and EIP canonical-state.md.</div>
+</div>
+<div class="turn ai logged-output" id="turn-127">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:31 AM PT</div>
+<div class="bubble-text">Now the reusable prompt templates so future issues inherit the rule automatically.</div>
+</div>
+<div class="turn ai logged-output" id="turn-128">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:32 AM PT</div>
+<div class="bubble-text">Now updating the two live Issue 19 prompt packets with the corrected execution instructions and an honest flag on today&#x27;s runs:</div>
+</div>
+<div class="turn ai logged-output" id="turn-129">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:32 AM PT</div>
+<div class="bubble-text">Now logging this in the edit-log and marking the task complete.</div>
+</div>
+<div class="turn ai logged-output" id="turn-130">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:33 AM PT</div>
+<div class="bubble-text">Adding the memory pointer to the index:</div>
+</div>
+<div class="turn ai logged-output" id="turn-131">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:33 AM PT</div>
+<div class="bubble-text">All the documentation is updated. One thing I want to flag before we go further:
+
+**Docs are now reinforced.** The rule lives in five places, all cross-referenced to one decision doc:
+- [decisions/2026-07-11-external-critique-manual-chatgpt-pro-execution.md](newsletter/decisions/2026-07-11-external-critique-manual-chatgpt-pro-execution.md) — the rule itself
+- [PROCESS-MAP.md](newsletter/PROCESS-MAP.md) — new banner + a standing rule block at the pipeline head, plus an &quot;Execution: manual&quot; line added directly into Steps 1A, 2A, 8A, 8B, and a rewritten Step 9 (its old text conditionally allowed manual execution and hard-coded &quot;ChatGPT 5.5 Pro&quot; — both fixed)
+- [SN-EPISTEMIC-CONSTITUTION-v1.md](newsletter/SN-EPISTEMIC-CONSTITUTION-v1.md) — the Outside SOTA Adversarial Review role definition
+- `canonical-state.md` and `epistemic-integrity-program/canonical-state.md` — governance-adopted lists
+- The three reusable prompt templates (narrative-arc critique, reader-translation, entropy-compression) — so every future issue inherits this automatically
+
+The model designation is written as a moving-target pin (&quot;latest available ChatGPT flagship, highest reasoning setting — currently ChatGPT 5.6 Ultra&quot;) rather than hard-coded, so it won&#x27;t go stale the way &quot;5.5 Pro&quot; did.
+
+**One thing this surfaces that I should flag directly:** today&#x27;s two runs — the rev. 7 arc critique and the Builder v0.1 Step 2A review — both went through the automated OpenRouter route this rule now forecloses, after the intended tier failed repeatedly. Arc rev. 8 and Builder v0.2 were built from those runs. I&#x27;ve left both paste-ready packets intact and untouched, and added a note to each flagging their history.</div>
+</div>
+<div class="turn ai logged-output" id="turn-132">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:36 AM PT</div>
+<div class="bubble-text">Understood — I&#x27;ll hand off rather than run these myself. One sequencing note: the Step 2A packet embeds the Builder v0.1 draft, which was built from the automated-critique-sourced rev. 8. If the manual arc critique changes rev. 8 in any way that would change the draft, Builder v0.1 (and the Step 2A packet) would need to be rebuilt before that second run means anything. So let&#x27;s do this one at a time.</div>
+</div>
+<div class="turn ai logged-output" id="turn-133">
+<div class="who">AI editorial process &middot; July 11, 2026, 11:36 AM PT</div>
+<div class="bubble-text">Documentation is fully updated and logged. Here&#x27;s the state:
+
+**Process docs reinforced** — the External Frontier-Model Execution Rule now lives in the [decision doc](newsletter/decisions/2026-07-11-external-critique-manual-chatgpt-pro-execution.md), the [PROCESS-MAP.md](newsletter/PROCESS-MAP.md) pipeline-head + Steps 1A/2A/8A/8B/9, the Constitution&#x27;s role definition, both canonical-state files, and all three reusable prompt templates — so it&#x27;s inherited automatically by every future issue, not just Issue 19.
+
+**Per your answer, here&#x27;s the handoff for the manual re-run** (doing the arc critique first, since Step 2A&#x27;s packet depends on its outcome):
+
+1. Open [prompts/issue-019-arc-adversarial-critique-prompt-2026-07-11.md](newsletter/prompts/issue-019-arc-adversarial-critique-prompt-2026-07-11.md)
+2. Copy everything below the `## PASTE EVERYTHING BELOW THIS LINE` marker
+3. Paste it into ChatGPT Pro on the latest flagship model (5.6 Ultra) at its highest reasoning/thinking setting
+4. Bring back the raw output — paste it to me directly, or save it somewhere and give me the path
+
+Once I have that, I&#x27;ll re-adjudicate against the dossier. If the findings differ meaningfully from what came back automated, I&#x27;ll rebuild arc rev. 8, then rebuild Builder v0.1 from it, then generate a **fresh** Step 2A packet from that new draft for you to paste separately — the current Step 2A packet embeds v0.1, so it&#x27;s only valid to re-run as-is if rev. 8 doesn&#x27;t substantively change. I&#x27;ll hold here until you bring back the arc-critique output.</div>
+</div>
+<div class="turn human author-input" id="turn-134">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 1:15 PM PT</div>
+<div class="bubble-text">Chat GPT 5.6 Ultra critique results: Revision is warranted, but the selected “rule, receipt, say” landing survives.
+
+The decisive findings are:
+
+* The arc proves that cost allocation is not publicly verifiable; it does not yet prove a current nationwide household subsidy.
+* Virginia already approved binding GS-5 large-load protections, so Virginia—not Ohio—should be the primary live test. [Virginia SCC](https://www.scc.virginia.gov/media/sccvirginiagov-home/about-the-scc/fact-sheets/scc-data-center-initiatives-02-2026.pdf)
+* JLARC found that then-current rates appropriately allocated existing costs, while warning that future growth, market exposure, and stranded-investment risk could raise household costs. Both findings must appear together. [JLARC report](https://jlarc.virginia.gov/pdfs/reports/Rpt598.pdf)
+* The receipt must separate audited costs and payments from counterfactual market-price modeling.
+* A host locality cannot authorize costs borne statewide or across PJM. Any deliberate public contribution needs approval from a body legally accountable to the payer class.
+* The 6,623-megawatt PJM figure was an auction shortfall against a modeled planning requirement—not an actual grid failure or certain future blackout. [PJM results](https://insidelines.pjm.com/pjm-auction-procures-134479-mw-of-generation-resources/)
+* Recent federal action further weakens any claim that the system is frozen. [FERC’s June 2026 action](https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration)
+
+I recommend replacing the original arc with the revised version, titled **“Who Pays for AI’s Grid? From Company Promises to Public Proof.”**
+
+[Download the complete adversarial critique and revised narrative arc](sandbox:/workspace/scratch/486ddcc489ae/Adversarial_Review_AI_Grid_Cost_Arc.md)</div>
+</div>
+<div class="turn ai logged-output" id="turn-135">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:17 PM PT</div>
+<div class="bubble-text">The manual run is back and it&#x27;s substantive — several findings the automated run never surfaced (Virginia&#x27;s own GS-5 rule, the JLARC pairing requirement). Per process: output is input, not authority — I&#x27;ll verify the checkable claims against the cited primaries before adjudicating anything. First, let me check whether the full critique file landed anywhere local, and verify the four cited sources.</div>
+</div>
+<div class="turn ai logged-output" id="turn-136">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:18 PM PT</div>
+<div class="bubble-text">The SCC PDF saved locally — reading it directly, and fetching the other three sources.</div>
+</div>
+<div class="turn ai logged-output" id="turn-137">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:19 PM PT</div>
+<div class="bubble-text">The full JLARC PDF saved locally (9.6MB). Reading the summary pages for the exact findings.</div>
+</div>
+<div class="turn ai logged-output" id="turn-138">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:22 PM PT</div>
+<div class="bubble-text">Now the dossier addendum with the newly verified primaries:</div>
+</div>
+<div class="turn ai logged-output" id="turn-139">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:23 PM PT</div>
+<div class="bubble-text">Now the adjudication document for the Ultra critique:</div>
+</div>
+<div class="turn ai logged-output" id="turn-140">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:24 PM PT</div>
+<div class="bubble-text">Now arc rev. 9 — the full rebuild on the verified findings:</div>
+</div>
+<div class="turn ai logged-output" id="turn-141">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:26 PM PT</div>
+<div class="bubble-text">Now logging row 27 and updating the canonical docs to the new resume point.</div>
+</div>
+<div class="turn ai logged-output" id="turn-142">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:29 PM PT</div>
+<div class="bubble-text">The Ultra critique verified across the board — every one of its seven decisive findings checked out against the primary sources, and I&#x27;ve adjudicated all seven into **arc rev. 9**. The two most consequential:
+
+**1. Virginia GS-5 — confirmed, and it reshapes Movement 4.** The SCC fact sheet (Dominion rate case PUR-2025-00058) confirms binding protections: a separate GS-5 rate class, minimum charges of **85% of monthly transmission-and-distribution costs regardless of usage** (new *and* existing customers), 14-year take-and-pay contracts from 2027, collateral up to 60%. Virginia is now the primary rule example — it&#x27;s the same state as the opening bill, the watchdog numbers, and the approval chain, and there&#x27;s a narrative gift in it: JLARC recommended exactly this separate class, and the regulator built it. Ohio stays as the second template (its 85% binds *reserved capacity* — a different design). The movement gains its sharpest turn: **even the best rule state has no receipt.**
+
+**2. The JLARC pairing — confirmed verbatim, and it was a real defect.** Report 598&#x27;s actual heading: *&quot;Data centers are currently paying their full cost of service, but growing energy demand is likely to increase other customers&#x27; costs.&quot;* Our arc carried only the $14–37 warning — using the warning without the finding misstates the source. Rev. 9 makes the pairing a standing prose rule and adds a framing guard: the essay claims the allocation is *not publicly verifiable*; it never claims a proven current subsidy.
+
+The other findings (two-ledger receipt separating audited from modeled numbers; payer-class accountability on any public share; the 6,623 MW auction-shortfall precision; the June 2026 FERC action) are all applied. The landing survives per the critic&#x27;s own verdict — no Step 1B routing. Everything is in [rev. 9](newsletter/drafts/issue-019-narrative-arc-v9-2026-07-11.md), the [adjudication](newsletter/drafts/issue-019-arc-critique-adjudication-ultra-2026-07-11.md), and dossier §13; Builder v0.1/v0.2 are now marked stale (they carry the old Ohio-first structure and the one-sided JLARC use).
+
+**Three things need you before I rebuild Builder:**
+
+1. **The full critique document.** The critic&#x27;s complete review and its full revised arc are in the ChatGPT sandbox file (`Adversarial_Review_AI_Grid_Cost_Arc.md`) — the download link only works from your ChatGPT session. Its wholesale-replacement recommendation can&#x27;t be honestly adjudicated sight-unseen. Either paste the file contents here (or save it anywhere in the workspace), or tell me rev. 9 stands on the decisive findings alone.
+2. **Title call (yours by authority).** The verified JLARC finding creates real tension with the current subtitle — &quot;Why *Current* Grid Cost Allocations *Fail* the Public&quot; now overclaims, since the home-state watchdog found current retail allocations working. Options: keep as-is; adopt the critic&#x27;s &quot;Who Pays for AI&#x27;s Grid? From Company Promises to Public Proof&quot;; or merge — **&quot;Unseen and Unenforced: From Company Promises to Public Proof.&quot;** I&#x27;d recommend the merge or the critic&#x27;s over keeping as-is.
+3. **Rev. 9 review** — plus the carried flags (Gallup relocation veto, length, optional ASI wording).
+
+Once the arc settles, I rebuild the Builder draft from it and stage a fresh Step 2A packet for you to run manually in 5.6 Ultra.</div>
+</div>
+<div class="turn human author-input" id="turn-143">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 1:50 PM PT</div>
+<div class="bubble-text">@&quot;~/Desktop/Adversarial_Review_AI_Grid_Cost_Arc.md&quot;
+1. The full critique is attached. 
+2. I&#x27;m leaning towards something that like &quot;Unseen and Unenforced: Who Pays for AI’s Grid?&quot;</div>
+</div>
+<div class="turn ai logged-output" id="turn-144">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:53 PM PT</div>
+<div class="bubble-text">The full critique is substantially richer than the summary — it contains ~15 additional targeted findings, several new primary sources, and the complete revised arc. Let me secure it in the workspace, then verify the one new factual dispute it raises (the JLARC scenario structure) before adjudicating.</div>
+</div>
+<div class="turn ai logged-output" id="turn-145">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:55 PM PT</div>
+<div class="bubble-text">Dossier corrected and extended. Now appending the full-document adjudication (Part 2) to the Ultra adjudication record:</div>
+</div>
+<div class="turn ai logged-output" id="turn-146">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:56 PM PT</div>
+<div class="bubble-text">Now arc rev. 10 — J&#x27;s title applied, all accepted full-document findings incorporated:</div>
+</div>
+<div class="turn ai logged-output" id="turn-147">
+<div class="who">AI editorial process &middot; July 11, 2026, 1:58 PM PT</div>
+<div class="bubble-text">Rev. 10 is written. Logging row 28 and updating the canonical docs:</div>
+</div>
+<div class="turn ai logged-output" id="turn-148">
+<div class="who">AI editorial process &middot; July 11, 2026, 2:00 PM PT</div>
+<div class="bubble-text">Done — the full critique is adjudicated and **arc rev. 10 is ready for your review**, under your title: **&quot;Unseen and Unenforced: Who Pays for AI&#x27;s Grid?&quot;**
+
+**The headline adjudication call:** the critic&#x27;s wholesale replacement is **rejected on form, adopted in substance**. Its full revised arc is analytically excellent, but structurally it re-expands everything you&#x27;ve spent five review rounds compressing — a tripled glossary, a standing cost-map section, an 8-item rule list, 7- and 6-item receipt lists, a six-row jurisdiction table plus a 7-step model sequence. So its ~20 real corrections went in as targeted plain-language edits inside your approved six-movement structure, and the critic&#x27;s full arc is kept as reference for Builder and the Core Battery.
+
+**One finding corrected our own evidence floor.** Reading JLARC&#x27;s Table 4-2 directly confirmed the critic over our dossier: the $14–$37 range spans *both* demand scenarios — **$14/month if half the projected demand gets built (&quot;difficult&quot;), $33–37 if all of it does (&quot;very difficult&quot;)** — in constant 2024 dollars, generation + transmission charges only. Our dossier had recorded it as the high-demand case alone. That&#x27;s fixed in the dossier (§2.6 corrected, §13.5 added) and the arc now states the projection scenario-precisely, paired with the currently-paying-full-cost finding.
+
+**What else changed in [rev. 10](newsletter/drafts/issue-019-narrative-arc-v10-2026-07-11.md):** the sharper promise-question (which parts became enforceable, covering which costs); a one-sentence Virginia bridge in Movement 1 so the pledge no longer appears to stand alone in the essay&#x27;s own state; honest deal-sorting in Movement 2 (the restarted plant with its federal loan disclosed, Amazon&#x27;s purchase from an *existing* plant, Entergy&#x27;s savings labeled as the utility&#x27;s claim); the &quot;millions of homes&quot; conversion cut; receipt accounting discipline (net only same-basis numbers, estimate-before/audit-after with a true-up, the advocate can test confidential evidence); the absence claim softened now that PJM has *proposed* cost-assignment machinery — &quot;the missing product is the public reconciliation&quot;; and Movement 6 gains the 2026 Virginia siting law as a real partial precedent, the staged-order fix for the critic&#x27;s circularity objection, the by-right/vested honesty clause, a one-sentence definition of a real say, the certificate&#x27;s authority boundary, and your public-share sentence extended with &quot;at most, for how long, with an end date.&quot;
+
+**Five flags are open for you in the arc file**, the notable ones: the millions-of-homes cut (veto restores it with a defined conversion), the public-share clause extension (it touches your compressed wording), and the M1 bridge placement (one sentence now vs. the critic&#x27;s full early Virginia section).
+
+When you sign off on rev. 10, I rebuild the Builder draft from it and stage a fresh Step 2A packet for you to run manually in 5.6 Ultra.</div>
+</div>
+<div class="turn human author-input" id="turn-149">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 2:09 PM PT</div>
+<div class="bubble-text">Rev. 10 approved as adjudicated: homes cut stays cut; public-share cap/end/national-funder stays; M1 keeps the Virginia bridge only; ladder stays ladder; Gallup stays in M6. Length and ASI wording to Builder. Ready for Builder rebuild.</div>
+</div>
+<div class="turn ai logged-output" id="turn-150">
+<div class="who">AI editorial process &middot; July 11, 2026, 2:12 PM PT</div>
+<div class="bubble-text">All five flags resolved and rev. 10 is Builder authority. Rebuilding the draft from it now — this is the full essay rewrite (v0.3, superseding the stale v0.1/v0.2 lineage).</div>
+</div>
+<div class="turn ai logged-output" id="turn-151">
+<div class="who">AI editorial process &middot; July 11, 2026, 2:17 PM PT</div>
+<div class="bubble-text">Packet staged. Logging row 29 and updating the canonical docs to the stop point:</div>
+</div>
+<div class="turn ai logged-output" id="turn-152">
+<div class="who">AI editorial process &middot; July 11, 2026, 2:18 PM PT</div>
+<div class="bubble-text">**Builder v0.3 is rebuilt from your approved rev. 10, and the fresh Step 2A packet is staged — the next action is your manual run.**
+
+[Builder v0.3](newsletter/drafts/issue-019-builder-draft-v0.3-2026-07-11.md) carries every rev. 10 obligation under your title *&quot;Unseen and Unenforced: Who Pays for AI&#x27;s Grid?&quot;*: the paired JLARC finding with the scenario-precise numbers ($14 half-demand / $33–37 full-demand, both labeled hard to achieve), Virginia GS-5 as the primary rule with Ohio as the second design, the sorted deals (the 835 MW restart with its federal loan disclosed, Amazon&#x27;s existing-plant purchase, Entergy&#x27;s savings as the utility&#x27;s claim), the audited-vs-modeled receipt lanes with same-basis netting and the true-up, and the full say section — consent gap, sequencing with staged order, the Virginia siting-law precedent, the certificate with its authority boundary, and the payer-accountable public share with your cap/end/national-funder language. All five flag resolutions applied; the ASI register kept per your deferral. v0.1/v0.2 are marked stale.
+
+**One thing to know before you run 2A — length.** The body came out at **~4,300 words** after my compression pass, against Issue 18&#x27;s accepted ~2,950. The overage isn&#x27;t prose flab (I cut what was); it&#x27;s that rev. 10 simply carries more approved obligations than Issue 18&#x27;s arc did. Rather than unilaterally cutting content you just approved, I put a per-item **trim menu in the draft header** (merge the China/ASI pair −150, compress the chain table −80, drop the twice/true-up paragraph −70, tighten Ohio −60, and two smaller items — all-in lands ~3,880). The 2A packet also asks the critic to identify its own weakest-value passages, so you&#x27;ll have both inputs for the length call at the post-2A review. And 8B compresses further downstream.
+
+**Your handoff:**
+1. Open [prompts/issue-019-outside-sota-full-draft-adversarial-review-prompt-v2-2026-07-11.md](newsletter/prompts/issue-019-outside-sota-full-draft-adversarial-review-prompt-v2-2026-07-11.md)
+2. Copy everything below `## PASTE EVERYTHING BELOW THIS LINE` (~37KB — prompt + the full draft)
+3. Run it in ChatGPT Pro on 5.6 Ultra at the highest reasoning setting
+4. Bring back the raw output — paste it here or save it anywhere (Desktop works, like last time)
+
+When it returns, I&#x27;ll verify any new factual claims, adjudicate with the landing-drift record, and bring you the adjudicated draft plus the length decision at the next review. Everything&#x27;s logged through edit-log row 29 and the canonical docs point at this exact stop.</div>
+</div>
+<div class="turn human author-input" id="turn-153">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 2:50 PM PT</div>
+<div class="bubble-text">@&quot;~/Desktop/GPT critique.md&quot;</div>
+</div>
+<div class="turn ai logged-output" id="turn-154">
+<div class="who">AI editorial process &middot; July 11, 2026, 2:52 PM PT</div>
+<div class="bubble-text">This is the strongest review of the sequence — and several of its factual corrections check out against our own dossier immediately (the $9.3–23.1B &quot;range&quot; really is a one-year figure next to a three-year cumulative — the year-by-year decomposition has been sitting in dossier §2.2 all along). The GS-5, PJM-correction, E3, and Utah claims need primary verification before I adjudicate. Fetching the five load-bearing sources now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-155">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:02 PM PT</div>
+<div class="bubble-text">Final canonical-doc updates, then the summary:</div>
+</div>
+<div class="turn ai logged-output" id="turn-156">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:03 PM PT</div>
+<div class="bubble-text">The 2A review is adjudicated and **Builder v0.4 is ready for your review** — and this run earned its keep. Verification confirmed every major finding, including three that caught real errors in our own material:
+
+**Factual corrections (all verified by direct primary reads):**
+- **The PJM shortfall is 6,516.6 MW, not 6,623** — PJM corrected its own December figure in a January 5 revised report (confirmed in the market monitor&#x27;s Part A analysis). The &quot;first region-wide miss in its history&quot; framing is also dropped: the monitor&#x27;s accounting shows the *previous* auction was actually the first to clear short.
+- **&quot;$9.3–$23.1 billion&quot; was a category error** — $9.3B is one auction year; $23.1B is three years *cumulative* ($9.33/$7.27/$6.50). The correct decomposition was sitting in our own dossier all along; the &quot;range&quot; phrasing was ours, and it had even crept into a hard constraint I gave the critic. Now fixed everywhere, with a standing prose rule.
+- **&quot;Nobody publishes the three numbers together&quot; was false** — two E3 studies do: an Amazon-funded one (four utility case studies, ~$33,500/MW surplus) and a CloudHQ-funded June 2026 model of a 100 MW customer under GS-5 ($37M base-case benefit, +$166M to −$92M range). One nuance the critic itself got wrong: the June study is developer-funded, not Amazon. Both are now **in the essay** — as the strongest ratepayer argument (which the draft had been missing) and as honest evidence a receipt could vindicate the companies. The absence claim is narrowed to what&#x27;s defensible: no *recurring, regulator-mandated, after-the-fact* public reconciliation on matched bases.
+- **Utah § 54-26-302 verified verbatim** — commission approval of large-load contracts with no-cost-shifting findings. The &quot;say&quot; mechanism is now a **sequencing clearance** with Utah as prior art (&quot;a combination of existing tools, not an invention&quot;), plus the veto-honesty rule.
+
+**Structural repairs:** the receipt is now genuinely **two ledgers** (audited vs. modeled, never netted against each other, true-up scoped to what a tariff makes reconcilable); GS-5 is order-accurate (85/85/60 minimum billed demand, effective 2027, on appeal — &quot;rung one being *built*&quot;); and the footer is replaced with **five real failure conditions** instead of falsifiers that mostly described the essay&#x27;s standard being adopted.
+
+**[Builder v0.4](newsletter/drafts/issue-019-builder-draft-v0.4-step2a-adjudicated-2026-07-11.md) is the live draft at ~3,600 words** (the cut plan removed ~700 from v0.3 while absorbing ~200 of new mandated material; v0.3&#x27;s 4,300-word version remains as a checkpoint). **Flags for you:** (1) the national-funder line was reworded — it touches text you approved in rev. 10 — from &quot;the honest funder is the national government&quot; to &quot;national funding is the cleanest match; a narrower payer class needs its own open finding by a body answerable to it&quot;; (2) the footer replacement; (3) the length call (3,600 / 4,300 / deeper cuts named); (4) the ASI passage now scopes to the *accelerationist version* of the belief. Everything&#x27;s logged (row 30, dossier §13.7, all three canonical docs).
+
+When you&#x27;ve settled v0.4, the next gate is Step 5 — the Core Adversarial Battery, which runs as an internal AI-process gate (no paste needed), with both 2A runs&#x27; smart-critic ledgers staged as inputs.</div>
+</div>
+<div class="turn human author-input" id="turn-157">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 3:07 PM PT</div>
+<div class="bubble-text">v0.4 approved. Please proceed to step 5.</div>
+</div>
+<div class="turn ai logged-output" id="turn-158">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:08 PM PT</div>
+<div class="bubble-text">v0.4 is approved — proceeding to Step 5, the Universal Core Adversarial Battery. This one is an internal AI-process gate. Let me load the Constitution&#x27;s battery specification and the Issue 18 precedent artifact first.</div>
+</div>
+<div class="turn ai logged-output" id="turn-159">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:10 PM PT</div>
+<div class="bubble-text">Battery complete — logging row 31 and updating the canonical docs:</div>
+</div>
+<div class="turn ai logged-output" id="turn-160">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:12 PM PT</div>
+<div class="bubble-text">**Step 5 is complete — the Core Adversarial Battery passes v0.4 to the Referee with ten constraints, no recast.**
+
+The [battery memo](newsletter/drafts/issue-019-core-adversarial-battery-v0.4-2026-07-11.md) ran the Constitution&#x27;s five questions against the approved draft, with both 2A smart-critic ledgers as staged adversarial input. The headline findings:
+
+- **No no-publish gate triggered.** The manual 2A round had already absorbed the hardest evidence attacks; what remains is Referee-level discipline, not structural weakness.
+- **The strongest result came from the negation test** (question 5 — what would I need to believe for the opposite conclusion?). The negation is fully inhabitable: existing institutions may allocate costs about right, the tariff wave may outrun any receipt mandate, and standardized receipts might manufacture false precision. But the essay survives its own negation because its demands are **self-liquidating if wrong** — if the skeptics are right, the receipt shows zeros, the clearance changes nothing, and the essay&#x27;s urgency collapses by its own stated failure conditions. That&#x27;s the correct shape for this claim, and constraint 7 orders the Referee to preserve it against any later polish that would turn the receipt into a presumption of guilt.
+- **The sharpest blind-spot findings:** the frame can&#x27;t see whether transparency actually changes outcomes (so the receipt&#x27;s audience claim must stay modest — a checkable shared object, not a promise that households will read it); the evidence spine is PJM-specific and must stay regionally scoped; and the missing receipt shouldn&#x27;t read as mere oversight — interest-based opacity is live, which makes the assumptions-shown requirement and the advocate&#x27;s access to confidential evidence load-bearing rather than decorative.
+- **Two alternative explanations were engaged** — generic bill opacity with data centers as the salient scapegoat (answered by the draft&#x27;s existing point that bills already itemize fuel and storms; the large-load line joins an existing family), and the opacity-as-equilibrium account (which strengthens the demand but changes the mechanism story).
+- **Claim-ledger recommendation:** two candidate entries at Reference Link — the dated, scope-defined absence claim, and the IMM attribution with its year-by-year handling rule.
+
+No text was changed at this gate; v0.4 stands as approved. Everything&#x27;s logged (row 31) and the canonical docs point at the new resume anchor.
+
+**Next gate is Step 6 — Referee adjudication** on v0.4 under the ten constraints (also an internal AI-process gate; it converts critique into binding editorial labels, with removal decisions staying yours). After that: Editor pass, then Reference Link where the [P-lead] register blocks, then your two manual 8A/8B runs. Say the word and I&#x27;ll run the Referee.</div>
+</div>
+<div class="turn human author-input" id="turn-161">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 3:18 PM PT</div>
+<div class="bubble-text">Yes, please proceed to referee</div>
+</div>
+<div class="turn ai logged-output" id="turn-162">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:19 PM PT</div>
+<div class="bubble-text">Proceeding to Step 6 — Referee adjudication on v0.4 under the battery&#x27;s ten constraints. Writing the adjudication memo, then applying its one bounded narrowing as v0.5.</div>
+</div>
+<div class="turn ai logged-output" id="turn-163">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:20 PM PT</div>
+<div class="bubble-text">Now producing v0.5 with the single ordered narrowing:</div>
+</div>
+<div class="turn ai logged-output" id="turn-164">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:21 PM PT</div>
+<div class="bubble-text">Row 32 and canonical docs:</div>
+</div>
+<div class="turn ai logged-output" id="turn-165">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:22 PM PT</div>
+<div class="bubble-text">**Step 6 Referee is complete — verdict: revise with one bounded narrowing, do not recast. The live draft is now v0.5.**
+
+The [Referee adjudication](newsletter/drafts/issue-019-referee-adjudication-v0.4-2026-07-11.md) went claim-by-claim through 28 load-bearing claims:
+
+- **24 keep** — the spine held cleanly, which is what you&#x27;d expect after two Ultra rounds already did the narrowing work.
+- **4 keep-with-blocking-fact-check** — these can&#x27;t publish until Reference Link clears them: both absence claims (each needs its search protocol — jurisdictions, repositories, dates, terms — disclosed in the source package), the GS-5 order-level formulas and November order date (the fact sheet alone isn&#x27;t publication-grade), and the six-body chain&#x27;s local specifics.
+- **One relabel** — the national-security framing was carrying a stale [P-lead]; it&#x27;s actually dossier-verified to the DOE documents, so it&#x27;s upgraded to [P].
+- **One prose narrowing ordered** — the only text change: v0.4 said Utah requires approval of &quot;every large-load contract before service,&quot; which overstates what the verified statute excerpt shows. [v0.5](newsletter/drafts/issue-019-builder-draft-v0.5-referee-revision-2026-07-11.md) scopes both Utah mentions to exactly what § 54-26-302 supports: contract approval conditioned on the two no-cost-shifting findings.
+
+**No removals were recommended, and no new public caveat was added** — the standing disclosure suffices, per the boundary rule. All ten Battery constraints are now binding on every downstream gate, the ~22-item source-link requirement is enumerated for the Reference Link package (with a fixed as-of date and re-checks on the time-sensitive items), and the two claim-ledger candidates ride along.
+
+**Next is Step 7, the Editor pass on v0.5** — still an internal AI-process gate: style-guide polish under hard limits (no confidence upgrades, no caveat removal, no merging the two ledgers, no softening the protected spine). After that, 7A Reference Link does the heavy source settlement, and then it&#x27;s back to you for the two manual ChatGPT Pro runs (8A Reader Translation, 8B Entropy Compression). Want me to run the Editor?</div>
+</div>
+<div class="turn human author-input" id="turn-166">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 3:35 PM PT</div>
+<div class="bubble-text">Yes</div>
+</div>
+<div class="turn ai logged-output" id="turn-167">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:37 PM PT</div>
+<div class="bubble-text">Running Step 7 — the Editor pass on v0.5. I&#x27;ve done a full editorial read-through; there are eight genuine polish-level fixes (register leaks, one self-reference, jargon glosses) — none touching constraints, confidence, or caveats. Creating v0.6 and the pass memo:</div>
+</div>
+<div class="turn ai logged-output" id="turn-168">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:38 PM PT</div>
+<div class="bubble-text">Now the Editor pass memo, row 33, and canonical docs:</div>
+</div>
+<div class="turn ai logged-output" id="turn-169">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:39 PM PT</div>
+<div class="bubble-text">**Step 7 Editor pass is complete — eight polish-level fixes, and v0.6 is the live draft.**
+
+The [pass memo](newsletter/drafts/issue-019-editor-pass-v0.5-2026-07-11.md) records each fix; the notable ones:
+
+- **An arc instruction had leaked into the prose.** The ASI paragraph carried &quot;Say that once, plainly, and let it stand:&quot; — that was a directive *to the Builder* from the arc, not a sentence for readers. Cut; the speculative label and the force are unchanged.
+- **A self-reference removed:** &quot;the receipt this essay asks for&quot; (banned announce-the-apparatus construction, and a forward-reference to a device two sections away) is now &quot;an honest public accounting.&quot;
+- **The ladder is finally introduced before it&#x27;s climbed.** The body used &quot;rung one / the second rung / the third rung&quot; without ever naming a ladder — a first-time reader met &quot;rung&quot; cold. The hinge now reads &quot;three things — three rungs of the same ladder: a rule, a receipt, and a say,&quot; which also makes the mnemonic you kept at rev. 10 load-bearing.
+- **Two plain-language floor fixes:** &quot;models a counterfactual market&quot; → &quot;estimates a market that never happened,&quot; and &quot;matched bases&quot; now carries a nine-word in-sentence gloss (the four Referee-protected qualifiers untouched).
+
+The discipline checks all passed: no confidence upgraded, no caveat removed, the two ledgers stay separate, the protected spine is intact post-edit, anchored friction preserved (all the inconvenient concessions stand), and nothing needed routing back to the Referee. No Compression Note required — the pass added small glosses rather than compressing nuance. Logged as row 33; [v0.6](newsletter/drafts/issue-019-builder-draft-v0.6-editor-pass-2026-07-11.md) is live with v0.5/v0.4 as checkpoints.
+
+**Next is Step 7A — Reference Link**, the heaviest remaining internal gate: it settles every source to publication grade. That means building the ~22-item source package, verifying the [P-lead] register against primaries (the GS-5 final order is the big one, plus the Ohio formula and appeal status, the PJM backstop&#x27;s FERC-filing status, the approval-chain local specifics, and the Virginia siting statute), writing out both absence-claim search protocols, stamping the fixed as-of date, and landing the two claim-ledger entries. It involves a fair amount of web verification, so it&#x27;s a longer run than the last two gates. After it clears, the draft comes to you for the two manual ChatGPT Pro passes (8A Reader Translation, 8B Entropy Compression). Ready when you are.</div>
+</div>
+<div class="turn human author-input" id="turn-170">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 3:45 PM PT</div>
+<div class="bubble-text">Please proceed</div>
+</div>
+<div class="turn ai logged-output" id="turn-171">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:46 PM PT</div>
+<div class="bubble-text">Proceeding to Step 7A — Reference Link on v0.6. First, the time-sensitive checks (the 2028/29 auction was scheduled for June 30–July 4, so &quot;most recent auction&quot; may already be stale) and the blocking verifications, in parallel:</div>
+</div>
+<div class="turn ai logged-output" id="turn-172">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:51 PM PT</div>
+<div class="bubble-text">Now the v0.7 label upgrades and header:</div>
+</div>
+<div class="turn ai logged-output" id="turn-173">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:52 PM PT</div>
+<div class="bubble-text">Now the pass memo, row 34, and canonical updates:</div>
+</div>
+<div class="turn ai logged-output" id="turn-174">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:53 PM PT</div>
+<div class="bubble-text">**Step 7A Reference Link is complete — pass, with one open item. The live draft is v0.7, source-settled with a fixed as-of date of 2026-07-11.**
+
+The centerpiece: **I read the GS-5 final order itself** (PUR-2025-00058, November 25, 2025, 30 pages) — and every order-level term verified at [P-order] grade: eligibility at ≥25 MW on a contiguous site with a ≥75% load factor (including totalization language that gives our site-aggregation point primary support), minimum demand charges of **85% distribution / 85% transmission / 60% generation of contracted demand** (with PJM capacity expense excluded from the generation minimum and the pre-2016 exemptions), 14-year contracts from 2027 with ramp and exit-fee provisions, and collateral at $1.5M/MW reducible up to 70% by credit. The satisfying part: **zero prose changes were needed** — the hedged wording the draft has carried since v0.4 was already order-accurate; only the internal labels upgraded. A nice cold-open resonance surfaced too: the order itself records the public&#x27;s fear that the rate increase &quot;was designed primarily to subsidize data centers.&quot;
+
+The rest of the pass, per the [memo](newsletter/drafts/issue-019-reference-link-pass-v0.6-2026-07-11.md) and [source package](newsletter/drafts/issue-019-source-link-package.md):
+
+- **24 source clusters** mapped claim-by-claim with links, grades, and page cites — including both E3 studies, the IMM Part A, JLARC Table 4-2, and Utah&#x27;s statute from the earlier direct reads.
+- **Both absence-claim search protocols disclosed** (corpus, repositories, counterexample definitions, closest misses) — the Referee&#x27;s blocking requirement, now satisfied and independently re-runnable.
+- **Claim-ledger entries CL-012 and CL-013 landed** — the dated absence claim, and the IMM attribution rule with its binding never-present-$9.3B-and-$23.1B-as-a-range handling.
+- **Time-Sensitivity Register:** the hair-trigger is the **2028/29 PJM auction** — it closed July 4, results are pending, and they&#x27;ll run *without* the price cap, so they&#x27;re likely material. If they land before publication, the shortage and price passages refresh.
+- **One open verification:** the approval-chain table&#x27;s local specifics (by-right vs. discretionary in the worked example) — one targeted read closes it, scheduled before Step 8.
+
+**The pipeline now hands back to you.** The next two gates are your manual ChatGPT Pro runs under the execution rule: **8A Reader Translation**, then **8B Entropy Compression** — both transform gates (no new claims, no confidence changes, protected material untouchable), each adjudicated on return. Say the word and I&#x27;ll stage the 8A packet from v0.7 for you to paste into 5.6 Ultra.</div>
+</div>
+<div class="turn human author-input" id="turn-175">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 3:56 PM PT</div>
+<div class="bubble-text">Go</div>
+</div>
+<div class="turn ai logged-output" id="turn-176">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:56 PM PT</div>
+<div class="bubble-text">Staging the 8A Reader Translation packet from v0.7. Pulling the full template first:</div>
+</div>
+<div class="turn ai logged-output" id="turn-177">
+<div class="who">AI editorial process &middot; July 11, 2026, 3:57 PM PT</div>
+<div class="bubble-text">**The 8A packet is staged — your run.**
+
+1. Open [prompts/issue-019-reader-translation-8a-prompt-2026-07-11.md](newsletter/prompts/issue-019-reader-translation-8a-prompt-2026-07-11.md)
+2. Copy everything below `## PASTE EVERYTHING BELOW THIS LINE` (~31KB — the Reader Translation prompt plus the full v0.7 draft)
+3. Run it in ChatGPT Pro on 5.6 Ultra at the highest reasoning setting
+4. Bring back the raw output — paste it here or drop it on your Desktop like last time
+
+Two things about how this packet is framed, so the output makes sense when it returns: since this issue was *born* plain-language, the prompt tells the critic to treat 8A as a **residue check** rather than a wholesale translation — hunting leftover jargon and double-read sentences, not rewriting. And it carries the full constraint sheet (the JLARC pairing, the never-a-range rule, the two-ledger separation, the order-verified GS-5 terms, the protected beats and spine sentences, plus an instruction to leave the bracketed source labels untouched), with orders to report any collision as a *claim-movement warning* rather than resolve it itself.
+
+When it comes back I&#x27;ll adjudicate the edits (transform output is untrusted input — anything that moves substance routes back), cut v0.8 if warranted, and stage the 8B Entropy Compression packet from the settled draft. I&#x27;ll also close the one open source-package item (the approval-chain local specifics) before Step 8. Logged through row 35; the canonical docs point at your run as the next action.</div>
+</div>
+<div class="turn human author-input" id="turn-178">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 4:31 PM PT</div>
+<div class="bubble-text">@&quot;~/Desktop/unseen-and-unenforced-reader-translation.md&quot;</div>
+</div>
+<div class="turn ai logged-output" id="turn-179">
+<div class="who">AI editorial process &middot; July 11, 2026, 4:33 PM PT</div>
+<div class="bubble-text">This is a disciplined 8A return — mostly glosses at the plain-language floor, honest claim-movement warnings, and **one genuine catch: &quot;Even the best rule state has no receipt,&quot; a protected-spine sentence, has been missing from the draft since the v0.4 rebuild** (the critic correctly refused to add it itself). Adjudicating now: accept the glosses and replacements, restore the dropped spine line (pluralized to fit the three-state frame), restore the typography the transform flattened, reject one clunky parenthetical, and add four package-supported clarifications from the confusion notes. Building v0.8:</div>
+</div>
+<div class="turn ai logged-output" id="turn-180">
+<div class="who">AI editorial process &middot; July 11, 2026, 4:35 PM PT</div>
+<div class="bubble-text">Saving the verbatim 8A output, writing the adjudication record, and staging the 8B packet in one sweep:</div>
+</div>
+<div class="turn ai logged-output" id="turn-181">
+<div class="who">AI editorial process &middot; July 11, 2026, 4:37 PM PT</div>
+<div class="bubble-text">**8A is adjudicated into v0.8 — and the 8B packet is staged for your next run.**
+
+The Reader Translation pass did its job well, and it earned one significant save: **the transform noticed that &quot;Even the best rule state has no receipt.&quot; — a protected spine sentence — has been missing from the draft since the v0.4 rebuild.** It stayed on the protected list while the multi-state reframe (Ohio + Utah joining Virginia) silently dropped it from the text, and every gate since inherited the gap. The transform flagged the collision and correctly refused to fix it itself; I&#x27;ve restored it, pluralized to fit the three-state frame (&quot;Even the best rule states have no receipt.&quot;). That&#x27;s the gate system working exactly as designed.
+
+The rest of the adjudication in [v0.8](newsletter/drafts/issue-019-builder-draft-v0.8-8a-adjudicated-2026-07-11.md) and the [memo](newsletter/drafts/issue-019-8a-adjudication-2026-07-11.md): ~25 in-sentence glosses and ~20 meaning-neutral replacements accepted (each checked — &quot;temporary limits on new connections&quot; verified against the monitor&#x27;s actual position; &quot;compares like with like&quot; preserves all four protected absence-claim qualifiers); the typography the transform flattened is reinstated (emphasis is voice, not decoration); one clunky parenthetical rejected; and four clarifications adopted from its confusion notes, all pre-verified in the source package — Microsoft is now named on the restart agreement, the March/June dates carry their years, and the &quot;~half&quot; attribution is scoped to demand growth generally. The glosses added ~250 words (body now ~3,900), which is exactly what 8B exists to claw back.
+
+**Your 8B run:**
+1. Open [prompts/issue-019-entropy-compression-8b-prompt-2026-07-11.md](newsletter/prompts/issue-019-entropy-compression-8b-prompt-2026-07-11.md)
+2. Copy everything below `## PASTE EVERYTHING BELOW THIS LINE` (~31KB)
+3. Run in ChatGPT Pro, 5.6 Ultra, highest reasoning
+4. Return the raw output
+
+The packet targets ~15–20% compression with named candidates (repeated setup, double glosses, transition tissue), carries the protected-sentence **no-compress** list — including the freshly restored line — plus a glossing discipline so the 8A definitions get tightened rather than deleted, and requires a deletion ledger with meaning-risk flags. After I adjudicate the return, Step 8&#x27;s mini-drift check runs (with the last open source item closed out), and then the only remaining external gate is your Step 9 NIR run.</div>
+</div>
+<div class="turn human author-input" id="turn-182">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 8:35 PM PT</div>
+<div class="bubble-text">@&quot;~/Desktop/unseen-and-unenforced-compressed.md&quot;</div>
+</div>
+<div class="turn ai logged-output" id="turn-183">
+<div class="who">AI editorial process &middot; July 11, 2026, 8:36 PM PT</div>
+<div class="bubble-text">A strong 8B return — 15.1% cut with an honest deletion ledger and no meaning-risk cuts accepted. Adjudicating: the compression is accepted in bulk, but it flattened typography again and smoothed nine spots that carry J-directed or protected-adjacent language (the recentering sentence, the &quot;held to&quot; promise-question, the ladder mnemonic, &quot;the vote comes after the numbers,&quot; the whole-bargain sentence, and four cadence beats). Building v0.9 with those restored:</div>
+</div>
+<div class="turn ai logged-output" id="turn-184">
+<div class="who">AI editorial process &middot; July 11, 2026, 8:39 PM PT</div>
+<div class="bubble-text">**8B is adjudicated — v0.9 is the live draft at ~3,730 words, down 15% with nothing load-bearing lost.**
+
+The compression run was the most disciplined transform yet: an honest deletion ledger, and its list of *declined* cuts matched the constraint sheet exactly — it kept the JLARC pair together, kept the shortage reprise for its second structural job, refused to merge the ledgers, and cut no term-and-gloss pair silently. I accepted it in bulk.
+
+Nine small restorations in the [adjudication](newsletter/drafts/issue-019-8b-adjudication-2026-07-11.md), all in the category of &quot;compressed correctly, but onto language that was load-bearing&quot;: your row-14 recentering sentence back verbatim (&quot;They wanted the bill not to rise because of a private company&#x27;s new demand&quot;); the promise-question&#x27;s &quot;become rules a company can be **held to**&quot; (it echoes the title&#x27;s &quot;Unenforced&quot; — the transform&#x27;s &quot;are enforceable&quot; flattened it); the exact mnemonic **&quot;the vote comes after the numbers&quot;** (your own directed formulation from rev. 5 — the transform&#x27;s &quot;the vote follows the numbers&quot; was close but not the named reform); the ladder intro; the &quot;not *yet* evidence&quot; hedge on GS-5; two cadence beats; the whole-bargain sentence; and the typography, which got flattened a second time.
+
+One pilot note worth keeping for the Issue-20 checkpoint: across 8A and 8B, the born-plain + constraint-sheet pattern worked — 8A caught a genuine baseline defect (the missing protected line), and 8B&#x27;s declined-cuts behavior shows the no-compress list held. That&#x27;s logged in row 37.
+
+**What remains on Issue 19:**
+1. **Step 8** (internal, on your go): the mini-drift check of v0.9 against the pre-transform v0.7, the full Issue Review Checklist, and closing the last open source item (the approval-chain local specifics).
+2. **Step 9 NIR** — your final manual ChatGPT Pro run, packet staged from whatever Step 8 passes.
+3. Step 10 adjudication → Step 11 final package.
+
+Say the word for Step 8.</div>
+</div>
+<div class="turn human author-input" id="turn-185">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 9:02 PM PT</div>
+<div class="bubble-text">Go</div>
+</div>
+<div class="turn ai logged-output" id="turn-186">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:03 PM PT</div>
+<div class="bubble-text">Running Step 8 — the checklist gate, the mini-drift check, and the last source close-out. Loading the checklist and the NIR base guide first:</div>
+</div>
+<div class="turn ai logged-output" id="turn-187">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:05 PM PT</div>
+<div class="bubble-text">Now staging the Step 9 NIR packet — the final manual run:</div>
+</div>
+<div class="turn ai logged-output" id="turn-188">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:07 PM PT</div>
+<div class="bubble-text">**Step 8 is complete — 🟡 pass to Final NIR, with no body blockers. The last verification item is closed, and your Step 9 packet is staged.**
+
+Three things happened in this gate, all in the [checklist artifact](newsletter/drafts/issue-019-issue-review-checklist-2026-07-11.md):
+
+**1. Cluster 21 closed at [P] grade.** The JLARC Appendix L read settled the approval-chain&#x27;s local layer: Fairfax, Loudoun, and Prince William hold 80% of Virginia&#x27;s data centers; by-right approval genuinely exists there (Prince William&#x27;s overlay actually *expanded* by-right density in 2019 to attract the industry); and Fairfax and Loudoun have been converting zones from by-right to special-permit since 2023–24. Every load-bearing claim cluster in the essay is now verified to primary sources — nothing remains open except the publication-time register re-checks.
+
+**2. The 8A/8B mini-drift check: no drift.** Against the pre-transform v0.7 baseline — thesis and landing unchanged, no new claims, no confidence or caveat movement, and the protected essentials came out *net-improved* (the restored spine line).
+
+**3. The full checklist passed** — mode declared as Explainer, claim-typing clean, falsifiability genuine (the failure-condition footer plus disclosed search protocols), the complete adversarial sequence documented, calibration and landing-drift confirmed, anchors auditable, the Origin gate clean, and the **specificity red-list scan clean** (nothing author-identifying, no PHI, no family material, no third-party issues). The 🟡 items are all standard package-stage work: the three-line transparency footer, the thumbnail, label stripping plus publishing the source package, the time-sensitivity re-check (the pending uncapped 2028/29 PJM results being the one to watch), and the final length confirmation.
+
+**Your last manual run — Step 9, the Final Narrative Integrity Review:**
+1. Open [prompts/issue-019-nir-step9-prompt-2026-07-11.md](newsletter/prompts/issue-019-nir-step9-prompt-2026-07-11.md)
+2. Copy everything below `## PASTE EVERYTHING BELOW THIS LINE` (~30KB)
+3. Run in ChatGPT Pro, 5.6 Ultra, highest reasoning
+4. Return the raw output
+
+This one is scoped differently from the earlier reviews: pure narrative entropy — end-to-end coherence, drift, repetition, buried ledes, comprehension friction — with the research layer explicitly off the table (it&#x27;s settled and separately auditable). The packet carries the full protected-sentence and substance-rule constraint sheet. When it returns, Step 10 adjudicates it, and then Issue 19 moves to the final package.</div>
+</div>
+<div class="turn human author-input" id="turn-189">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 9:25 PM PT</div>
+<div class="bubble-text">Final NIR results:
+
+[The author pasted the complete output of the manually run final Narrative Integrity Review — a single-pass outside review returning one Critical, ten Material, and nine Minor findings with a publish-after-fixes verdict. The full review and its finding-by-finding adjudication are preserved in the issue&#x27;s working files; the Critical finding — a temporally impossible pre-decision &quot;audited ledger&quot; — became the published price-tag/receipt split.]</div>
+</div>
+<div class="turn ai logged-output" id="turn-190">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:30 PM PT</div>
+<div class="bubble-text">The NIR verdict is &quot;publish after listed fixes&quot; — one Critical (a real category slip: the pre-decision &quot;audited ledger&quot; is impossible under the essay&#x27;s own definition), ten Material, nine Minor. I&#x27;ll adjudicate into **v1.0**, then — per the ultracode standard now in effect — run a multi-agent verification workflow over the result before calling Step 10 done. Saving the verbatim output and building v1.0 first:</div>
+</div>
+<div class="turn ai logged-output" id="turn-191">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:31 PM PT</div>
+<div class="bubble-text">Now v1.0 — the Step 10 adjudicated draft:</div>
+</div>
+<div class="turn ai logged-output" id="turn-192">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:33 PM PT</div>
+<div class="bubble-text">Now the verification workflow over v1.0 — three independent auditors before I call Step 10 done:</div>
+</div>
+<div class="turn ai logged-output" id="turn-193">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:33 PM PT</div>
+<div class="bubble-text">While the verifiers run, the Step 10 adjudication record:</div>
+</div>
+<div class="turn ai logged-output" id="turn-194">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:35 PM PT</div>
+<div class="bubble-text">The workflow will notify me on completion — standing by for its results.</div>
+</div>
+<div class="turn ai logged-output" id="turn-195">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:35 PM PT</div>
+<div class="bubble-text">All three verifiers are running against v1.0. While they work, here&#x27;s where Step 10 stands: the NIR&#x27;s Critical finding (the temporally-impossible pre-decision &quot;audited ledger&quot;) is fixed with the price-tag/receipt split; 9 of 10 Material and 7 of 9 Minor findings are applied; and three items are flagged for your call rather than applied — the critic&#x27;s proposed rewrite of your recentering sentence, the &quot;So is the opposition&quot; precision swap, and the optional object on the closing price-tag line. Full dispositions are in the [Step 10 record](newsletter/drafts/issue-019-nir-adjudication-2026-07-11.md). I&#x27;ll report the verification results the moment the workflow returns.</div>
+</div>
+<div class="turn ai logged-output" id="turn-196">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:39 PM PT</div>
+<div class="bubble-text">All three verifiers are back: **constraints PASS with zero findings** (every protected sentence verbatim, every substance rule intact), fix-application PASS with three minor notes, and the cold reader caught three genuine comprehension defects plus useful minors. Let me get the truncated tail, then apply the repairs:</div>
+</div>
+<div class="turn ai logged-output" id="turn-197">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:42 PM PT</div>
+<div class="bubble-text">**Steps 9 and 10 are complete. Issue 19 is at v1.0 — verified, source-settled, and one review away from the final package.**
+
+**The Step 10 adjudication** accepted the NIR&#x27;s Critical finding — and it was the review&#x27;s best catch: the essay&#x27;s pre-decision &quot;audited ledger&quot; was temporally impossible by its own definition (you can&#x27;t audit costs that haven&#x27;t been incurred). v1.0 splits the instrument cleanly: **the price tag** before the decision (a labeled forecast, built on the same bases the later audit will use, beside the separate modeled estimate) and **the receipt** after service begins (audited actuals, model rerun). That repair propagates through the receipt section, the sequencing rule, and the clearance — and it makes the close sharper, since &quot;the household sees the price tag&quot; now names a defined artifact. Nine of ten Material and seven of nine Minor findings landed; I rejected one (the proposed replacement of the dossier-grounded &quot;make them pay more of their own cost, and keep building&quot; summary) and held the protected-text items for you.
+
+**Then the verification workflow ran three independent auditors over v1.0:** the constraint audit passed with **zero findings** — every protected sentence verbatim, every substance rule intact; the fix-application check passed with three parity notes; and a cold first-time reader caught three real comprehension defects, all repaired — including a genuine embarrassment: the restored spine line &quot;Even the best rule *states*&quot; garden-paths (&quot;states&quot; reads as a verb), so it now reads **&quot;Even the states with the best rules have no receipt.&quot;**
+
+**Four flags await your call on [v1.0](newsletter/drafts/issue-019-builder-draft-v1.0-nir-adjudicated-2026-07-11.md)** (consolidated in its Builder notes):
+1. Your opening want-sentences — kept as you directed them; the NIR and cold reader each proposed variants (default-payer framing / tense smoothing). Your call whether to keep or adopt either.
+2. &quot;So is the **opposition**&quot; (applied — voiced opposition isn&#x27;t collective refusal); veto restores &quot;refusal.&quot;
+3. The closing price-tag line — optional object (&quot;expected to add *to grid costs and market pressure*&quot;); not applied since the close is yours verbatim.
+4. The de-garden-pathed spine line above; veto restores the compound-noun form.
+
+After your review, **Step 11 packages it**: transparency footer, new-style thumbnail, label strip, the source package published as the Reference surface, the time-sensitivity re-check (the uncapped 2028/29 PJM auction results are still pending and will be material if they land before you publish), and the Beehiiv paste artifacts — with publication itself yours, per the standing boundary.</div>
+</div>
+<div class="turn human author-input" id="turn-198">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 9:58 PM PT</div>
+<div class="bubble-text">(1) Opening want-sentences — keep current; reject default-payer reframe and tense smoothing.
+(2) “So is the opposition” — keep; do not restore “refusal.”
+(3) Closing price-tag object — do not add “to grid costs and market pressure.”
+(4) Spine line — keep “Even the states with the best rules have no receipt.”
+Proceed to Step 11</div>
+</div>
+<div class="turn ai logged-output" id="turn-199">
+<div class="who">AI editorial process &middot; July 11, 2026, 9:59 PM PT</div>
+<div class="bubble-text">All four flags resolved to the current text — v1.0 is final-form, zero edits needed. Proceeding to Step 11: the publication package. First, stripping the internal labels to produce the publication text and building the Beehiiv paste artifact:</div>
+</div>
+<div class="turn ai logged-output" id="turn-200">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:00 PM PT</div>
+<div class="bubble-text">Paste artifact built with the triad as the experienced ending. Now the thumbnail — checking for the existing brand-asset generator:</div>
+</div>
+<div class="turn ai logged-output" id="turn-201">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:01 PM PT</div>
+<div class="bubble-text">The house pattern exists — per-issue HTML + `generate.py`. Following it exactly:</div>
+</div>
+<div class="turn ai logged-output" id="turn-202">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:02 PM PT</div>
+<div class="bubble-text">The thumbnail rendered on the house pattern — Night navy, Iowan serif, gold rule, eclipse ring, everything center-safe for the archive crop. Now the final package document:</div>
+</div>
+<div class="turn ai logged-output" id="turn-203">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:06 PM PT</div>
+<div class="bubble-text">Package doc and edit-log row 40 are in. Now the three canonical docs — reading the sections I need to update:</div>
+</div>
+<div class="turn ai logged-output" id="turn-204">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:06 PM PT</div>
+<div class="bubble-text">The banner and live-work paragraph are located. Updating canonical-state.md first — new live paragraph, old one demoted to the audit trail:</div>
+</div>
+<div class="turn ai logged-output" id="turn-205">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:07 PM PT</div>
+<div class="bubble-text">Now the EIP canonical-state — locating the Pilot-1 / item-10 line:</div>
+</div>
+<div class="turn ai logged-output" id="turn-206">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:08 PM PT</div>
+<div class="bubble-text">All updates are in. One final verification sweep of the package artifacts before handing off:</div>
+</div>
+<div class="turn ai logged-output" id="turn-207">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:08 PM PT</div>
+<div class="bubble-text">The grep found one match of a label-like pattern in the paste artifact — checking whether it&#x27;s real residue or a false positive:</div>
+</div>
+<div class="turn ai logged-output" id="turn-208">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:09 PM PT</div>
+<div class="bubble-text">Clean — the only hit was the intentional PJM source link; zero claim-label residue anywhere in the paste file. **Step 11 is complete: Issue 19 is publication-ready.**
+
+## The package
+
+- **[issue-019-beehiiv-paste-2026-07-11.md](newsletter/drafts/issue-019-beehiiv-paste-2026-07-11.md)** — the paste-ready body. Essay ends on the rule/receipt/say triad, then the transparency footer (What this is / Confidence: Medium-high / What would change our mind), then &quot;What would prove this essay wrong&quot; as the methodology footer, then the grouped 22-link Sources block. Labels stripped and verified twice.
+- **Thumbnail** — issue-19.png in the local brand-assets folder, house pattern (Night navy, Iowan, gold rule, eclipse ring), 1200×630, built center-safe for the archive crop, visually QA&#x27;d.
+- **[issue-019-final-package-2026-07-11.md](newsletter/drafts/issue-019-final-package-2026-07-11.md)** — your pre-publication checklist, the staged Step-13 landing-outcome ledger row (diagnostic-only), and the full manifest.
+
+Your four flag resolutions required zero draft edits — v1.0 text is final as reviewed. Edit-log row 40 is appended, and canonical-state, PROCESS-MAP, and the EIP canonical doc all now read &quot;Step 11 complete, publication-ready, publication J-only.&quot;
+
+## What you do next (publishing is yours per the standing boundary)
+
+1. **Day-of Time-Sensitivity re-check first** — the one live risk. The **2028/29 PJM auction** closed July 4 and results are pending; it runs **uncapped**, so if results land before you publish, the shortage/price passages need a refresh pass — ping me and I&#x27;ll stage it. Quick glance also at GS-5 appeal status, Ohio 2025-1458, the PJM backstop FERC filing, and TMI.
+2. Paste into Beehiiv — title **&quot;Unseen and Unenforced&quot;**, subtitle **&quot;Who pays for AI&#x27;s grid?&quot;** — upload the thumbnail, run your usual chrome check, publish web → send email.
+3. Tell me when it&#x27;s live: I&#x27;ll verify the public page, append the ledger row date, flip the canonical docs to post-publication monitoring, and stage the follow-on gates (audio companion, World Behind slice + EDR, Origin Card, X posts) one at a time on your go.
+
+One pilot note worth carrying to the Issue-20 checkpoint: all three manual gates earned their keep — 8A caught the dropped protected line, 8B&#x27;s declined-cuts list matched the constraint sheet exactly, and the NIR caught the temporally impossible pre-decision &quot;audited ledger&quot; that became the price-tag/receipt split. Pilot 1&#x27;s gate chain is complete end-to-end under the manual-execution rule.</div>
+</div>
+<div class="turn human author-input" id="turn-209">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 10:20 PM PT</div>
+<div class="bubble-text">It&#x27;s live on Beehiiv</div>
+</div>
+<div class="turn ai logged-output" id="turn-210">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:20 PM PT</div>
+<div class="bubble-text">Issue 19 is live — verifying the public page now, then closing out the publication chain (ledger row, edit log, canonical docs to post-publication monitoring).</div>
+</div>
+<div class="turn ai logged-output" id="turn-211">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:20 PM PT</div>
+<div class="bubble-text">The public site is signalandnoise.email. Fetching the archive to find Issue 19&#x27;s live URL:</div>
+</div>
+<div class="turn ai logged-output" id="turn-212">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:21 PM PT</div>
+<div class="bubble-text">The homepage listing doesn&#x27;t show it yet (likely CDN cache). Trying the direct slug:</div>
+</div>
+<div class="turn ai logged-output" id="turn-213">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:21 PM PT</div>
+<div class="bubble-text">Cloudflare blocks curl — switching to the browser pane to load the live archive:</div>
+</div>
+<div class="turn ai logged-output" id="turn-214">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:22 PM PT</div>
+<div class="bubble-text">It&#x27;s on the homepage — Jul 11, correct title and subtitle. Opening the post itself for the content verification:</div>
+</div>
+<div class="turn ai logged-output" id="turn-215">
+<div class="who">AI editorial process &middot; July 11, 2026, 10:27 PM PT</div>
+<div class="bubble-text">Verified live and closed out. **Issue 19 is up, intact, and Pilot 1 is complete** — with two small items needing your hand.
+
+## QA of the live page — clean
+
+[signalandnoise.email/p/unseen-and-unenforced](https://www.signalandnoise.email/p/unseen-and-unenforced) renders correctly: full essay text-identical to the paste artifact at every sentinel I checked (the 6,500 MW label, the $9.3B/$23.1B never-a-range sentence with its parenthetical, the $13.8B nesting, the JLARC pairing, Gallup&#x27;s triple scope, the price-tag/receipt split, and all the protected spine lines). The triad is the experienced ending, both footers and the grouped Sources render, the who-decides table came through as a real table, and the social card (og:image) is the house-pattern issue-19.png. Title, subtitle, byline, and date all correct.
+
+Hair-trigger re-checked at verification: the **2028/29 PJM auction results are still unpublished** (only the [2027/28 results](https://insidelines.pjm.com/pjm-auction-procures-134479-mw-of-generation-resources/) exist; the [auction calendar](https://www.esaipower.com/capacity-market-auction-calendar/pjm-capacity-auction-calendar/) confirms the 28/29 run just closed). The essay&#x27;s &quot;latest auction&quot; framing is accurate as published, and this stays the top monitoring item — when results land, I&#x27;ll flag whether anything warrants a post-publication note.
+
+## Two things for you
+
+**1. The standing disclosure line is missing from the live post — my packaging omission.** Every issue ends with the italic pen-name/AI-disclosure line (Issue 18&#x27;s live page has it; my paste artifact left it out, so Issue 19 lacks it). One Beehiiv edit fixes it — add this as the final italic line, after Sources:
+
+&gt; *Signal &amp; Noise is written under the pen name Synthia Cipher. AI tools draft and critique; the human author owns the editorial judgment, final wording, and published claims. If something here is wrong, the fault is the author&#x27;s, not the algorithm&#x27;s.*
+
+I&#x27;ve appended it to the paste artifact so the file now matches the intended final state.
+
+**2. The landing-outcome ledger was empty — Issue 18&#x27;s row was never appended.** Pilot 0&#x27;s Step-13 append got missed. I&#x27;ve added **Issue 19&#x27;s row** (other-asym ratepayer-protection · probe-match yes, strong-same-direction · contested y · CC n). For the **Issue 18 backfill**: probe-match = partial is on record; I&#x27;d propose direction `other-asym (process-integrity; principle held open)` based on the selector card, but the classification is yours — say the word and I&#x27;ll append it.
+
+## Bookkeeping done
+
+Edit-log row 41, the ledger row, canonical-state, PROCESS-MAP, and the EIP canonical are all updated to published state; the EIP now records Pilot 1 as complete with the probe-match result and the Issue-20 checkpoint data (all three manual gates caught something real).
+
+Follow-on gates staged and waiting on your go, one at a time: audio companion → World Behind slice + EDR (+ the probe-match methods note) → Origin Card → X posts → curator refresh.</div>
+</div>
+<div class="turn human author-input" id="turn-216">
+<div class="who">The author &middot; development turn &middot; July 11, 2026, 10:32 PM PT</div>
+<div class="bubble-text">1. Done, 2. Agree, Please proceed to the next steps</div>
+</div>
+</div>
+
+<p class="navline"><a href="../">Origin</a> &middot; <a href="../structure/">Structure</a> &middot; <a href="../reference/">Reference</a> &middot; <a href="../crosswalk/">Crosswalk</a></p>
+</body>
+</html>
