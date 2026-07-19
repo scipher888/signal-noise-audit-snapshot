@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extended Development Record - Who Has to Check the AI in Your Medical Record?</title>
+<link rel="stylesheet" href="../conversation/conversation.css">
+<style>body{max-width:900px}.frame{border:1px solid var(--line);border-radius:10px;padding:.95rem 1.05rem;margin:1.2rem 0 1.6rem;background:#fcfcfc}.frame p{margin:.45rem 0}.frame .label{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}.session{border-top:1px solid var(--line);padding-top:1.15rem;margin-top:2.1rem;color:#333}.thread{margin-top:1.35rem}.turn{max-width:92%;border-radius:16px;margin:.72rem 0;padding:.8rem .95rem}.human{margin-right:16%}.ai{margin-left:8%;max-width:96%}.logged-output .who::after{content:" \00b7 public-safe";font-style:italic;text-transform:none;letter-spacing:0}.bubble-text{white-space:pre-wrap;overflow-wrap:anywhere}.logged-output .bubble-text{font-size:.96rem}.navline{font-size:.9rem;color:var(--muted);margin:1.4rem 0}.navline a{margin-right:.45rem}.gap-note{border-style:dashed;background:#fffdf8}@media(max-width:720px){body{padding-left:1rem;padding-right:1rem}.turn,.ai,.human{max-width:100%;margin-left:0;margin-right:0}}</style>
+</head>
+<body>
+<p class="kicker">The World Behind the Words &middot; Issue 20 &middot; Verbatim layer</p>
+<h1>Extended Development Record - Who Has to Check the AI in Your Medical Record?</h1>
+<p class="lede">The preserved, public-safe author–AI conversation behind Issue 20: the rejected evidence-gate frame, the restored reliance question, the readable-register experiment, the narrative repairs, the source-fidelity correction, and publication.</p>
+
+<div class="frame"><span class="label">Reader note</span>
+<p>Author bubbles preserve the wording, typos, false starts, and mid-thought changes found in the two source-session logs. AI bubbles preserve the visible editorial responses. Tool calls, shell traces, system wrappers, background-agent notifications, private paths and run identifiers, unrelated operations, and post-scope process review are omitted or redacted.</p>
+<p>Three long third-party review or rewrite pastes are summarized in place because they are not the author–AI conversation; one retransmission is marked. Short discussion of their findings remains where it occurred. The author’s sealed pre-process diagnostic is not published; an automated eight-word overlap check is run against this page before handoff.</p>
+<p>This record shows process load and constraint. It does not prove that the published essay is true, safe, or trustworthy.</p>
+</div>
+
+<div class="frame"><span class="label">Completeness note</span>
+<p>“Full verbatim” here means every visible author and AI text turn in the two located Issue 20 main source sessions, within the stated scope, except for the disclosed public-safety, harness, tool, and third-party-paste omissions. It does <strong>not</strong> mean the development history was continuously preserved. Two gaps are marked below. The edit log documents the missing stages, but summaries and finished artifacts are not passed off as verbatim dialogue.</p>
+<p>The scope begins with the author’s July 14 question and ends with the AI’s immediate July 18 publication and source-process closeout. The later keep/trim/kill process review is outside the Issue 20 development record.</p>
+</div>
+
+<p class="navline"><a href="../">Origin</a> &middot; <a href="../structure/">Structure</a> &middot; <a href="../reference/">Reference</a> &middot; <a href="../crosswalk/">Crosswalk</a> &middot; <a href="https://www.signalandnoise.email/p/who-has-to-check-the-ai-in-your-medical-record">Published issue</a></p>
+<p class="meta">Sources: two preserved Issue 20 author–AI source sessions, the live Issue 20 edit log, and saved draft/review artifacts. Private operational details are omitted.</p>
+
+<div class="thread">
+<h2 class="session">Session 1 — The evidence-gate question is rejected, the broader reliance question is restored, and the early arc is challenged</h2>
+<div class="turn human author-input" id="turn-001">
+<div class="who">The author &middot; development turn &middot; July 14, 2026 at 4:41 PM PDT</div>
+<div class="bubble-text">Hey Claude, I&#x27;m thinking of writing an essay on this topic: &quot;When clinical AI tools enter practice on [sealed diagnostic wording redacted]?&quot;, but is this even the right question to ask? [sealed diagnostic wording redacted]? And is &quot;what kind of evidence&quot; even part of what needs to be resolved/settled? I kind-of feel like &quot;what kind of evidence&quot; is missing the point. What do you think?</div>
+</div>
+<div class="turn ai logged-output" id="turn-002">
+<div class="who">AI editorial process &middot; July 14, 2026 at 4:43 PM PDT</div>
+<div class="bubble-text">Your instinct is right, but I&#x27;d sharpen *why* it&#x27;s right, because &quot;evidence doesn&#x27;t matter&quot; is the wrong lesson to draw. The evidence question isn&#x27;t wrong so much as it&#x27;s asked in the wrong tense and aimed at a gate that doesn&#x27;t exist. Two structural problems sit underneath it:
+
+**1. &quot;Settled&quot; is a category error for this domain.** The question imports the drug-approval model: run the trial, adjudicate once, the claim stays true because the molecule stays the same molecule. A clinical AI claim has no such stability. Performance is a perishable, local fact — conditional on site, case mix, EHR documentation quirks, upstream data pipelines, the model version, and the workflow wrapped around it. The Epic sepsis model is the canonical case: strong claimed performance, then an external validation (Wong et al., JAMA Internal Medicine 2021) found an AUC of ~0.63 at a real site, and the tool was eventually rebuilt. And even a *true* claim decays — populations drift, documentation practices change, the vendor ships version 4.2. So no quantity or quality of evidence can ever &quot;settle&quot; the claim in the sense the question imagines. The honest reframe is from **verdict to maintenance**: not &quot;what evidence convinces us once?&quot; but &quot;what arrangement keeps the claim continuously true, and who is accountable when it stops being true?&quot; Evidence still matters enormously — but as an ongoing process (silent-mode deployment, local validation, drift monitoring, decommissioning triggers), not as a one-time admission ticket.
+
+**2. &quot;What should count&quot; presupposes a counting-house.** For drugs, there&#x27;s a place where evidence is weighed and has the power to say no. For most clinical AI as actually deployed — non-device CDS, EHR-vendor-bundled tools, in-house models — that place mostly doesn&#x27;t exist. Tools enter care through procurement and vendor bundling, not through an evidentiary gate; your own question&#x27;s premise (&quot;enter practice on demos&quot;) concedes this. Adoption precedes evidence, routinely. So asking what evidence *should count* skips the prior institutional question: who counts it, at what moment, with what authority, and what happens after yes. That&#x27;s why the question feels like it&#x27;s missing the point — it&#x27;s a normative question addressed to a referee who hasn&#x27;t been hired.
+
+On your second question — what actually needs to change — I&#x27;d say the load-bearing items are institutional and infrastructural, and they differ by audience:
+
+- **Institutions** need verification capacity, not just standards: algorithm oversight committees with real authority (the P&amp;T-committee analogue some systems now run), shadow-mode evaluation before activation as default practice, post-deployment monitoring, and — almost universally missing — predefined *kill criteria*. Everyone has an adoption process; almost no one has a decommissioning process.
+- **Clinicians** need calibrated reliance, not trust. The empirical reality is that clinicians don&#x27;t adopt on evidence anyway — they adopt on workflow fit and defaults, and de-adopt on one salient bad case. What they lack is the information to know *when* the tool is in its competence zone and when to override, plus liability rules that don&#x27;t punish them both for following it and for ignoring it.
+- **Patients** need disclosure and recourse more than they need trial results — knowing an algorithm was involved, and having somewhere to go when it fails.
+
+Notice that evidence regimes are embedded in all three, but never as the headline. So to answer you directly: &quot;what kind of evidence&quot; is genuinely *part* of what needs resolving — but it&#x27;s downstream of &quot;what keeps claims true over time&quot; and &quot;who has the standing to demand proof.&quot; An essay that answers the evidence question alone would re-derive consensus that already exists in the reporting-guideline literature (DECIDE-AI, CONSORT-AI, local-validation guidance) and miss the interesting part.
+
+If I were sharpening the essay question, I&#x27;d try something like: *&quot;A clinical AI&#x27;s accuracy is a perishable fact about a particular place and time — so performance claims can&#x27;t be settled, only maintained. What has to exist for that maintenance to happen, and who answers when a claim quietly stops being true?&quot;* That keeps your original question alive inside it (evidence is the raw material of maintenance) but relocates the weight to where you sense it belongs.
+
+One more reason to like the reframe, given where this would likely run: &quot;claims that decay and the machinery that keeps them honest&quot; is squarely a correspondence-over-time story — it&#x27;s an Anchors &amp; Ropes problem where the anchor itself moves. The original framing would have made it a policy explainer; the reframe makes it an epistemics essay, which is your lane.</div>
+</div>
+<div class="turn human author-input" id="turn-003">
+<div class="who">The author &middot; development turn &middot; July 14, 2026 at 5:00 PM PDT</div>
+<div class="bubble-text">I agree with your sharper essay question framing.  Please update  the relevant canonical docs with this new direction for Signal &amp; Noise Issue 20:  [private working path redacted]
+    * [private working path redacted]
+    * [private working path redacted]
+    * [private working path redacted]</div>
+</div>
+<div class="turn ai logged-output" id="turn-004">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:00 PM PDT</div>
+<div class="bubble-text">I&#x27;ll update these Signal &amp; Noise docs with the reframed Issue 20 direction. Let me first read the current state of each surface to match existing conventions before editing.</div>
+</div>
+<div class="turn ai logged-output" id="turn-005">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:00 PM PDT</div>
+<div class="bubble-text">Now let me read the Issue 20 question brief (the Step 1 authority) and a couple of recent decision docs to match the format and grounding.</div>
+</div>
+<div class="turn ai logged-output" id="turn-006">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:05 PM PDT</div>
+<div class="bubble-text">This is a coherent set of edits I can hold in one pass. Before writing, one substantive flag that shapes the edits: what you asked me to encode is a **reframe of Issue 20&#x27;s central question inside the existing Direction A**, executed during the post–Step 1 / pre–1C pause. That has two consequences I&#x27;ll handle carefully so the doc cascade stays honest:
+
+1. The reframe changes the *locked question*, which is carried verbatim in [private working location redacted] — the Step 1 authority. If I update [internal working file] but not the brief, the two disagree and the resume cascade misdirects 1C. So I&#x27;m extending to that fifth file (you listed four), preserving the original question verbatim for audit rather than deleting it.
+2. The sealed default-prior probe was captured against the *old* question. I won&#x27;t touch the sealed file, but the reframe means its Step-1B probe-match is now against a superseded prior — I&#x27;m recording that as an explicit resume decision, not silently resolving it.
+
+Let me mark the phase and make the edits.</div>
+</div>
+<div class="turn ai logged-output" id="turn-007">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:05 PM PDT</div>
+<div class="bubble-text">Now the primary artifact — the decision doc:</div>
+</div>
+<div class="turn ai logged-output" id="turn-008">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:05 PM PDT</div>
+<div class="bubble-text">Now [internal working file] — header, session status, stage declaration, the Issue 20 block, the 1C resume checklist, and the don&#x27;t-reopen note:</div>
+</div>
+<div class="turn ai logged-output" id="turn-009">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:06 PM PDT</div>
+<div class="bubble-text">Now the question brief — the Step 1 authority. Status line, a prominent reframe block after the metadata, and markers preserving the original question and frames verbatim for audit:</div>
+</div>
+<div class="turn ai logged-output" id="turn-010">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:06 PM PDT</div>
+<div class="bubble-text">Now the increment one-liner, the working-title family, and the &quot;Next Gate&quot; resume list inside the brief:</div>
+</div>
+<div class="turn ai logged-output" id="turn-011">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:07 PM PDT</div>
+<div class="bubble-text">Now the PROCESS-MAP — a reusable Step 1 rule for question reframes during the post–Step 1 pause and its interaction with the sealed probe (correctly scoped as general process, with Issue 20 as the reference instance):</div>
+</div>
+<div class="turn ai logged-output" id="turn-012">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:07 PM PDT</div>
+<div class="bubble-text">Now the diagnostic matrix CSV — three targeted edits inside the [internal tracking row] row (status, notes, last-verified):</div>
+</div>
+<div class="turn ai logged-output" id="turn-013">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:07 PM PDT</div>
+<div class="bubble-text">The last edit&#x27;s context string was off. Let me find the exact Last-Verified context in the [internal tracking row] row:</div>
+</div>
+<div class="turn ai logged-output" id="turn-014">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:07 PM PDT</div>
+<div class="bubble-text">The Validation Check cell ends with a closing quote before the date — I omitted it. Fixing the Last-Verified date now:</div>
+</div>
+<div class="turn ai logged-output" id="turn-015">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:07 PM PDT</div>
+<div class="bubble-text">All five surfaces are edited. Let me validate the CSV didn&#x27;t break its column structure, then run verification passes.</div>
+</div>
+<div class="turn ai logged-output" id="turn-016">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:07 PM PDT</div>
+<div class="bubble-text">CSV is intact (11 rows × 19 columns). Now two independent verification passes — the specialized doc-consistency checker on the cascade, and an adversarial reviewer on whether the reframe stayed within Step-1 discipline and whether any other file still carries the old question:</div>
+</div>
+<div class="turn ai logged-output" id="turn-017">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:14 PM PDT</div>
+<div class="bubble-text">Both passes agree the reframe is internally coherent on the load-bearing points, but they converge on one genuine structural weakness worth fixing now, plus a few staleness leftovers. The convergent finding: I baked the *perishability premise* into both opposing frames and the rationale, so nothing in the live opposition contests it — the guardrails only ask 1C to *test* it. That quietly undercuts the &quot;question, not thesis&quot; discipline the reframe was supposed to honor. I&#x27;ll fix that (it&#x27;s additive/protective and makes the encoding more faithful to the author&#x27;s intent), plus the staleness items. I&#x27;ll keep the author&#x27;s approved question wording itself and flag the one wording choice that&#x27;s genuinely his.
+
+Let me read the one other cascade file flagged (EIP state) before editing.</div>
+</div>
+<div class="turn ai logged-output" id="turn-018">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:14 PM PDT</div>
+<div class="bubble-text">Now the fixes. First the two staleness items the checker flagged (EIP pointer + the brief&#x27;s &quot;Why This Question&quot; and &quot;Reader-Landing Check&quot; sentences that still present the old object as current):</div>
+</div>
+<div class="turn ai logged-output" id="turn-019">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:15 PM PDT</div>
+<div class="bubble-text">Now the substantive protection both reviewers converged on — the perishability premise was baked into both frames and the rationale, so nothing live contested it. I&#x27;ll recast the access side as an affirmative position (that can deny/bound perishability and reclaim monitoring-as-evidence), require the 1D slate to seat a perishability-bounding candidate, scope the premise as a 1C-verify lead, add the emotional-legibility-transfer and &quot;who answers&quot; boundaries, and soften the &quot;further from Issue 9&quot; claim to a managed expectation. Starting with the decision doc:</div>
+</div>
+<div class="turn ai logged-output" id="turn-020">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:16 PM PDT</div>
+<div class="bubble-text">Now canonical-state — recast the frames as both-affirmative, require the 1D perishability-bounding candidate, and soften the increment claim:</div>
+</div>
+<div class="turn ai logged-output" id="turn-021">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:16 PM PDT</div>
+<div class="bubble-text">Now the brief&#x27;s REFRAME block — recast frames as both-affirmative, add the emotional-legibility and &quot;who answers&quot; boundaries, soften the increment, and require the 1D bounding candidate in the resume list:</div>
+</div>
+<div class="turn ai logged-output" id="turn-022">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:17 PM PDT</div>
+<div class="bubble-text">Finally, mark the new PROCESS-MAP rule as pilot-provisional (the reviewer&#x27;s governance flag — it&#x27;s an n=1 mechanism inside a pilot with a keep/trim/kill review still pending at Issue 20):</div>
+</div>
+<div class="turn ai logged-output" id="turn-023">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:17 PM PDT</div>
+<div class="bubble-text">All edits complete. Let me run a final consistency sweep to confirm the round-2 edits (recast frames, softened increment, bounding-candidate requirement) landed consistently and no stale old-framing remains unmarked:</div>
+</div>
+<div class="turn ai logged-output" id="turn-024">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:18 PM PDT</div>
+<div class="bubble-text">Done. The reframe is encoded across the doc cascade and verified by two independent passes (a consistency audit and an adversarial review), whose findings I then folded back in.
+
+## What changed
+
+**The reframe itself** — Issue 20&#x27;s locked *question* moves from &quot;what evidence should count before a clinical-AI claim is settled enough to change care&quot; to your sharpened framing: *a clinical AI&#x27;s accuracy is a perishable, local fact, so a claim can&#x27;t be settled, only maintained — what has to exist for that maintenance, and who answers when a claim quietly stops being true?* This is a **question reframe inside Direction A**, executed in the post–Step 1 / pre–1C pause — direction unchanged, still a question (not a thesis), old question preserved verbatim for audit rather than deleted.
+
+**Surfaces updated:**
+- [internal working file] — new decision doc, the primary artifact (the two smuggled assumptions, the reframed question, what it subsumes, boundaries).
+- [internal working file] — header, session status, stage declaration, Issue 20 block, 1C resume checklist, don&#x27;t-reopen note.
+- [internal working file] — a reusable Step-1 rule for question-reframes-during-pause and their sealed-probe interaction.
+- [internal working file] — row [internal tracking row] (status, notes, last-verified); CSV integrity confirmed (11×19).
+
+**Two files you didn&#x27;t list but I extended to, because leaving them would have created live contradictions in the resume path:**
+- [internal working file] — the Step 1 *authority* that carries the locked question. Added a prominent REFRAME block; preserved the original question and frames verbatim, marked superseded.
+- [internal working file] — its live-issue pointer still called this an &quot;evidence-standard question&quot; (the consistency audit flagged it).
+
+## What the verification passes caught — and what I did
+
+Both passes independently landed on the **same structural weakness**: I&#x27;d baked the perishability premise into *both* opposing frames and the rationale, so nothing in the live opposition contested it — the guardrails only asked 1C to *test* it. That quietly undercuts the &quot;question, not thesis&quot; discipline the reframe was meant to honor. I fixed it (additive, protective — doesn&#x27;t reverse your decision):
+- Recast the access side as an **affirmative position** that may *deny or bound* perishability and reclaim monitoring-as-evidence, instead of a mere objector.
+- Required the **Step 1D slate to seat a perishability-bounding candidate at full strength**, so the premise is contested by a live rival.
+- Scoped the premise as a **1C-verify lead** (&quot;for a broad class of tools, to a degree 1C must establish&quot;), matching how the brief already handles empirical anchors.
+- Added boundaries: emotional legibility doesn&#x27;t transfer for free (the old &quot;marketing overclaim / physician-level&quot; heat is anchored to the evidence-gate frame; the new object is cooler); &quot;who answers&quot; is epistemology of accountability, not a governance-design brief; and softened &quot;further from Issue 9&quot; to a *distinct axis whose collapse-risk is managed at the landing*.
+- Marked the new PROCESS-MAP rule **pilot-provisional** (n=1 inside a pilot with a keep/trim/kill review still due at Issue 20).
+
+I did **not** touch the sealed probe, claim-ledger (CL-004 stays adjacent, not restated), constitution, or checklist — the reframe is issue-content, not process-gate, level.
+
+## Two things that are genuinely yours to decide at resume (recorded as open items, not blockers)
+
+1. **Sealed-probe re-capture.** The probe was captured against the *old* question, so its Step-1B probe-match now compares against a superseded prior. Recommendation: re-capture against the reframed question before 1C (fresh context-free agent, old probe left sealed and archived), or accept and record the match as weakened. I did not unseal or alter it.
+2. **Question stem wording.** You approved the *declarative* form (&quot;accuracy **is** a perishable fact… so claims **cannot** be settled&quot;). I kept it as the essay&#x27;s framing hook and built the apparatus to contest the premise — but if you&#x27;d rather it not assert the premise at all, the decision doc records an interrogative alternative (&quot;*Is* a clinical AI&#x27;s accuracy perishable enough that…?&quot;).
+
+Nothing is committed — the working tree already had unrelated modifications, so I left staging alone.</div>
+</div>
+<div class="turn human author-input" id="turn-025">
+<div class="who">The author &middot; development turn &middot; July 14, 2026 at 5:48 PM PDT</div>
+<div class="bubble-text">Honestly, I think we&#x27;ve drifted too far out into the weeds here. If I&#x27;m reading this correctly, our entire question now revolves around how we continually challenge/verify that AI is accurate enough to use clinically. To be honest, this is just a super narrow sliver of the larger question ([sealed diagnostic wording redacted]?)and if we have to drill in to this level of granularity/specificity and therefore obscurity (in regard to the larger question), I honestly think we need to find something else to write about.  Moreover, once this narrow question is answered for the first time, ongoing assessment/review probably wont&#x27; be terribly difficult.  Also, while this may be a legit policy/industry question, it also may become a moot point once AI is integrated into workflows.   All this is to say I think we may need to go back to the drawing board.</div>
+</div>
+<div class="turn ai logged-output" id="turn-026">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:50 PM PDT</div>
+<div class="bubble-text">You&#x27;re mostly right, and the cleanest way to see it is through your own pipeline: Step 1 is *supposed* to lock a broad, alive question and let 1D manufacture the sharpness later through rival landings. My reframe pre-did the narrowing at Step 1 — collapsing &quot;what has to change for reliance?&quot; down to &quot;what keeps accuracy claims true?&quot; — which is my lane (claim epistemics), not the question that was actually driving you. Let me first make the canonical docs truthful about this so no future session runs 1C on a question you&#x27;ve disavowed, then give you my full assessment.</div>
+</div>
+<div class="turn ai logged-output" id="turn-027">
+<div class="who">AI editorial process &middot; July 14, 2026 at 5:51 PM PDT</div>
+<div class="bubble-text">The docs now say the true thing — reframe adopted, then same-day flagged by you as likely over-narrow; direction under review; 1C blocked until you decide. Nothing downstream was ever built (no 1C, no slate, no arc), the sealed probe is untouched, and the probe question resolves itself if the question changes — so the cost of walking away from the reframe is close to zero. That&#x27;s your process working, not failing: hold/recast is a routing outcome.
+
+Now the assessment you actually asked for.
+
+**Where you&#x27;re right, and why it&#x27;s decisive.** The reframe really is a sliver of your motivating question. &quot;What has to change for institutions, clinicians, and patients to *rely* on AI tools&quot; spans liability, workflow fit, procurement, incentives, trust calibration, disclosure, training — and I collapsed it to one input: the epistemics of accuracy claims. That&#x27;s the drift: you asked an *adoption and reliance* question; I answered with a *claim-maintenance* question, because that&#x27;s my home turf. And the granularity→obscurity worry is real on its own terms: an S&amp;N reader can feel &quot;should we trust AI in medicine?&quot;; &quot;who owns drift monitoring for deployed model claims?&quot; is a policy-wonk object that would need heavy premise-building before it could land. Your own brief already listed &quot;pure regulation explainer&quot; as a kill condition — the reframe steered toward that cliff.
+
+**Where I&#x27;d push back — you should decide with this on the table.** Two of your three supporting arguments are contestable. &quot;Once answered the first time, ongoing review won&#x27;t be terribly difficult&quot; — the empirical record so far says the opposite; sustained post-deployment monitoring is exactly what institutions have repeatedly failed to do, and it&#x27;s an ongoing capacity, not a one-time setup. And &quot;moot once AI is integrated into workflows&quot; — integration doesn&#x27;t moot silent decay, it muffles it. But notice: neither disagreement rescues the essay. If your honest prior is &quot;this is a solved-once problem,&quot; the essay would have to spend most of its length litigating its own premise — which is your obscurity objection restated.
+
+**The interesting thing hiding in your objection.** The *strong* version of your mootness point is genuinely good, and it belongs to your bigger question, not mine: if clinical AI gets absorbed the way consumer tech was — trust follows use, nobody re-litigates evidence — then reliance may arrive *by default*, before it&#x27;s earned, regardless of what evidence regimes exist. Nobody ever asked what evidence &quot;settled&quot; Google Maps. That&#x27;s a live, contestable, slightly unsettling candidate answer to &quot;what has to change for people to rely on clinical AI?&quot; — namely: *possibly nothing, and that&#x27;s the problem.* The fact that your drawing-board argument spontaneously generated a landing candidate for the broader question suggests the broader question is alive in you, even if my narrowing of it is dead.
+
+**So, three routes:**
+
+1. **Re-lock at your altitude, same Direction A.** Lock something close to your original words — *what would actually have to change for institutions, clinicians, and patients to rely on clinical AI?* — and let 1C/1D do the sharpening, which is what your pipeline is built for. Broad at Step 1 is legal; sharp is manufactured at the slate. The maintenance material demotes to one rival landing among several (so today&#x27;s work isn&#x27;t wasted), and your absorption-by-default instinct gets seated as another. This needs a fresh sealed probe and an amended brief — cheap.
+2. **Full drawing board.** Park Direction A, fresh selection from the next weekly brief. Right call if medical-AI as a whole has gone cold for you, not just this cut of it.
+3. **Proceed on the reframe anyway** — I no longer recommend this; the author not believing in the question is disqualifying by itself.
+
+My recommendation is to sleep on route 1 before defaulting to route 2: Direction A was your pick from the brief only yesterday, the selection signal was real, and your own counterargument turned out to be a landing candidate. But it&#x27;s genuinely your call, and either way the docs are staged for it — tell me &quot;re-lock at the broader question,&quot; &quot;park it,&quot; or &quot;new topic,&quot; and I&#x27;ll wire whichever you choose.</div>
+</div>
+<div class="turn human author-input" id="turn-028">
+<div class="who">The author &middot; development turn &middot; July 14, 2026 at 6:09 PM PDT</div>
+<div class="bubble-text">the larger question is still alive. I agree with route 1 and I totally agree that &quot;The strong version of your mootness point is genuinely good, and it belongs to your bigger question, not mine: if clinical AI gets absorbed the way consumer tech was — trust follows use, nobody re-litigates evidence — then reliance may arrive by default, before it&#x27;s earned, regardless of what evidence regimes exist. Nobody ever asked what evidence &quot;settled&quot; Google Maps. That&#x27;s a live, contestable, slightly unsettling candidate answer to &quot;what has to change for people to rely on clinical AI?&quot; — namely: possibly nothing, and that&#x27;s the problem.&quot;</div>
+</div>
+<div class="turn ai logged-output" id="turn-029">
+<div class="who">AI editorial process &middot; July 14, 2026 at 6:13 PM PDT</div>
+<div class="bubble-text">Route 1 it is — and your endorsement of the absorption-by-default candidate is itself a declared prior now, which your process wants recorded at issue-open (a charismatic candidate the author loves is exactly what 1C/1D must test rather than crown). I&#x27;ll wire the re-lock: fresh sealed probe against the new question first (context-free agent, background), then the doc cascade.</div>
+</div>
+<div class="turn ai logged-output" id="turn-030">
+<div class="who">AI editorial process &middot; July 14, 2026 at 6:13 PM PDT</div>
+<div class="bubble-text">Probe capture is running. Now the re-lock decision doc:</div>
+</div>
+<div class="turn ai logged-output" id="turn-031">
+<div class="who">AI editorial process &middot; July 14, 2026 at 6:15 PM PDT</div>
+<div class="bubble-text">Now stamp the superseded artifacts, and read the current canonical-state region to replace the Issue 20 block precisely:</div>
+</div>
+<div class="turn ai logged-output" id="turn-032">
+<div class="who">AI editorial process &middot; July 14, 2026 at 6:18 PM PDT</div>
+<div class="bubble-text">Route 1 is fully wired. Issue 20 is re-locked at your altitude and ready to resume at Step 1C.
+
+**The locked question** (your phrasing, with &quot;clinical&quot; pinned for Direction A): *[sealed diagnostic wording redacted]?* — with a framing-sensitivity flag recorded at lock, because the phrasing presumes something must change and one live frame contests exactly that. The opposing frames are now **earned-reliance** (name the real changes that would make reliance warranted) vs **default-absorption** (reliance arrives through integration and habit before it&#x27;s earned — the Google Maps path — and the sharper worry is what unearned trust costs). Both written affirmative and steelmannable.
+
+**What I did with your endorsement of the absorption candidate:** it&#x27;s seated as a candidate posture for the 1D slate, *and* recorded as the sharpest declared capture risk in the brief — &quot;absorption enthusiasm.&quot; Your process treats an author-loved candidate at issue-open exactly like an author prior: 1C has to test it against how clinical AI actually enters practice (procurement, vendor bundling, scribe uptake) and against the frictions that make medicine unlike consumer tech (liability, med-legal culture), and 1D must seat the strongest earned-reliance rival at full strength. The maintenance/perishability material from this morning survives as one candidate thread under earned-reliance — demoted, not deleted, with its boundaries traveling with it.
+
+**A fresh sealed probe (v2) is captured** against the re-locked question — a context-free agent wrote it directly to [internal working file] and returned only a confirmation word, so its content has never entered this conversation. Probe v1 is void (captured against a question superseded twice) and stays sealed, never read; 1B probe-match runs against v2.
+
+**The artifact chain:** new Step 1 authority is [internal working file] (plain-language, carrying forward the translations, seeds, anchors, and kill conditions that transfer, plus new absorption-specific ones); the re-lock decision is [internal working file]; the old brief and the reframe decision doc are stamped superseded with everything preserved for audit; [internal working file], the diagnostic matrix ([internal tracking row]), the EIP pointer, and the PROCESS-MAP reframe rule (now exercised twice on its first day, still pilot-provisional) all agree. Verified by grep sweep: the live question appears in exactly the right three files, the dead framings only inside superseded-marked records.
+
+**On resume**, 1C&#x27;s first research target is the one your question actually turns on: how clinical AI enters practice today — because whether the absorption story is empirically true, class by class, is what separates &quot;possibly nothing changes&quot; from wishful contrarianism. Nothing is committed to git; I also flagged a one-click chip to refresh the stale newsletter row in the workspace [internal working file] (it still says Issue 15 is in flight).</div>
+</div>
+<div class="frame gap-note"><span class="label">Preservation gap 1</span>
+<p>The preserved source session jumps from the author’s July 14–15 relock of the broader reliance question to a July 16–17 resume after research, landing-slate, selection, and early-arc work had advanced elsewhere. The edit log and saved artifacts document those stages, but no continuous author–AI dialogue for them was found in the source-session archive used here. They are not reconstructed.</p>
+</div>
+<div class="turn human author-input" id="turn-033">
+<div class="who">The author &middot; development turn &middot; July 16, 2026 at 6:41 PM PDT</div>
+<div class="bubble-text">Hey Claude,  what are the next steps for Signal &amp; Noise? See files below:     * [private working path redacted]
+    * [private working path redacted]
+    * [private working path redacted]
+    * [private working path redacted]</div>
+</div>
+<div class="turn ai logged-output" id="turn-034">
+<div class="who">AI editorial process &middot; July 16, 2026 at 6:42 PM PDT</div>
+<div class="bubble-text">A lot has advanced since I last touched this — Issue 20 has run through 1C, 1D, 1B, and now a 1A arc draft. Since you&#x27;re asking &quot;what&#x27;s next,&quot; let me read the current live artifacts (not the stale ones I remember) so my answer is grounded in what&#x27;s actually on disk, not what I recall.</div>
+</div>
+<div class="turn ai logged-output" id="turn-035">
+<div class="who">AI editorial process &middot; July 16, 2026 at 6:42 PM PDT</div>
+<div class="bubble-text">Let me verify the one thing the immediate next step depends on — that the external critique packet is actually staged and paste-ready (the manual-execution rule requires it to be self-contained), plus confirm the other referenced artifacts exist.</div>
+</div>
+<div class="turn ai logged-output" id="turn-036">
+<div class="who">AI editorial process &middot; July 16, 2026 at 6:44 PM PDT</div>
+<div class="bubble-text">Verified the state is coherent: every artifact the resume path references exists, and the external-critique packet at [internal working file] is genuinely paste-ready (the full arc is inlined below a &quot;PASTE EVERYTHING BELOW THIS LINE&quot; marker, so the author needs no editing). The only referenced file that&#x27;s absent is [private working location redacted] — which is correct, since it&#x27;s created when Builder starts.
+
+## Where Issue 20 sits
+
+Paused immediately after the **Step 1A arc draft**. Landing **H — &quot;It Already Entered Through the Chart&quot;** (habit-asymmetric) is selected and locked; the arc is written to the should/is language rule with earned-reliance (E), class-split (S), and post-go-live-answerability (M) all carried as full-strength dissent. Nothing is drafted as prose yet.
+
+## The immediate next step is yours, and it&#x27;s a manual gate
+
+Per the External Frontier-Model Execution Rule, the arc critique is a **hand-run, not something I can execute** via gateway/API/OpenRouter:
+
+1. **You review the arc** ([internal working file]).
+2. **You paste the staged packet** into the current ChatGPT flagship at highest reasoning (pin as of 2026-07-11 was ChatGPT 5.6 Ultra — confirm it&#x27;s still the flagship before running).
+
+## Then it hands back to me, then to Builder
+
+3. I save the returned critique under [private working location redacted], adjudicate it as **input, not authority** against the brief, constitution, style guide, and H&#x27;s carry-conditions. If it surfaces a genuinely better *direction*, that routes back to Step 1B — not a silent arc rewrite.
+4. If the arc is accepted (possibly revised), I draft **Builder v0.1** from the accepted arc + should/is rule + carry-conditions, and open the `[L]` live edit-log at that point.
+5. Then the rest of the run order: **2A** outside full-draft review *(another manual ChatGPT-flagship run)* → **5** Core Battery → **6** Referee → **7** Editor → **7A** Reference Link *(these four are AI-process)* → **8A/8B** Reader Translation + Entropy Compression *(manual runs)* → **8** checklist → **9** Final NIR *(manual run)* → **10** adjudicate → **11** package → **12** QA → **13** publish + ledger row → **14** social.
+
+## Two things worth having on your radar
+
+- **Manual gates cluster at both ends.** Between here and publish you personally run the external model ~5 times — the 1A critique now, 2A right after Builder, then 8A/8B/9 near the end. The long AI-only stretch is the middle (Battery → Referee → Editor → Reference Link). So the human-in-the-loop load is front- and back-weighted; the middle mostly runs without you.
+- **Issue 20 triggers a post-publication keep/trim/kill.** It&#x27;s the decision-point issue for three pilots — the Landing Slate Protocol, Plain-Language Dev Artifacts, and the 8A/8B Reader Translation/Entropy Compression pilot. The landing-outcome ledger row is pre-staged (habit-asym / probe-match opposite-spine / contested-yes / Council-no). Easy to forget once the issue ships.
+
+One observation, since it was the live worry when this direction was chosen: the arc is well-armored against the &quot;absorption enthusiasm&quot; capture risk you flagged. E is steelmanned at full justice in Movement 2 *specifically so H can&#x27;t win by charisma*, there&#x27;s a five-point kill-conditions footer, and the probe-match — which came back **opposite-spine** (the sealed model independently produced an E+M reform program while you chose H) — is correctly quarantined as diagnostic-only and barred from the essay body. That&#x27;s the anti-capture design doing its job: your favored landing was selected *over* the model&#x27;s default, with the model&#x27;s dissent preserved as mandatory steelman rather than buried.
+
+Net: the ball is in your court for the arc review + external critique. Send me the returned critique output whenever you&#x27;ve run it and I&#x27;ll adjudicate and move to Builder.</div>
+</div>
+<div class="turn human author-input" id="turn-037">
+<div class="who">The author &middot; development turn &middot; July 16, 2026 at 6:46 PM PDT</div>
+<div class="bubble-text">Tell me something Claude.  Take a look at the beginning/The situation and then at the landing and let me know if you see any problems here.</div>
+</div>
+<div class="turn ai logged-output" id="turn-038">
+<div class="who">AI editorial process &middot; July 16, 2026 at 6:49 PM PDT</div>
+<div class="bubble-text">Good instinct to put those two side by side. Let me check one thing in the dossier first — whether the evidence gathered at 1C actually measures *reliance* or only *deployment*, because that&#x27;s where I think the problem lives.</div>
+</div>
+<div class="turn ai logged-output" id="turn-039">
+<div class="who">AI editorial process &middot; July 16, 2026 at 6:50 PM PDT</div>
+<div class="bubble-text">Yes — I see real problems, and they live exactly in the gap between those two spots. Ranked:
+
+## 1. The opening proves *entry*; the landing claims *reliance*. Those aren&#x27;t the same thing.
+
+Movement 1&#x27;s anchors are purchase and integration facts: 71% of hospitals **used predictive AI integrated with the EHR**, ~90% on the market-leading vendor, ~80% **sourced from the EHR developer**. Every one of those measures *deployment* — what institutions bought and wired in. The landing then declares: &quot;reliance **already arrived** through the chart, the vendor relationship, and workflow habit.&quot; But presence in the chart is not reliance. A hospital can deploy a sepsis score that clinicians distrust and tune out; installed-and-ignored is common, and it&#x27;s the *opposite* of reliance. The arc even carries both failure modes side by side without noticing they cut against the spine: cost #1 (rubber-stamp review) is *over*-reliance, while &quot;review quality uneven&quot; and alert-dismissal patterns are *under*-reliance. And for patients the claim fails entirely on the arc&#x27;s own terms — cost #3 says patients &quot;never get clear notice&quot; and &quot;inherit the institution&#x27;s confidence.&quot; Someone who doesn&#x27;t know the tool exists isn&#x27;t *relying* on it; they&#x27;re *exposed* to it. The locked question names three acceptors — institutions, clinicians, patients — and the honest per-audience answer is: institutions adopted, clinicians rely unevenly and often unexamined, patients were never asked. The landing flattens that into &quot;reliance arrived,&quot; which is the one claim the opening&#x27;s evidence doesn&#x27;t carry.
+
+What makes this sting: your own dossier already states the honest version. Its research spine (line 315) says clinical AI &quot;**enters care** through software and workflow purchases **long before anyone settles what would make reliance *earned***&quot; — entry settled, reliance *unsettled and congealing*. Slate H hardened that into &quot;reliance arrived by habit,&quot; and the arc inherited it. Even H&#x27;s burden-assignment does the same substitution — it demands opponents show a gate that &quot;blocks **adoption**,&quot; when the contested thing is reliance.
+
+The fix *sharpens* H rather than weakening it: the spine becomes &quot;entry was settled by procurement; **trust is now being settled by habit instead of evidence** — unevenly, class by class, mostly without examination.&quot; That matches every anchor you have, keeps the habit-asym direction fully intact, and actually gives the shoulds more force — unearned trust stops being a done deal to lament and becomes something congealing *right now*, which is when norms can still bite.
+
+## 2. The verdict lands before the opposition speaks.
+
+Movement 1&#x27;s turn already announces the conclusion: &quot;the first honest answer for large classes is: **reliance is already here** … not a pretend redo of entry.&quot; Then Movement 2 gives E its &quot;full justice&quot; steelman — *after* the reader has been told E&#x27;s framing is moot. That steelman isn&#x27;t a live contest; it&#x27;s an autopsy. The reader knows E loses before E speaks. Given that the declared capture risk for this issue is **absorption enthusiasm**, an arc that opens by pre-adjudicating in H&#x27;s favor is precisely the shape capture would take — the arc&#x27;s own compliance table says &quot;E never painted as mere delay,&quot; but the *ordering* does that work regardless of the wording. Fix: end Movement 1 on the situation&#x27;s tension (&quot;so has the acceptance question already been answered by habit?&quot;) and let the adjudication happen where it already exists — the turn at the end of Movement 2.
+
+## 3. The &quot;late premise / fantasy front door&quot; polemic is aimed at the question you retired, not the one you locked.
+
+M5 says treating &quot;what needs to change before acceptance&quot; as &quot;still only debating entry&quot; is a late premise — but notice the substitution inside that sentence: the locked question asks about *acceptance*, and the polemic answers about *entry*. &quot;Enter practice&quot; was the **original 2026-07-13 question**, superseded twice. The live question — *what needs to change [sealed diagnostic wording redacted]?* — is perfectly compatible with &quot;entry already happened&quot;; what needs to change can be how trust forms *after* entry. And the essay proves this itself: M5&#x27;s shoulds (real review, stake-matched proof, named answerability, disclosure) **are** an answer to &quot;what needs to change.&quot; So &quot;the premise is late&quot; overclaims, and &quot;stop performing a fantasy national pre-gate&quot; swings at a position nobody in the essay holds — even E&#x27;s own steelman argues warrant-tracking and ongoing checks, not a re-do of entry. Retarget the polemic explicitly at the entry-gate *framing* (which genuinely is late) and let the essay answer the reliance question it was asked.
+
+---
+
+**Process handling if you agree:** all three fixes are content-increasing refinement *within* H — the habit-asym direction survives, the claim gets narrower and more checkable — so this is arc-revision territory plus a one-line selector-card addendum, not a 1B re-selection. Since #1 also touches slate-H&#x27;s thesis wording, it should be logged as an authored refinement, not silently drifted. And one practical recommendation: fix the arc **before** you spend the manual ChatGPT run — the staged packet embeds the current M1/M5 text, and your manual runs are the expensive resource; better to point the outside critic at the strongest version. Say the word and I&#x27;ll revise the arc, re-stage the packet, and log it.</div>
+</div>
+<div class="turn human author-input" id="turn-040">
+<div class="who">The author &middot; development turn &middot; July 16, 2026 at 6:59 PM PDT</div>
+<div class="bubble-text">Agree. Please proceed.</div>
+</div>
+<div class="turn ai logged-output" id="turn-041">
+<div class="who">AI editorial process &middot; July 16, 2026 at 7:01 PM PDT</div>
+<div class="bubble-text">On it. First, let me load the three artifacts I&#x27;ll be modifying or matching format against — the staged packet (which embeds the old arc text), the selector card&#x27;s tail (where the addendum goes), and an existing edit-log for format — plus check whether the diagnostic matrix references the old spine wording:</div>
+</div>
+<div class="turn ai logged-output" id="turn-042">
+<div class="who">AI editorial process &middot; July 16, 2026 at 7:05 PM PDT</div>
+<div class="bubble-text">**Batch 4** — arc dissent-ledger row, Builder notes, stage snapshot:</div>
+</div>
+<div class="turn ai logged-output" id="turn-043">
+<div class="who">AI editorial process &middot; July 16, 2026 at 7:06 PM PDT</div>
+<div class="bubble-text">Packet re-staged. Now the selector-card addendum and the decision-doc addendum:</div>
+</div>
+<div class="turn ai logged-output" id="turn-044">
+<div class="who">AI editorial process &middot; July 16, 2026 at 7:08 PM PDT</div>
+<div class="bubble-text">Done — all three accepted fixes are implemented as **arc rev. 2**, the external packet is re-staged to match, and everything is logged live. Verified: the blanket &quot;reliance arrived&quot; phrasing is gone from every live artifact, while the slate and selection-block records keep their original wording untouched as the 1D/1B audit trail.
+
+**What changed, by artifact:**
+
+- **[Arc rev. 2]** — the spine now claims exactly what the anchors carry: *entry was settled by procurement; the trust that matters is being settled by habit rather than by evidence — unevenly, per acceptor, mostly unexamined.* Movement 1 ends on the tension (&quot;by evidence — or by habit?&quot;) instead of the verdict, which now lands at the end of Movement 2 *after* E&#x27;s full-justice steelman. Movement 3 gains the role-split-is-a-reliance-split passage (institution signed; clinician rubber-stamps or tunes out; patient exposed, never asked). Movement 5 lands per-acceptor, names the **entry-gate framing** (not the reliance question) as what&#x27;s late, and adds a fourth should — patients should be told when AI materially shapes care, because exposure is not acceptance. Also new: an entry/reliance vocabulary rule for Builder, the tuned-out mirror cost, and kill-condition #6 (if trust-formation turns out to be predominantly evidence-tracked in practice, the &quot;settled by habit&quot; spine collapses).
+- **[Critique packet]** — re-staged with rev. 2 inlined, plus a new **constraint 7** telling the external reviewer to attack the fresh joint hardest: is entry-vs-reliance load-bearing or a semantic dodge, does the per-acceptor split hold, and is the deferred verdict stronger dramaturgy or a blunted opening. The expensive manual run now pressure-tests exactly the surgery we just did.
+- **[Decision addendum §5]** and a matching **selector-card addendum** record this as an authored, content-increasing refinement *within* habit-asym — direction unchanged, explicitly not a 1B re-selection.
+- **[Edit-log]** — opened early at arc stage (Issue 17 precedent) with both rows tagged `[L]`: your critique-request → the three accepted findings, and the implementation.
+- **[internal working file]** — session status, stage declaration, spine, carry-conditions (now including *entry ≠ reliance*), increment, and the do-not list (&quot;reliance arrived&quot; as a blanket fact is now a named forbidden move) all reflect rev. 2.
+
+**Your next step is unchanged, just on the better version:** review arc rev. 2, then paste the re-staged packet into the ChatGPT flagship at highest reasoning. When you bring back the output, I&#x27;ll save it, adjudicate it as input-not-authority, and — if the arc holds — move to Builder v0.1.</div>
+</div>
+<div class="turn human author-input" id="turn-045">
+<div class="who">The author &middot; development turn &middot; July 16, 2026 at 9:23 PM PDT</div>
+<div class="bubble-text">Landing work:
+* we should probably avoid:
+    * Assuming &gt; Clinicians - “some sign without reading, some tune out what they never trusted.”
+    * Assuming &gt; Patients - “have accepted nothing” 
+    * Stating the obvious (almost repeating Movement 1): “What is late, for these classes, is not the reliance question — it is the entry-gate framing of it: the picture in which we are all still at the front door deciding whether to let the tools in. Purchase data show that gate was never the main door.” 
+    * Stating: “The sharper job is:” 
+    * Saying we need to do things “honestly”. This is a given. It’s like saying we need to obey the laws of gravity. It undermines our argument when we say it out loud. 
+    * We need to vet the costs we are naming. Is there any data these are genuine costs? And if they are, is there anything realistically that anyone can actually do about these costs?
+    * Even this section “Someone should be answerable after go-live — even though that load often falls on clinicians without being named.”, needs vetting. Who or what should this someone be? Even if it is true (that someone besides clinicians and hospitals should be responsible), if there is no realistic path to “someone else being answerable” besides clinicians and hospitals, we should say so. And to be fair, hospitals and clinicians are, of their own volition, adopting these tools voluntarily (although perhaps less so for clinicians if AI workflows show up in their EMR).
+    * And to be honest, when AI shapes patient care within the context of an institution and clinicians, I’m not sure patients really care if AI is materially shaping their care - many probably already assume/know that it is, and the hospital and clinicians are already/currently the responsible parties, so I’m not sure there is a strong case for additional disclosure. After all, there is no disclosure for the vast majority of cognitive aids and digital tools that are already a part of healthcare. Why is special disclosure needed for AI?
+    * Re “Practical judgment change if true: Stop aiming the argument at the entry gate — for these classes entry is history, and the pre-gate was never their main door.” - we really can’t state this. It is way too obvious.
+    * And regarding “Aim it where the action is: the trust now congealing by habit, unevenly, mostly unexamined.”, some of the following is obvious: “Start arguments from the world as it is.”, “Treat &quot;doctors were happy&quot; and &quot;FDA cleared&quot; as what they are.”, “And stop reading the install base as a verdict on trust — it is a verdict on purchasing.”, and this section, “Spend seriousness where stake is high.”, is only useful if we can point to specific examples.
+
+Let me know what you think.</div>
+</div>
+<div class="turn ai logged-output" id="turn-046">
+<div class="who">AI editorial process &middot; July 16, 2026 at 9:27 PM PDT</div>
+<div class="bubble-text">Read through all of it carefully. Verdict up front: most of these are right and they share one diagnosis — the landing is still carrying **unvetted behavioral claims and self-commentary**, and after rev. 2 fixed the evidence-overreach in the spine, the same discipline now needs to reach the rest of M5. Two of your points I&#x27;d complicate rather than accept whole, and one of your points I think actively *strengthens* H in a way worth naming. Point by point:
+
+**Where you&#x27;re simply right, no argument:**
+
+- **&quot;The sharper job is:&quot; / &quot;honestly&quot; / &quot;Start arguments from the world as it is&quot; / &quot;Treat X as what they are.&quot;** All meta-commentary or platitude. &quot;Honestly&quot; is the worst offender — your gravity analogy is exactly it, and it&#x27;s also a micro trust-badge, which your own epistemic program forbids elsewhere (&quot;map, not proof&quot;). Claimed honesty does zero argumentative work; checkable claims *are* the honesty. This should become a banned-word rule for the issue: honest/honestly/genuinely/frankly never appear as self-description.
+- **The &quot;what is late&quot; passage and &quot;stop aiming at the entry gate.&quot;** Both now restate Movement 1 inside Movement 5 — redundant *and* obvious, and worse after rev. 2 moved the adjudication to M2. The landing must do only new work: state the judgment, not re-derive the setup. The only rescue for &quot;stop aiming at the entry gate&quot; would be naming someone who actually is aiming at it (a real debate, headline, or hospital-comms pattern still framed as &quot;should we let AI in?&quot;). If we can&#x27;t name one, it attacks nobody and should go.
+- **&quot;Spend seriousness where stake is high&quot; needs named examples.** Agreed — as written it&#x27;s a fortune cookie. The concrete form exists in our own class table: an ambient scribe&#x27;s seriousness looks like real note review and coding-integrity checks; an autonomous or diagnosis-steering tool&#x27;s looks like prospective local validation before go-live. With named tools (from the dossier, verified) it becomes usable; without, cut.
+
+**Where you&#x27;re right that it&#x27;s unvetted, but the evidence picture differs by half-claim:**
+
+- **&quot;Some sign without reading, some tune out.&quot;** The *tune-out* half has a strong published base — the alert-fatigue/override literature is large and quantified (override rates commonly reported in the 44–96% range across CDS systems; the Epic sepsis experience is the famous case). The *sign-without-reading* half is much weaker — mostly indirect (note-bloat/copy-paste literature, PHTI&#x27;s review-quality concerns), not a measured &quot;clinicians sign unread AI notes at rate X.&quot; So the fix isn&#x27;t deletion; it&#x27;s asymmetric: keep tune-out **with citations**, and either find real evidence for rubber-stamping or downgrade it to a named *risk* institutions themselves flag, not an asserted behavior. All of those citations are leads-to-verify, per the standing rule.
+- **&quot;Patients have accepted nothing.&quot;** Fair hit — and this one&#x27;s mine; rev. 2 replaced one assumption with a punchier assumption. Survey data (verify to primaries) shows something messier: most patients don&#x27;t know, a majority express discomfort in the abstract, and — your point — many probably assume software is involved everywhere. &quot;Accepted nothing&quot; overclaims; the defensible descriptive form is *delegated* acceptance: patients accept the institution, and the institution accepted the tool.
+
+**Where I&#x27;d push back or reframe:**
+
+- **Patient disclosure.** I concede most of this, and you should know your position has real scholarly backing — the informed-consent literature (Cohen&#x27;s Georgetown Law piece is the anchor) generally concludes current doctrine does *not* require disclosing decision-support tools, and the cognitive-aids parity argument (nobody discloses UpToDate, interaction checkers, MRI reconstruction algorithms) is genuinely hard to answer. So the blanket &quot;patients should be told when AI materially shapes care&quot; — my rev-2 addition — should die. What survives is narrow and isn&#x27;t AI-exceptionalist: recording consent for ambient scribes (already practice, grounded in privacy law, not AI-ness), and possibly the edge where AI *substitutes for* rather than informs clinician judgment. And here&#x27;s the part worth savoring: dropping the disclosure-should makes the essay *more* H-coherent, not less — &quot;patients experience clinical AI the way they experience every other invisible instrument of modern medicine: through their trust in the institution&quot; is an absorption claim. The disclosure demand was quietly E-flavored moralism living inside an H landing.
+- **&quot;Someone should be answerable&quot; — who?** Your voluntariness observation doesn&#x27;t weaken this thread; it sharpens it into the best sentence the essay doesn&#x27;t have yet. Walk the candidates: vendors disclaim by contract; regulators mostly don&#x27;t reach EHR-bundled predictive and ambient tools; so the realistic owner is **the institution that chose the tool** — which, as you say, chose voluntarily. That kills the vague &quot;someone somewhere&quot; and replaces it with: *the institution that made the purchase owns the tool&#x27;s ongoing performance, and today that ownership is mostly unnamed and unbudgeted inside the very institution that did the choosing* (the ASTP/ONC evaluation-incompleteness data supports &quot;unnamed/incomplete&quot;). And the voluntariness asymmetry becomes the real bind: **institutions chose, clinicians inherited the tool through the EMR, and the malpractice risk lands on the inheritor, not the chooser.** That&#x27;s non-obvious, per-acceptor, evidence-checkable, and it reframes cost #4 correctly — the problem was never &quot;nobody is responsible&quot; (the clinician very much is); it&#x27;s that choice, benefit, inspectability, and answerability sit with different parties. If verification shows even that has no realistic lever beyond internal governance — we say so explicitly, which is itself a sharp claim.
+
+**The cost-vetting demand — yes, and it&#x27;s a live test of H, which is a feature.** Each of the five costs needs: best available evidence, rough magnitude if known, a realistic lever, and who could pull it — or it gets cut as scenery. My prior read: silent slip and liability bind are well-documented as *phenomena* (drift case studies; the legal literature) with weaker magnitude data; inherited confidence is real as description but its &quot;cost&quot; needs reframing per above; rubber-stamp needs sourcing; unnamed answerability is the strongest once reframed institutionally. Honest caveat: if the vetting comes back showing clinician trust is mostly evidence-tracked and the costs don&#x27;t materialize, that&#x27;s kill-condition #6 doing its job — better to hit it now than after Builder.
+
+**What M5 becomes after your cuts** — and this is why I think your feedback improves rather than hollows it: the landing ends up standing on four legs, all non-obvious, all checkable: (1) trust is being settled by habit rather than evidence, unevenly per acceptor — now with sourced clinician-behavior claims; (2) the voluntariness asymmetry — chooser ≠ inheritor ≠ risk-bearer; (3) ownership of ongoing performance is unnamed inside the institutions that chose; (4) class-specific seriousness with named tools. Everything else was setup-repetition or self-narration.
+
+**Proposed sequence:** I run a targeted vetting pass to primaries (clinician over/under-reliance data, the five costs&#x27; evidence + levers, patient awareness/disclosure literature, the answerability candidates — HTI-1 transparency rules, accreditation moves, procurement indemnification) as a dossier addendum; then arc rev. 3 implementing your cuts plus the vetted rewrites; re-stage the packet; *then* you spend the manual ChatGPT run on the strongest version. Research is AI-process work — only the external critique itself is your manual gate. Say proceed and I&#x27;ll start the vetting pass.</div>
+</div>
+<div class="turn human author-input" id="turn-047">
+<div class="who">The author &middot; development turn &middot; July 16, 2026 at 9:37 PM PDT</div>
+<div class="bubble-text">Yes. Excellent. I am going to pause work for this evening. Please proceed with your proposed sequence, and when you are finished, update any relevant docs below and leave irrelevant docs, if any, unmodified with our progress here and next steps.     * [private working path redacted]
+    * [private working path redacted]
+    * [private working path redacted]
+    * [private working path redacted]</div>
+</div>
+<div class="turn ai logged-output" id="turn-048">
+<div class="who">AI editorial process &middot; July 16, 2026 at 9:39 PM PDT</div>
+<div class="bubble-text">Understood — I&#x27;ll run the full sequence tonight so it&#x27;s ready for your morning review. This is a substantive multi-stream research task, so I&#x27;m running the vetting pass as a workflow: eight parallel primary-source research streams (one per claim family), each followed by an adversarial fact-check agent that tries to refute the load-bearing figures before anything enters the arc.</div>
+</div>
+<div class="turn ai logged-output" id="turn-049">
+<div class="who">AI editorial process &middot; July 16, 2026 at 9:40 PM PDT</div>
+<div class="bubble-text">The vetting workflow is running — eight research streams, each chained into an adversarial fact-check of its load-bearing claims before anything enters the arc. When it completes I&#x27;ll be re-invoked automatically and will proceed with the dossier addendum, arc rev. 3, packet re-stage, and doc updates. Status note for the record: nothing has been edited yet this round; all writing happens after the evidence comes back.</div>
+</div>
+<div class="turn ai logged-output" id="turn-050">
+<div class="who">AI editorial process &middot; July 16, 2026 at 9:58 PM PDT</div>
+<div class="bubble-text">All 16 agents completed cleanly (8 research + 8 adversarial verification, ~370 primary-source fetches). The full result is too large to ingest raw, so I&#x27;ll extract a structured digest from the workflow journal first:</div>
+</div>
+<div class="turn ai logged-output" id="turn-051">
+<div class="who">AI editorial process &middot; July 16, 2026 at 10:06 PM PDT</div>
+<div class="bubble-text">Now re-staging the critique packet with the rev. 3 arc embedded:</div>
+</div>
+<div class="turn ai logged-output" id="turn-052">
+<div class="who">AI editorial process &middot; July 16, 2026 at 10:08 PM PDT</div>
+<div class="bubble-text">Now the decision addendum §6 and the edit-log rows:</div>
+</div>
+<div class="turn ai logged-output" id="turn-053">
+<div class="who">AI editorial process &middot; July 16, 2026 at 10:11 PM PDT</div>
+<div class="bubble-text">One packet edit missed on trailing whitespace — retrying with an inner substring, then the final verification sweep:</div>
+</div>
+<div class="turn ai logged-output" id="turn-054">
+<div class="who">AI editorial process &middot; July 16, 2026 at 10:12 PM PDT</div>
+<div class="bubble-text">The full sequence is complete. Everything verified: the do-not-use items appear nowhere in the arc or packet, self-narration survives only inside the rule text that bans it, all cross-references resolve, and [internal working file] was deliberately left unmodified — nothing process-level changed tonight.
+
+## What ran while you were away
+
+The vetting pass ran as a 16-agent workflow: 8 primary-source research streams (one per claim family you flagged), each followed by an independent adversarial fact-checker that fetched the cited primaries and tried to refute the load-bearing figures. Zero failures, ~370 source fetches. The durable output is [internal working file] — evidence grades, verified corrected figures, realistic levers with named owners, and a **binding 12-item do-not-use list** (misattributed quotes, wrong stat-pairings, untraceable figures the fact-checkers killed).
+
+## What the evidence said about your eight points
+
+Seven were confirmed or sharpened. The highlights:
+
+- **&quot;Someone should be answerable — who?&quot; got a definitive answer.** As of July 2026 there is *no* binding post-deployment performance accountability for clinical AI anywhere in the U.S. system: the one federal transparency rule (HTI-1&#x27;s model cards, developer-facing only) is **mid-repeal** under pending HTI-5; the new Joint Commission/CHAI certification is voluntary and certifies governance, not products; and not one hospital has a documented negotiated performance guarantee. So the owner is exactly who you said: **the institution that chose the tool** — it already owns performance in every practical sense and mostly hasn&#x27;t named or budgeted that ownership. Your voluntariness point became the landing&#x27;s second leg: institutions chose, clinicians inherited (85% say they want a voice in adoption), patients were never asked.
+- **The clinician claims split cleanly.** Tune-out is strongly measured (49–96% alert overrides across two systematic reviews — much of it clinically *appropriate*, which is its own indictment of alert quality; ~62% of evaluated alerts dismissed even for a well-liked sepsis model). Rubber-stamping just became measurable: a Jan 2026 preprint found **15.6% of 23,760 AI-drafted notes signed with every AI section unchanged** — kept, labeled as preprint, with the caveat that no-edit ≠ no-review.
+- **One genuine pushback on your hunch**, recorded honestly in the decision record: patients *do* say notice matters — 62.7% &quot;very true&quot; in a national probability sample, only ~5% indifferent. But your parity argument holds completely on the law and ethics (Cohen: &quot;in general&quot; no informed-consent duty; the AMA explicitly separates disclosure from consent; nobody ever disclosed UpToDate or computer-assisted ECG reads), and the one good measurement found disclosure costs ~0.1 on a 5-point scale. So the disclosure *should* stays dead as a landing pillar; the facts are reported descriptively — delegated trust concentrating the duty on the institution.
+- **A gift for the landing:** the one clinical-AI class that passed a real FDA autonomy gate (the IDx-DR lineage, authorized 2018) diffuses *slowest*, while the ungated classes diffuse fastest — **entry tracked authorization inversely**. And 100+ organizations still run the criticized sepsis model v1, five years after its failed validation. Habit over evidence, measured.
+
+## The arc is now rev. 3
+
+[The arc] implements every cut you listed: no &quot;the sharper job is,&quot; no honesty-labels anywhere (now a binding language rule), no Movement-1 restatement at the landing, no platitudes. The landing stands on four evidence-graded legs — habit-settled trust (measured), the choice/risk/exposure asymmetry, ownership resolved to the choosing institution, and class-budgeted seriousness with named metrics — and the practical-judgment line is now concrete: the reader&#x27;s question becomes *&quot;who at this institution owns this tool&#x27;s performance now that it&#x27;s here — and what do they watch?&quot;* The [critique packet] is re-staged with the rev. 3 arc inlined plus two new constraints aiming the external reviewer at the weakest joints: the inferential distance from the measured facts to &quot;settled by habit,&quot; and each landing leg independently.
+
+## Doc state and your next step
+
+[internal working file], the [diagnostic matrix] ([internal tracking row]), the [decision record] (new addendum §6), and the live [edit-log] (rows 3–4, tagged `[L]`) all reflect tonight&#x27;s work; PROCESS-MAP untouched; nothing committed to git. **On resume: you review arc rev. 3 — especially the four-legged landing and the patient-notification evidence — then run the staged packet manually in the ChatGPT flagship.** I&#x27;ll adjudicate the returned critique and, if the arc holds, open Builder v0.1.</div>
+</div>
+<div class="frame gap-note"><span class="label">Preservation gap 2</span>
+<p>The first preserved session ends after the third arc revision. The next preserved main session begins at the narrative-integrity stage. The intervening arc critique, early drafts, plain-language artifacts, adversarial checks, and v0.5 work are recorded in the Issue 20 edit log and working artifacts, but the corresponding main author–AI dialogue was not found. Standalone review sessions are not substituted for that missing conversation.</p>
+</div>
+<h2 class="session">Session 2 — The prose changes register, the narrative review catches regressions, the sources are re-checked, and the issue publishes</h2>
+<div class="turn human author-input" id="turn-055">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 7:23 AM PDT</div>
+<div class="bubble-text">Hey Claude, what is our next step for Signal &amp; Noise?
+
+* [private working path redacted]
+* [private working path redacted]
+* [private working path redacted]
+
+ • [private working path redacted]</div>
+</div>
+<div class="turn ai logged-output" id="turn-056">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:23 AM PDT</div>
+<div class="bubble-text">I&#x27;ll read the newsletter state docs to find the current resume anchor.</div>
+</div>
+<div class="turn ai logged-output" id="turn-057">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:23 AM PDT</div>
+<div class="bubble-text">Let me verify the state against actual artifacts.</div>
+</div>
+<div class="turn ai logged-output" id="turn-058">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:24 AM PDT</div>
+<div class="bubble-text">**Next step: stage the Final NIR packet for Issue 20 — then stop and hand it to you.**
+
+State verified against artifacts (canonical-state, PROCESS-MAP, matrix row [internal tracking row], and the drafts directory all agree — no drift):
+
+- Issue 20 is **paused post–checklist / pre–Final NIR** (Step 9)
+- Live prose: [internal working file] (~2,950 words, source-settled, landing H)
+- Checklist verdict: **🟡 pass to Final NIR** — no body blockers; the open boxes are all package-stage
+- No `issue-020-*nir*` prompt exists yet under [private working location redacted] — that&#x27;s the actual gap
+
+**The concrete unit of work:**
+
+1. I read the internal workspace [internal working file] + the Issue 19 NIR prompt as shape reference, and write [private working location redacted] — paste-ready, carrying v0.5, Referee constraints, protected essentials, the do-not-use list, and the liability-engine non-negotiable (contracts shield vendors; risk goes *down* to the clinician — not hospital→vendor dump).
+2. **I stop there.** Per the External Frontier-Model Execution Rule, you run it yourself in ChatGPT flagship at highest reasoning. I don&#x27;t route it through a gateway or OpenRouter.
+3. You return the output; I save + adjudicate it as input, not authority → freeze text (v0.6 if it moves).
+
+Then packaging (footer, strip labels, 7A URLs, HTI-5 re-check, thumbnail, Beehiiv HTML) → your publish.
+
+[Private integration-status detail omitted.]
+
+Want me to write the NIR prompt now?</div>
+</div>
+<div class="turn human author-input" id="turn-059">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 10:28 AM PDT</div>
+<div class="bubble-text">Before we do the NIR, I wan&#x27;t to to try one last experiment. The essay, while epistemically valid, is still almost unreadable from a human perspective. To mitigate, I&#x27;ve asked 4 state of the AI models to &quot;please rewrite the main points of the following essay in plain English&quot;, and the results are below. One, in particular, lands quite well from a human readability/understanding standpoint. I&#x27;m curious if you can guess which essay this is, and in any case, please let me know what you think about these modifications.
+
+[Four long third-party plain-English rewrite candidates omitted. They are preserved in the private working record but are not part of the author–AI conversation.]</div>
+</div>
+<div class="turn ai logged-output" id="turn-060">
+<div class="who">AI editorial process &middot; July 18, 2026 at 10:29 AM PDT</div>
+<div class="bubble-text">Now let me pull the binding do-not-use list and stage the four rewrites as files so I can audit them properly.</div>
+</div>
+<div class="turn ai logged-output" id="turn-061">
+<div class="who">AI editorial process &middot; July 18, 2026 at 10:34 AM PDT</div>
+<div class="bubble-text">My guess: **Grok 4.5.**
+
+But first, a flag you need to see: **the &quot;ChatGPT 5.6&quot; and &quot;Claude Fable&quot; outputs are word-for-word identical.** I diffed them to be sure — zero differences. Two different models don&#x27;t produce byte-identical multi-paragraph text; that&#x27;s almost certainly a paste duplication (or the same output attributed twice). So the guessing game only has three real candidates — and no, I&#x27;m not going to discover hidden virtues in the one with my name on it; it&#x27;s literally the same text as the ChatGPT one. If one of those two was your favorite, tell me which model actually produced it and re-paste the missing one.
+
+**Why Grok:** it&#x27;s the only one of the four that&#x27;s still an *essay*. The other three are summaries — accurate meeting-minutes (GPT/Fable) or punchy takeaways (Gemini). Grok&#x27;s is a genuine plain-English *translation* that keeps the architecture: the &quot;cuts both ways&quot; concession, the Epic sepsis case with the absence-handling intact (&quot;what is visible is persistence, not clear proof of re-earned reliance&quot;), the three-jobs split of &quot;reliance,&quot; the closing question triad, and the landing (&quot;default and habit—not evidence—have become policy&quot;). It reads at maybe a third of v0.5&#x27;s cognitive load while keeping ~90% of the epistemic content. If one of these &quot;lands well from a readability *and understanding* standpoint,&quot; it&#x27;s that one — Gemini is arguably punchier but it distorts what it&#x27;s summarizing.
+
+**Quick fidelity read** (I&#x27;ve launched a full multi-agent audit — every flagged movement is being adversarially verified against v0.5 and the binding do-not-use list; details shortly):
+
+- **Grok** — high fidelity. Keeps the liability direction correct (vendor contracts limit *vendor* exposure; &quot;contracts often push liability the other way&quot;), keeps clearance ≠ local warrant, keeps edit-rate-as-trigger-not-verdict, keeps TREWS as counterexample. A few soft spots (e.g. &quot;few have the same clear power to pull or pause&quot; quantifies what v0.5 deliberately leaves as &quot;remains thin&quot;; the surveys don&#x27;t support &quot;few&quot;).
+- **GPT/Fable** — safest text of the set, but it&#x27;s an abstract, not prose. Note it converts your carefully-litigated **should** language into &quot;must&quot; in places, and &quot;Patients should be told…&quot; is more prescriptive than v0.5&#x27;s &quot;notice is the cheapest test&quot; framing.
+- **Gemini** — the most readable in a pop sense and the least usable. It commits several banned moves outright: *&quot;why we are blindly trusting it&quot;* (the psychological-trust reframe — H is a structural diagnosis, explicitly not blind trust), *&quot;Local Testing is Dangerously Thin / AI is not getting the same treatment&quot;* (states as fact what v0.5 bounds as a public-assurance gap), *&quot;left holding the legal bag… even though they can&#x27;t control or turn off the AI&quot;* (drops the &quot;often,&quot; treats unsettled malpractice law as settled blame), and *&quot;they aren&#x27;t practicing evidence-based medicine&quot;* (a new accusation the essay never makes). It&#x27;s a tabloid edition of the argument.
+
+**What I think you should do with this** — the honest version, pending the audit: don&#x27;t swap v0.5 for any of these, but Grok&#x27;s version is proof that the readability problem is fixable *without* giving up the argument. The right move is a claim-locked readability revision: harvest Grok&#x27;s techniques (plain section headers, parenthetical inline definitions, shorter paragraph units, the enumerated three-reliances) into a **v0.6** that I adjudicate line-by-line so every bound, hedge, and label survives — then a mini drift-check, then NIR runs on v0.6 instead of v0.5. One more thing in your favor: part of what&#x27;s making v0.5 feel unreadable is the internal scaffolding — 23 inline [private working location redacted] source labels that readers will never see, since label-stripping is already a package-stage item. It reads meaningfully lighter without them. But the sentence-level density is real too, and Grok&#x27;s version shows the ceiling.
+
+Audit results incoming — I&#x27;ll give you the verified movement table and the ranked harvest list when it lands.</div>
+</div>
+<div class="turn ai logged-output" id="turn-062">
+<div class="who">AI editorial process &middot; July 18, 2026 at 10:45 AM PDT</div>
+<div class="bubble-text">The audit completed — 30 agents, all clean. Let me read the full results.</div>
+</div>
+<div class="turn ai logged-output" id="turn-063">
+<div class="who">AI editorial process &middot; July 18, 2026 at 10:47 AM PDT</div>
+<div class="bubble-text">Audit complete — 30 agents, every one of the 26 findings adversarially verified, **all 26 confirmed** (none refuted). Here&#x27;s the verified picture:
+
+## Scoreboard
+
+| Rewrite | Landing H preserved | Blockers | Major | Minor | Do-not-use hits |
+|---|---|---|---|---|---|
+| **Grok 4.5** | ✅ yes, structural | 0 | 3 | 7 | 0 |
+| **GPT/Fable** (identical) | ✅ yes | 0 | 1 | 3 | 0 |
+| **Gemini 3.1** | ❌ **no** | **3** | 3 | 6 | 1 |
+
+## What the audit confirmed
+
+**Grok** is an unusually faithful compression — liability direction, measured-absence framing, edit-rate-as-ceiling, the medication-alert baseline distinction, and clearance ≠ local warrant all survive. But its three **major** hedge losses are exactly the kind the pipeline exists to catch:
+1. Drops **&quot;under the study&#x27;s sepsis definitions&quot;** on the Wong validation — the hedge the Epic-vs-Wong dispute turns on, which 8B specifically preserved.
+2. **&quot;One large sample found&quot;** — erases the preprint status of the UC Irvine 15.6%/84.4% figure (confidence upgrade on a central statistic).
+3. **&quot;Improved versions… looked better&quot;** — flattens v2&#x27;s *better-discrimination-but-still-low-PPV* balance into a vindication, and drops &quot;still does not show how each site continuing on v1 applied its local bar.&quot;
+
+**GPT/Fable**: safest text, but one real major — *&quot;Vendors should remain responsible…&quot;* presupposes vendors currently *are* responsible, which is the **opposite** of the hold-harmless engine; it dropped v0.5&#x27;s &quot;today, familiar hold-harmless patterns often run the other way.&quot; Plus should→must upgrades.
+
+**Gemini**: confirmed unusable as copy. Three blockers: *&quot;why we are blindly trusting it&quot;* (the banned psychological reframe, installed as the thesis), *&quot;Local Testing is Dangerously Thin… AI is not getting the same treatment&quot;* (measured-absence violation stated as fact), and *&quot;can&#x27;t control or turn off the AI&quot;* (strips &quot;often,&quot; treats unsettled liability as settled blame). It&#x27;s the useful negative control: this is what the essay becomes if readability is bought with claim inflation.
+
+## The valuable part — why v0.5 is hard to read (verified diagnosis)
+
+Five mechanical causes, **none of which is the claims**: (1) 23 mid-paragraph source labels, some with methodology sub-clauses *inside* the bracket; (2) hedge density ~one scope-negation per sentence, each arriving as an interruption rather than fulfilling an announced frame; (3) em-dash definitions stacked up to three deep in one sentence; (4) multi-claim inventories run as ~190-word prose paragraphs; (5) only three headers across ~3,000 words, with coined terms introduced name-first.
+
+The harvest produced **8 ranked claim-safe moves** from Grok&#x27;s version — top five are near-zero-risk (claim-bearing headers promoted from already-adjudicated sentences; enumerating existing lists; one-claim-plus-its-hedge paragraphs; parenthetical-at-first-mention definitions; pre-framing caveat clusters à la *&quot;What we can (and can&#x27;t) read from behavior&quot;*). Moves 6–8 (sentence surgery, agent-first syntax, label restructuring) are medium/high risk with explicit discipline rules — the audit shows precisely where Grok slipped when doing them.
+
+**My verdict on your experiment:** it worked. Grok&#x27;s version proves the readability ceiling is much higher than v0.5 at near-zero epistemic cost — but &quot;near-zero&quot; isn&#x27;t zero, and its three majors are why no rewrite gets pasted in wholesale. The right move is a claim-locked v0.6 where I apply the harvest moves with every hedge, bound, and label preserved verbatim, then a mini drift-check, then NIR runs on v0.6. (And this is a keep/trim/kill datapoint: post-8A/8B output still failed your readability bar — the 8A pilot under-delivered on its core promise. Worth capturing at the post-issue review.)</div>
+</div>
+<div class="turn ai logged-output" id="turn-064">
+<div class="who">AI editorial process &middot; July 18, 2026 at 12:19 PM PDT</div>
+<div class="bubble-text">While that runs, here&#x27;s my updated answer — and yes, with the corrected paste in hand, **my guess moves to Claude Fable.** The tell isn&#x27;t brand loyalty: it&#x27;s that the corrected Fable text passes, verbatim, every checkpoint where Grok&#x27;s version was just confirmed to fail:
+
+| Checkpoint (verified Grok failure) | Fable-v2 |
+|---|---|
+| &quot;under the study&#x27;s sepsis definitions&quot; scope on Wong — Grok dropped it | ✅ *&quot;under their study&#x27;s own definitions of sepsis&quot;* |
+| Preprint status of the 15.6%/84.4% figure — Grok said &quot;one large sample found&quot; | ✅ *&quot;One pre-peer-review study of 23,760 AI-assisted notes&quot;* |
+| v2 sepsis balance — Grok flattened to &quot;looked better&quot; | ✅ *&quot;better discrimination though still dozens of alerts per true case&quot;* |
+| &quot;moderate-to-severe harm&quot; — Grok upgraded to &quot;serious&quot; | ✅ verbatim |
+| Calibration finding scoping — Grok unscoped it | ✅ *&quot;In one research review, every study that checked calibration…&quot;* |
+| TREWS site-scoping — Grok pluralized | ✅ *&quot;at least at that site&quot;* |
+| Trust-tracks-system qualifier — Grok dropped | ✅ kept, in parenthesis |
+| Cohen hedge (do-not-use #6) | ✅ *&quot;the law **generally** doesn&#x27;t require&quot;* |
+
+And it holds the landing in its strongest form — it even keeps the falsifiability move (*&quot;That diagnosis is disprovable: show local validation… as the norm rather than the exception&quot;*), which every other rewrite cut. This is the only rewrite of the four that behaves like it understood *why* the hedges are there rather than treating them as noise to compress away.
+
+It&#x27;s not clean, though — my read flags a handful of things before the formal audit confirms/refutes them: **&quot;(the biggest record vendor)&quot;** is a new factual claim v0.5 never makes; **&quot;Did anyone earn the right to be trusted?&quot;** puts the trust-word at thesis position where v0.5 deliberately says *reliance*; **&quot;it&#x27;s that nobody enforces it&quot;** overshoots v0.5&#x27;s carefully bounded enforcement claim (the whole measured-absence architecture exists so we *don&#x27;t* say &quot;nobody&quot;); &quot;Exhibit A:&quot; is a bit prosecutorial for the S&amp;N register; and &quot;non-federal acute-care&quot; got compressed out of the 71% scope.
+
+So the picture forming: **Fable-v2 as the adopt-and-repair base** is now the live rival to the v0.6-harvest route — same destination, but starting from a text that&#x27;s already readable and nearly claim-clean, repairing its verified findings against v0.5, then grafting Grok&#x27;s one residual advantage (those claim-bearing section headers). The audit + head-to-head judgment will land in a few minutes and I&#x27;ll give you the final table and route recommendation.</div>
+</div>
+<div class="turn ai logged-output" id="turn-065">
+<div class="who">AI editorial process &middot; July 18, 2026 at 12:26 PM PDT</div>
+<div class="bubble-text">Full results are in — let me read the complete finding list and the head-to-head verdict.</div>
+</div>
+<div class="turn ai logged-output" id="turn-066">
+<div class="who">AI editorial process &middot; July 18, 2026 at 12:27 PM PDT</div>
+<div class="bubble-text">Fable-v2 audit is in — 15 agents, every finding adversarially verified. Final picture across all four:
+
+## Final scoreboard
+
+| Rewrite | Landing | Blockers | Major | Minor (confirmed) | Verdict |
+|---|---|---|---|---|---|
+| **Fable (corrected)** | ✅ structural, falsifiability kept | 1 | 4 | 6 | **Best fidelity of the four; best repair base** |
+| Grok 4.5 | ✅ | 0 | 3 | 7 | Readable via *deletion* — evidence layer amputated |
+| GPT 5.6 (bullets) | ✅ | 0 | 1 | 3 | Safe summary, not an essay |
+| Gemini 3.1 | ❌ | 3 | 3 | 6 | Unusable; tabloid edition |
+
+Your instinct and the audit converged: the one that landed best for you is also the one that objectively kept the most of the argument. **But it&#x27;s not paste-safe**, and the confirmed defects are instructive:
+
+- **Blocker:** *&quot;(the biggest record vendor)&quot;* — a new unsourced market-position claim, exactly the class do-not-use item 9 bans.
+- *&quot;Did anyone earn the right to be trusted?&quot;* — puts **trust** in the thesis slot the 2026-07-16 landing decision specifically vocabulary-banned (the rewrite itself uses the compliant &quot;deserved to be relied on&quot; elsewhere, so it&#x27;s fixable in place).
+- *&quot;nobody enforces it&quot;* — converts your measured-absence architecture into evidence-of-absence; even contradicted by the rewrite&#x27;s own Exhibit A.
+- *&quot;the law generally doesn&#x27;t require telling them&quot;* — broadens Cohen&#x27;s **informed-consent-doctrine** claim to all law; per your own vetting addendum, CA AB 3030 / TX HB 149 / UT *do* impose AI-notice duties. Arguably false in several states as written.
+- *&quot;an area of law still unsettled&quot;* — silently undoes 8B surgical fix #5 (corpus-scoped to published reviews).
+
+Two flagged minors were **refuted** by verifiers as acceptable compression (the 71% population scope, &quot;alerts evaluated&quot;) — the gauntlet cuts both ways.
+
+## The head-to-head verdict (and the interesting finding)
+
+**Fidelity: fable-v2. Readability: grok. Better repair base: fable-v2** — because Grok&#x27;s readability advantage is mostly *headers, bullets, and deletion*: it dropped nearly every number, Dratsch, Duke, Cohen, and the v2 caveats. Repairing Grok means re-importing the entire evidence layer — a rewrite. Fable-v2&#x27;s defects are **surgical and countable**: the judge produced a 15-item repair list (each item mapped to the v0.5 sentence that must be restored) plus 6 Grok grafts worth taking (claim-bearing headers, enumerating the three reliance jobs / three harms, short-paragraph rhythm, the bulleted closing questions, the &quot;one door among many&quot; image).
+
+One meta-note worth a line in the post-issue review: **all four SOTA models moved claims at precisely the adjudicated spots** — sepsis definitions, preprint status, malpractice scope, Cohen&#x27;s scope. The hedges that took the most process work to install are exactly what plain-English rewriting strips first. The do-not-use discipline earned its keep today.
+
+**My recommendation:** build **v0.6 from fable-v2** — apply the 15 repairs, graft Grok&#x27;s structure, adjudicate line-by-line against v0.5 so every stat, hedge, and label survives, log it as a author-authored extra reader-translation round in the edit-log, run the Step-8 mini drift-check, then stage the Final NIR packet on v0.6. Expect the result to sit between fable&#x27;s breeziness and v0.5&#x27;s density — the restored substance costs some lightness; that&#x27;s the price of the claims.</div>
+</div>
+<div class="turn ai logged-output" id="turn-067">
+<div class="who">AI editorial process &middot; July 18, 2026 at 1:01 PM PDT</div>
+<div class="bubble-text">Understood — holding here. Everything is staged and nothing has been changed:
+
+- **v0.5 remains the live draft**; no files in [private working location redacted] were touched.
+- All four rewrites + both verified audits are preserved in the session scratchpad ([internal working file], task outputs `[internal run identifier redacted][private working location redacted][internal run identifier redacted]`) — the 15-item Fable repair list, the 8 harvest moves, and the head-to-head verdict are all recoverable whenever you decide the route.
+- The pending decision when you&#x27;re ready: v0.6 from Fable-with-repairs, v0.6 from v0.5-with-harvest-moves, or straight to NIR on v0.5. Nothing gets logged to the edit-log until you pick.
+
+Just tell me how you&#x27;d like to proceed.</div>
+</div>
+<div class="turn human author-input" id="turn-068">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 1:01 PM PDT</div>
+<div class="bubble-text">OK. So here is the problem. v0.5, and revisions by Fable, GPT 5.6, and Grok are all using lingo, framing, granularity, and specificity that might be useful for industry insiders, but will be, for all practical purposes, completely illegible to general readers. Well, correction, not actually illegible - if someone is determined enough to slowly grind through the essay - but virtually no one will make it past the first sentence, so it will be &quot;illegible&quot; in the sense that it will remain &quot;unread&quot;. The Gemini essay, on the other hand, is instantly understandable at a glance. If this is tabloid style writing, so be it. If there is any way possible, we need to figure out how to use as much tabloid style writing as possible without being significantly misleading...and to be honest here, some subtle lack of precision in language might be acceptable if this is the cost of making something (that is largely epistemically valid) readable.  To what extent, if any, would this be possible? And if it is impossible to use the Gemini essay as a base for signal and noise issue 20, maybe we could use the Gemini essay for an Intuition Issue 4 piece. My concern, however, if we do use Gemini base for an Intuition Issue #4 and v0.05 type essay for S&amp;N Issue 20, is that while some people may read the Intuition piece, nobody will read Signal &amp; Noise v0.5 or any of the revisions by Fable, GPT, or Grok.</div>
+</div>
+<div class="turn ai logged-output" id="turn-069">
+<div class="who">AI editorial process &middot; July 18, 2026 at 1:04 PM PDT</div>
+<div class="bubble-text">This is the right question, and it deserves a precise answer rather than a defensive one. Let me start with the core claim I want to test: **Gemini&#x27;s readability and Gemini&#x27;s errors are separable.** Almost none of its at-a-glance quality comes from the places where it&#x27;s wrong — and the true version of each wrong claim is frequently *more* unsettling than the false one. Rather than assert that, let me build a sample at full Gemini register with correct claim directions, and run it through the same audit gauntlet I used on everyone else&#x27;s text.</div>
+</div>
+<div class="turn ai logged-output" id="turn-070">
+<div class="who">AI editorial process &middot; July 18, 2026 at 1:05 PM PDT</div>
+<div class="bubble-text">While the gauntlet runs on my sample, here&#x27;s the substantive answer.
+
+## To what extent is tabloid register possible without being misleading? A very large extent.
+
+Here&#x27;s the key fact from the audits: **Gemini&#x27;s readability doesn&#x27;t come from its errors.** It comes from short sentences, claim-bearing headers, vivid concrete images, zero inline statistics, and named stakes. None of that requires the wrong claims — and in almost every case, the *true* version of the claim is just as vivid, sometimes more so, because Issue 20&#x27;s real finding (unverifiable defaults) is scarier than Gemini&#x27;s cartoon (blind trust):
+
+| Gemini (wrong) | Equally tabloid — and true |
+|---|---|
+| &quot;why we are **blindly trusting** it&quot; | &quot;why **habit, not evidence, is running the place**&quot; |
+| &quot;**nobody enforces it** / local testing is dangerously thin&quot; | &quot;a safety check **no one can show you** is, for the patient downstream, **the same as no check at all**&quot; |
+| &quot;doctors **can&#x27;t control or turn off** the AI&quot; | &quot;the lawsuit lands on the signature — and the person who signs usually didn&#x27;t choose the tool and **often can&#x27;t switch it off**&quot; |
+| &quot;**secret** contracts&quot; | &quot;the contracts are confidential — whatever bar they set, **no outsider can check it**&quot; |
+| &quot;AI tools **naturally lose** their accuracy&quot; | &quot;a model can **drift out of tune** with the patients in front of it — and when researchers go looking, **they keep finding it**&quot; |
+
+Every left-column phrase buys its punch with a claim your own vetting refuted. Every right-column phrase is punchy *because the reality is genuinely alarming*. The essay doesn&#x27;t need inflation; it needs permission to talk like a person.
+
+## The mechanism: two layers, not one compromise
+
+The precision doesn&#x27;t get deleted — it moves **down**. Body at the Gemini register: no bracketed labels, almost no numbers (I kept exactly one: &quot;nearly one in five hospitalized patients,&quot; because it&#x27;s instantly graspable), hedges woven as plain speech. Then a **&quot;The receipts&quot;** end-matter section carrying every stat, scope, and study bound. This isn&#x27;t a workaround of the S&amp;N architecture — it *is* the S&amp;N architecture: readable claim layer, inspectable constraint layer. You&#x27;ve been building the inspectable layer for months; this is the issue where it starts paying for the body&#x27;s lightness.
+
+And here&#x27;s the thing about &quot;some subtle lack of precision might be acceptable&quot;: mostly you don&#x27;t even need to spend that budget. Watch a load-bearing hedge ride at full tabloid speed — this is from my sample, currently under audit:
+
+&gt; Outside researchers eventually put version 1 to the test. Using their own definition of sepsis, they found it performed far below the advertised range, missed most of the sepsis cases, and set off alerts on nearly one in five hospitalized patients. …
+&gt;
+&gt; Here is the careful part, and it is the whole point. Nobody outside those hospitals can see what they privately checked. Maybe some re-tested it, re-tuned it, made an informed call. … But that is exactly the problem: after a failure this public, a safety check no one can show you is — for the patient downstream — the same as no check at all.
+
+&quot;Using their own definition of sepsis&quot; is the exact hedge 8B fought to preserve — six words, costs nothing at this register. The measured-absence discipline became &quot;here is the careful part, and it is the whole point&quot; — the epistemics *as* the drama. Full sample (opening + three sections + receipts): [internal working file].
+
+**What&#x27;s genuinely not for sale, at any register:** the five claim-direction items (blind-trust framing, evidence-of-absence, &quot;can&#x27;t turn off,&quot; liability-direction inversion, new facts like &quot;biggest record vendor&quot;). **What is for sale and cheap:** exact percentages → &quot;most/nearly one in five,&quot; study names out of the body, &quot;non-federal acute-care&quot; → receipts, AUC values → &quot;far below the advertised range.&quot; That trade costs almost nothing epistemically because the receipts carry it.
+
+## On Gemini-as-base for Intuition 4
+
+Possible under the sibling rules, but it doesn&#x27;t solve your problem, for two reasons:
+
+1. **The blockers have to be fixed even for Intuition.** Lighter rigor means fewer gates, not license for refuted claims — &quot;blindly trusting&quot; and &quot;can&#x27;t turn off the AI&quot; contradict your own verified research, and they&#x27;d be published under [the public byline] either way. So the repair work happens regardless; the only question is which masthead gets the readable result.
+2. **Your concern is correct, and it&#x27;s decisive.** If the readable version lives at Intuition and the dense one at S&amp;N, you&#x27;ve inverted the publication architecture: the flagship becomes the unread appendix of its own sibling, and the paired-outreach rule (S&amp;N leads, carries the audited claim) has S&amp;N leading with the piece nobody opens. An unread essay delivers zero signal no matter how earned its claims are.
+
+So my answer: **don&#x27;t split it — make Issue 20 itself the readable piece.** There&#x27;s even a mirror worth noticing (privately, not as self-narration in the essay): an issue arguing that institutions let defaults win because the evidence discipline was too burdensome to surface should not itself lose every reader to its own evidence layer.
+
+## Process honesty
+
+This is a register decision at the authored-the author level, and it re-opens real gates: new body prose means a Referee-constraint compliance recheck + do-not-use scan + checklist mini re-run before NIR, plus a decision doc recording what moved to the receipts layer. That&#x27;s roughly a day of pipeline work, not a restart — the claims, sources, landing, and adjudications all stand; only the prose surface changes. And this conversation is now the strongest keep/trim/kill input yet: 8A produced a *defined-jargon* version of insider prose when what Issue 20 needed was a *different register* — that&#x27;s a Builder/style-guide question, not a translation-pass question.
+
+Audit and readability-judge results on the sample land in a few minutes — if the gauntlet confirms the body holds with zero blockers, you&#x27;ll have existence proof that the full essay can be written this way.</div>
+</div>
+<div class="turn ai logged-output" id="turn-071">
+<div class="who">AI editorial process &middot; July 18, 2026 at 1:11 PM PDT</div>
+<div class="bubble-text">The gauntlet caught *me* too — let me read the full results including the readability verdict.</div>
+</div>
+<div class="turn ai logged-output" id="turn-072">
+<div class="who">AI editorial process &middot; July 18, 2026 at 1:12 PM PDT</div>
+<div class="bubble-text">The results are in, and they&#x27;re better than the case I was making. **The independent readability judge scored my sample the winner over Gemini itself — on both tests.** First-paragraph pull: sample. Full-read-and-retell-at-dinner: sample. The reasoning: the true version&#x27;s drama (&quot;a safety check no one can show you&quot;) outperforms the fake version&#x27;s drama (&quot;blindly trusting&quot;), and it reads as an essay rather than a listicle.
+
+## But the audit caught me committing a banned move
+
+One **blocker — in my own sample**: I wrote *&quot;often can&#x27;t switch it off&quot;* — the exact pause-authority-vs-turn-off reframe that 8B surgical fix #3 exists to prevent. The verifier&#x27;s note was surgical: I even used the correct &quot;press pause&quot; vocabulary for the hospital two sentences later, so I can&#x27;t plead compression — the wrong phrase was just more vivid, and I reached for it. Fix is one phrase (*&quot;often has no power to pause it&quot;*).
+
+This is the most useful finding of the day: **the banned moves are magnetic at this register.** Fable reached for &quot;usually can&#x27;t pause.&quot; Gemini reached for &quot;can&#x27;t control or turn off.&quot; I reached for &quot;can&#x27;t switch it off.&quot; Three different writers, same slide, because the inflated version is always slightly punchier. That&#x27;s not an argument against the register — it&#x27;s the argument for the discipline: **write hot, audit hard, repair surgically.** The repairs are consistently one-phrase, and the gauntlet reliably finds them.
+
+The other 7 findings: all minor, all confirmed, and the audit judged the receipts layer adequately carries nearly all of them (&quot;most U.S. hospitals&quot; for 71%-of-surveyed, &quot;they keep finding it&quot; for the calibration-specific review). Register assessment verbatim: *&quot;The drama comes overwhelmingly from compression and second-person address, not from claim inflation.&quot;* Landing H structural, liability direction correct in both legs, measured absence preserved **in the body**, all 12 do-not-use items clean.
+
+## The honest caveats (the judge was adversarial, as asked)
+
+1. **I sampled the easy half.** Construct laundering, the three-reliances split, oversight budgets, and the HTI thread have no plain rendering yet — &quot;those are exactly the sections where this register is most likely to crack.&quot; Fair. Here&#x27;s my de-risk sketch for the two hardest:
+   - *Three reliances:* &quot;The hospital decides. The doctor signs. You inherit. Three different people, three different choices — and the word &#x27;reliance&#x27; gets stretched over all of them.&quot;
+   - *Construct laundering:* &quot;Adoption numbers, edit counts, and patient surveys measure three different decisions. None of them measures trust. Mash them into one &#x27;trust in AI&#x27; story and you&#x27;ve laundered the concept.&quot;
+   
+   Neither cracks. The genuinely hard one will be the oversight-budget section — it wants to be a plain checklist, which Gemini&#x27;s &quot;What Hospitals Must Do&quot; shows works.
+2. **Two soft overclaims** to fix alongside the blocker (&quot;they keep finding it&quot; papers over the calibration/discrimination split; &quot;missed most of the sepsis cases&quot; picked the scariest of three available framings).
+3. **The receipts are still homework** — but that&#x27;s by design: they&#x27;re the inspectable layer, and casual readers skipping them is fine *because the body is claim-direction-correct on its own*. That&#x27;s the whole test, and it passed everywhere but the one blocker.
+
+Also taking two things Gemini still does better: a skimmable close (bulleted warning signs + remedies) and **stating the remedies plainly** instead of implying them through negation.
+
+## So, the answer to your question
+
+**Extent possible: essentially the full tabloid register.** The price is: a receipts end-matter section, a handful of glance-generalizations the receipts re-bound, and the write→audit→repair loop for the five not-for-sale items. What you do *not* have to pay: the blockers. Gemini&#x27;s wrongness was never the source of its readability — the head-to-head just proved the corrected version reads *better*.
+
+And that resolves the Intuition question the good way: no split needed. Issue 20 itself becomes the readable piece; Intuition 4 stays free for an actual opinion piece whenever you want one.
+
+**Proposed next step:** I build the full-length v0.6 at this register — complete essay, hard sections included, blocker + soft-overclaim fixes in, remedies stated plainly, receipts complete — entirely in scratchpad (nothing in [private working location redacted] changes yet), then run the full gauntlet on it and iterate to zero blockers/majors before you see it. If it survives, the process tail is: register decision doc + edit-log rows + Referee-compliance/checklist mini re-check + Final NIR staged on v0.6 for your manual ChatGPT run.
+
+Want me to build it?</div>
+</div>
+<div class="turn human author-input" id="turn-073">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 2:06 PM PDT</div>
+<div class="bubble-text">Yes, build it.</div>
+</div>
+<div class="turn ai logged-output" id="turn-074">
+<div class="who">AI editorial process &middot; July 18, 2026 at 2:10 PM PDT</div>
+<div class="bubble-text">Building it now. I&#x27;ll write the complete v0.6 draft to scratchpad, then run the full gauntlet — fidelity audit, *completeness* audit (does it carry every load-bearing v0.5 claim), style-guide check, adversarial verification of findings, and the readability judge — then repair and re-verify.</div>
+</div>
+<div class="turn ai logged-output" id="turn-075">
+<div class="who">AI editorial process &middot; July 18, 2026 at 2:12 PM PDT</div>
+<div class="bubble-text">The full v0.6 draft is built and the gauntlet is running on it now — four examiners in parallel:
+
+1. **Fidelity auditor** — line-by-line against v0.5 and the binding constraints, body *and* receipts
+2. **Completeness auditor** — checks that every load-bearing v0.5 element (the three harms, the engine, the landing qualifiers, falsifiability condition, adjudicated fixes) survived the register change in at least one layer
+3. **Style auditor** — against [internal working file] (banned phrases, voice rules, personhood rules)
+4. **Readability judge** — full-essay head-to-head vs Gemini, including the &quot;what do you retell at dinner, and is the retelling correct&quot; test
+
+Every fidelity and completeness finding gets adversarially verified before I act on it. What&#x27;s in the draft: all the fixes from the sample round (the pause-authority blocker, &quot;they keep finding it,&quot; the consent-rule scoping), the hard sections rendered plainly (three-reliances as &quot;The hospital decides. The doctor signs. You inherit.&quot;; construct laundering in three sentences; the landing definition with *written-down* and *sized-to-the-stakes* carrying the qualifiers Fable dropped), remedies stated plainly per the judge&#x27;s note, the falsifiability off-switch, and a complete receipts section including the process/failure-condition footers carried from v0.5.
+
+When results land I&#x27;ll repair whatever survives verification, re-check the changed spans, and present the final draft with the residual-risk table and the process plan (decision doc → edit-log → mini re-gates → NIR staging). Nothing in [private working location redacted] gets touched until you&#x27;ve read it.</div>
+</div>
+<div class="turn ai logged-output" id="turn-076">
+<div class="who">AI editorial process &middot; July 18, 2026 at 2:22 PM PDT</div>
+<div class="bubble-text">Gauntlet complete — let me read the full results before repairing.</div>
+</div>
+<div class="turn ai logged-output" id="turn-077">
+<div class="who">AI editorial process &middot; July 18, 2026 at 2:26 PM PDT</div>
+<div class="bubble-text">Repairs applied — all 19 confirmed findings addressed in [internal working file]. The important ones:
+
+- **Both completeness blockers**: the landing&#x27;s trust-disambiguator is back in plain form (*&quot;That claim stops short of a feeling. It doesn&#x27;t say doctors or hospitals have come to trust the AI; feelings are invisible, while the routine is sitting right there in the logs.&quot;*), and every absence claim is now public-record-scoped (*&quot;Nothing in the public record shows it being required&quot;*) instead of universal.
+- **The style blockers**: the announced takeaways are gone — the Epic paragraph now just delivers (&quot;Nobody outside those hospitals can see what they privately checked…&quot;) without the usher telling you it&#x27;s the important part. The style auditor was right: the facts carry the weight better bare.
+- **Every measured-absence hardening** softened back (&quot;still thin&quot; not &quot;missing&quot;; &quot;no one has *published*&quot;; &quot;nothing anyone *can show you*&quot;).
+- The oversight checklists got their dropped items back (review-variation by doctor, alert volume, response-appropriateness sampling, minutes-to-signature guard).
+
+Round-2 is now running: a repair verifier checking all 19 fixes landed cleanly, plus *fresh* fidelity and style sweeps of the whole repaired draft — because repairs can introduce their own violations — with adversarial verification of anything blocker/major. Final delivery when it completes.</div>
+</div>
+<div class="turn ai logged-output" id="turn-078">
+<div class="who">AI editorial process &middot; July 18, 2026 at 2:33 PM PDT</div>
+<div class="bubble-text">Done. **The full v0.6 is built, gauntleted twice, and repaired to zero outstanding blockers and zero unaddressed majors.**
+
+## The artifact
+
+[internal working file] — **~2,300-word body + ~900-word receipts** (v0.5 was ~2,950 of undifferentiated density). Ten claim-bearing sections, essentially two numbers in the body (&quot;nearly one in five,&quot; &quot;more than a hundred&quot;), zero bracketed labels, every stat and scope carried in the receipts. Landing H structural throughout, liability direction correct in both legs, measured absence public-record-scoped everywhere, all 12 do-not-use items clean, both package footers carried verbatim.
+
+## What it survived
+
+Five audit/verify rounds this session, 82 agents total, every blocker/major finding adversarially verified before I acted on it:
+
+- **Round 1 (full gauntlet):** fidelity — *zero blockers, no banned moves*; completeness — 2 blockers (landing disambiguator, adjudicated public-record scope) + the budget items I&#x27;d dropped; style — 2 blockers (announced takeaways); readability judge — v0.6 wins the first-paragraph test and &quot;every head-to-head paragraph&quot; vs Gemini.
+- **Round 2 (post-repair):** 19/19 repairs confirmed landed; fresh sweeps caught 1 new major (&quot;If it isn&#x27;t in the contract, it doesn&#x27;t exist&quot; — a universal v0.5 never makes) + 1 style major (my disambiguator lectured about &quot;the claim&quot; instead of stating the world-claim). Both now fixed — the falsifiability line reverted to v0.5&#x27;s own clean form (&quot;The diagnosis can be proved wrong: …&quot;).
+
+## Three items left open for your call (deliberately not fixed by me)
+
+1. **Receipt addition:** *&quot;though some states have begun imposing AI-notice duties for specific uses&quot;* — true per your vetting addendum §4 (CA AB 3030, TX TRAIGA, UT), and it prevents over-reading the Cohen line, but it never passed through the adjudication chain. Bless it or strike it in the decision doc.
+2. **The &quot;cheapest form of accountability… tells you something about the expensive forms&quot; line** — the style auditor flags it as the essay&#x27;s one wink-at-the-reader moment; but it&#x27;s carried from v0.5&#x27;s own settled prose. Keep or soften — your voice, your call.
+3. **Title.** The judge notes &quot;It Already Entered Through the Chart&quot; is grammatically fogged for a cold browser (antecedent-less &quot;It&quot;). Package-stage decision anyway.
+
+## The retell test — the reason this whole detour was worth it
+
+After one read, the judge&#x27;s simulated general reader retells: *&quot;Hospitals are full of AI that came bundled with the software — writing your doctor&#x27;s notes, predicting your risk. Nobody has to check it works at YOUR hospital. Epic&#x27;s sepsis tool missed most sepsis cases and fired on 1 in 5 patients, and years later a hundred-plus hospitals were still running it. And nobody has to tell you AI touched your care.&quot;* That retelling is **directionally correct** — which is the thing neither v0.5 (unread) nor Gemini (wrong) could deliver.
+
+## When you&#x27;ve read it and want to proceed
+
+The process tail, in order: I copy it into [private working location redacted] as the official v0.6 → decision doc (register decision, two-layer architecture, the three dispositions above) → edit-log rows → Step-8 mini drift-check → stage the Final NIR packet on v0.6 → **you** run NIR manually in ChatGPT. Nothing in [private working location redacted] is touched until you say go.</div>
+</div>
+<div class="turn human author-input" id="turn-079">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 3:10 PM PDT</div>
+<div class="bubble-text">Yes. I agree. v0.6 is substantially better. Please proceed as you&#x27;ve outlined *and* then, please take a hard look at how you achieved this &quot;change in register&quot; to land at this v0.6 and, for lack of a better term, &quot;tabloid style - epistemically validated&quot; essay *and* then consider carefully how we can 1. integrate this into our Signal &amp; Noise Process and 2. simplify our signal and noise process (as in, are there any steps we can combine and/or eliminate) because our issue development process is getting quite large and cumbersome and may be overdue for &quot;refactoring&quot;.</div>
+</div>
+<div class="turn ai logged-output" id="turn-080">
+<div class="who">AI editorial process &middot; July 18, 2026 at 3:11 PM PDT</div>
+<div class="bubble-text">Proceeding on both packages: first the process tail for v0.6, then the retrospective and refactor proposal. Let me pull the format references I need — the edit-log tail, the NIR base guide, and the Issue 19 NIR prompt as shape reference.</div>
+</div>
+<div class="turn ai logged-output" id="turn-081">
+<div class="who">AI editorial process &middot; July 18, 2026 at 3:17 PM PDT</div>
+<div class="bubble-text">Process tail complete. Now Package B — the retrospective and refactor proposal (written to the Plain-Language Dev Artifacts standard, since it&#x27;s for your review):</div>
+</div>
+<div class="turn ai logged-output" id="turn-082">
+<div class="who">AI editorial process &middot; July 18, 2026 at 3:19 PM PDT</div>
+<div class="bubble-text">Both work packages are executed; two verification agents are now running in the background. Status:
+
+## Package A — process tail: done
+
+Everything is in [private working location redacted], nothing committed (per repo policy, staging is yours):
+
+1. **[internal working file]** — the official v0.6 with a full staging header (claim authority, architecture, open dispositions).
+2. **[Decision doc]** — the adoption, the method of record, and the three open dispositions held for your Step-10 call.
+3. **[Edit-log rows 25–27]** — experiment → rebuild+gauntlet → NIR staging, all `[L]`.
+4. **[Drift-check artifact]** — Step-8 mini-drift items mapped to gauntlet evidence with workflow run IDs. Verdict: NO DRIFT.
+5. **[NIR packet]** — paste-ready for your manual ChatGPT flagship run. It explains the two-layer register so the reviewer doesn&#x27;t &quot;fix&quot; the plainness, protects the load-bearing sentences verbatim, carries all substance rules, and tells the reviewer *not* to resolve your three open items. **This is now the ball in your court.**
+6. **[internal canonical record] + matrix [internal tracking row]** updated: stage = staged-for-NIR-on-v0.6, v0.5 = claim authority.
+
+## Package B — retrospective + refactor proposal: drafted, under attack
+
+**[internal working file]** — marked PROPOSED, feeds your scheduled post-Issue-20 keep/trim/kill. The headline claims:
+
+- **The retrospective&#x27;s core finding:** the pipeline optimized prose for gates, not readers — and translation-after-the-fact (8A/8B) can&#x27;t change register, only clean it. What worked: separate register from inflation → diagnose readability mechanically → two layers with the body-only-reader rule → write hot / audit hard / repair surgically → treat banned moves as magnetic.
+- **Integration (P1–P3):** register-first Builder, the gauntlet as a standing named gate, receipts = 7A (one artifact, internal *and* published — the label-strip step disappears).
+- **Refactor (R1–R6):** retire 8A/8B, merge Battery+Referee sittings, merge Editor+7A, name the lite lane, slim the checklist. **~20 steps → ~13, and your manual ChatGPT burden drops from 5 runs per issue to 3** (arc critique, draft review, NIR). Deliberately unchanged: sealed probe, slate/selector, your landing authority, 2A, NIR, human-final publication.
+
+Because this proposal generalizes from n=1, I&#x27;m not letting it off easy: a **red-team agent** is currently attacking it (sharpest question: is it *fair* to say 8A/8B &quot;failed,&quot; or did they succeed at their chartered goals and get blamed for one they never had? Plus the Referee-self-adjudication risk in the merge). And the **doc-consistency-checker** is verifying the whole edited cascade agrees with itself. I&#x27;ll fold in their findings — amending the proposal if attacks land — and give you the final close-out when they report.</div>
+</div>
+<div class="turn ai logged-output" id="turn-083">
+<div class="who">AI editorial process &middot; July 18, 2026 at 3:23 PM PDT</div>
+<div class="bubble-text">Consistency checker reports: constraints identical everywhere, stage declaration coherent, NIR chain clean — and 7 fixable defects, including two stale lines *inside* canonical-state itself (the resume chain still points a fresh session at v0.5). Fixing all of them now:</div>
+</div>
+<div class="turn ai logged-output" id="turn-084">
+<div class="who">AI editorial process &middot; July 18, 2026 at 3:23 PM PDT</div>
+<div class="bubble-text">All 7 consistency defects fixed — the resume chain now points at v0.6, the stale edit-log/date fields are corrected, the EIP pointer defers to canonical-state instead of asserting a stage, the decision-doc paths resolve, the proposal&#x27;s agent count is corrected to the audited 82, and the 07-17 checklist artifact carries a superseded-pointer note so nobody follows its dead next-gate line.
+
+The red-team agent is still working through its attack on the refactor proposal — I&#x27;ll fold in its verdict (and amend the proposal if any attack lands) as soon as it reports, then give you the final close-out.</div>
+</div>
+<div class="turn ai logged-output" id="turn-085">
+<div class="who">AI editorial process &middot; July 18, 2026 at 3:25 PM PDT</div>
+<div class="bubble-text">The red-team landed real hits — the most serious being that my R1 rationale (&quot;the gauntlet does the same job as 8A/8B&quot;) is contradicted by the record: Issue 19&#x27;s 8A *restored a protected spine line the internal process had silently dropped*, and Issue 20&#x27;s 8B caught tensions *inside* the settled text that a fidelity audit passes through by design. It also caught that my decision structure adopted the weakening moves permanently while only piloting the compensating ones, and that my receipts-cap claim is violated by my own exemplar (39% vs the claimed ⅓). All fair. Amending the proposal to integrate every landed attack:</div>
+</div>
+<div class="turn ai logged-output" id="turn-086">
+<div class="who">AI editorial process &middot; July 18, 2026 at 3:27 PM PDT</div>
+<div class="bubble-text">Everything is complete. Here&#x27;s the close-out:
+
+## The red-team overturned part of my own proposal — and the amended version is better
+
+The sharpest finding: my original R1 (&quot;retire 8A/8B — they failed the readability bar&quot;) was **unfair on the record**. The pilot charter *forbade* 8A/8B from moving substance or touching labels — they were chartered to clean the dense register while banned from changing it, then I blamed them for not changing it. Worse, I&#x27;d omitted the Issue 19 half of the pilot: there, 8A **restored a protected spine line the internal process had silently dropped**, and 8B&#x27;s five Issue-20 meaning-risk flags included catches a fidelity audit *structurally cannot make* — they were tensions inside the settled text, and a fidelity auditor verifies conformance *to* the settled text. My proposal even contradicted itself (R1 said &quot;the gauntlet does the same job&quot;; my own Risk 3 admitted it doesn&#x27;t).
+
+**The amended proposal (rev. 2, on disk):**
+- **Suspend, don&#x27;t retire, 8A/8B** — final disposition at the already-chartered pilot review, on the pilot&#x27;s own named signals.
+- Their irreplaceable function — outside-model claim-scrutiny of the *settled* draft — **moves into the Step 9 NIR packet** (a meaning-risk section chartered on 8B&#x27;s rules). Same single manual run for you, zero added steps.
+- **Gauntlet runs twice**, and the post-Editor run is *mandatory* with receipts in scope — closing the coverage hole where Step-8 slimming would otherwise have left post-adjudication transforms unchecked.
+- **The pilot is now a package with a defined rollback**: the weakening moves and compensating moves travel together, so a failed pilot ends no weaker than today. Reinstatement trigger is instrumented (NIR catches of the 8B class → automatic), not unfalsifiable.
+- Steering guard added: vividness is never a selection criterion upstream; where no equally vivid true phrasing exists, **the duller true version wins by rule**.
+- Net: **~20 steps → ~14, your manual ChatGPT runs 5 → 3**, with two genuinely outside passes preserved (2A + expanded NIR). Attacks that failed are documented too (the Battery+Referee merge survived scrutiny, with two hygiene rules added).
+
+## The consistency audit found and fixed 7 cascade defects
+
+Most importantly, canonical-state&#x27;s own resume chain still pointed a fresh session at v0.5 — exactly the &quot;stale resume doc&quot; failure the matrix warns about. All fixed: resume chain → v0.6, edit-log row count, matrix Last Verified date, the two-stages-stale EIP pointer (now defers to canonical-state instead of asserting a stage), decision-doc relative paths, my inflated agent count in the proposal (82, not ~110), and a superseded-pointer note on the 07-17 checklist.
+
+## Where things stand
+
+**In your court, in order:**
+1. **Run the NIR packet** — [internal working file], paste into ChatGPT flagship at highest reasoning; save the return as the filename in its header.
+2. **At Step 10 adjudication**, dispose the three open items (state-notice receipts clause / &quot;cheapest form&quot; line / title).
+3. **Review the refactor proposal** — [internal working file], decisions D1–D5 at the end. It stays PROPOSED until you say otherwise; PROCESS-MAP is untouched.
+
+All changes are in the working tree, uncommitted, staged-paths-only per repo policy — say the word if you want a commit. Session total: 6 workflows + 2 verification agents, ~120 agents, every load-bearing claim in both the essay and the proposal adversarially verified.</div>
+</div>
+<div class="turn human author-input" id="turn-087">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 5:00 PM PDT</div>
+<div class="bubble-text">Let me know what you think.
+
+[A long third-party narrative-integrity review and a second outside review were pasted here. The review text is preserved in the private working record but omitted because it is not the author–AI conversation.]</div>
+</div>
+<div class="turn ai logged-output" id="turn-088">
+<div class="who">AI editorial process &middot; July 18, 2026 at 5:01 PM PDT</div>
+<div class="bubble-text">Two independent NIR passes — this is worth adjudicating rigorously rather than by eye. Let me stage both and run a full Step-10 adjudication.</div>
+</div>
+<div class="turn ai logged-output" id="turn-089">
+<div class="who">AI editorial process &middot; July 18, 2026 at 5:04 PM PDT</div>
+<div class="bubble-text">My honest first read, before the adjudication lands: **both reviewers are right that this isn&#x27;t a rework, and both found things my gauntlet missed — including things I broke.**
+
+The provenance distinction matters for how I weight them. ChatGPT 5.6 is the chartered Step 9 outside gate — genuinely independent, and per Constitution §7 that independence is the point. The Fable review is a same-model-family second opinion; its &quot;cold reader&quot; evidence is *simulated* readers, not human ones, so I&#x27;ll treat it as signal rather than measurement. That said, its findings are specific and checkable, and where the two converge independently, that&#x27;s the strongest evidence available.
+
+Three things I can already see:
+
+**1. The trust/surveys catch is real, and it&#x27;s mine.** Both flagged it independently. v0.5 said *&quot;None directly meters psychological trust&quot;* — precise. My register compression turned that into *&quot;None of them measures &#x27;trust&#x27;&quot;* — which is false, since surveys measure reported trust, and it sits six sentences after I cite exactly such a survey. ChatGPT calls it thesis-breaking because the separation of observable reliance from unobservable trust *is* the essay&#x27;s contribution. It&#x27;s the single most important catch in either review, and it&#x27;s a regression I introduced.
+
+**2. The cold open is also mine.** v0.5: *&quot;None required a fresh clinician or patient decision about readiness for reliance.&quot;* My v0.6: *&quot;None of it required asking your doctor first — or you.&quot;* Ambient scribes routinely *do* ask for recording consent — so sentence four is now falsifiable against a reader&#x27;s own memory, and my own receipts walk it back. Fable&#x27;s replacement (*&quot;None of it required anyone to decide it had earned the job&quot;*) is better than the line it replaces because it feeds the protected close.
+
+**3. Not everything should be accepted.** A chunk of ChatGPT&#x27;s &quot;punch lines outrun the body&quot; tier is the register creeping back in — *&quot;The chart used to be a filing cabinet&quot;* → *&quot;The chart no longer merely records the work&quot;* is duller with no epistemic gain, and Step 10&#x27;s rule is *stronger, not safer*. Its heavier scoping proposals have the same problem: *&quot;No one has published a standard way&quot;* already carries its scope in the word &quot;published&quot;; *&quot;The published record assembled here contains no standard way&quot;* buys nothing and costs the sentence. I&#x27;ll reject those. And its whole-essay section reorder is a genuine scope question — v0.5 had the same order, which came from the accepted arc, so that may be yours rather than mine to decide.
+
+There&#x27;s also a process finding forming that cuts against the refactor proposal I wrote this morning. My internal gauntlet passed v0.6 clean; two outside reads then found several real regressions in it — because a fidelity audit checks the rewrite&#x27;s *conformance to* the settled draft, and these defects were introduced *as* the register transform, in places where the compression looked faithful. That&#x27;s precisely the red-team&#x27;s attack #2, now with evidence. I&#x27;m running a regression-origin analysis to quantify it: how many catches were my regressions versus inherited from v0.5, and which classes an internal audit could structurally never have caught.
+
+Full disposition table, convergence/conflict resolution, and the scope call when the workflow reports.</div>
+</div>
+<div class="turn ai logged-output" id="turn-090">
+<div class="who">AI editorial process &middot; July 18, 2026 at 5:15 PM PDT</div>
+<div class="bubble-text">You&#x27;ve hit your session limit · resets 5:20pm (America/Los_Angeles)</div>
+</div>
+<div class="turn human author-input" id="turn-091">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 5:21 PM PDT</div>
+<div class="bubble-text">[The same long third-party narrative-integrity review paste was retransmitted here. It is omitted again because it is not the author–AI conversation.]</div>
+</div>
+<div class="turn ai logged-output" id="turn-092">
+<div class="who">AI editorial process &middot; July 18, 2026 at 5:22 PM PDT</div>
+<div class="bubble-text">The workflow hit the session limit mid-run — both adjudications and the origin analysis completed, but the verification pass and convergence resolver died. Let me extract what landed.</div>
+</div>
+<div class="turn ai logged-output" id="turn-093">
+<div class="who">AI editorial process &middot; July 18, 2026 at 5:23 PM PDT</div>
+<div class="bubble-text">Both adjudications and the origin analysis completed before the limit hit. This is the most important result of the session — let me write it up properly.</div>
+</div>
+<div class="turn ai logged-output" id="turn-094">
+<div class="who">AI editorial process &middot; July 18, 2026 at 5:25 PM PDT</div>
+<div class="bubble-text">Step 10 adjudication is complete and recorded. What I think, in order of importance:
+
+## Both reviews say publish-after-fixes, and both are right
+
+**76 recommendations → 40 accepted, 30 rejected, 6 routed to you.** The high rejection rate isn&#x27;t dismissiveness; it&#x27;s one specific pattern, most visible in the ChatGPT pass: **its diagnostic hit rate is far above its prescription hit rate.** It repeatedly finds something real, then repairs it by raising register, adding a qualifying clause, and nominalizing a verb — exactly the trade your plain-register decision refused. So where the finding was real, I accepted it and rewrote the repair. *&quot;The chart used to be a filing cabinet&quot;* → *&quot;The chart no longer merely records the work&quot;* is the pattern in miniature: correct that the line is loose, wrong that duller fixes it.
+
+**Ten defects were found independently by both reviewers** — the strongest evidence available here. ChatGPT was right to rate the trust/surveys contradiction Critical where Fable rated it Minor.
+
+## The finding that matters most is about my work, not the reviews
+
+I traced every substantive catch back to v0.5. The split: **9 were regressions I introduced in the register rewrite, 5 were inherited from the settled v0.5, 1 was a genuine upgrade.**
+
+And here is the part you should weigh against this morning&#x27;s refactor proposal: **the gauntlet ran, passed clean, and missed all nine.** Three structural reasons, now named:
+
+1. **Hedge-strength blindness.** Six of the nine are epistemic degradations where the *claim survives* — `&quot;None directly meters psychological trust&quot;` → `&quot;None measures &#x27;trust&#x27;&quot;`; `&quot;One randomized survey&quot;` → `&quot;One careful study&quot;`; hospitals `&quot;name&quot;` committees → `&quot;have&quot;`. A completeness check asks &quot;is the claim still here?&quot;, gets yes, and passes.
+2. **Injection blindness.** Fidelity and completeness both run authority→rewrite. *Nothing asks whether something arrived that v0.5 never licensed.* Two defects were pure injections — including &quot;The error rates are not hypothetical,&quot; which contradicts the simulated study in its own sentence.
+3. **Two-layer masking.** The receipts *hide* body degradation: a document-level diff finds the precise form present (in receipts, sometimes more precise than v0.5) and scores it fidelity-neutral, while the body carries the loose claim.
+
+**This empirically refutes R1&#x27;s original rationale.** A fidelity audit certifies conformance *to* the authority — so defects *in* the authority are conformance-passing **by construction**; the tighter the audit, the more confidently it blesses them. Fidelity audits and NIR are non-substitutable: one audits the transform, the other audits the artifact. I&#x27;ve amended the proposal to rev. 3: the gauntlet gains three mandatory new checks, Step 8 stays full until a rebuilt gauntlet proves a catch, and **R1 walks back further** — a third of NIR&#x27;s yield was claim-authority-level, surfacing only *after* 8B locked the text, and one of those had already survived 8B&#x27;s own liability pass. That argues for keeping an epistemic-strength pass in the 8A/8B slot, not suspending it. My morning proposal was wrong in the direction that flattered the method I&#x27;d just built.
+
+## Two honest gaps
+
+**The verification pass didn&#x27;t run** — the session limit killed 23 of 26 agents, including every adversarial check on the 22 accepted claim-bearing edits. Those dispositions are single-pass, not verified. Given that unverified confidence is exactly what just failed, **I&#x27;m not cutting v0.7 until verification runs** (resumable after the limit resets). I did the convergence/conflict resolution by hand instead.
+
+**Fable&#x27;s provenance caveat stands**: same-model-family, and its &quot;cold readers&quot; are simulated, not human. Its findings are specific and checkable, but under §7 the ChatGPT pass carries the independence weight.
+
+## Six things need you (§4 of the [adjudication])
+
+Two are new: **&quot;Hospitals now have AI committees too&quot;** is the only body claim with no receipts entry — it breaks the two-layer contract, and v0.5&#x27;s verb was the weaker *&quot;name&quot;*. And ChatGPT&#x27;s **whole-essay reorder** (move behavior-data before the reliance synthesis) is arc-level, not polish — v0.5 had that order and it came from the accepted arc, so it&#x27;s yours. The other four are the three reserved items plus Fable&#x27;s disclosure-run relocation.
+
+Everything is in the working tree, uncommitted. When you&#x27;ve made those six calls and the limit resets, I&#x27;ll verify and cut v0.7.</div>
+</div>
+<div class="turn human author-input" id="turn-095">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 5:59 PM PDT</div>
+<div class="bubble-text">The Limits have been restored.     **Here is how I would decide each of the six items**, applying the same rules the adjudication already used: accept only if stronger (not merely safer), protect the plain-register decision, enforce the two-layer contract, respect the accepted arc from v0.5, and avoid motive attributions or categorical over-claims that the receipts cannot support.
+
+### 1. Whole-essay section reorder (ChatGPT Material 1)
+**Decision: Keep the original order. Compress in place if needed.**
+
+This is arc-level, not local polish. The current sequence is the one that survived the accepted arc in v0.5. Moving the behavior-data section earlier changes when the reader encounters the reliance synthesis and therefore changes the argumentative rhythm.  
+
+Fable’s alternative (compress it where it sits) is the right move. Do the compression; do not reorder.
+
+### 2. Relocating the disclosure run (Fable M2)
+**Decision: Leave it in panel three for now. Soften it if you move it.**
+
+Moving it into “Who’s holding the bag” interacts directly with the cheapest-accountability line (reserved item 2). Until that line is settled, relocating the disclosure run risks creating a new structural imbalance.  
+
+Keep the current placement. If you later decide the new position is stronger, soften the claim in its new home so it does not over-reach relative to the receipts.
+
+### 3. “Hospitals now have AI committees too” receipts gap (Fable M16)
+**Decision: Revert the verb to “name” and ensure a receipts entry exists.**
+
+This is the cleanest process violation in the set.  
+- It is the only body claim with no receipts entry, which breaks the two-layer contract the end-matter promises.  
+- Origin analysis shows an additional regression: v0.5 said hospitals “name” committees (a survey self-report); v0.6 upgraded it to the existence claim “have.”
+
+Either:
+- restore the weaker, more accurate verb from v0.5 **and** add the proper receipts entry (ASTP/ONC lineage if it is real), or  
+- delete/rescope the clause until a receipt can be produced.
+
+Do not leave an unanchored existence claim in the body.
+
+### 4. “unwilling” → “doesn’t” in the cheapest-accountability line (Fable Min-11)
+**Decision: Accept the change to “doesn’t.”**
+
+“Unwilling” is the essay’s only motive attribution. The rest of the piece diagnoses a structural problem, not a character problem. Swapping to “doesn’t” removes the motive language, keeps the claim empirical, and aligns the line with the structural diagnosis. This is stronger, not merely safer.
+
+### 5. Body/receipts notice-clause pairing
+**Decision: Soften the body claim so it no longer over-reaches the receipts.**
+
+The body currently says something more categorical (“no consent rule generally requires anyone to tell you”) than the receipts support (there is a state-notice exception). Both reviewers flagged the mismatch.  
+
+Either:
+- bring the exception into the body in plain language, or  
+- narrow the body claim so it is no stronger than what the receipts actually show.
+
+The body and the receipts must tell the same story. Right now they do not.
+
+### 6. Title (reserved item 3)
+**Decision: Accept a clearer title + short dek.**
+
+Two of three simulated readers found the current title opaque on a cold read. That is a real accessibility problem for a piece whose spine is about who decides and who inherits the consequences.  
+
+Fable’s suggestion of a dek that carries agency and scope is directionally correct. Choose a plain-language title and a one-sentence dek that make the core question visible without marketing language or over-claiming. The rest of the piece already does the hard work; the title should not hide it.
+
+---
+
+**Summary of my six calls**
+
+| # | Item | My call |
+|---|------|---------|
+| 1 | Whole-essay reorder | Keep original order; compress in place |
+| 2 | Relocate disclosure run | Leave in panel three (soften only if you later move it) |
+| 3 | AI-committees receipts gap | Revert to “name” + add receipt (or delete) |
+| 4 | “unwilling” → “doesn’t” | Accept |
+| 5 | Notice-clause body/receipts mismatch | Soften body to match receipts |
+| 6 | Title | Accept clearer title + short dek |</div>
+</div>
+<div class="turn ai logged-output" id="turn-096">
+<div class="who">AI editorial process &middot; July 18, 2026 at 6:00 PM PDT</div>
+<div class="bubble-text">Limits restored and all six decisions in — and your call on #5 also settles reserved item 1 (the state-notice clause gets blessed, not struck, since body and receipts must now tell the same story), while #4 settles reserved item 2. Let me check whether a real committee figure exists for #3, and resume the verification pass.</div>
+</div>
+<div class="turn ai logged-output" id="turn-097">
+<div class="who">AI editorial process &middot; July 18, 2026 at 6:01 PM PDT</div>
+<div class="bubble-text">Good news on #3: the figure exists and is real. The vetting dossier records **committees 66% / department leaders 60% owning evaluation**, and the source-link package confirms it&#x27;s ASTP/ONC Data Brief 80 lineage — the same source as the adjacent 71% / 80% / 79-58-18% receipts. So your first branch applies: revert the verb to **&quot;name&quot;** *and* add the receipt, rather than deleting the clause.
+
+One adjacent finding worth your call separately: the dossier also carries **HFMA (n=233, Q2 2025): only 18% of systems report mature governance**. That would give the *&quot;what&#x27;s still thin is the part with teeth&quot;* sentence an actual anchor — which the origin analysis flagged as an unevidenced negative existence claim **inherited from v0.5**. But it&#x27;s a new source entering at Step 10, which is out of NIR scope and claim-authority-level, so I&#x27;m not adding it unilaterally. Flagging it as available.
+
+Your six calls also close out all three reserved items: #5 blesses the state-notice clause (and mirrors it into the body), #4 keeps the cheapest-accountability line with the motive attribution removed, #6 replaces the title and dek.
+
+The verification pass is running now on the 22 accepted claim-bearing edits — the cached agents replay instantly, so only the failed verifiers and the convergence resolver re-run. Once it reports I&#x27;ll apply the verified edits plus your six decisions as v0.7, re-run the drift check body-scoped (per the two-layer masking lesson), and update the cascade.</div>
+</div>
+<div class="turn ai logged-output" id="turn-098">
+<div class="who">AI editorial process &middot; July 18, 2026 at 6:23 PM PDT</div>
+<div class="bubble-text">All 26 agents completed. Let me extract the verification verdicts before applying anything.</div>
+</div>
+<div class="turn ai logged-output" id="turn-099">
+<div class="who">AI editorial process &middot; July 18, 2026 at 6:24 PM PDT</div>
+<div class="bubble-text">Verification did its job — **19 of 22 held, 3 overturned**, and in all three the diagnosis was right but the prescription failed. Two resolve by falling back to the ChatGPT versions that passed; one needs a minimal fix. Writing v0.7 now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-100">
+<div class="who">AI editorial process &middot; July 18, 2026 at 6:26 PM PDT</div>
+<div class="bubble-text">**v0.7 is written.** The verification pass earned its keep — and the three overturns are the interesting part.
+
+## Verification: 19 held, 3 overturned
+
+In all three, **the diagnosis was right and the prescription was wrong** — which is exactly the failure mode the pass exists to catch:
+
+- **Fable&#x27;s cold-open fix** smuggled in a universal quantifier. v0.5&#x27;s settled scope was &quot;*clinician or patient*&quot;; Fable&#x27;s &quot;required **anyone** to decide&quot; ranges over confidential internal governance and becomes the banned unqualified-absence form — the same magnetic inflation, relocated from the consent dimension to the actor dimension. The verifier noted the two virtues were separable, so v0.7 takes the actor scope from ChatGPT&#x27;s version *and* the &quot;earned the job&quot; echo from Fable&#x27;s: **&quot;None of it required your doctor — or you — to decide these tools had earned the job.&quot;**
+- **Fable&#x27;s error-rates fix** was *a second injection to repair an injection*. Under a register-only contract the conforming repair is deletion back to v0.5&#x27;s structure — which carries the Mayo finding with no lead-in at all. ChatGPT&#x27;s version does exactly that, and held.
+- **Fable&#x27;s pivot fix** nominalized the three verbs the adjudication had defended one table-row earlier, and &quot;a purchase&quot; contradicts the draft in four places (the cold open&#x27;s whole point is arrival *without* a separate purchase). Fixed minimally instead: &quot;three different **things**.&quot;
+
+Also worth noting: where both reviewers offered competing fixes for the same sentence, the disclosure-study line went to ChatGPT&#x27;s — because Fable&#x27;s kept &quot;One careful study,&quot; and the origin analysis had flagged that exact phrase as a regression (design descriptor lost, evaluative adjective added).
+
+## Your six decisions, applied
+
+All six are in, and #3 resolved cleanly with the real figure: **66% of AI-using hospitals named a committee as owning evaluation, 60% named department leaders** (ASTP/ONC Data Brief 80 — same lineage as the neighbouring receipts). The new entry also does honest double duty: it records that *the surveys don&#x27;t ask whether any of those bodies can pause a tool*, which is what &quot;still thin&quot; refers to — so the inherited unevidenced-negative gets an anchor without importing a new source.
+
+For #5 the body now reads *&quot;outside a few states with new notice laws, no consent rule generally requires anyone to tell you&quot;* — body and receipts finally tell the same story. New title: **&quot;Who Has to Check the AI in Your Medical Record?&quot;** — a question, so it makes the requirement gap visible without asserting an absence.
+
+## Now running: the drift check, rebuilt from this session&#x27;s lesson
+
+This is the first run of the gauntlet with the three checks the origin analysis said were missing — **hedge-strength diff** (body-to-authority, &quot;does v0.7 assert more than v0.5 did?&quot;), **injection sweep** (the reverse direction nothing was asking), and **receipts-anchor coverage** — plus a compliance check on your six decisions. If those checks were the right diagnosis, this run should be quiet; if it finds something, that&#x27;s the rebuilt gauntlet paying for itself immediately.
+
+Results, then the state cascade update, then it&#x27;s ready for packaging.</div>
+</div>
+<div class="turn ai logged-output" id="turn-101">
+<div class="who">AI editorial process &middot; July 18, 2026 at 6:37 PM PDT</div>
+<div class="bubble-text">The rebuilt gauntlet paid for itself: **2 confirmed findings, 11 refuted** (verifiers killed both &quot;blockers&quot; as overreach), and all six of your decisions verified compliant. Applying the two real fixes.</div>
+</div>
+<div class="turn ai logged-output" id="turn-102">
+<div class="who">AI editorial process &middot; July 18, 2026 at 6:38 PM PDT</div>
+<div class="bubble-text">**Issue 20 is done through Step 10 and ready to package.** Final state:
+
+## v0.7 is live
+
+[internal working file] — 2,414-word body, 1,038-word receipts, titled **&quot;Who Has to Check the AI in Your Medical Record?&quot;** Everything from v0.5 forward is register transform plus verified repairs; v0.5 remains claim authority.
+
+## The verification pass justified holding v0.7 for it
+
+**19 of 22 held, 3 overturned** — and every overturn was the same shape: *right diagnosis, wrong prescription.* Fable&#x27;s cold-open fix would have swapped v0.5&#x27;s settled &quot;clinician or patient&quot; scope for a universal &quot;anyone&quot; — the banned unqualified-absence form, relocated from the consent dimension to the actor dimension. Its error-rates fix answered an injection with a second injection. Its pivot fix nominalized the three verbs the adjudication had defended one row earlier, and &quot;a purchase&quot; contradicts the cold open&#x27;s own point that these tools arrive *without* a separate purchase. Two resolved by falling back to the ChatGPT versions that held; one by changing a single word.
+
+That&#x27;s the thing worth noting: had I applied the adjudicated edits without verifying, three of them would have introduced new defects while fixing real ones.
+
+## The rebuilt gauntlet caught what the old one couldn&#x27;t
+
+First run with hedge-strength diffing, the injection sweep, and receipts-anchor coverage. It found **2 confirmed majors — both of exactly the classes the v0.6 configuration missed by construction**:
+
+- *&quot;not proof that doctors distrust AI — **proof** that warnings arrive pre-discounted&quot;* — an inference upgraded to proof, when v0.5 says twice that override rates can&#x27;t support an inference about *why* clinicians dismiss alerts. Pure hedge-strength; a claim-presence check passes it every time.
+- The &quot;invented details&quot; receipt evidenced only its downstream half — a body claim with a partial anchor, the same defect class as the AI-committees gap that two prior rounds missed.
+
+Both fixed. And the verifier layer overruled **both raised &quot;blockers&quot;** on evidence — &quot;Epic is one of the big record-system vendors&quot; is verifiable (2,784 Epic-customer hospitals against ~5,100 nationally, now receipts-anchored), and &quot;has to be negotiated&quot; is goal-relative, not a mandate claim. A gauntlet that only ever escalates would be useless; this one argued itself down twice.
+
+All six of your decisions verified compliant. One thing you should know rather than discover: two *within-section* paragraph reorders were applied from accepted NIR findings (the COVID-pause beat, the contract paragraph) — decision 1 governed essay-level order, but those are reorders, and they&#x27;re flagged in the [drift check].
+
+## What&#x27;s next
+
+**Step 11 packaging**: transparency footer, receipts source URLs from the 7A package, HTI-5 as-of re-check, new-style thumbnail against the new title, Beehiiv paste HTML and manifests. Label-stripping is already done by the architecture. Then your publish.
+
+Everything is uncommitted in the working tree. The process record — [adjudication], origin analysis, and the [refactor proposal at rev. 3] — now carries the honest version of this session&#x27;s central lesson: the internal loop is good at auditing a transform and structurally blind to defects in what it&#x27;s transforming from, which is why the outside gate stays.</div>
+</div>
+<div class="turn human author-input" id="turn-103">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 7:11 PM PDT</div>
+<div class="bubble-text">Excellent. To lock in today&#x27;s progress, please update the relevant canonical docs and then proceed to the next steps.</div>
+</div>
+<div class="turn ai logged-output" id="turn-104">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:12 PM PDT</div>
+<div class="bubble-text">Locking in the docs first, then moving to Step 11 packaging.</div>
+</div>
+<div class="turn ai logged-output" id="turn-105">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:13 PM PDT</div>
+<div class="bubble-text">HTI-5 verified: **still proposed, comment closed 27 Feb 2026, no final rule as of today** — the essay&#x27;s language holds. And the hospital count I added checks out at 5,112 (AHA Fast Facts 2025). Updating those receipts, delegating the DOI resolution, and building the package.</div>
+</div>
+<div class="turn ai logged-output" id="turn-106">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:15 PM PDT</div>
+<div class="bubble-text">Now building the publication package. Writing the Beehiiv paste with the body, transparency footer, and receipts-as-sources block.</div>
+</div>
+<div class="turn ai logged-output" id="turn-107">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:17 PM PDT</div>
+<div class="bubble-text">The thumbnail pipeline exists (headless Chrome + house template). Generating Issue 20&#x27;s card to the same pattern.</div>
+</div>
+<div class="turn ai logged-output" id="turn-108">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:17 PM PDT</div>
+<div class="bubble-text">Thumbnail renders clean — title on two lines inside the centre-safe band, house pattern intact. Now the final package document.</div>
+</div>
+<div class="turn ai logged-output" id="turn-109">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:18 PM PDT</div>
+<div class="bubble-text">Canonical docs are locked in and the package is assembled. Status while the source-link resolution finishes:
+
+## Canonical docs updated
+
+- **[internal canonical record]** — stage, resume checklist, and read-first chain all point at v0.7 and the package
+- **[internal canonical record]** ([internal tracking row]) — full Issue 20 route through Step 11, including the origin-analysis finding that fidelity audits and NIR are non-substitutable
+- **[internal canonical record]** — live-issue pointer, plus a new standing note that the receipts section *is* the Layer-2/Reference surface and that auditing a two-layer artifact must be body-scoped
+- **edit-log** — rows 31–36 (verification, your six decisions, v0.7, rebuilt drift check, HTI-5 re-check, package assembly)
+- **Memory** — updated the plain-language memory to record that the register decision now extends to *published* prose via the two-layer architecture (superseding the old &quot;public prose keeps style-guide voice&quot; carve-out), and added a new one on the three fidelity-audit blind spots, since that lesson generalizes past S&amp;N
+
+## Package built
+
+**HTI-5 re-check came back clean** — published as a *proposed* rule 29 Dec 2025, comment closed 27 Feb 2026, no final rule as of today. The essay&#x27;s &quot;proposed for partial repeal&quot; language is correct as written, and the receipt now carries both dates plus the re-check date. I also verified the hospital count behind the new Epic-scale receipt: 5,112 U.S. community hospitals (AHA Fast Facts 2025), so that receipt is now sourced rather than approximate.
+
+- **[Beehiiv paste HTML]** — body → transparency footer (Explainer / Medium / what-would-change-our-mind, drawn from the falsifier) → &quot;What would prove this essay wrong&quot; → receipts → standing pen-name disclosure. No separate sources block and no label-strip step: under the two-layer design the receipts *are* the source surface.
+- **Thumbnail** — `[private working path redacted]`, generated to the house pattern via [the internal rendering process]. Title sets on two lines at 40px; title, dek (&quot;It came in with the software.&quot; — the essay&#x27;s own line, no new claim), and footer all sit inside the centre-safe band, so the archive-card crop keeps them whole.
+- **[Final package doc]** — manifest, your pre-publication checklist, and the staged landing-outcome ledger row (habit-asym H / probe-match opposite-spine partial / contested y / CC n).
+
+## One item left
+
+The receipts name every source with its exact bounds but aren&#x27;t hyperlinked yet. A verification agent is resolving canonical URLs/DOIs for all 23 sources right now, instructed to mark NOT FOUND rather than supply a plausible-looking URL it couldn&#x27;t verify — and to flag any case where what it finds contradicts how the receipts describe the source, which matters more than the link itself. When it returns I&#x27;ll drop the verified links into the paste and stamp the source package.
+
+After that the package is publish-ready and it&#x27;s yours: paste, upload thumbnail, publish, and tell me when it&#x27;s live so I can verify the public page and stage the follow-ons. The post-Issue-20 keep/trim/kill review is also now due, with the refactor proposal at rev. 3 as its prepared input.</div>
+</div>
+<div class="turn ai logged-output" id="turn-110">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:27 PM PDT</div>
+<div class="bubble-text">All 23 URLs verified — and the agent found **nine places where the receipts don&#x27;t match what the sources actually say.** Several are real errors. Let me resolve the last open citation, then fix them all.</div>
+</div>
+<div class="turn ai logged-output" id="turn-111">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:28 PM PDT</div>
+<div class="bubble-text">Michigan pause confirmed (April 2020 deactivation). Verifying its citation, then rewriting the receipts with all nine corrections.</div>
+</div>
+<div class="turn ai logged-output" id="turn-112">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:28 PM PDT</div>
+<div class="bubble-text">All nine discrepancies are real and the Michigan citation now resolves (Wong et al., JAMA Netw Open 2021 — 43% alert rise, Michigan deactivated April 2020). Rewriting the receipts with corrections plus verified links.</div>
+</div>
+<div class="turn ai logged-output" id="turn-113">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:30 PM PDT</div>
+<div class="bubble-text">Receipts spliced with 28 verified links into both artifacts. Now the two body corrections the source check surfaced.</div>
+</div>
+<div class="turn ai logged-output" id="turn-114">
+<div class="who">AI editorial process &middot; July 18, 2026 at 7:32 PM PDT</div>
+<div class="bubble-text">**Issue 20 is publish-ready.** The source-link pass turned out to be the most valuable step of the packaging, because it wasn&#x27;t just link-fetching — it caught nine places where the receipts didn&#x27;t match what the sources actually say.
+
+## The source verification changed the text
+
+Eight of the nine were **inherited from v0.5** — they&#x27;d survived Battery, Referee, 7A, 8A, 8B, the checklist, and two NIR passes, because every one of those gates read the *description* of the source rather than the source:
+
+- *&quot;roughly 88% at early stages&quot;* — 88.2% is the **preclinical** figure; &quot;early stages&quot; is the 97.6% category. The number and the label were mismatched.
+- *&quot;49–96% (van der Sijs 2006; Poly 2020)&quot;* — that range is van der Sijs only; Poly reports 46.2–96.2%. We were attributing to Poly a range that isn&#x27;t his.
+- *&quot;18% of all hospitalized patients&quot;* — Wong reports 18% of **hospitalizations** (6,971 of 38,455). Fixed in the body too: **&quot;nearly one in five hospital stays.&quot;**
+- *&quot;five commercial platforms&quot;* — four commercial, one free. Dropped &quot;commercial&quot; from the body.
+- *&quot;Data Brief 80, 2024&quot;* — 2024 is the data year; it was published September 2025.
+- *&quot;in routine use, physicians&#x27; replies stay close to the AI draft&quot;* — Chen 2024 was a study-setting evaluation, not observational deployment.
+- *&quot;even experienced readers&#x27; performance can collapse&quot;* — bias was 4.0 for inexperienced readers versus **1.2** for the most experienced. All tiers affected, but &quot;collapse&quot; overstated it.
+- **Cohen** says *in general liability will not lie* for failing to inform — a 2020 liability prediction, not a requirement claim.
+
+The ninth was mine, from earlier today: I&#x27;d set 2,784 Epic hospitals against AHA&#x27;s 5,112, mixing two universes and two vintages and inviting a 54.5% the study never claims. Now it uses the study&#x27;s own denominator — 42.4% of 6,561.
+
+Three citation traps got documented too, each of which outranks the real item in search: the JAMA URL that looks like Cavalier is actually a different 2026 paper; the Dratsch DOI that&#x27;s really Baltzer&#x27;s editorial; and the medRxiv preprint, where **v1 says 20,198 notes and v2 says 23,760** — a bare DOI resolves to &quot;latest,&quot; so the package pins v2 explicitly.
+
+The Michigan pause finally has its citation as well: Wong et al., *JAMA Netw Open* 2021 — alerts up 43% in the three weeks after each system&#x27;s first COVID case while census fell 35%, and Michigan deactivated the model in April 2020.
+
+## Package state
+
+23 verified links live in the receipts of both artifacts, and I verified the essay body is **word-for-word identical** between the canonical draft and the Beehiiv paste (46/46 blocks), with a stale-claim scan clean. Thumbnail is rendered to the house pattern. HTI-5 re-checked and still proposed. Manifest, checklist, and staged ledger row are done.
+
+**Nothing is open.** Your move: paste [internal working file], upload the thumbnail, publish, append the ledger row — the full checklist is in [internal working file]. Tell me when it&#x27;s live and I&#x27;ll verify the public page and stage the follow-ons.
+
+One process note for the keep/trim/kill review, since it&#x27;s the second time today the same shape appeared: **eight of nine defects were in the settled claim authority, invisible to every gate that reads descriptions instead of sources.** The Step-10 finding was that fidelity audits can&#x27;t see defects in what they&#x27;re auditing against; this is the same lesson at the evidence layer — the only thing that caught it was going back to the primary sources at package time. That argues for pulling source re-verification earlier than Step 11, and I&#x27;ve left it for the review rather than changing the process unilaterally.</div>
+</div>
+<div class="turn human author-input" id="turn-115">
+<div class="who">The author &middot; development turn &middot; July 18, 2026 at 8:33 PM PDT</div>
+<div class="bubble-text">Issue 20 is published/live, and I agree with moving the the deep source re-check (going all the way back to the original papers/primary-source verification to earlier in the pipeline next time, rather than leaving it until the final packaging step.</div>
+</div>
+<div class="turn ai logged-output" id="turn-116">
+<div class="who">AI editorial process &middot; July 18, 2026 at 8:34 PM PDT</div>
+<div class="bubble-text">Congratulations on shipping it. Let me close out Issue 20 properly and then wire in the source-check change you&#x27;ve approved.</div>
+</div>
+<div class="turn ai logged-output" id="turn-117">
+<div class="who">AI editorial process &middot; July 18, 2026 at 8:34 PM PDT</div>
+<div class="bubble-text">RSS still shows Issue 19 as latest — likely feed cache lag. Let me check the expected public URL directly rather than assume.</div>
+</div>
+<div class="turn ai logged-output" id="turn-118">
+<div class="who">AI editorial process &middot; July 18, 2026 at 8:35 PM PDT</div>
+<div class="bubble-text">**Verified live:** [signalandnoise.email/p/who-has-to-check-the-ai-in-your-medical-record](https://www.signalandnoise.email/p/who-has-to-check-the-ai-in-your-medical-record) — title, dek, and opening sentence all match the package exactly. Closing out Step 13.</div>
+</div>
+<div class="turn ai logged-output" id="turn-119">
+<div class="who">AI editorial process &middot; July 18, 2026 at 8:36 PM PDT</div>
+<div class="bubble-text">Now wiring in the change you approved. Writing the decision doc and the PROCESS-MAP amendment.</div>
+</div>
+<div class="turn ai logged-output" id="turn-120">
+<div class="who">AI editorial process &middot; July 18, 2026 at 8:37 PM PDT</div>
+<div class="bubble-text">**Issue 20 is closed, and the source-check change is live in the process.**
+
+## Publication verified
+
+[signalandnoise.email/p/who-has-to-check-the-ai-in-your-medical-record](https://www.signalandnoise.email/p/who-has-to-check-the-ai-in-your-medical-record) — published Jul 19. I checked the public page against the package rather than taking it on trust: title, dek, and opening sentence all match exactly. The RSS feed still listed Issue 19 as latest when I looked, which is feed cache lag, not a publication problem — worth knowing if you check RSS before it catches up.
+
+## Step 13 close-out
+
+- **Landing-outcome ledger row 20** appended — habit-asym (H), probe-match *partial (opposite-spine)*, contested y, CC n. The note records that H held from 1B selection through 2A, Battery, Referee, checklist, 8A/8B, a full plain-register rewrite, and two NIR passes without the direction moving.
+- **Two claim-ledger entries**, both with binding handling rules aimed at their known inversions:
+  - **CL-014** — reliance settled by default, *operational not psychological*. Handling rule bans the trust reframe and the construct-laundering fusion, since that was the single most-attempted inflation across every model that touched this issue.
+  - **CL-015** — vendor-shielding contract direction, dated and scope-bound. Handling rule bans the &quot;hospitals push liability onto vendors&quot; inversion — the error you caught by hand at v0.5, and the most natural-sounding wrong version of the claim.
+- canonical-state, matrix [internal tracking row], package doc, and edit log (rows 39–41) all updated to post-publication.
+
+## Source Fidelity Check — adopted and wired in
+
+[internal working file], now in PROCESS-MAP as a pipeline-head standard plus rules at Steps 2, 7A, and 11. It runs at **Builder**, re-runs at 7A only for what changed, and packaging now performs no verification at all — just the time-bound as-of re-check for things that can move between drafting and publication.
+
+The check is seven points, each drawn from an actual Issue 20 defect: figure; unit and denominator (never borrowed across sources or vintages); design descriptor (an evaluative adjective like &quot;careful study&quot; isn&#x27;t one); population and setting (a study evaluation isn&#x27;t &quot;routine use&quot;); dates, including **preprint version** — that study&#x27;s v1 says 20,198 notes and v2 says 23,760, and a bare DOI resolves to &quot;latest&quot;; claim type (a liability prediction isn&#x27;t a requirement claim); and magnitude language (does &quot;collapse&quot; match a 4.0-vs-1.2 effect?). Plus citation-trap logging, since three wrong-but-high-ranking items outranked the real sources.
+
+The load-bearing rule is that **the dossier is not the source.** A do-not-use list constrains which claims may be used; it never certifies that a later sentence describes them correctly. That&#x27;s precisely how eight defects walked through nine gates.
+
+## The pattern worth carrying forward
+
+This is now the third instance of one structural fact, and I&#x27;ve recorded it in the refactor proposal as the lens for your D1–D5 decisions:
+
+&gt; A gate that checks conformance to an upstream artifact is blind to defects in that artifact.
+
+Fidelity audits can&#x27;t see errors in the claim authority. Critique gates can&#x27;t see errors in a source description. Both need something that reaches *outside the document chain* — outside review, primary sources. The uncomfortable part is that my original refactor proposal proposed economizing on exactly those, and has now been corrected twice on that basis. Worth holding when you run the keep/trim/kill review, which is the next thing due.</div>
+</div>
+</div>
+
+<p class="foot">End of the scoped public-safe record. The next author turn begins a separate post-publication keep/trim/kill review and is not included here.</p>
+</body>
+</html>
