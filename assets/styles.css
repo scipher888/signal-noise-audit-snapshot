@@ -1550,9 +1550,28 @@ a:hover {
 .process-flow {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 0.7rem;
   margin: 2rem 0 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.process-dot.process-code {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 820;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.process-sequence {
+  line-height: 1.55;
+}
+
+.process-sequence span {
+  font-variant-numeric: tabular-nums;
 }
 
 .process-dot .dot-glyph {
@@ -1717,8 +1736,7 @@ a:hover {
   display: none;
 }
 
-.check-card summary::after {
-  content: "+";
+.check-toggle {
   display: grid;
   width: 30px;
   height: 30px;
@@ -1729,10 +1747,22 @@ a:hover {
   font-weight: 600;
 }
 
-.check-card[open] summary::after {
-  content: "−";
+.check-toggle::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background:
+    linear-gradient(currentColor, currentColor) center / 11px 2px no-repeat,
+    linear-gradient(currentColor, currentColor) center / 2px 11px no-repeat;
+}
+
+.check-card[open] .check-toggle {
   color: var(--white);
   background: var(--navy);
+}
+
+.check-card[open] .check-toggle::before {
+  background: linear-gradient(currentColor, currentColor) center / 11px 2px no-repeat;
 }
 
 .check-index {
@@ -1763,6 +1793,29 @@ a:hover {
   display: block;
   color: var(--muted);
   font-size: 0.78rem;
+}
+
+.check-card summary .check-index {
+  display: inline-flex;
+  width: auto;
+  min-width: 36px;
+  padding: 0 0.5rem;
+  color: var(--navy);
+  background: var(--sky);
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.check-card summary .check-toggle {
+  display: grid;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.check-card[open] summary .check-toggle {
+  color: var(--white);
 }
 
 .check-body {
@@ -2448,6 +2501,10 @@ a:hover {
     row-gap: 1.6rem;
   }
 
+  .process-step:last-child {
+    grid-column: 2;
+  }
+
   .process-flow::before {
     display: none;
   }
@@ -2671,6 +2728,10 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .process-step:last-child {
+    grid-column: 1 / -1;
+  }
+
   .check-body {
     grid-template-columns: 1fr;
   }
@@ -2717,6 +2778,10 @@ a:hover {
 
   .process-flow {
     grid-template-columns: 1fr;
+  }
+
+  .process-step:last-child {
+    grid-column: auto;
   }
 
   .process-step {

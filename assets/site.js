@@ -46,4 +46,21 @@
   });
 
   filterIssues();
+
+  const printableDetails = [...document.querySelectorAll('details.check-card')];
+  let printOpenState = [];
+
+  window.addEventListener('beforeprint', () => {
+    printOpenState = printableDetails.map((details) => details.open);
+    printableDetails.forEach((details) => {
+      details.open = true;
+    });
+  });
+
+  window.addEventListener('afterprint', () => {
+    printableDetails.forEach((details, index) => {
+      details.open = printOpenState[index] ?? false;
+    });
+    printOpenState = [];
+  });
 })();
