@@ -44,6 +44,31 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000/`.
 
+## Shared assets and cache-busting
+
+Every page hard-codes a cache-busting query on the shared stylesheet and script —
+`assets/styles.css?v=…`. **Do not choose that string by hand.** It is derived from the
+asset's own content hash, so it cannot disagree with the file it names:
+
+```bash
+./sync-asset-versions.sh          # rewrite every page to match current asset content
+./sync-asset-versions.sh --check  # report drift, change nothing, exit 1 if stale
+```
+
+**Run it after any change to `assets/styles.css` or `assets/site.js`, before committing.**
+
+This exists because of a real failure. Pages were bumped one at a time by whoever was
+editing them, and the site drifted to four different version strings across 39 pages.
+Nothing looked broken, because the stylesheet had only ever been *appended* to — a page
+holding a stale string still got every rule it needed. The damage would have arrived the
+first time someone *modified* a shared rule: pages on old strings would keep serving the
+old CSS to returning visitors, and it would present as a layout bug on some pages and not
+others, which is a genuinely nasty thing to debug.
+
+Deriving the version from content removes the human step that was failing. Forgetting to
+run the script is recoverable — run it later and every page is fixed at once — and running
+it twice does nothing, so it is safe in any hook, script, or habit.
+
 ## Publication
 
 This snapshot was first published as **v1.0** at https://github.com/scipher888/signal-noise-audit-snapshot, approved 2026-05-13 after redaction checks, link verification, and snapshot-cadence review. The constitution is now at **v1.1** (2026-06-09; one rule made public — see the changelog in the v1.1 file). Material changes follow [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md).

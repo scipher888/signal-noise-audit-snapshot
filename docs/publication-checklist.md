@@ -44,6 +44,24 @@ Verify all public links resolve:
 - public process note links;
 - any future `/bio` or homepage links to this repository.
 
+## 3A. Shared-asset version check
+
+If this change touched `assets/styles.css` or `assets/site.js`, every page that loads them
+must request the current version. Run:
+
+```bash
+./sync-asset-versions.sh --check
+```
+
+Exit 0 means every page is current. Exit 1 lists the stale pages — run the script without
+`--check` to fix them, then commit the result with the asset change, not separately.
+
+Do not hand-pick a version string. It is the asset's content hash, so it is correct by
+construction; choosing one by hand is the exact step that let the site drift to four
+different strings across 39 pages. The failure is silent while the stylesheet is only ever
+appended to, and surfaces as an inconsistent layout bug the first time a shared rule is
+modified.
+
 ## 4. Version check
 
 Before public push:
