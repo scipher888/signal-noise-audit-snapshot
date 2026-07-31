@@ -1,7 +1,7 @@
 # Snapshot Cadence and Versioning
 
-**Status:** current constitution snapshot v1.1 — published 2026-06-09 (v1.0 archived; first published 2026-05-13)  
-**Snapshot date:** 2026-06-09
+**Status:** current constitution snapshot v1.2 — published 2026-07-31 (v1.1 and v1.0 archived; first published 2026-05-13)
+**Snapshot date:** 2026-07-31
 
 This repository uses milestone snapshots, not a raw live mirror of internal working files.
 
@@ -15,7 +15,13 @@ Milestone snapshots give readers a stable public artifact without pretending tha
 
 - **v1.0** — first public snapshot of the editorial constitution and corrections / changes surface.
 - **v1.x** — material clarification, added section, or meaningful wording change that preserves the same overall constitution.
-- **v2.0** — structural change to the trust stack, editorial authority model, claim-gating system, or AI process framing.
+- **v2.0** — structural change to the Source-World architecture, editorial authority model, claim-gating system, or AI process framing.
+
+Published history:
+
+- **v1.0 — 2026-05-13:** first public snapshot.
+- **v1.1 — 2026-06-09:** pre-draft anchor admission rule made public.
+- **v1.2 — 2026-07-31:** Landing Slate and Opinion Piece amendments, including the Floor Pass and audit-before-next-issue coupling.
 
 ## Snapshot triggers
 
