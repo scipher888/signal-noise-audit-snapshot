@@ -1,7 +1,7 @@
 # Snapshot Cadence and Versioning
 
-**Status:** current constitution snapshot v1.2 — published 2026-07-31 (v1.1 and v1.0 archived; first published 2026-05-13)
-**Snapshot date:** 2026-07-31
+**Status:** current constitution snapshot v1.3 — published 2026-08-09 (v1.2, v1.1 and v1.0 archived; first published 2026-05-13)
+**Snapshot date:** 2026-08-09
 
 This repository uses milestone snapshots, not a raw live mirror of internal working files.
 
@@ -22,6 +22,7 @@ Published history:
 - **v1.0 — 2026-05-13:** first public snapshot.
 - **v1.1 — 2026-06-09:** pre-draft anchor admission rule made public.
 - **v1.2 — 2026-07-31:** Landing Slate and Opinion Piece amendments, including the Floor Pass and audit-before-next-issue coupling.
+- **v1.3 — 2026-08-09:** streamlined-pipeline adoption — one two-layer piece (essay + published audit), an autonomous audit stage with disclosed machine-publish authority, execution-mode disclosure replacing the manual-execution rule, and the companion opinion masthead retired.
 
 ## Snapshot triggers
 

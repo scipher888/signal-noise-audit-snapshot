@@ -1,7 +1,7 @@
 # Signal & Noise — Public Audit Snapshot
 
-**Status:** public snapshot v1.2 — published 2026-07-31 (v1.1 and v1.0 remain archived); low-cognitive-load redesign prepared 2026-06-18
-**Snapshot date:** 2026-07-31
+**Status:** public snapshot v1.3 — published 2026-08-09 (v1.2, v1.1 and v1.0 remain archived); low-cognitive-load redesign prepared 2026-06-18
+**Snapshot date:** 2026-08-09
 **Publication:** Signal & Noise — https://www.signalandnoise.email
 
 Signal & Noise is written under the pen name **Synthia Cipher**. AI tools draft and critique; the human author owns the editorial judgment, final wording, published claims, and errors. If something is wrong, the fault is the author's, not the algorithm's.
@@ -14,7 +14,7 @@ This repository is a public-safe snapshot of the editorial audit trail. It is me
 - [`issues/`](https://scipher888.github.io/signal-noise-audit-snapshot/issues/) - issue-specific Origin / Structure / Reference scaffolds.
 - [`signal-noise/`](https://scipher888.github.io/signal-noise-audit-snapshot/signal-noise/) - publication-level Origin / Structure / Reference scaffold.
 - [`assets/`](assets/) - shared static CSS and JavaScript for the redesigned orientation layer.
-- [`docs/editorial-constitution-v1.2.md`](docs/editorial-constitution-v1.2.md) — current public-safe snapshot of the editorial / epistemic constitution (v1.2, 2026-07-31; changelog inside). Prior snapshots remain accessible and unchanged: [`v1.1`](docs/editorial-constitution-v1.1.md) and [`v1.0`](docs/editorial-constitution-v1.0.md).
+- [`docs/editorial-constitution-v1.3.md`](docs/editorial-constitution-v1.3.md) — current public-safe snapshot of the editorial / epistemic constitution (v1.3, 2026-08-09; changelog inside). Prior snapshots remain accessible and unchanged: [`v1.2`](docs/editorial-constitution-v1.2.md), [`v1.1`](docs/editorial-constitution-v1.1.md) and [`v1.0`](docs/editorial-constitution-v1.0.md).
 - [`docs/corrections-and-changes-v1.md`](docs/corrections-and-changes-v1.md) — public-safe corrections, changes, and tracked claims surface.
 - [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md) — versioning and milestone snapshot rules.
 - [`docs/publication-checklist.md`](docs/publication-checklist.md) — what must be checked before publishing or updating this snapshot.
@@ -57,6 +57,16 @@ asset's own content hash, so it cannot disagree with the file it names:
 
 **Run it after any change to `assets/styles.css` or `assets/site.js`, before committing.**
 
+**Standing operational guards** (they bind any publisher of this repo, including the
+autonomous audit stage under the 2026-08-08 streamlined pipeline):
+
+1. `./sync-asset-versions.sh` runs **in the same commit** as any shared-asset change.
+2. A rejected push is **rebased, never force-pushed** — this repo can carry commits made
+   outside any one working copy, and a force would destroy them.
+3. Publish order for anything that links into this site from elsewhere: **push → confirm
+   the page is live (GitHub Pages takes ~a minute and briefly serves stale HTML) → then
+   place the link.**
+
 This exists because of a real failure. Pages were bumped one at a time by whoever was
 editing them, and the site drifted to four different version strings across 39 pages.
 Nothing looked broken, because the stylesheet had only ever been *appended* to — a page
@@ -71,4 +81,4 @@ it twice does nothing, so it is safe in any hook, script, or habit.
 
 ## Publication
 
-This snapshot was first published as **v1.0** at https://github.com/scipher888/signal-noise-audit-snapshot, approved 2026-05-13 after redaction checks, link verification, and snapshot-cadence review. **v1.1** followed on 2026-06-09, making the pre-draft anchor admission rule public. The current constitution is **v1.2** (2026-07-31), carrying the Landing Slate and Opinion Piece amendments. Material changes follow [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md).
+This snapshot was first published as **v1.0** at https://github.com/scipher888/signal-noise-audit-snapshot, approved 2026-05-13 after redaction checks, link verification, and snapshot-cadence review. **v1.1** followed on 2026-06-09, making the pre-draft anchor admission rule public; **v1.2** followed on 2026-07-31, carrying the Landing Slate and Opinion Piece amendments. The current constitution is **v1.3** (2026-08-09), recording the streamlined-pipeline adoption: one two-layer piece per issue (essay + published audit), an autonomous audit stage with disclosed machine-publish authority, and the retirement of the companion opinion masthead. Material changes follow [`docs/snapshot-cadence.md`](docs/snapshot-cadence.md).
