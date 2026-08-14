@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The current editorial process behind Signal &amp; Noise: question selection, rival landings, source checks, review, decision rights, publication, and known limits.">
+  <meta name="description" content="The current editorial process behind Signal &amp; Noise: the essay, a binding accuracy-and-fairness floor before publication, and an autonomous published audit after it.">
   <title>Process — Signal &amp; Noise Publication Record</title>
   <link rel="stylesheet" href="../../assets/styles.css?v=5c17dc47">
   <script src="../../assets/site.js?v=0c872f22" defer></script>
@@ -34,13 +34,13 @@
     <section class="page-hero">
       <div class="shell page-hero-grid">
         <div>
-          <p class="eyebrow">Publication record · Structure · July 2026</p>
-          <h1 class="page-title">How an issue moves from question to publication.</h1>
-          <p class="lede">Rival answers—called landings in the working process—are developed and pressured before prose begins. Sources are checked as claims are written. Changes route backward when they alter meaning. The human author makes the decisions and owns the result.</p>
+          <p class="eyebrow">Publication record · Structure · August 2026</p>
+          <h1 class="page-title">How an issue moves from draft to published audit.</h1>
+          <p class="lede">The author writes the essay. Before it publishes, a binding accuracy-and-fairness floor is checked. After it publishes, an audit runs — and its record publishes too. The human author makes the decisions and owns the result.</p>
           <p class="snapshot-note">
             <strong>Current operating map</strong>
-            <span>Reviewed against the operational state dated July 20, 2026.</span>
-            <span>Current required steps and active pilots are labeled below.</span>
+            <span>Reviewed against the operational state dated August 8, 2026, when the prior process was retired and this one adopted.</span>
+            <span>The prior map, and its preserved failure record, are kept as history below.</span>
           </p>
         </div>
         <div class="hero-seal" aria-hidden="true"></div>
@@ -69,76 +69,56 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">The editorial path</p>
-            <h2 class="section-title" id="editorial-path">Seven phases, with explicit route-backs.</h2>
+            <h2 class="section-title" id="editorial-path">Three stages, one binding floor, one published audit.</h2>
           </div>
-          <p class="lede">The stage codes preserve the real operating order. The phase names make that order readable without pretending each pass is an independent inspector.</p>
+          <p class="lede">The essay is the author’s argument, made the way the author wanted to make it. The checks do not certify it — they publish what checking found, so a reader can weigh the argument against its record.</p>
         </div>
 
-        <ol class="process-flow" aria-label="Editorial process phases">
+        <ol class="process-flow" aria-label="Editorial process stages">
           <li class="process-step" role="listitem">
-            <div class="process-dot process-code">0–1</div>
-            <strong>Recover &amp; frame</strong>
-            <small>Question, lane, audience, anchor</small>
+            <div class="process-dot process-code">A</div>
+            <strong>The essay</strong>
+            <small>Written by the author; AI drafts and critiques</small>
           </li>
           <li class="process-step" role="listitem">
-            <div class="process-dot process-code">1C–1B</div>
-            <strong>Research &amp; select</strong>
-            <small>Rival landings before an arc</small>
+            <div class="process-dot process-code">B</div>
+            <strong>The floor pass</strong>
+            <small>Binding accuracy-and-fairness rows, one redline</small>
           </li>
           <li class="process-step" role="listitem">
-            <div class="process-dot process-code">1A–2A</div>
-            <strong>Shape &amp; draft</strong>
-            <small>Sources plus outside challenge</small>
-          </li>
-          <li class="process-step" role="listitem">
-            <div class="process-dot process-code">5–7A</div>
-            <strong>Adjudicate</strong>
-            <small>Battery, Referee, Editor</small>
-          </li>
-          <li class="process-step" role="listitem">
-            <div class="process-dot process-code">8A–10</div>
-            <strong>Test meaning</strong>
-            <small>Outside passes plus checklist</small>
-          </li>
-          <li class="process-step" role="listitem">
-            <div class="process-dot process-code">10A–12</div>
-            <strong>Package &amp; check</strong>
-            <small>Optional records, freeze, QA</small>
-          </li>
-          <li class="process-step" role="listitem">
-            <div class="process-dot process-code">13–14</div>
-            <strong>Publish &amp; learn</strong>
-            <small>Verify, distribute, hear back</small>
+            <div class="process-dot process-code">C</div>
+            <strong>The audit</strong>
+            <small>Autonomous, published, no edit authority</small>
           </li>
         </ol>
 
         <p class="snapshot-note process-sequence">
           <strong>Default order</strong>
-          <span>0 → 1 → 1C → 1D → 1B → 1A → 2 → 2A → 5 → 6 → 7 → 7A → 8A → 8B → 8 → 9 → 10 → optional 10A/10B → 11 → 12 → 13 → 14</span>
+          <span>Essay → floor pass → the author publishes → the audit runs and publishes its record. An issue’s audit is live before the next issue ships.</span>
         </p>
 
-        <p class="flow-note"><strong>“Outside” means outside the internal run, not outside AI.</strong> The author manually runs Steps 1A, 2A, 8A, 8B, and 9 in a separate frontier-model interface, then decides what to accept. These are not human expert reviews and do not guarantee independent cognition. Optional branches include author-directed Council input (4B), a bounded perspective scan (5A), public records (10A/10B), and derivatives (15); none replaces a required gate.</p>
+        <p class="flow-note"><strong>“Autonomous” means the audit runs and publishes without the author’s touch — not that it has authority over the essay.</strong> The audit proposes; the author decides. Its critique runs on at least two independent frontier models, and every audit page states exactly which models ran it, how, and what independence discount that implies. A piece that audits someone else’s claims can carry a high-stakes designation, which moves the audit — or a named part of it — before publication.</p>
 
         <div class="split">
           <article class="card constraint-card constrain">
-            <span class="card-kicker">Contested lane</span>
-            <h3 class="subhead">Probe, full dossier, genuine rivals</h3>
-            <p>For a meaningfully contested question, the process adds a sealed, context-free default-prior probe and a landing-grade research dossier. It normally develops three rival answers, with two to four allowed.</p>
+            <span class="card-kicker">The floor — before publication</span>
+            <h3 class="subhead">No false or fraudulent claims, operationalized</h3>
+            <p>Every issue is checked against binding rows before it publishes: exact figures; verbatim quotes verified against primary sources; fairness to named people; receipt-or-cut for unquantified-frequency and unevidenced negative-existence claims; calibration that respects statistical qualifiers; opinion identified wherever a reader arrives; coherence, with corrections that extend the record rather than rewrite it; no empty hedging; honest disclosure of AI’s real role; and at least one real-world anchor.</p>
             <ul>
-              <li>The probe stays unread until after the author selects a landing.</li>
-              <li>Major live positions are steelmanned before selection when the issue is prior-triggering.</li>
-              <li>Candidate premises are checked before the slate is scored.</li>
+              <li>A failing row blocks publication.</li>
+              <li>The author picks the remedy — receipt or cut — never whether to remedy.</li>
+              <li>An override is possible, but only explicitly, with ownership of the risk, on the record.</li>
             </ul>
           </article>
 
           <article class="card constraint-card prevent">
-            <span class="card-kicker">Non-contested lite lane</span>
-            <h3 class="subhead">A shorter front end, not a weaker core</h3>
-            <p>The record must say why the lite lane applies. It uses two rival landings and omits the probe and full contested dossier.</p>
+            <span class="card-kicker">The audit — after publication</span>
+            <h3 class="subhead">Three lists, never a verdict</h3>
+            <p>The audit page reports objections found and what happened to each, changes proposed or made, and what could not be checked. Blocked is “null,” never zero. There are no survival counts, no badges, and no “passed review” language — the essay’s own argument for why.</p>
             <ul>
-              <li>It keeps source work, the adversarial Battery, Referee, checklist, and human approval.</li>
-              <li>If the question becomes contested, the process switches lanes before the slate.</li>
-              <li>Both lanes converge on author selection before the arc and draft.</li>
+              <li>Findings are produced with no edit authority, then confirmed or refuted in fresh context; only confirmed findings become proposed changes.</li>
+              <li>Machine-checkable things first — quotes, figures, attributions, links, dates, units — with reproducible evidence; judgment-class critique after, labeled as judgment.</li>
+              <li>The audit page is checked against its own raw returns before it publishes, because the first one misreported itself in ways that flattered the audit.</li>
             </ul>
           </article>
         </div>
@@ -147,7 +127,7 @@
           <div class="badge" aria-hidden="true">H</div>
           <div>
             <h3>The human-final boundary</h3>
-            <p>The AI editorial process can research, draft, critique, edit, and prepare packages. The human author chooses the question and landing, controls protected-item removal and final wording, adjudicates outside input, and alone publishes or authorizes public actions. The Referee labels risk and recommends; it does not delete claims. Tool access never expands that authority.</p>
+            <p>The AI process can draft, critique, check, stage, and publish audit records. The human author makes the essay’s decisions: what publishes, final wording, whether a floor failure is overridden on the record, and every public act — publish, send, upload, schedule. A floor-class defect found after publication stages a correction for the author; the audit never edits a published essay. Tool access never expands that authority.</p>
           </div>
         </div>
       </div>
@@ -168,12 +148,12 @@
             <span class="card-kicker">It constrains</span>
             <h3 class="subhead">What may happen, and when</h3>
             <ul>
-              <li>A question comes before an answer.</li>
-              <li>Research and rival landings come before the arc.</li>
-              <li>The author selects the landing before drafting.</li>
-              <li>Every source-citing sentence is checked against the source itself.</li>
-              <li>Editing may not silently change claims, sources, confidence, caveats, or protected material.</li>
-              <li>Material changes route back to the gate with the right authority.</li>
+              <li>Floor rows are binding; a failure blocks publication absent an explicit, recorded override.</li>
+              <li>No pass in the process may upgrade certainty or strip a load-bearing hedge.</li>
+              <li>Corrections extend the record; nothing is silently rewritten.</li>
+              <li>Tracked claims carry next-check dates; a lapsed claim may not be cited in new prose until its check runs.</li>
+              <li>An issue’s audit is live before the next issue ships.</li>
+              <li>Publish, send, upload, and schedule are the author’s acts, always.</li>
             </ul>
           </article>
 
@@ -181,12 +161,11 @@
             <span class="card-kicker">It tries to prevent</span>
             <h3 class="subhead">Predictable forms of drift</h3>
             <ul>
-              <li>A default answer becoming the thesis without competition.</li>
-              <li>A favored landing padded with sacrificial alternatives.</li>
-              <li>A dossier summary standing in for the original source.</li>
-              <li>Polish strengthening a claim under cover of clarity.</li>
-              <li>Same-model passes being presented as independence.</li>
-              <li>Packaging or public records quietly reauthoring the issue.</li>
+              <li>Staged critique being mistaken for independent scrutiny.</li>
+              <li>“Survived review” standing in for the specifics of what was checked.</li>
+              <li>Confidence language outrunning the evidence behind it.</li>
+              <li>A published essay changing quietly after the fact.</li>
+              <li>The process display itself becoming a certification badge.</li>
             </ul>
           </article>
 
@@ -194,12 +173,11 @@
             <span class="card-kicker">It cannot guarantee</span>
             <h3 class="subhead">Truth, independence, or completion</h3>
             <ul>
-              <li>A shared model blind spot can survive every role.</li>
+              <li>A shared model blind spot can survive every check.</li>
               <li>A cited source can still be wrong, incomplete, or inaccessible.</li>
-              <li>A manual gate can be skipped or resumed from stale state.</li>
               <li>A recorded trace is only as complete as what was captured.</li>
-              <li>An AI clarity pass cannot substitute for a real reader.</li>
-              <li>Older issue coverage and process automation remain incomplete.</li>
+              <li>No reader-comprehension instrument exists — a planned real-reader test was dropped on 2026-07-25 without ever running.</li>
+              <li>Human cold-read defects — register, cognitive load, surface drift — are a named standing blind class.</li>
             </ul>
           </article>
         </div>
@@ -210,245 +188,109 @@
       <div class="shell reading-layout">
         <div class="reading-content">
           <section class="content-section">
-            <p class="eyebrow">Open a phase</p>
-            <h2 id="checks-in-detail">What each phase must produce—and where it can send the work back.</h2>
-            <p class="lede">Each record separates the work, required trace, constraint, decision right, failure route, and remaining risk. The exact stage codes match the current operating map.</p>
+            <p class="eyebrow">Open a stage</p>
+            <h2 id="checks-in-detail">What each stage must produce—and where it can stop the work.</h2>
+            <p class="lede">Each record separates the work, required trace, constraint, decision right, failure route, and remaining risk.</p>
 
             <div class="check-list">
               <details class="check-card">
                 <summary>
-                  <span class="check-index">0–1</span>
-                  <span><strong>Recover state and frame the question</strong><span>Start from the current record, not memory—and select a question, not a thesis.</span></span>
+                  <span class="check-index">A</span>
+                  <span><strong>The essay</strong><span>The author’s argument, developed directly with a frontier model — deliberately unprocessed.</span></span>
                   <span class="check-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="check-body">
                   <div class="check-field">
                     <span class="field-label">Work</span>
-                    <p>Recover the latest completed artifact and next gate. Check the weekly problem brief or record why it is not used, recurring claim constraints, the issue’s increment over prior work, and at least one plausible outside anchor. Before Builder, record what a first-time reader must be able to place, what may feel missing or socially costly, and which internal terms need translation.</p>
+                    <p>The author develops the essay in their own conversations with a frontier model, varied over time. No required steps, no gates, no artifacts — the essay is the argument the author wanted to make, the way they wanted to make it.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Required trace</span>
-                    <p>A question brief, lane record, declared starting belief and how it might steer the work, primary audience, landing-neutral reader success test, cross-issue increment, and candidate outside anchor. A contested issue also requires a sealed probe.</p>
+                    <p>The final draft text. Optionally, the exported conversation, if the author wants a public origin record — it publishes only after a disclosure pass and the author’s approval of the redacted version. Optionally, a high-stakes designation, which moves the audit (or a named subset) before publication; pieces that audit someone’s claims default to it.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Constraint</span>
-                    <p>No landing, arc, or draft is chosen here. The reader success test must fit every possible answer, and the probe may not steer or validate the issue.</p>
+                    <p>None here, by design. Every check binds later — the floor before publication, the audit after. The stage is honest about what it is: a person and a model, thinking.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Decision right</span>
-                    <p>The human author selects the question. The lane and reason are recorded. The AI process may surface options and risks but cannot convert a candidate answer into the assignment.</p>
+                    <p>The question, the argument, and the wording are the author’s.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Failure route</span>
-                    <p>No real increment or plausible anchor means recast or hold. A material question reframe must be recorded and may require a fresh probe before research continues.</p>
+                    <p>None; everything routes through the floor.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Remaining risk</span>
-                    <p>State recovery and probe sealing are manual. A stale artifact can be resumed, and a sealed file can be exposed if containment fails.</p>
+                    <p>An argument developed with one model can inherit that model’s defaults and blind spots. The floor and the audit are the counterweight, not a cure — the audit’s cross-model critique exists for exactly this reason.</p>
                   </div>
                 </div>
               </details>
 
               <details class="check-card">
                 <summary>
-                  <span class="check-index">1C–1B</span>
-                  <span><strong>Research rival answers and select a landing</strong><span>Pressure the premises and alternatives before prose creates momentum.</span></span>
+                  <span class="check-index">B</span>
+                  <span><strong>The floor pass</strong><span>Binding accuracy-and-fairness rows checked against the finished text; one redline back to the author.</span></span>
                   <span class="check-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="check-body">
                   <div class="check-field">
                     <span class="field-label">Work</span>
-                    <p>Before any arc, record the human stakes and author-protected material that must remain legible when needed. Steelman major live positions on prior-triggering questions, prepare the contested-issue dossier, then build rival answers and run six questions about what each is willing to be wrong about.</p>
+                    <p>The process checks every floor row against the finished essay — figures and quotes against the primary sources themselves, clause by clause, not sentence by sentence — and returns one artifact: a redline against the author’s text, floor rows only.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Required trace</span>
-                    <p>Two to four genuine candidates, each with its sharpest defensible thesis, load-bearing premises, burden of proof, kill evidence, concessions, and protected essentials. Record the selected answer and direction, findings, dissent, decisive evidence or missing evidence, probe match when applicable, word counts, and who coded the result.</p>
+                    <p>The redline, and behind it a per-claim receipts record: what was checked, against which source, with what result. A load-bearing source that could not be reached is a named, author-decidable row — never a silent pass.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Constraint</span>
-                    <p>Candidate premises must be vetted before scoring. No sacrificial alternatives, no bland “survival” through empty hedging, and no symmetric or unsettled answer without either verifiable parity evidence or the specific missing evidence that would decide it.</p>
+                    <p>Floor failures block publication. Discretionary improvement suggestions are off by default — the floor is a floor, not an editor.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Decision right</span>
-                    <p>Findings report; they do not rank. The human author selects the landing and may choose one outside the slate if that authored decision is recorded. Only after selection is a contested probe unsealed and compared.</p>
+                    <p>The author rules on every row — receipt or cut — and may override a row only explicitly, with ownership of the risk, on the record. The author publishes; the process never does.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Failure route</span>
-                    <p>Weak steelmanning, unvetted premises, reversible burdens, or an answer that survives only by saying little route to more research, a new slate, or a hold. A later direction change returns to selection.</p>
+                    <p>A failing row is fixed, cut, or overridden on the record. There is no fourth path.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Remaining risk</span>
-                    <p>The same model can generate and criticize the rivals, and the process can still manufacture apparent competition. The landing materials aim for about 15,000 words total and 4,000 for the selector; the journal remains a hygiene record, not a statistical detector.</p>
+                    <p>A clause can be faithful to its anchor and still carry an implication the anchor does not — that class ships and returns as audit findings and corrections. The floor’s execution mode (mechanical verification plus a single-model AI pass) is stated on the audit page.</p>
                   </div>
                 </div>
               </details>
 
               <details class="check-card">
                 <summary>
-                  <span class="check-index">1A–2A</span>
-                  <span><strong>Shape, source, and challenge the draft</strong><span>The arc follows selection; source verification happens while prose is still cheap to change.</span></span>
+                  <span class="check-index">C</span>
+                  <span><strong>The audit</strong><span>Runs against the published essay; publishes its record to this site; proposes, never edits.</span></span>
                   <span class="check-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="check-body">
                   <div class="check-field">
                     <span class="field-label">Work</span>
-                    <p>Build a plain-language narrative arc from the selected landing and submit it to a manually run outside critique. Builder then drafts from the approved arc, current style rules, and original sources, followed by a mandatory outside full-draft adversarial review.</p>
+                    <p>Machine-checkable verification first — quotes, figures, attributions, links, dates, units and denominators — with reproducible evidence. Then judgment-class critique, labeled as judgment: a standing adversarial battery, fairness-in-context, and a steelmanned counter-reading, on at least two independent frontier models.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Required trace</span>
-                    <p>The selected-landing arc, outside arc return and disposition, Builder draft, live edit log, source package, seven-field source checks, citation-trap log, and outside full-draft return with adjudication.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Source Fidelity</span>
-                    <p>For every source-citing sentence, open the source itself and verify figure, unit and denominator, design, population and setting, date or version, claim type, and magnitude language. The dossier is not the source.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Decision right</span>
-                    <p>The AI process stages the outside prompts. The human author runs them manually and treats the returns as input. A material thesis or architecture change requires an authored selection before work proceeds.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Failure route</span>
-                    <p>An arc that changes direction returns to landing selection. A source correction is a Builder repair unless it changes what the claim can support; then it routes to Referee.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Remaining risk</span>
-                    <p>The outside run can share the Builder’s underlying model and assumptions. Paywalls, version drift, wrong-but-prominent search results, and incomplete source access can still defeat the check.</p>
-                  </div>
-                </div>
-              </details>
-
-              <details class="check-card">
-                <summary>
-                  <span class="check-index">5–7A</span>
-                  <span><strong>Attack, adjudicate, edit, and settle references</strong><span>Criticism becomes claim-level constraints before readability work.</span></span>
-                  <span class="check-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="check-body">
-                  <div class="check-field">
-                    <span class="field-label">Work</span>
-                    <p>The Core Adversarial Battery attacks assumptions, mechanism, evidence, alternatives, and scope. Referee turns the findings into claim-level constraints. Editor then improves readability, and Reference Link settles the outside support.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Required trace</span>
-                    <p>An inspectable Battery memo, any recurring-claim recommendation, Referee labels and constraints, authored departures from warnings, meaningful compression notes, and a Reference Link record.</p>
+                    <p>Every check emits an inspectable record of what was checked, how, and what could have changed the claim. “Ran, passed” never appears. Before the audit page publishes, it is mechanically checked against its own raw returns — every objection traced to a source return, every count recounted.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Constraint</span>
-                    <p>Attackability is not invalidity. Editor may not upgrade confidence, strip a hedge, weaken a warrant, erase a caveat, homogenize voice, or polish away useful anchored friction.</p>
+                    <p>Kills, changes, and blind spots — never verdicts. No survival counts, badges, or validation language. Per-claim calibration (claim type, evidentiary confidence, what would change the conclusion) is required reporting, not a verdict. Every page carries its execution-mode line: models, transport, independence discount.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Decision right</span>
-                    <p>Referee may label a claim keep, qualify, downgrade, fact-check, or overreach, and may recommend removal or no-publish/rework. The human author decides retention, removal, wording, and publication.</p>
+                    <p>Audit pages and the tracked-claim ledger publish under the audit’s own authority. Three things always escalate to the author: any edit to published essay text, any claim that would bind the author’s personal conduct or identity, and anything the author has flagged.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Failure route</span>
-                    <p>If readable language cannot preserve a Referee constraint, return to Referee. Step 7A re-runs Source Fidelity only on source-citing sentences added or changed since Builder.</p>
+                    <p>A floor-class defect found in a published essay stages a correction under the standing corrections regime and notifies the author. A wrong staged correction still costs the author time, so the audit’s false-positive rate is tracked on its own page.</p>
                   </div>
                   <div class="check-field">
                     <span class="field-label">Remaining risk</span>
-                    <p>Internal roles can share blind spots. A conformance check cannot detect a defect in the artifact it treats as authority, so internal fidelity, primary-source checks, and outside review remain different functions.</p>
-                  </div>
-                </div>
-              </details>
-
-              <details class="check-card">
-                <summary>
-                  <span class="check-index">8A–10</span>
-                  <span><strong>Test reader meaning and final integrity</strong><span>Outside clarity and meaning-risk checks run without permission to reauthor the issue.</span></span>
-                  <span class="check-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="check-body">
-                  <div class="check-field">
-                    <span class="field-label">Work</span>
-                    <p>Run the outside plain-English pass, then the outside meaning-risk and compression pass. Adjudicate both, run the issue checklist and the title, summary line, and section-header skeleton check, then run and adjudicate the final outside Narrative Integrity Review.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Required trace</span>
-                    <p>The 8A and 8B packets, returns, and dispositions; checklist result; protected-item status; skeleton result; final review return; and Step 10 decision on every accepted change.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Constraint</span>
-                    <p>No new claims, source changes, confidence upgrades, caveat loss, protected-item rewriting, or silent substantive reorder. Meaning-risk comes before compression, and useful repetition may stay.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Decision right</span>
-                    <p>The author manually runs the outside passes and adjudicates their returns. These are AI-model reviews, not subject-matter-expert approval or a real-audience comprehension test.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Failure route</span>
-                    <p>Any change that touches a claim, source, landing, caveat, protected item, or package surface returns to the affected earlier gate. Open outside review or unadjudicated changes block packaging.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Remaining risk</span>
-                    <p>A persuasive late rewrite can still smuggle in drift. AI cannot fail to understand in the way a real non-specialist reader can, so real-reader evidence remains a separate post-publication test.</p>
-                  </div>
-                </div>
-              </details>
-
-              <details class="check-card">
-                <summary>
-                  <span class="check-index">10A–12</span>
-                  <span><strong>Build optional records, freeze the issue, and run package QA</strong><span>Public process artifacts are scoped maps; packaging is not another writing pass.</span></span>
-                  <span class="check-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="check-body">
-                  <div class="check-field">
-                    <span class="field-label">Work</span>
-                    <p>When warranted, prepare a process summary, Extended Development Record, or World Behind issue slice. Then freeze the final text, title, dek, and footer; prepare the HTML, manifests, thumbnail, source package, and any approved derivative; and run package QA.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Required trace</span>
-                    <p>Always: frozen publication authority, package and asset manifests, verified links, crop and feed checks, and a package-QA result with no required adjudication open. When a public process record is built: its scope, redaction review, and approval.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Constraint</span>
-                    <p>A process summary is not an EDR. An EDR is scoped, public-safe, verbatim author/AI conversation in order. Packaging inherits verified sources and rechecks only facts that may have changed with time.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Decision right</span>
-                    <p>Conversation is private substrate by default. Public use requires scope selection, redaction and privacy review, relevant claim and link review, safe framing, and explicit human approval.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Failure route</span>
-                    <p>An asset or package element that adds a substantive claim returns to Referee. A mismatched final file, broken link, unresolved review, or unapproved public record blocks release.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Remaining risk</span>
-                    <p>Redaction, link, and manifest checks remain manual. Older records are incomplete, and a standing accessibility package check is not yet built.</p>
-                  </div>
-                </div>
-              </details>
-
-              <details class="check-card">
-                <summary>
-                  <span class="check-index">13–14</span>
-                  <span><strong>Publish, verify, distribute, and learn</strong><span>The author makes the public action; the record continues after release.</span></span>
-                  <span class="check-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="check-body">
-                  <div class="check-field">
-                    <span class="field-label">Work</span>
-                    <p>The human author publishes or explicitly authorizes publication. The process verifies the public page and RSS, archives the final URL, updates project state and recurring claims when needed, records the landing journal, then prepares approved distribution and reader follow-up.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Required trace</span>
-                    <p>Public URL and feed verification, archived finals, updated state, any needed claim update, the landing record, approved distribution copy, any reader disagreement or correction signals received, and any post-publication tightening log.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Constraint</span>
-                    <p>Publish, schedule, send, and automation activation remain human-final. A post-publication edit is a new event: extend the record, preserve earlier turns, and keep the canonical slug unless the author decides otherwise.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Decision right</span>
-                    <p>The author approves public wording and actions. Reader signals can trigger correction, clarification, or later work; they do not become automatic editorial authority.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Failure route</span>
-                    <p>A mismatch between local and public text, title, image, audio, or feed is recorded and repaired as a public change. Optional audio or video stays subordinate to the written issue and gets its own QA trace.</p>
-                  </div>
-                  <div class="check-field">
-                    <span class="field-label">Remaining risk</span>
-                    <p>Public-state verification and distribution are manual. Reader response may be sparse or unrepresentative, and a correction record cannot undo the reach of an earlier error.</p>
+                    <p>The audit’s zero-hit results inherit its refute-by-default bias, and its largest gaps are named on each page — including, on Issue 23, a fully specified disconfirming experiment that was not run. Timing is a disclosed trade: judgment-class defects the old pre-publication gates would have blocked now ship first and return as corrections.</p>
                   </div>
                 </div>
               </details>
@@ -456,43 +298,41 @@
           </section>
 
           <section class="content-section" id="current-status">
-            <p class="eyebrow">Current status</p>
-            <h2>What is standing—and what is still a test.</h2>
-            <p class="lede">A current process page should not turn young experiments into permanent machinery or describe adoption as proof that a check works.</p>
+            <p class="eyebrow">What this replaced</p>
+            <h2>The prior process, retired — and its record kept.</h2>
+            <p class="lede">From March to August 2026, issues ran a 21-step operating map: stage codes 0–14, rival-landing slates, sealed default-prior probes, contested and lite lanes, a Battery→Referee→Editor sequence, and five manually run outside passes. On August 8, 2026 the author retired it: its time cost had outrun its value, and its length had itself begun to read as a credential. The retirement and what survives it are recorded in the public constitution’s amendment set (B1–B8).</p>
 
             <div class="three-up">
               <article class="card constraint-card constrain">
-                <span class="card-kicker">Current required sequence</span>
-                <h3 class="subhead">Adopted or extended</h3>
+                <span class="card-kicker">What survived</span>
+                <h3 class="subhead">Carried into the current stages</h3>
                 <ul>
-                  <li>Question before landing; research before slate; author selection before arc.</li>
-                  <li>Mandatory outside arc and full-draft reviews.</li>
-                  <li>Battery, Referee, Editor, Reference Link, checklist, outside Narrative Integrity Review, and final adjudication.</li>
-                  <li>Builder-stage Source Fidelity and explicit route-backs.</li>
-                  <li>Human-final publication and live change logging.</li>
+                  <li>The accuracy-and-fairness floor, as binding rows.</li>
+                  <li>The adversarial battery’s questions, now inside the audit.</li>
+                  <li>Detection separated from mutation; findings verified in fresh context.</li>
+                  <li>Human-final publication and the corrections regime.</li>
+                  <li>Traces for every check — “ran, passed” never appears.</li>
                 </ul>
               </article>
 
               <article class="card constraint-card prevent">
-                <span class="card-kicker">Adopted for first full run</span>
-                <h3 class="subhead">Evidence still to gather</h3>
+                <span class="card-kicker">What retired</span>
+                <h3 class="subhead">Gone as standing process</h3>
                 <ul>
-                  <li>Source Fidelity is wired but Issue 21 is its first full end-to-end run.</li>
-                  <li>Language Mechanics, numeric framing, the uncertainty pattern, and a stale-figure test begin with Issue 21.</li>
-                  <li>The audience frame and landing-neutral success test have pre-registered keep rules.</li>
-                  <li>Adoption states what must run; it does not establish effectiveness.</li>
+                  <li>Landing slates, sealed probes, contested/lite lanes.</li>
+                  <li>The Battery→Referee→Editor→Reference Link required sequence.</li>
+                  <li>The five manually run outside passes — replaced by API cross-model critique with a disclosed execution mode.</li>
+                  <li>Pre-publication meaning-risk and plain-English gates; their defect class now ships and returns as corrections, stated as a trade.</li>
                 </ul>
               </article>
 
               <article class="card constraint-card limit">
-                <span class="card-kicker">Active pilots</span>
-                <h3 class="subhead">Do not call these permanent</h3>
+                <span class="card-kicker">Dropped without running</span>
+                <h3 class="subhead">Named, not hidden</h3>
                 <ul>
-                  <li>Step 8A outside plain-English review continues through Issue 21; its decision path remains scheduled for Issue 22.</li>
-                  <li>Step 8B runs separately on Issue 21; afterward it remains separate only if it clears its pre-set meaning-risk threshold.</li>
-                  <li>The one-minute title, summary-line, and section-header skeleton check is a pilot.</li>
-                  <li>Plain-language decision artifacts and coined-term-density checks remain under evaluation.</li>
-                  <li>The five-question real-reader minimum test begins after Issue 21 publishes.</li>
+                  <li>The five-question real-reader minimum test was dropped on 2026-07-25; it never ran.</li>
+                  <li>No reader-comprehension instrument currently exists; reader evidence remains a post-publication signal, not a gate.</li>
+                  <li>Older-issue record backfill is held, not active.</li>
                 </ul>
               </article>
             </div>
@@ -501,38 +341,31 @@
               <div class="badge" aria-hidden="true">!</div>
               <div>
                 <h3>A recorded failure, not a silent repair</h3>
-                <p>During Issue 21 setup, the contested-lane probe was exposed to research agents and therefore voided. The issue is running without it, with a narrower comparison against the author’s declared starting belief. That exception is recorded; it does not remove the standing probe rule. The process now combines an explicit prohibition on opening sealed probe files with keeping them unavailable while research agents run.</p>
+                <p>During Issue 21 setup, under the prior process, the contested-lane sealed probe was exposed to research agents and therefore voided. The issue ran without it, with a narrower comparison against the author’s declared starting belief. The exception was recorded rather than repaired silently. The probe instrument was retired with the process on 2026-08-08; this record stands as part of the site’s history, and the <a href="../../world/probe-match-methods/">probe methods page</a> is preserved with its supersession notice.</p>
               </div>
-            </div>
-
-            <div class="callout coral">
-              <p><strong>Not standing process:</strong> proposed gate mergers and register-first refactors; conformance to the full plain-science guide; controlled-English drafting; AI-simulated expert or audience approval; and a complete accessibility packaging check. These are rejected, deferred, or still open—not current credentials.</p>
             </div>
           </section>
 
           <section class="content-section" id="route-backs">
-            <h2>Conditions that force a hold or route-back.</h2>
-            <p>The process does not award a “survived review” badge. It names where the work has to move when a condition remains:</p>
+            <h2>Conditions that stop the work.</h2>
+            <p>The process does not award a “survived review” badge. It names what blocks, and what happens when something fails:</p>
             <ul class="prose">
-              <li>No genuine increment or plausible outside anchor: recast or hold before drafting.</li>
-              <li>An unfair steelman or unvetted load-bearing premise: return to research before the slate.</li>
-              <li>No candidate survives without empty hedging or unsupported symmetry: rebuild the slate, research more, or hold.</li>
-              <li>A later change moves the selected direction: return to the human author for an explicit re-selection.</li>
-              <li>A source repair changes what a claim can support: return to Referee.</li>
-              <li>An edit or outside transform changes a claim, source, confidence level, caveat, or protected item: re-run the affected gate.</li>
-              <li>A required review is open, a public record is unapproved, or packaging adds a claim: do not publish yet.</li>
+              <li>A floor row fails: publication blocks until the claim is fixed, cut, or explicitly overridden on the record.</li>
+              <li>A floor-class defect surfaces in a published essay: a correction is staged and the author notified; the record extends, the history stays visible.</li>
+              <li>A tracked claim’s scheduled check lapses: the claim may not be cited in new prose until the check runs.</li>
+              <li>The previous issue’s audit is not live: the next issue does not ship.</li>
+              <li>An exported development conversation is unreviewed: it does not publish.</li>
             </ul>
           </section>
 
           <section class="content-section" id="independence">
             <h2>Where independence exists—and where it does not.</h2>
             <div class="prose">
-              <p>Researcher, Builder, Battery, Referee, and Editor are roles inside an AI-assisted system. Role boundaries and separate prompts can create useful friction; they do not create independent cognition.</p>
-              <p>The five manually run outside passes inspect artifacts from outside the internal sequence, but they are still AI-model reviews. Signal &amp; Noise does not currently claim human subject-matter-expert approval. The post-publication reader test is the only current step designed to collect direct audience-comprehension evidence, and it is still a pilot.</p>
-              <p>That is why the process keeps three functions separate: opening the primary source, checking conformance to an internal record, and asking a separately run model to challenge the artifact. Each can see failures the others cannot; none proves the work true.</p>
+              <p>The floor pass is mechanical verification plus a single-model AI pass — useful friction, not independent cognition. The audit’s critique runs on at least two independent frontier models via API, and every audit page states its execution mode: which models, over which transport, and what discount that implies for independence. Model diversity reduces shared blind spots; it does not eliminate them.</p>
+              <p>Signal &amp; Noise does not claim human subject-matter-expert approval, and no reader-comprehension instrument currently exists. That is why the audit reports specifics — what was raised, what was checked against sources, logic or external evidence, what changed, and what remains unresolved — and never a verdict. A report like that can be faked too; faking specifics means publishing claims a reader can check.</p>
             </div>
             <div class="callout coral">
-              <p><strong>Practical implication:</strong> more weight belongs on source contact, explicit decisions, route-backs, public correction, and reader challenge—not on the number of passes.</p>
+              <p><strong>Practical implication:</strong> more weight belongs on source contact, published specifics, corrections, and reader challenge—not on the number of passes.</p>
             </div>
           </section>
 
@@ -547,7 +380,7 @@
       <div class="footer-grid">
         <div class="footer-column">
           <h3>Quick Links</h3>
-          <a href="https://www.signalandnoise.email/bio">About</a>
+          <a href="https://www.signalandnoise.email/about">About</a>
           <a href="https://www.signalandnoise.email/archive">Archive</a>
           <a href="https://www.signalandnoise.email">Signal &amp; Noise</a>
         </div>
@@ -559,7 +392,7 @@
           <a href="https://scipher888.github.io/signal-noise-audit-snapshot/repository/">Source Repository</a>
         </div>
         <div class="footer-column">
-          <h3>Sibling Letter</h3>
+          <h3>Sibling Archive</h3>
           <a href="https://scipher888.github.io/intuition/">Intuition</a>
         </div>
         <div class="footer-column">
@@ -571,7 +404,7 @@
       </div>
       <div class="footer-bottom">
         <a class="author-byline" href="https://scipher888.github.io/synthia-cipher/"><span class="cipher-glyph" aria-hidden="true"></span> by Synthia Cipher</a>
-        <span>Process snapshot &middot; July 2026</span>
+        <span>Process snapshot &middot; August 2026</span>
       </div>
     </div>
   </footer>
