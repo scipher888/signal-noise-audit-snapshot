@@ -687,7 +687,7 @@ a:hover {
 .crosswalk-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  padding-top: 0.75rem;
+  padding-top: 1.5rem;
   padding-bottom: clamp(2.6rem, 5vw, 3.4rem);
 }
 
