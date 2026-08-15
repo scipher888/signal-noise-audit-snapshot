@@ -681,10 +681,13 @@ a:hover {
 
 /* Crosswalk node — a 4th layer link that hangs BELOW the layer-nav box
    (so the box still closes right under Origin/Structure/Reference), placed
-   midway between and bracketed up to Structure and Reference. */
+   midway between Structure and Reference. A little top padding keeps the
+   hanging frame from sitting on the tab strip's bottom border, which
+   otherwise clips it into a stray card-edge fragment. */
 .crosswalk-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-top: 0.75rem;
   padding-bottom: clamp(2.6rem, 5vw, 3.4rem);
 }
 
@@ -700,8 +703,7 @@ a:hover {
   position: absolute;
   inset: 0 16.667% 0 50%;
   border: 1px solid var(--line-strong);
-  border-top: 0;
-  border-radius: 0 0 9px 9px;
+  border-radius: 9px;
 }
 
 .layer-bridge::after {
