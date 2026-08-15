@@ -28,6 +28,19 @@
         var(--navy);
       box-shadow: var(--shadow-lg);
     }
+    /* .lens-intro sets --ink-soft for light sections. That color wins over
+       this panel's inherited white and fails contrast (~1.3:1 on --navy). */
+    .world-lens .lens-intro {
+      color: inherit;
+    }
+    .world-lens .lens-intro a {
+      color: var(--sky);
+      text-decoration-color: rgba(207, 232, 236, 0.65);
+    }
+    .world-lens .lens-intro a:hover {
+      color: var(--paper-bright);
+      text-decoration-color: currentColor;
+    }
     .wl-wrap {
       overflow-x: auto;
       border: 1px solid rgba(244, 239, 230, 0.16);
