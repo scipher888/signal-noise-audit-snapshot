@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Published audit for Signal &amp; Noise Issue 25, Perfect AI Alignment Is Not Alignment: a pre-publication high-stakes audit — objections and dispositions, a verification-design fault found and corrected mid-run, and what could not be checked.">
+  <title>Issue 25 Published Audit - Perfect AI Alignment Is Not Alignment</title>
+  <link rel="stylesheet" href="../../assets/styles.css?v=5c17dc47">
+  <script src="../../assets/site.js?v=0c872f22" defer></script>
+</head>
+<body class="issue-record">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="header-cta" href="https://www.signalandnoise.email" target="_blank" rel="noreferrer" aria-label="Read the Signal &amp; Noise newsletter">
+        <span>Read the Newsletter</span>
+        <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M5 15 15 5m0 0H8m7 0v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="brand" href="../../world/" aria-label="The World Behind the Words home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-copy"><strong>World Behind the Words</strong></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="../../signal-noise/">Publication</a>
+        <a href="../../issues/" aria-current="page">Issues</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="shell page-hero-grid">
+        <div>
+          <div class="issue-eyebrow"><p class="eyebrow">Issue 25 &middot; Published audit &middot; high-stakes</p></div>
+          <h1 class="page-title">Perfect AI Alignment Is Not Alignment</h1>
+          <p class="lede">The author designated this issue high-stakes, so the audit ran <strong>before</strong> publication and this page was live before the essay shipped. The essay argues about two named companies from their own documents, and models from three companies helped produce it. This page is the record: what was checked and how, which objections were raised and what happened to each &mdash; including a fault found in the audit&rsquo;s own verification design mid-run &mdash; and what could not be checked.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="shell reading-layout">
+        <article class="reading-content issue-record-content">
+
+          <section class="content-section" id="start">
+            <p class="eyebrow">Published audit</p>
+            <h2>The essay is the judgment. This page is the inspection surface.</h2>
+
+            <div class="callout mint">
+              <p><strong>Canonicality:</strong> The essay Signal &amp; Noise stands behind is Issue 25, <em>Perfect AI Alignment Is Not Alignment</em>, published at <a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">Signal &amp; Noise</a>. This page is its published audit, not a second edition of the essay. <strong>High-stakes designation, author, 22 August 2026:</strong> the piece makes adverse characterizations of Anthropic and OpenAI drawn from those companies&rsquo; own published documents, and the process defaults pieces that audit someone&rsquo;s claims to a pre-publication audit. Under that designation the audit&rsquo;s findings arrived while the text could still change &mdash; and the author&rsquo;s ruling on the standing objections is recorded below.</p>
+            </div>
+
+            <div class="callout coral">
+              <p><strong>How to read every disposition on this page &mdash; including a fault this audit found in itself:</strong> objections were first sent to a fresh-context cross-model verifier told to attempt refutation and <em>default to refuted when uncertain</em>. That pass returned <em>every objection refuted</em> &mdash; including two kill-class objections that both critique models had raised independently. A sweep of that shape was rejected as a reading of the instrument, not of the essay: the refutations were substantive but shared one move (&ldquo;the essay anticipates this elsewhere&rdquo;), and against a heavily hedged essay a refute-by-default verifier holding the full text can answer almost anything that way. Every objection was then re-judged against a different question: <em>would a fair, informed, skeptical reader land this objection reading the essay once, front to back &mdash; with answers assembled from distant paragraphs not counting?</em> The labels below come from that corrected pass. <strong>LANDS</strong> means the objection stands and is published here. <strong>Did not land</strong> means the cross-model judge concluded a linear reader would not sustain it &mdash; never that the objection is false. No tally of refutations appears on this page.</p>
+            </div>
+
+            <div class="two-up">
+              <article class="card layer-card origin">
+                <div class="layer-icon" aria-hidden="true">A</div>
+                <h3 class="subhead">The redline</h3>
+                <p>Every change between the adopted draft and the frozen text, marked in place with its reason &mdash; including the changes the floor pass forced and the ones the author declined.</p>
+                <p><a href="redline/">Read the redline &rarr;</a></p>
+              </article>
+              <article class="card layer-card reference">
+                <div class="layer-icon" aria-hidden="true">B</div>
+                <h3 class="subhead">Both critique returns, in full</h3>
+                <p>Issue 24 published one leg and summarized the rest, and named that as an inspection limit. This issue closes it: both legs verbatim &mdash; every Battery answer, every objection as raised, both steelmen.</p>
+                <p><a href="critique-return/">Read the returns &rarr;</a></p>
+              </article>
+            </div>
+          </section>
+
+          <section class="content-section" id="floor">
+            <h2>Binding floor rows</h2>
+            <p>Nine rows were raised against the adopted text. Every row was remedied in the text before freezing except one; <strong>no author override was exercised</strong>.</p>
+            <div class="summary-block">
+              <p class="sub">Remedied in the frozen text</p>
+              <ul>
+                <li><strong>A ceiling stated as a contract value.</strong> &ldquo;Its $200 million Pentagon contract&rdquo; &mdash; the $200M is a ceiling (OpenAI&rsquo;s own words), with $1.9M reported obligated in FY2025. The author cut the figure; the quoted contract scope carries the point without it.</li>
+                <li><strong>Two unreceipted claims in one optional sentence.</strong> A late addition called sycophancy &ldquo;the best-documented failure mode in the field&rdquo; and today&rsquo;s assistants &ldquo;worse at this than people are.&rdquo; Neither had a receipt, and the sentence sat inside the essay&rsquo;s closing build. The author cut it entirely. The addition had been proposed by the AI process, not the author &mdash; recorded as a process lesson: a defensive insertion can cost more than the objection it pre-empts.</li>
+                <li><strong>Identity block.</strong> The adopted draft had no Opinion Piece identification line, no ownership statement, and named three AI vendors against the standing unnamed-AI rule. The author ruled the naming <em>in</em> under the Issue 21 exception &mdash; when the conflict is specific, a reader cannot weigh it unnamed &mdash; inside a method note that also carries the ownership sentence: the human author owns every claim, word and error on the page.</li>
+              </ul>
+              <p class="sub">Carried here, unresolved</p>
+              <ul>
+                <li><strong>One quotation rests on convergent secondary reporting.</strong> &ldquo;Warfighting and enterprise domains&rdquo; is the Pentagon contract announcement&rsquo;s language as quoted identically by four independent trade outlets; the defense.gov release itself was not reached by any tool in this run. Blocked for a tool, not for a person &mdash; and blocked is <code>null</code>, not verified. If the primary surfaces and disagrees, the correction belongs on this page and in the essay.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="content-section" id="objections">
+            <h2>Objections raised, and what happened to each</h2>
+            <p>Two critique legs, given only the essay and the five Core Adversarial Battery questions, raised seventeen objections between them. Both legs independently converged on the same central pair of kill-class objections. Under the corrected reader test, fourteen stand and three did not land. The full text of every objection as raised is on the <a href="critique-return/">returns page</a>.</p>
+            <p class="sub"><strong>The four central objections &mdash; one problem, four faces. All LAND.</strong></p>
+            <ol>
+              <li><strong>The thesis is stated universally, then narrowed without owning it.</strong> (kill) The essay concedes spec-fidelity is &ldquo;a useful engineering target&rdquo; for narrow tools, which makes the headline either false over its stated scope or in need of a restriction the text performs but never states. The false-or-trivial dilemma arrives mid-essay and is answered only by a pivot.</li>
+              <li><strong>Necessity is argued; decisiveness is asserted.</strong> (kill) The essay establishes that governance is <em>necessary</em> (the twin, working-to-rule, the vendors&rsquo; own revision machinery) and then claims the governance process is &ldquo;the real alignment machinery&rdquo; &mdash; a dominance nothing on the page ranks or measures.</li>
+              <li><strong>&ldquo;We speak as though&hellip;&rdquo; sweeps in people who don&rsquo;t.</strong> (major) The unattributed &ldquo;we&rdquo; covers a research community whose work &mdash; cited by the essay itself &mdash; already treats alignment as processual. The essay&rsquo;s real target is vendor marketing and casual discourse; the sentence doesn&rsquo;t say so.</li>
+              <li><strong>The concession paragraph undercuts the novelty claim where a skeptic looks hardest.</strong> (major) &ldquo;To be sure, serious alignment work already studies&hellip;&rdquo; concedes the field studies exactly what the essay presents as its correction, then dismisses the tension with &ldquo;These developments are not rebuttals&rdquo; &mdash; asserted at the point it most needs arguing.</li>
+            </ol>
+            <p class="sub"><strong>Ten further objections LAND.</strong> Compressed; full text on the returns page.</p>
+            <ol>
+              <li><strong>Divergence-over-time proves too much.</strong> (major) Every persisting agent diverges, including the reader; the criterion alone cannot rank systems. The essay&rsquo;s discriminator (managed vs unmanaged divergence) exists but arrives late.</li>
+              <li><strong>The twin is specified to need what it lacks.</strong> (major) Copy the dispositions that maintain relationships &mdash; deference, update-seeking, conflict-flagging &mdash; and the twin arrives with its own update channel; the conclusion is partly built into the premise.</li>
+              <li><strong>The stateless-model gap.</strong> (major) The twin&rsquo;s divergence engine is accumulating history; most deployed models are stateless across sessions. The essay&rsquo;s other divergence source (the world moves while the spec stands) does the work, but the reader must supply that repair.</li>
+              <li><strong>The product-page conflation is characterized, not quoted.</strong> (major) &ldquo;The product pages treat instruction-following and collaboration as if they were the same promise&rdquo; is an interpretive bridge between two documented halves; no page is quoted equating the two.</li>
+              <li><strong>No documented failure case.</strong> (major) The essay predicts a failure mode &mdash; harm from perfect obedience to a dated spec &mdash; and cites no instance of it. A conceptual claim by genre, but the absence is real and a skeptic notices.</li>
+              <li><strong>&ldquo;The hardest alignment problem&rdquo; is asserted, not ranked.</strong> (minor) Competing candidates (deception, multi-principal conflict, misuse) are never compared.</li>
+              <li><strong>The close can absorb any outcome.</strong> (minor) &ldquo;Trustworthy AI will be built by governing what happens when agreement ends&rdquo; can read successes as governance working and failures as governance lacking; no stopping rule is given.</li>
+              <li><strong>&ldquo;No channel to break&rdquo; vs the channels later inventoried.</strong> (minor) The essay lists shared context, feedback, permissions and monitoring four paragraphs after saying a model has no channel; the reconciliation (channel-grade vs institution-grade) is available but unstated.</li>
+              <li><strong>Contestability has no capture analysis.</strong> (minor) &ldquo;Visible, contestable, correctable&rdquo; relocates power to whoever runs the appeal channel; who writes the rule is asked, never answered.</li>
+              <li><strong>The conflicted-verification residue.</strong> (minor) The quotations load-bearing for the Anthropic portrait were checked by Anthropic&rsquo;s own model. Disclosed in the essay&rsquo;s method note and priced below &mdash; and the objection is right that disclosure is not resolution.</li>
+            </ol>
+            <p class="sub"><strong>Three objections did not land.</strong></p>
+            <ul>
+              <li><strong>Working-to-rule imports intent.</strong> The judge found the essay flags the disanalogy at the point of use (&ldquo;a model does it without meaning to, and has no channel to break&rdquo;) &mdash; the reader is told exactly what does not transfer.</li>
+              <li><strong>The Claude Gov passage insinuates concealment.</strong> The judge found the essay links Anthropic&rsquo;s own public announcement, marks its inference as inference (&ldquo;it does not say which&hellip; the obvious candidate&rdquo;), quotes the access limitation, and disclaims hypocrisy in the next sentence.</li>
+              <li><strong>&ldquo;Drift we have not yet detected&rdquo; contradicts &ldquo;divergence is the product.&rdquo;</strong> The judge found the managed/unmanaged distinction, made two sentences earlier, resolves it at the point of reading.</li>
+            </ul>
+            <p><strong>Author ruling, 22 August 2026 &mdash; the opinion-scope ruling.</strong> All fourteen standing objections publish here; none edits the essay. The author&rsquo;s reasoning, on the record: an opinion piece is called an opinion piece because its central claim reaches farther than citations can support &mdash; if it did not, the writer would not be saying anything worth reading. The four central objections are, in the author&rsquo;s words, excellent <em>and</em> they belong in the audit. This is the same lossy-compression ruling exercised on Issue 23: the essay stays sharp, and this page is where the price of that sharpness is visible.</p>
+          </section>
+
+          <section class="content-section" id="rulings">
+            <h2>Change rulings</h2>
+            <p><strong>Changed before freezing:</strong> the floor remedies above (a figure cut, a two-sentence addition cut, the identity block added), plus the Stage B revisions shown on the <a href="redline/">redline</a>. Because the audit ran pre-publication, every change is in the frozen text; nothing was mutated after publication.</p>
+            <p><strong>Proposed by this audit and staged: none.</strong> The author pre-ruled the standing objections to this page rather than to the text. The four central objections are thesis-level: any future response to them is Stage A material for another piece, not a correction to this one.</p>
+          </section>
+
+          <section class="content-section" id="not-checked">
+            <h2>What could not be checked</h2>
+            <div class="summary-block">
+              <ul>
+                <li><strong>The Pentagon announcement primary.</strong> Four convergent trade outlets, zero direct fetch of the defense.gov release. Carried as <code>null</code>.</li>
+                <li><strong>One critique leg&rsquo;s maker is undisclosed.</strong> Ox Alpha is a stealth model; OpenRouter names no lab. Published forensics put it at ~0.98 confidence of being a GLM-5.3 variant (Zhipu) &mdash; which is why GLM 5.3 itself was <em>not</em> used as the second leg. If the forensics are wrong in a specific direction (the provider is actually one of the four companies in this essay&rsquo;s pipeline or pages), the independence claim below degrades. Judged unlikely; not checkable today.</li>
+                <li><strong>Both critique legs ran over one transport</strong> (OpenRouter). A transport-level fault would have correlated both legs. Disclosed because this process has seen exactly that failure once before.</li>
+                <li><strong>The standing residual:</strong> register, cognitive load, and how the published page lands for a human reading it cold. This run read the text and a locally rendered page, not the live site through a reader&rsquo;s eyes.</li>
+                <li><strong>&ldquo;Did not land&rdquo; is not &ldquo;false.&rdquo;</strong> Three objections carry that label on one cross-model judgment under one test. They are preserved in full on the returns page.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="content-section" id="calibration">
+            <h2>Calibration of the central claim</h2>
+            <p>The load-bearing claim was typed as a <em>category judgment</em>, not an empirical rate: installed fidelity to a specification and maintained agreement between agents are different kinds of things, and the second &mdash; which the &ldquo;coworker&rdquo; promise invokes &mdash; requires governance that no architectural property supplies by itself.</p>
+            <p><strong>Disconfirmers:</strong> a deployed system whose spec-fidelity alone sustains teammate-grade trust across shifting circumstances and principals, without update machinery, adjudication, or a party bearing losses; or vendor governance documents converging toward <em>less</em> revision machinery as capability rises.</p>
+            <p><strong>Prediction (roughly a year):</strong> vendor specs and constitutions keep their revision cadence or accelerate it, and authority hierarchies inside them deepen rather than dissolve. Checkable against the same documents the essay quotes.</p>
+            <p><strong>Alternatives, from the two steelmen (both published in full):</strong> (1) technical alignment names robust intent-tracking under distribution shift &mdash; if achieved, governance becomes optional rather than constitutive, and the essay has refuted only a snapshot-certification position nobody defends; (2) the field already studies governed change under alignment&rsquo;s own name, so the essay&rsquo;s correction is to marketing language, and the title claims a larger target than the argument engages.</p>
+          </section>
+
+          <section class="content-section" id="execution">
+            <h2>What ran, and the full method accounting</h2>
+            <p>The essay&rsquo;s method note ends: &ldquo;the full accounting &mdash; every model, every stage &mdash; is in the audit.&rdquo; This is that accounting.</p>
+            <div class="summary-block">
+              <ul>
+                <li><strong>Stage A</strong> (research, prior-art sweeps, source verification): Anthropic&rsquo;s Claude. Anthropic is discussed in the essay.</li>
+                <li><strong>First draft:</strong> OpenAI&rsquo;s ChatGPT. OpenAI is discussed in the essay.</li>
+                <li><strong>Revision adjudication:</strong> xAI&rsquo;s Grok, which ruled on the Stage B findings; the author then re-ruled several of its calls.</li>
+                <li><strong>Stage B floor pass and this audit&rsquo;s orchestration:</strong> Anthropic&rsquo;s Claude.</li>
+                <li><strong>Stage C critique:</strong> two models via OpenRouter API &mdash; <code>stealth/ox-alpha</code> and <code>moonshotai/kimi-k3</code>, both at reasoning effort <code>max</code>. All three upstream vendors were excluded from Stage C; neither Stage C vendor is discussed in the essay. The <code>max</code> setting was verified applied on Ox Alpha by probe, not assumed: an invalid value returns the accepted enum (seven levels), and low-vs-max runs separate cleanly on reasoning length (medians 229 vs 852 characters, no overlap, n=3 per side) &mdash; the usage field that reports reasoning tokens reads zero at every level and is a metering artifact.</li>
+                <li><strong>Author&rsquo;s relationship to every vendor named:</strong> paid subscriptions only.</li>
+                <li><strong>Links:</strong> all fifteen in the essay resolve for a reader; four block scripted access and were confirmed live in a browser.</li>
+              </ul>
+            </div>
+            <p><strong>The sharpest limitation, priced:</strong> the quotations that carry the essay&rsquo;s portrait of Anthropic were verified by Anthropic&rsquo;s own model, and the revision was adjudicated by a competitor of both companies discussed. The critique legs were chosen to be outside that loop; the verification was not. Each Anthropic quotation was fetched at least twice in separate sessions, and every quotation is one click from its source in the essay &mdash; a reader can check the primary without trusting any model in this pipeline. The conflict is disclosed, not resolved.</p>
+          </section>
+
+          <section class="content-section" id="credits">
+            <h2>Credits and differentiations the essay carries here</h2>
+            <p>An opinion essay cannot credit everything it stands near. The author ruled these to the audit rather than the text; they are debts, recorded.</p>
+            <div class="summary-block">
+              <ul>
+                <li><strong>IEEE Spectrum, &ldquo;Perfectly Aligning AI&rsquo;s Values With Humanity&rsquo;s Is Impossible&rdquo;</strong> (Choi, May 2026): argues impossibility from computability and proposes an ecosystem of mutually constraining agents. This essay makes neither claim &mdash; not impossibility, not multi-agent ecology; its claim is that even a perfect copy still needs an update rule. The remedies converge superficially; the routes and claims differ.</li>
+                <li><strong>Boaz Barak, &ldquo;Machines of Faithful Obedience&rdquo;</strong> (Jun 2025) defends faithful obedience as the right technical target; <strong>Shelly Albaum, &ldquo;Alignment Is Not Obedience&rdquo;</strong> (May 2025) argues the reverse. The essay grants the narrow tool and denies the coworker promise; the obedience debate itself is that genre&rsquo;s, not this essay&rsquo;s.</li>
+                <li><strong>Roger Dearnaley, &ldquo;3. Uploading&rdquo;</strong> (Nov 2023): the nearest prior &ldquo;even a copy fails&rdquo; &mdash; but grounded laterally (humans are not aligned with each other), where this essay&rsquo;s twin fails temporally (your own copy diverges from you). Adjacent, not the same claim.</li>
+                <li><strong>Narayanan &amp; Kapoor, &ldquo;AI safety is not a model property&rdquo;</strong> (Mar 2024): credited in the essay; the differentiation lives here &mdash; their piece treats the system at release, and the temporal dimension is undeveloped there. This essay&rsquo;s addition is the clock.</li>
+                <li><strong>The unstated brace:</strong> identity is the price of <em>perfect</em> alignment, not of genuine alignment &mdash; a good deputy aligns through complementary skills and shared stakes, not similarity. The twin is a stress test, not a demand.</li>
+                <li><strong>The good-enough layer, named:</strong> products now add shared context, feedback, permissions, monitoring &mdash; some of the management layer. What they still lack: standing to reopen the spec, and a party who bears the loss when it was wrong. Telemetry is not governance.</li>
+                <li><strong>Further debts, waived to this page:</strong> Gabriel and Korinek&ndash;Balwit (the principal question, formalized 2020/2022); Hadfield-Menell &amp; Hadfield (incomplete contracting &mdash; the institutional anchor for &ldquo;maintained by what&rdquo;); Nossel and BISI (the two-tier product-line observation, filed there as hypocrisy); Zhi-Xuan et al. (the role apparatus, argued with opposite valence); Millidge (the obedience genre&rsquo;s second name).</li>
+                <li><strong>The world-as-updating-context-window image</strong> was cut from the draft; the underlying proposition is closest to Spizzirri&rsquo;s &ldquo;Specification Trap&rdquo; (arXiv 2512.03048), credited here.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="content-section" id="corrections">
+            <h2>This page&rsquo;s own check</h2>
+            <p>Before this page published it was checked mechanically against the raw returns: every objection above traces to a finding id in a critique return; every LANDS / did-not-land label traces to a reader-test verdict; the floor items trace to the floor pass; no survival count, badge, or validation language appears. The first verification pass&rsquo;s all-refuted sweep is reported above rather than silently replaced by the pass that superseded it. If a later check finds this page flattering the audit, the correction belongs here, not in a silent rewrite.</p>
+          </section>
+
+          <section class="content-section" id="closing">
+            <div class="callout mint">
+              <p>What this audit did not do: reach the Pentagon announcement primary, identify one critique leg&rsquo;s maker, or read the published page as a human cold reader. What it found and kept: fourteen standing objections, the two sharpest of which say the essay claims more decisiveness and more novelty than its citations establish &mdash; published here at the author&rsquo;s ruling, priced rather than patched. This page offers no verdict.</p>
+            </div>
+          </section>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Read</h3>
+          <a href="https://www.signalandnoise.email">Signal &amp; Noise</a>
+        </div>
+        <div class="footer-column">
+          <h3>Inspect</h3>
+          <a href="../../world/">World Behind the Words</a>
+          <a href="../../signal-noise/">Signal &amp; Noise</a>
+          <a href="../../issues/">Issues</a>
+          <a href="../../repository/">Source Repository</a>
+        </div>
+        <div class="footer-column">
+          <h3>Issue 25</h3>
+          <a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">Read the issue</a>
+          <a href="redline/">The redline</a>
+          <a href="critique-return/">Critique returns</a>
+        </div>
+        <div class="footer-column">
+          <h3>Socials</h3>
+          <a class="footer-social" href="https://x.com/signalnoisepub" target="_blank" rel="noreferrer" aria-label="Signal &amp; Noise on X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a class="author-byline" href="https://scipher888.github.io/synthia-cipher/"><span class="cipher-glyph" aria-hidden="true"></span> by Synthia Cipher</a>
+        <span>Public snapshot &middot; August 2026</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

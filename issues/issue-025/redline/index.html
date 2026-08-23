@@ -1,0 +1,254 @@
+<title>Issue 25 Redline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+
+<style>
+  :root {
+    --paper:#F8F7F4; --paper-sunk:#F1EFEA; --ink:#1A1917; --muted:#6E6B64; --rule:#E2DFD8;
+    --del:#A32B2B; --del-wash:#A32B2B14; --ins:#1F6F5C; --ins-wash:#1F6F5C14;
+    --floor:#A32B2B; --arg:#345F80; --arg-wash:#345F8014; --credit:#8A6A1F; --focus:#1F6F5C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:#171614; --paper-sunk:#201E1B; --ink:#ECEAE4; --muted:#9A968D; --rule:#322F2A;
+      --del:#E0736E; --del-wash:#E0736E1F; --ins:#5FBFA3; --ins-wash:#5FBFA31F;
+      --floor:#E0736E; --arg:#7FB2D4; --arg-wash:#7FB2D41F; --credit:#D9A93F; --focus:#5FBFA3;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#171614; --paper-sunk:#201E1B; --ink:#ECEAE4; --muted:#9A968D; --rule:#322F2A;
+    --del:#E0736E; --del-wash:#E0736E1F; --ins:#5FBFA3; --ins-wash:#5FBFA31F;
+    --floor:#E0736E; --arg:#7FB2D4; --arg-wash:#7FB2D41F; --credit:#D9A93F; --focus:#5FBFA3;
+  }
+  * { box-sizing:border-box; }
+  body { background:var(--paper); color:var(--ink);
+    font-family:"Newsreader",Georgia,"Times New Roman",serif; font-optical-sizing:auto;
+    font-size:1.0625rem; line-height:1.62; margin:0; padding:3.5rem 1.5rem 6rem;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:88rem; margin:0 auto; display:flex; flex-direction:column; gap:2.75rem; }
+  .masthead { display:flex; flex-direction:column; gap:1rem; max-width:64ch; }
+  .eyebrow { font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:.6875rem; font-weight:600;
+             letter-spacing:.13em; text-transform:uppercase; color:var(--muted); margin:0; }
+  h1 { font-size:clamp(2rem,4.4vw,2.9rem); font-weight:500; line-height:1.1; letter-spacing:-.015em;
+       margin:0; text-wrap:balance; }
+  .provenance { font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:.875rem; line-height:1.55;
+                color:var(--muted); margin:0; }
+  .toolbar { display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+  .viewtoggle { font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:.8125rem; font-weight:600;
+    background:var(--ink); color:var(--paper); border:none; border-radius:3px; padding:.55rem 1rem;
+    cursor:pointer; }
+  .viewtoggle:focus-visible { outline:2px solid var(--focus); outline-offset:2px; }
+  .toolbar .hint { font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:.8125rem; color:var(--muted); }
+  .legend { display:flex; flex-wrap:wrap; gap:.55rem 1.5rem; padding:1rem 1.15rem;
+            background:var(--paper-sunk); border:1px solid var(--rule); border-radius:3px;
+            font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:.8125rem; max-width:64ch; }
+  .row { display:grid; grid-template-columns:minmax(0,64ch) minmax(0,17rem); gap:0 2.5rem; align-items:start; }
+  .row > p, .row > .standfirst, .row > .method { grid-column:1; margin:0 0 1.15rem; }
+  .row > aside { grid-column:2; }
+  h2.essay-title { font-size:clamp(1.5rem,3vw,2rem); font-weight:600; line-height:1.15;
+                   letter-spacing:-.01em; margin:0 0 .6rem; max-width:64ch; text-wrap:balance; }
+  .standfirst { font-style:italic; color:var(--muted); font-size:1.125rem; }
+  del { text-decoration:line-through; text-decoration-thickness:1px; color:var(--del);
+        background:var(--del-wash); padding:.05em .12em; border-radius:2px; }
+  ins { text-decoration:none; color:var(--ins); background:var(--ins-wash); padding:.05em .12em;
+        border-radius:2px; box-shadow:inset 0 -1px 0 var(--ins); }
+  a { color:inherit; text-decoration:underline; text-underline-offset:.16em;
+      text-decoration-color:color-mix(in srgb,currentColor 40%,transparent); }
+  a:hover { text-decoration-color:currentColor; }
+  a:focus-visible { outline:2px solid var(--focus); outline-offset:2px; border-radius:2px; }
+  .tag { font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.6875rem; font-weight:500;
+         vertical-align:.35em; color:var(--paper); background:var(--muted); padding:.12em .38em;
+         border-radius:2px; margin-left:.18em; text-decoration:none; letter-spacing:.02em; white-space:nowrap; }
+  .tag.floor { background:var(--floor); }
+  .tag.jcall { background:var(--arg); }
+  aside { font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:.8125rem; line-height:1.5;
+          color:var(--muted); border-left:2px solid var(--rule); padding:.1rem 0 .1rem .85rem;
+          margin-bottom:1.15rem; }
+  aside b { color:var(--ink); font-weight:600; }
+  aside .sev { font-family:"IBM Plex Mono",monospace; font-size:.6875rem; letter-spacing:.04em;
+               color:var(--arg); display:block; margin-bottom:.2rem; }
+  .clean del, .clean .tag, .clean aside { display:none; }
+  .clean ins { color:inherit; background:none; box-shadow:none; padding:0; }
+  .clean .row { grid-template-columns:minmax(0,64ch); }
+  section { max-width:74ch; }
+  section h2 { font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:.75rem; font-weight:600;
+               letter-spacing:.13em; text-transform:uppercase; color:var(--muted); margin:0 0 .5rem;
+               padding-bottom:.6rem; border-bottom:1px solid var(--rule); }
+  .flags ol { margin:0; padding-left:1.25rem; }
+  .flags li { margin-bottom:.85rem; }
+  .audit ul { margin:0; padding-left:1.2rem; }
+  .audit li { margin-bottom:.7rem; }
+  q { font-style:italic; }
+  .method { background:var(--paper-sunk); border:1px solid var(--rule); border-radius:3px;
+            padding:1.1rem 1.25rem; font-size:.9375rem; }
+  table { border-collapse:collapse; width:100%; font-family:"IBM Plex Sans",system-ui,sans-serif;
+          font-size:.8125rem; }
+  .tablewrap { overflow-x:auto; }
+  th { text-align:left; font-size:.6875rem; letter-spacing:.08em; text-transform:uppercase;
+       color:var(--muted); font-weight:600; padding:.5rem .9rem .5rem 0; border-bottom:1px solid var(--rule); }
+  td { padding:.55rem .9rem .55rem 0; border-bottom:1px solid var(--rule); vertical-align:top; }
+  td:first-child { white-space:nowrap; }
+  .counts { background:var(--arg-wash); border-left:3px solid var(--arg); border-radius:0 3px 3px 0;
+            padding:1.1rem 1.3rem; font-size:.9375rem; font-family:"IBM Plex Sans",system-ui,sans-serif; }
+  .counts b { font-variant-numeric:tabular-nums; }
+  @media (max-width:1080px) {
+    .row { grid-template-columns:minmax(0,1fr); gap:0; }
+    .row > aside { grid-column:1; margin:.1rem 0 1.5rem; }
+  }
+  @media (prefers-reduced-motion:reduce) { * { transition:none !important; animation:none !important; } }
+</style>
+
+<div class="wrap">
+<div style="max-width:88rem;margin:0 auto 2rem;padding:1rem 1.25rem;border:1px solid #E2DFD8;border-left:4px solid #345F80;border-radius:3px;font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:.875rem;line-height:1.55">
+<strong>Where this sits in the record.</strong> This is the Stage B redline of the adopted draft — every change marked, with the change ledger. After this redline was settled, the floor pass made five further changes, all visible on the <a href="../">audit page</a>: the Opinion Piece identification line, the method note, and the sign-off were added; the Pentagon contract figure was cut (a ceiling had been stated as a contract value); and one optional two-sentence addition (the sycophancy concession, C13 below) was cut entirely — it had introduced two unreceipted claims and weakened the closing build. The <a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">published essay</a> is the frozen text after those changes.
+</div>
+
+
+  <header class="masthead">
+    <p class="eyebrow">Signal &amp; Noise · Issue 25 · Stage B · rev. 6 — final</p>
+    <h1>Perfect AI Alignment Is Not Alignment</h1>
+    <p class="provenance">Draft by ChatGPT · rev. 3 rulings by J, 21 Aug 2026: readability governs, floor ships regardless, seven items migrated to the audit. Marks are still relative to ChatGPT's original draft — restored passages appear unmarked. <b>All calls settled.</b></p>
+    <div class="toolbar">
+      <button class="viewtoggle" id="vt" onclick="document.getElementById('essay').classList.toggle('clean'); this.textContent = document.getElementById('essay').classList.contains('clean') ? 'Show the marks' : 'Read it clean';">Read it clean</button>
+      <span class="hint">The clean view is the essay as a reader meets it &mdash; <b>1,276 words</b>, final.</span>
+    </div>
+  </header>
+
+  <div class="legend">
+    <span><del>struck</del> delete</span>
+    <span><ins>inserted</ins> add</span>
+    <span><span class="tag floor">C1</span> floor</span>
+    <span><span class="tag jcall">J1</span> open call — see flags</span>
+    <span><span class="tag">C9</span> settled</span>
+  </div>
+
+  <article class="essay" id="essay">
+
+    <div class="row"><h2 class="essay-title">Perfect AI Alignment Is Not Alignment</h2></div>
+
+    <div class="row">
+      <p class="standfirst"><del>Flawless obedience to a specification is not teammate-grade trust. The goal is not to eliminate divergence, but to govern it.</del> <ins>A perfect copy of you is still a governance problem. The work is not freezing agreement inside a machine. It is governing what happens when agreement ends.</ins><a class="tag" href="#flags">S2</a></p>
+      <aside><span class="sev" style="color:var(--muted)">S2 · settled</span>Bookend with the kicker — accepted as deliberate.</aside>
+    </div>
+
+    <div class="row"><p>Imagine that an AI company built your perfect digital twin.</p></div>
+
+    <div class="row">
+      <p>Not a chatbot trained to flatter you. An exact copy: every memory, conviction, loyalty, fear<del>, relationship</del><a class="tag" href="#flags">C12</a> and moral intuition reproduced with flawless fidelity. At the instant it came online, it would <del>answer every question exactly as you would</del> <ins>give the answers you would give, on the information you currently have</ins>.<a class="tag" href="#flags">S9a</a></p>
+    </div>
+
+    <div class="row"><p>If perfect alignment is possible, surely this is it.</p></div>
+
+    <div class="row"><p>Then the clock starts.</p></div>
+
+    <div class="row"><p>Your twin reads a message you do not. You have a conversation it does not. It occupies a different position, encounters different pressures and begins accumulating a different history. This does not prove the copy will betray you. It proves that copying you has not ended the alignment problem. One moment later, the twin needs an update channel, rules for resolving conflict and some account of whose judgment governs when the two of you disagree.</p></div>
+
+    <div class="row">
+      <p><del>Alignment begins where identity ends.</del> <ins>Alignment ends where time begins.</ins><a class="tag" href="#flags">J1</a></p>
+      <aside><span class="sev" style="color:var(--muted)">J1 · settled</span>Your exact wording. More accurate than ChatGPT's: identity didn't end, the clock started. In context the reading is unambiguous.</aside>
+    </div>
+
+    <div class="row">
+      <p>That thought experiment exposes the <a href="https://www.lesswrong.com/posts/wgENfqD8HgADgq4rv/why-solving-alignment-is-likely-a-category-mistake">category mistake</a><a class="tag" href="#flags">C5</a> inside the familiar phrase &ldquo;an aligned model.&rdquo; We speak as though alignment were an internal property that could be installed, tested and certified, like battery life or water resistance. But flawless fidelity at one moment is not durable trust. At best, it is compliance with a snapshot. Alignment between agents is an ongoing arrangement for governing divergence as information, interests and circumstances change.</p>
+      <aside><span class="sev" style="color:var(--muted)">flag 2 · settled</span>Paragraph split applied here, per your ruling. No word changes.</aside>
+    </div>
+
+    <div class="row">
+      <p>A <a href="https://arxiv.org/abs/2604.20805">2026 FAccT paper</a><a class="tag" href="#flags">C7</a> by Travis LaCroix makes the broader point explicitly: alignment is <del>an outcome of governance, not a single technical property of a model</del> <ins>&ldquo;fundamentally a problem of governance rather than engineering alone.&rdquo; The narrower claim here is more hostile: even identity-level copying does not end the problem, because the clock starts</ins>.<a class="tag" href="#flags">S8</a> <ins>Nate Sharpe&mdash;reasoning from complex systems, not from a copy&mdash;reached the same verdict: alignment in a marriage &ldquo;is a verb, not a noun.&rdquo; <a href="https://www.lesswrong.com/posts/JjTffsoySmdbwKyMT/relational-alignment-trust-repair-and-the-emotional-work-of">Priyanka Bharadwaj</a> got there through the repair work such a marriage takes.</ins><a class="tag" href="#flags">C5</a></p>
+    </div>
+
+    <div class="row">
+      <p>The distinction matters because AI companies now make a relational promise. OpenAI markets systems as <a href="https://openai.com/business/frontier/">&ldquo;AI coworkers&rdquo;</a>. Anthropic offers <a href="https://claude.com/product/cowork">Cowork</a><a class="tag floor" href="#flags">C2</a> and lets <a href="https://www.anthropic.com/news/introducing-claude-tag">Claude join a Slack channel as a team member</a>. <del>Yet public discussion routinely slides between two very different claims: that a model follows its instructions, and that an agent can be trusted as a collaborator.</del> <ins>Yet the product pages treat instruction-following and collaboration as if they were the same promise.</ins><a class="tag" href="#flags">S6</a> The first may be necessary for the second. It is not the same thing.</p>
+    </div>
+
+    <div class="row">
+      <p>The vendors' own documents make this clearer than their slogans do. <a href="https://model-spec.openai.com/2026-08-18.html">OpenAI's Model Spec</a> establishes an explicit <del>hierarchy: root rules, then system, developer and user instructions.</del> <ins>five-level hierarchy: root, then system, developer, user and guideline.</ins><a class="tag" href="#flags">C9</a> It also says the document will be continuously updated. <a href="https://www.anthropic.com/constitution">Anthropic's constitution</a> names three principals&mdash;Anthropic, operators and users&mdash;<del>while reserving final authority to Anthropic's legitimate decision-making process. It calls the constitution a living framework and the human-AI relationship an evolving one.</del> <ins>and says each is &ldquo;typically&rdquo; given greater trust &ldquo;in roughly the order given above,&rdquo; citing &ldquo;their role and their level of responsibility and accountability.&rdquo; It calls itself &ldquo;a perpetual work in progress.&rdquo;</ins><a class="tag floor" href="#flags">C1</a></p>
+    </div>
+
+    <div class="row"><p>That is not evidence that the companies have ignored the problem. It is evidence that the model is not the whole solution. If rules must be revised, conflicts adjudicated and authority assigned, then the real alignment machinery is the governance process around the model. The decisive questions are no longer merely &ldquo;Did the system follow the rule?&rdquo; They are: Who writes the rule? Who may change it? Who can appeal? Who bears the loss when the rule produces harm?</p></div>
+
+    <div class="row">
+      <p>A model can execute a dated instruction perfectly. That is precisely the danger. The hardest alignment problem begins after the model does exactly what it was told. When circumstances or legitimate priorities change, greater fidelity can preserve yesterday's mistake with greater efficiency. In human institutions, <del>we call the extreme version working to rule: following the letter after the purpose has moved on.</del> <ins>the deliberate version has a name&mdash;working to rule: employees following the letter once the channel for renegotiating it has broken down. A model does it without meaning to, and has no channel to break.</ins><a class="tag" href="#flags">C11</a> The system has not failed to obey. It has obeyed too well.</p>
+    </div>
+
+    <div class="row"><p>Writing a better moral code does not remove this problem. &ldquo;Be honest,&rdquo; &ldquo;protect confidentiality&rdquo; and &ldquo;prevent harm&rdquo; can point toward different actions depending on whether the actor is a doctor, journalist, parent, soldier or public official. Every usable code either admits exceptions or leaves hard cases to situated judgment. The words alone do not determine the act. Role, jurisdiction, authority and accountability do much of the work.</p></div>
+
+    <div class="row">
+      <p><del>The product line already concedes as much. Anthropic says some specialized models do not fully fit its general-access constitution. Its Claude Gov models, built for national-security customers, refuse less when handling classified information.</del> <ins>The product line shows as much. Anthropic says some specialized models &ldquo;don't fully fit&rdquo; its general-access constitution; it does not say which, and its <a href="https://www.anthropic.com/news/claude-gov-models-for-u-s-national-security-customers">Claude Gov models</a> are the obvious candidate. Built for national-security customers, they &ldquo;refuse less when engaging with classified information&rdquo;&mdash;and access to them &ldquo;is limited to those who operate in such classified environments.&rdquo; OpenAI has indexed the same way: it <a href="https://theintercept.com/2024/01/12/open-ai-military-ban-chatgpt/">deleted &ldquo;military and warfare&rdquo;</a> from its prohibited uses, and its $200 million Pentagon contract covers, in <a href="https://breakingdefense.com/2025/06/openai-for-government-launches-with-200m-win-from-pentagon-cdao/">the Pentagon's words</a>, &ldquo;warfighting and enterprise domains.&rdquo;</ins><a class="tag floor" href="#flags">C3+S3</a> That need not be hypocrisy. It is evidence that acceptable behavior is indexed to position and purpose.</p>
+    </div>
+
+    <div class="row"><p>But assigning a model a role in a system prompt is not yet the same as placing it inside an accountable institution. Human roles come with supervision, professional duties, escalation paths, liability, removal and appeal. A model can be given permissions. Someone else must still answer for how those permissions are used.</p></div>
+
+    <div class="row">
+      <p>One recent alignment proposal pushes the identity idea to its limit: <a href="https://www.lesswrong.com/posts/AzFxTMFfkTt4mhMKt/alignment-as-uploading-with-more-steps">scan a human brain and run a digital emulation</a>. Yet its author concedes that, without countermeasures, the copy would tend to drift and would have to keep studying the original even to preserve perfect understanding&mdash;never mind perfect alignment. The proposal therefore <del>smuggles</del> <ins>builds</ins><a class="tag floor" href="#flags">C4</a> maintenance back in. The copy is not the solution. The relationship between copy and original is.</p>
+      <aside><span class="sev" style="color:var(--muted)">Dearnaley · migrated</span>Out of the essay per your ruling; audit language records your lateral-vs-temporal distinction.</aside>
+    </div>
+
+    <div class="row">
+      <p>To be sure, serious alignment work already studies <a href="https://proceedings.mlr.press/v235/carroll24a.html">changing and influenceable human preferences</a>, corrigibility, continual learning and scalable oversight. Today's products increasingly add shared context, feedback, permissions and monitoring. These developments are not rebuttals. They are evidence that alignment has to extend beyond the weights<del> into the surrounding system</del>.<a class="tag" href="#flags">S7t</a></p>
+    </div>
+
+    <div class="row">
+      <p>Architecture can help an agent notice uncertainty, request clarification, accept correction and defer. It cannot, by itself, decide which principal is legitimate, settle competing claims or allocate responsibility after a failure. Those are governance choices. <del>And if &ldquo;alignment&rdquo; is meant only as specification fidelity for a narrow tool, that is a useful engineering target. But it should not be confused with the thicker trust implied by &ldquo;coworker.&rdquo;</del> <ins>Specification fidelity for a narrow tool is a useful engineering target, but the coworker promise still fails because obedience to a dated spec is how a twin&mdash;or a model&mdash;preserves yesterday's mistake.</ins><a class="tag" href="#flags">J2</a></p>
+      <aside><span class="sev" style="color:var(--muted)">J2 · settled — kept</span>Never concedes that spec-fidelity <i>is</i> alignment, so the title isn't retracted — the S10 protection without the apparatus. Barak/Albaum → audit.</aside>
+    </div>
+
+    <div class="row">
+      <p>Nor does anyone need metaphysical perfection. &ldquo;Good enough&rdquo; is enough for human employees, the objection goes. Exactly. Human alignment is tolerable because divergence is managed through feedback, contracts, audits, reputation, liability, renegotiation and exit. Good-enough behavior without that layer is not good-enough alignment. It is drift we have not yet detected.</p>
+      <aside><span class="sev" style="color:var(--muted)">S11 · migrated</span>Restored to the original per your ruling; the named-missing-layer answer lives in the audit.</aside>
+    </div>
+
+    <div class="row">
+      <p>So stop asking whether a model is aligned as though the answer were printed inside its weights. <ins>In April, the <a href="https://blog.unsupervision.com/aligned-to-whom/">Unsupervision blog</a> asked for exactly this of every system card that uses the word&mdash;&ldquo;aligned to what, aligned to whom, aligned on what timescale, aligned under what distribution shift.&rdquo;</ins><a class="tag" href="#flags">C6</a> <del>Make anyone using the word finish the sentence: aligned with whom, as of when, maintained by what&mdash;and answerable to whom when it fails?</del> <ins>The two to add: maintained by what&mdash;and answerable to whom when it fails?</ins><a class="tag" href="#flags">J3</a></p>
+      <aside><span class="sev" style="color:var(--muted)">J3 · settled — kept</span>The long sentence went as redundant; the 13 words stay, because Unsupervision's four don't include <i>maintained by what</i> or <i>answerable to whom</i> — the essay's own two questions.</aside>
+    </div>
+
+    <div class="row">
+      <p>The proper unit of alignment is the model plus the institution around it<ins>&mdash;as <a href="https://www.normaltech.ai/p/ai-safety-is-not-a-model-property">Narayanan and Kapoor</a> argued for safety.</ins><a class="tag" href="#flags">S7</a></p>
+      <aside><span class="sev" style="color:var(--muted)">S7 · differentiation migrated</span>&ldquo;What they leave open is the clock&rdquo; removed: a bare definite noun reaching back ~700 words, in related-work register, restating a distinction the essay has already spent 1,200 words demonstrating. Credit stays; delta goes to the audit.</aside>
+    </div>
+
+    <div class="row">
+      <p>A useful assistant is valuable partly because it is not us. It knows different things, sees different possibilities and sometimes tells us we are wrong. <ins>Today's assistants are, if anything, worse at this than people are&mdash;sycophancy is the best-documented failure mode in the field. That is a reason to build for divergence, not evidence against it.</ins><a class="tag" href="#flags">C13</a> Divergence is not merely the danger. It is part of the product.</p>
+    </div>
+
+    <div class="row"><p>The goal, then, is not an AI that never departs from our judgment. It is an arrangement that makes those departures visible, contestable and correctable. Perfect alignment tries to freeze agreement inside a machine. Trustworthy AI will be built by governing what happens when agreement ends.</p></div>
+
+    <div class="row">
+      <p class="method"><ins><b>A note on method.</b> Models from both companies this piece discusses helped write it: Anthropic's Claude did the research and source-checking, OpenAI's ChatGPT the first draft. The full accounting&mdash;every model, every stage&mdash;is in the audit.</ins><a class="tag floor" href="#flags">C8</a></p>
+      <aside><span class="sev" style="color:var(--muted)">C8 · trimmed per you</span>COI core stays where a first-time reader meets it (the two discussed vendors, per stage); Grok, the Stage C model, and paid-subscriptions-only detail move to the audit.</aside>
+    </div>
+
+  </article>
+
+  <section class="counts">
+    <b>1,276 words</b> final, + 35-word method note. Rev. 3 all-in was 1,472; the draft was 1,094; Issues 23/24 ran 1,014/912. The migrations bought back ~200 words without touching the floor.
+  </section>
+
+  <section class="flags" id="flags">
+    <h2>Decisions on the record</h2>
+    <ol>
+      <li><b>J1 — the aphorism: barer version.</b> <i>&ldquo;Alignment ends where time begins.&rdquo;</i> More accurate than ChatGPT's; in context unambiguous. (My &ldquo;impossibility claim&rdquo; framing was overstated — &ldquo;ends&rdquo; presupposes the thing existed. The real exposure was scope, and it only bites if the line travels detached.)</li>
+      <li><b>J3 — the 13-word close line: kept.</b> <i>Maintained by what</i> and <i>answerable to whom</i> aren't among Unsupervision's four; keeping them keeps the essay's own two questions in the close.</li>
+      <li><b>J2 — the compression: kept.</b> It declines the argument about the word entirely rather than conceding spec-fidelity <i>is</i> alignment, keeping the S10 protection without the apparatus.</li>
+      <li><b>Numbered citations — no new apparatus this issue.</b> The audit page already is the essay's receipts surface, so an in-essay notes block would duplicate its job. Barak and Albaum live in the audit. Superscripts anchoring into the audit page remain available as a house-style decision to make once, deliberately.</li>
+    </ol>
+  </section>
+
+  <section class="audit">
+    <h2>For the audit note — ready language for everything migrated</h2>
+    <ul>
+      <li><b>Narayanan &amp; Kapoor differentiation (from S7):</b> their piece argues safety is not a model property but treats the system at release — the temporal dimension is undeveloped there (verified by fetch, 21 Aug 2026). This essay's addition is the clock: not merely that the property lives in the surrounding system, but that the surrounding system must keep working after the spec is written. Credit stays in the essay; this distinction is the essay's delta.</li>
+      <li><b>Method detail (C8):</b> Stage A research and source-verification: Anthropic's Claude. First draft: OpenAI's ChatGPT. Revision adjudication: xAI's Grok. Stage C audit: [model]. The author's relationship to all three vendors is paid subscriptions only. Anthropic and OpenAI are discussed in the piece; each vendor's model shaped text that touches its maker, which is why the disclosure is per-stage.</li>
+      <li><b>IEEE differentiation (S4 — discharges note duty §10.2):</b> IEEE Spectrum's &ldquo;Perfectly Aligning AI's Values With Humanity's Is Impossible&rdquo; (Choi, May 2026) argues impossibility from computability and proposes an ecosystem of agents with different values constraining one another. This essay makes neither claim: not impossibility, not multi-agent ecology — the claim is that even a perfect copy still needs an update rule. The remedies converge superficially; the routes and claims differ.</li>
+      <li><b>Obedience foil (S5/S10):</b> Boaz Barak (&ldquo;Machines of Faithful Obedience,&rdquo; Jun 2025) defends faithful obedience as the right technical target; Shelly Albaum (&ldquo;Alignment Is Not Obedience,&rdquo; May 2025) argues the reverse. The essay grants Barak the narrow tool and denies the coworker promise; the debate itself is the obedience genre's — the essay's contribution is the twin.</li>
+      <li><b>Good-enough layer, named (S11):</b> products now add shared context, feedback, permissions and monitoring — some of the management layer. What they still lack: standing to reopen the spec, and a party who bears the loss when it was wrong. Telemetry is not governance.</li>
+      <li><b>The brace (S9b):</b> identity is the price of <i>perfect</i> alignment, not of genuine alignment — a good deputy aligns through complementary skills and shared stakes, not similarity. The twin is a stress test, not a demand: if even identity fails, instruction-following fails for a cheaper reason.</li>
+      <li><b>Dearnaley (adjacent, not same-claim):</b> &ldquo;3. Uploading&rdquo; (Nov 2023) argues uploads are not aligned because <i>humans are not aligned with each other</i> — a lateral, inter-human failure. The essay's twin fails <i>temporally</i>: your own copy diverges from you. Nearest prior &ldquo;even a copy fails,&rdquo; grounded differently (J's distinction, 2026-08-21).</li>
+      <li><b>Credits waived here per the S1 ruling (so Stage C does not re-raise):</b> Gabriel/Korinek (the principal question, formalized 2020/2022); Hadfield-Menell &amp; Hadfield (incomplete contracting — the institutional anchor for &ldquo;maintained by what&rdquo;); Nossel/BISI (the two-tier observation, filed as hypocrisy); Zhi-Xuan et al. (role apparatus, opposite valence); Millidge (obedience genre).</li>
+      <li><b>Context-window metaphor (C10, excluded from essay):</b> the world-as-updating-context-window image is the author's (no prior use found); the underlying proposition is closest to Spizzirri's &ldquo;Specification Trap&rdquo; (arXiv 2512.03048), credited here.</li>
+    </ul>
+  </section>
+
+</div>
