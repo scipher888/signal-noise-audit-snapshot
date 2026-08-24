@@ -9,8 +9,15 @@ h1{font-size:1.6rem;line-height:1.2}h2{font-size:1.25rem;margin-top:2.6rem;borde
 .kicker{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#6E6B64}
 .note{font-family:system-ui,sans-serif;font-size:.86rem;color:#3B3934;border:1px solid #E2DFD8;border-left:4px solid #8A6A1F;padding:.9rem 1.1rem;border-radius:3px;background:#F1EFEA;margin:1.2rem 0}
 .note.coral{border-left-color:#A32B2B}
-.navline{font-family:system-ui,sans-serif;font-size:.85rem;color:#6E6B64;margin:1.1rem 0}
-.navline a{margin-right:.55rem}
+.meta{font-family:system-ui,sans-serif;font-size:.85rem;color:#6E6B64;margin:1.1rem 0}
+.cnav{font-family:system-ui,sans-serif;font-size:.82rem;color:#6E6B64;margin:2.6rem 0 0;padding-top:1.1rem;border-top:1px solid #E2DFD8}
+.cnav.top{margin:1.1rem 0 1.6rem;padding:0 0 1rem;border-top:0;border-bottom:1px solid #E2DFD8}
+.cnav dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;margin:0;align-items:baseline}
+.cnav dt{font-size:.68rem;letter-spacing:.075em;text-transform:uppercase;font-weight:600;opacity:.85;white-space:nowrap}
+.cnav dd{margin:0}
+.cnav .here{font-weight:600}
+.cnav .here::after{content:" \25B8 you are here";font-weight:400;font-size:.72rem;color:#6E6B64;text-transform:none;letter-spacing:.02em}
+@media(max-width:640px){.cnav dl{grid-template-columns:1fr;gap:.1rem}.cnav dt{margin-top:.7rem}.cnav dt:first-of-type{margin-top:0}}
 .finding{border:1px solid #E2DFD8;border-radius:3px;padding:1rem 1.15rem;margin:1rem 0;background:#fff;font-size:.95rem}
 .sev{font-family:ui-monospace,monospace;font-size:.7rem;letter-spacing:.06em;padding:.15em .5em;border:1px solid currentColor;border-radius:2px}
 .sev.kill{color:#A32B2B}.sev.major{color:#8A6A1F}.sev.minor{color:#6E6B64}
@@ -23,7 +30,7 @@ a{color:#1A1917}
 </style></head><body><div class="wrap">
 <p class="kicker">The World Behind the Words &middot; Issue 25 &middot; The machine&rsquo;s version &middot; its audit</p>
 <h1>Audit of the Machine&rsquo;s Version &mdash; Your AI Coworker Reports to Someone Else</h1>
-<p class="navline"><a href="../">The essay</a> &middot; <a href="../../">The issue&rsquo;s audit</a> &middot; <a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">The author&rsquo;s essay</a></p>
+<nav class="cnav top" aria-label="Issue 25 companions"><dl><dt>The author&rsquo;s</dt><dd><a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">The essay</a> &middot; <a href="https://open.spotify.com/episode/6pElPtOkGUskt05bYx612u">Audio companion</a></dd><dt>The machine&rsquo;s</dt><dd><a href="../../">The issue audit</a> &middot; <a href="../../machine-version/">The machine&rsquo;s essay</a> &middot; <a href="../../machine-version/plain/">In plain words</a> &middot; <span class="here" aria-current="page">Audit of the machine&rsquo;s essay</span></dd><dt>The record</dt><dd><a href="../../development/">The conversation behind this</a></dd></dl></nav>
 
 <div class="note"><p><strong>Canonicality.</strong> This page audits the machine-written companion essay, an experiment inside the Issue 25 record. The essay Signal &amp; Noise stands behind is the author&rsquo;s. This audit ran <strong>before</strong> publication; its findings became text changes or published objections, never post-hoc corrections.</p></div>
 
@@ -209,7 +216,7 @@ a{color:#1A1917}
 <div class="note"><p>The essay predicts (horizon: two to three years from 2026-08-23) that user-level standing arrives only where bought, imposed, or extracted &mdash; never volunteered at the level of the documents that define the model. A landing objection (Leg A, 8) is right that volunteered-vs-forced needs an observable. <strong>Scoring rule, fixed now:</strong> a document-level standing change counts as <em>volunteered</em> only if it ships bound to a vendor-committed process (a comment period the vendor obligates itself to answer, a notice right, an appeal mechanism) absent visible regulatory instruction, litigation, or organized user pressure in the preceding twelve months; changes following any of those score as <em>forced</em>; ambiguous cases score <strong>against</strong> the essay. The standing objections that the cloud-SLA analogy already instantiates the volunteered path (Leg A, 12) and that bystanders appear on no chart (Leg A, 10) are the essay&rsquo;s strongest published risks.</p></div>
 
 <h2>Both returns, in full</h2>
-<p class="navline">Everything above is derived from these. Nothing was withheld.</p>
+<p class="meta">Everything above is derived from these. Nothing was withheld.</p>
 <h3 style="font-family:system-ui,sans-serif">Leg A &mdash; stealth/ox-alpha (verbatim)</h3>
 <pre class="return"># Adversarial Audit — &quot;Your AI Coworker Reports to Someone Else&quot;
 
@@ -377,5 +384,5 @@ The symptoms confirm the diagnosis. The prediction is staked with no exposure: e
 
 **Vendors as a class.** &quot;The vendors publish notice policies&quot; and &quot;the coworker marketing sells&quot; generalize a class from two documents and one event; Google, Mistral, xAI, and Meta go unexamined. The scope is declared (&quot;hosted frontier assistants&quot;), but the evidence is two firms — one of which wrote the essay, and the other of which supplies its only concrete case. That asymmetry is the essay&#x27;s fairness problem in miniature.</pre>
 
-<p class="navline"><a href="../">The essay</a> &middot; <a href="../../">The issue&rsquo;s audit</a></p>
+<nav class="cnav" aria-label="Issue 25 companions"><dl><dt>The author&rsquo;s</dt><dd><a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">The essay</a> &middot; <a href="https://open.spotify.com/episode/6pElPtOkGUskt05bYx612u">Audio companion</a></dd><dt>The machine&rsquo;s</dt><dd><a href="../../">The issue audit</a> &middot; <a href="../../machine-version/">The machine&rsquo;s essay</a> &middot; <a href="../../machine-version/plain/">In plain words</a> &middot; <span class="here" aria-current="page">Audit of the machine&rsquo;s essay</span></dd><dt>The record</dt><dd><a href="../../development/">The conversation behind this</a></dd></dl></nav>
 </div></body></html>

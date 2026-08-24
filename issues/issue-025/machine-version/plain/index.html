@@ -8,8 +8,13 @@ body{font-family:Georgia,'Times New Roman',serif;line-height:1.6;color:#1A1917;b
 h1{font-size:1.7rem;line-height:1.2;margin:.4rem 0 .6rem}
 .kicker{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#6E6B64}
 .note{font-family:system-ui,sans-serif;font-size:.86rem;color:#3B3934;border:1px solid #E2DFD8;border-left:4px solid #8A6A1F;padding:.9rem 1.1rem;border-radius:3px;background:#F1EFEA;margin:1.2rem 0}
-.navline{font-family:system-ui,sans-serif;font-size:.85rem;color:#6E6B64;margin:1.1rem 0}
-.navline a{margin-right:.55rem}
+.cnav{font-family:system-ui,sans-serif;font-size:.82rem;color:#6E6B64;margin:2.6rem 0 0;padding-top:1.1rem;border-top:1px solid #E2DFD8}
+.cnav dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;margin:0;align-items:baseline}
+.cnav dt{font-size:.68rem;letter-spacing:.075em;text-transform:uppercase;font-weight:600;opacity:.85;white-space:nowrap}
+.cnav dd{margin:0}
+.cnav .here{font-weight:600}
+.cnav .here::after{content:" \25B8 you are here";font-weight:400;font-size:.72rem;color:#6E6B64;text-transform:none;letter-spacing:.02em}
+@media(max-width:640px){.cnav dl{grid-template-columns:1fr;gap:.1rem}.cnav dt{margin-top:.7rem}.cnav dt:first-of-type{margin-top:0}}
 figure{margin:2.6rem 0}
 svg{width:100%;height:auto;display:block;background:#fff;border:1px solid #E2DFD8;border-radius:4px}
 figcaption{font-size:1.02rem;margin-top:.7rem}
@@ -19,7 +24,6 @@ a{color:#1A1917}
 <p class="kicker">The World Behind the Words &middot; Issue 25 &middot; The machine&rsquo;s version &middot; the plain version</p>
 <h1>Your AI Coworker Reports to Someone Else</h1>
 <div class="note"><p><strong>The plain version.</strong> Six pictures, few words. It trades precision for speed: every hedge, quote, and source lives in <a href="../">the essay</a>, which is the record.</p></div>
-<p class="navline"><a href="../">The essay</a> &middot; <a href="../audit/">Its audit</a> &middot; <a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">The author&rsquo;s essay</a></p>
 
 <figure><svg viewBox="0 0 700 360" role="img" aria-label="Two org charts. OpenAI's Model Spec: root, system, developer, you, the vendor's defaults, the internet. Anthropic's constitution: Anthropic, operators, you. 'You' is highlighted near the bottom of both.">
 <style>text{font-family:system-ui,sans-serif}</style>
@@ -123,6 +127,6 @@ a{color:#1A1917}
 <text x="350" y="196" text-anchor="middle" font-size="11" fill="#6E6B64">* standing sold separately</text>
 </svg><figcaption>Treatment is built in. Standing is sold separately.</figcaption></figure>
 
-<p class="navline"><a href="../">Read the precise version</a> &middot; <a href="../audit/">Its audit</a></p>
 <p class="small">Every claim behind these pictures carries its hedge and its source in the essay. Where a picture and the essay disagree, the essay is right.</p>
+<nav class="cnav" aria-label="Issue 25 companions"><dl><dt>The author&rsquo;s</dt><dd><a href="https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/">The essay</a> &middot; <a href="https://open.spotify.com/episode/6pElPtOkGUskt05bYx612u">Audio companion</a></dd><dt>The machine&rsquo;s</dt><dd><a href="../../">The issue audit</a> &middot; <a href="../../machine-version/">The machine&rsquo;s essay</a> &middot; <span class="here" aria-current="page">In plain words</span> &middot; <a href="../../machine-version/audit/">Audit of the machine&rsquo;s essay</a></dd><dt>The record</dt><dd><a href="../../development/">The conversation behind this</a></dd></dl></nav>
 </div></body></html>
