@@ -2936,14 +2936,6 @@ a:hover {
 .cnav dd { margin: 0; }
 .cnav a { color: var(--ink-soft); }
 .cnav .here { color: var(--ink); font-weight: 600; }
-.cnav .here::after {
-  content: " \25B8 you are here";
-  font-weight: 400;
-  font-size: 0.72rem;
-  color: var(--muted);
-  text-transform: none;
-  letter-spacing: 0.02em;
-}
 @media (max-width: 640px) {
   .cnav dl { grid-template-columns: 1fr; gap: 0.1rem; }
   .cnav dt { margin-top: 0.7rem; }
