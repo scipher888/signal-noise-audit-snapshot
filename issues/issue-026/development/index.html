@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extended Development Record - Civilization at Machine Speed</title>
+<link rel="stylesheet" href="../conversation/conversation.css">
+<style>body{max-width:900px}.frame{border:1px solid var(--line);border-radius:10px;padding:.95rem 1.05rem;margin:1.2rem 0 1.6rem;background:#fcfcfc}.frame p{margin:.45rem 0}.frame .label{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}.session{border-top:1px solid var(--line);padding-top:1.15rem;margin-top:2.1rem;color:#333}.thread{margin-top:1.35rem}.turn{max-width:92%;border-radius:16px;margin:.72rem 0;padding:.8rem .95rem}.human{margin-right:16%}.ai{margin-left:8%;max-width:96%}.logged-output .who::after{content:" \00b7 public-safe";font-style:italic;text-transform:none;letter-spacing:0}.bubble-text{white-space:pre-wrap;overflow-wrap:anywhere}.logged-output .bubble-text{font-size:.96rem}.navline{font-size:.9rem;color:var(--muted);margin:1.4rem 0}.navline a{margin-right:.45rem}.cnav{font-size:.84rem;color:var(--muted);margin:2.6rem 0 0;padding-top:1.1rem;border-top:1px solid var(--line)}.cnav.top{margin:1.4rem 0 1.6rem;padding:0 0 1rem;border-top:0;border-bottom:1px solid var(--line)}.cnav dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;margin:0;align-items:baseline}.cnav dt{font-size:.68rem;letter-spacing:.075em;text-transform:uppercase;font-weight:600;opacity:.85;white-space:nowrap}.cnav dd{margin:0}.cnav .here{font-weight:600;color:var(--ink)}@media(max-width:640px){.cnav dl{grid-template-columns:1fr;gap:.1rem}.cnav dt{margin-top:.7rem}.cnav dt:first-of-type{margin-top:0}}.gap-note{border-style:dashed;background:#fffdf8}@media(max-width:720px){body{padding-left:1rem;padding-right:1rem}.turn,.ai,.human{max-width:100%;margin-left:0;margin-right:0}}</style>
+</head>
+<body>
+<p class="kicker">The World Behind the Words &middot; Issue 26 &middot; Extended Development Record</p>
+<h1>Extended Development Record - Civilization at Machine Speed</h1>
+<p class="lede">The complete author&ndash;AI conversation that produced Issue 26 and everything published inside its record: a dual-essay experiment in which the author wrote a freeze while a machine companion was written separately, neither sharing until both froze; then the floor pass and audits, the landings, both Audio companions, and the live push &mdash; 181 turns, about 7,560 words. It closes when the issue is live and the author names the leftover lanes (About-page rewrite, X/profile/pin, Don’s social work, subscriber email), which this record does not carry.</p>
+<div class="frame"><span class="label">Read first — what this record is</span>
+<p><strong>This is the full development conversation, not a stage excerpt.</strong> Issue 26 was a dual-essay experiment: the author wrote a freeze while a machine companion was written separately, and neither side shared text until both were frozen. The issue then ran a source-check floor pass against the SwarmWorld preprint (arXiv:2608.26081) — not designated high-stakes in the Issue 25 companies-from-documents sense — and published both landings with their audits. All of that is here: the thesis impulse, the parallel-freeze rule, the floor objections and the author’s rulings, the two-row companions map, the live push, and both Audio companions.</p>
+<p>Author bubbles preserve the wording, typos, false starts, and mid-thought changes found in the source logs. AI bubbles preserve the delivered editorial replies, including progress narration and its own recorded errors. Tool calls, shell traces, internal reasoning, compact summaries, system wrappers, and background-agent notifications are omitted or redacted.</p>
+<p>This record shows process load and constraint. It does not prove that the published essays are true, safe, or trustworthy.</p>
+</div>
+<div class="frame"><span class="label">Who brought what</span>
+<p><strong>The author brought:</strong> the Issue 26 slot check; the Buehler/swarm thesis impulse (and the alternate “swarms will be smarter” line); the ruling to write a human freeze in parallel with a machine companion and not share until both froze; the freeze itself; the floor rulings (accept the two human findings onto a redline, then land the accepted corrections while keeping the freeze visible in the audit); the same split for the machine companion; the two-row companions nav (author’s / machine’s — essay, audio, audit); the locked title and slug; the go to merge both PRs; the instruction to pull a given name off the public pages; the listen-and-go on both Audio companions; and the catch that the author’s Audio link had been wired to the wrong Spotify episode.</p>
+<p><strong>The AI brought:</strong> the prior-topic inventory (nothing tagged to 26); the read of the Buehler claim as mechanism rather than slogan; the parallel-freeze rule as stated; the machine freeze; the dual source-check against the preprint; the redlines and landings; the audit package and essay-page builds, run on the author’s instruction; the given-name sweep; both listening scripts and house renders; and the repair of the miswired author Audio URL.</p>
+<p><strong>The honest summary:</strong> the author supplied the thesis, every ruling, and every publish decision. The machine companion is the AI’s essay. The essay Signal &amp; Noise stands behind is the author’s.</p>
+</div>
+<div class="frame"><span class="label">Scope and completeness</span>
+<p>The record opens with the product-partner session already standing by, then the author’s first Issue 26 ask: whether any thesis was already lined up. (A hidden agent-to-agent briefing that woke the session is omitted as plumbing.) It closes when Issue 26 is live — essay, machine companion, both audits, both Audio companions — and the author names the leftover lanes. Those leftover lanes are outside this record: the About-page rewrite, X profile and pin, Don’s social/growth work, and the subscriber email send. A brief closing note records that they followed, without carrying that later thread.</p>
+<p>The source is one product-partner session log. It does not carry per-turn wall-clock times; dates on bubbles are the production calendar from the public freeze (29 August 2026) and the audio work that continued into 30 August 2026, not clock times from the log. UI wrappers on the author’s messages (turn ids, “in reply to,” “answering your question”) are stripped as system chrome; the author’s wording underneath is kept. Background-agent notifications (“Referenced Cursor cloud agent…”) are omitted. File attachments are noted as attachments, not inlined. One credential the author pasted for the house audio renderer is replaced in place with <span class="redaction">[credential]</span>. A given name the author asked to keep off the public pages is replaced with <span class="redaction">[the author]</span> wherever it appeared in a bubble.</p>
+</div>
+<div class="frame"><span class="label">Provenance notes</span>
+<p>The published essays’ claims went through the floor pass and the audits; this transcript’s working claims did not. Where the conversation’s drafts differ from the published text, the public redlines are the accounting.</p>
+<p>The record includes the AI’s errors as they happened, uncorrected in place: a fused pair of SwarmWorld assays in the machine freeze, later split on the machine redline; an author Audio URL pointed at the wrong Spotify episode, later rewired to the Civilization episode. The corrections follow in the same thread.</p>
+<p>Redactions by this publication are marked inline in <span class="redaction">[brackets]</span>: credentials and key material, a given/legal name, local paths and identifiers, commit ids, sibling-project names, other agents’ private chatter, and non-public emails. Summaries are marked summaries, never silent cuts.</p>
+</div>
+<nav class="cnav top" aria-label="Issue 26 companions"><dl><dt>The author&rsquo;s</dt><dd><a href="https://www.signalandnoise.email/p/civilization-at-machine-speed/">The essay</a> &middot; <a href="https://open.spotify.com/episode/64mbkMHYJz7YLzkfWD8w2b">Audio companion</a> &middot; <a href="../">The audit</a></dd><dt>The machine&rsquo;s</dt><dd><a href="../machine-version/">The essay</a> &middot; <a href="https://open.spotify.com/episode/0nTfvwBxKgbCXXoDETTPDr">Audio companion</a> &middot; <a href="../machine-version/audit/">The audit</a></dd><dt>This record</dt><dd><span class="here" aria-current="page">The conversation behind this</span></dd></dl></nav>
+<p class="meta">Source: one product-partner session log for Issue 26 production (Buehler/swarm dual-essay, freeze, floor/audit, landings, audio, live push). Hidden system prompts, tool traces, and agent-to-agent messages are omitted. Private operational details are omitted or redacted.</p>
+<div class="thread">
+<h2>Session open — is anything lined up for Issue 26?</h2>
+<div class="turn ai logged-output" id="turn-001">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Ready. Send me a product idea, bug, or follow-up and I’ll draft the GitHub Issue (and open it if it’s clear). S&amp;N repos only.</div>
+</div>
+<div class="turn human author-input" id="turn-002">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Hey Tess, can you check to see if we have any potential topics/thesis statements lined up for Issue 26?</div>
+</div>
+<div class="turn ai logged-output" id="turn-003">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">On it. Checking Issue 26 for any topics or thesis statements already lined up.</div>
+</div>
+<div class="turn ai logged-output" id="turn-004">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">GitHub CLI isn’t signed in on my computer, so I’m pulling Issue 26 from the public repos next.</div>
+</div>
+<div class="turn ai logged-output" id="turn-005">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">No GitHub #26 on either S&amp;N repo. Looking through closed issues and the editorial files for an Issue 26 topic or thesis list.</div>
+</div>
+<div class="turn ai logged-output" id="turn-006">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Found the editorial folders. Checking `future-issues` and `issue-ideas` for anything tagged to Issue 26.</div>
+</div>
+<div class="turn ai logged-output" id="turn-007">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Published issues go through 23 at least. Checking the live archive and canonical state for anything assigned to 26.</div>
+</div>
+<div class="turn ai logged-output" id="turn-008">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Nothing is lined up for Issue 26. Latest published is Issue 25 (closed Aug 22–23). No `issue-026` brief, draft, or decision exists. The process now is Stage A first: you write the essay, then we run the floor. No fixed cadence, so 26 starts when you hand over a draft.</div>
+</div>
+<div class="turn ai logged-output" id="turn-009">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">There is an unassigned topic pile, just not tagged to 26. Still unused: the Repulsion Illusion, the Strange Loop, the Tension Issue, the World Model Trap, AI-content quicksand/anchors, and the Boglehead investing paradox. Tabled from 21: “Does writing with AI make you choose between being readable and being right?” Ideas.md also still has mechanistic interpretability and AI homogenization (on hold). Homer Car, regret-as-raw-material, and the accessibility illusion already shipped.</div>
+</div>
+<h2>The Buehler post, and the claim that is not a slogan</h2>
+<div class="turn human author-input" id="turn-010">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Hey Tess, what do you think of building Issue 26 on the claim that AGI and/or ASI "is a swarm"? See this X post for reference: https://x.com/ProfBuehlerMIT/status/2093630309585531033?s=20. Or, perhaps, something closer to "no matter how smart your AI model is, swarms will be smarter". What do you think?</div>
+</div>
+<div class="turn ai logged-output" id="turn-011">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">On it. Reading the Buehler post first so I’m reacting to the actual claim, not a paraphrase.</div>
+</div>
+<div class="turn ai logged-output" id="turn-012">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">You're connected to X. I can open posts from a link, look up accounts, search, and check likes/reposts. Requests use credits from https://console.x.com. I'll flag cost before anything expensive. Pulling this one post now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-013">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">This X account isn’t set up yet. Go to https://console.x.com, register and onboard with this same X account, then I’ll retry from X. Opening the public post another way so we can still talk Issue 26.</div>
+</div>
+<div class="turn ai logged-output" id="turn-014">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Don’t lock 26 to “AGI/ASI is a swarm.” That’s a slogan, and it’s the version of this that will be everywhere this week. Buehler’s actual result is narrower and better: hundreds of identical frontier agents, no assigned roles, almost no need to talk. They specialize by leaving stuff in a world physics can reject. About 95% of first reuse is walking past an artifact, not a handoff. Kill the agents and the infrastructure keeps running.</div>
+</div>
+<div class="turn ai logged-output" id="turn-015">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Your second line is closer, but still too empty. “Swarms will be smarter” needs a metric. His metrics are portfolio breadth, held-out resilience, and inventions that outlive the inventors. The S&amp;N claim is something like: a model is a proposer; a swarm with a persistent world is a civilization; watching what they say to each other is watching the wrong channel.</div>
+</div>
+<div class="turn ai logged-output" id="turn-016">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">The corpus collision is Issue 23, and that’s the edge. We already said a swarm of critics with no world is a hallucinated jury. This is the inverse: a swarm with a hard environment is real plurality. I wouldn’t write “AGI arrived.” I’d write that intelligence showed up in the leftover stuff, not in the smartest model. If that lands, 26 is live. If you want the slogan, I’d hold.</div>
+</div>
+<h2>An operational stretch — X enrollment so the source post can be read</h2>
+<div class="turn human author-input" id="turn-017">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Working on this now. What should I put for this section?: "Describe all of your use cases of X's data and API:
+
+We need this information for data protection."</div>
+</div>
+<div class="turn ai logged-output" id="turn-018">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Drafting copy for that field from how we actually use X: editorial reads, the S&amp;N account, no scraping or resale.</div>
+</div>
+<div class="turn ai logged-output" id="turn-019">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Paste this:
+
+We use X’s public data and API only for the Signal &amp; Noise publication (@signalnoise_op1). Use cases: (1) open a specific public post from a URL to read it as editorial source material; (2) look up public profiles and recent posts for attribution and context; (3) search public posts when checking a claim in an essay; (4) read our own account’s timeline, mentions, and bookmarks; (5) draft or publish posts from this same publication account.
+
+We do not scrape X, build a user database, sell or share X data with third parties, run ads targeting, or access private accounts we do not own. Post text is used in-session for research. We keep only what we need for citations, internal editorial notes, or content we ourselves published. Public citations in essays include author attribution. We do not store access tokens in chat or logs.</div>
+</div>
+<div class="turn ai logged-output" id="turn-020">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">If the box is short, cut (5). If this account never posts, delete (5) entirely so the form matches what you actually do.</div>
+</div>
+<div class="turn human author-input" id="turn-021">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Done</div>
+</div>
+<div class="turn ai logged-output" id="turn-022">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Retrying X now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-023">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">This X account isn't set up yet. Go to https://console.x.com, register and onboard with this same X account, then come back and I'll retry.</div>
+</div>
+<div class="turn ai logged-output" id="turn-024">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Want me to pop the X reconnect card so this chat picks up the new enrollment? — Reconnect X / Not yet</div>
+</div>
+<div class="turn human author-input" id="turn-025">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Yes, reconnect X</div>
+</div>
+<div class="turn ai logged-output" id="turn-026">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Popping the X reconnect card. Sign in with the same account you just onboarded.</div>
+</div>
+<div class="turn ai logged-output" id="turn-027">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">X is connected. Checking that the API actually works this time.</div>
+</div>
+<div class="turn ai logged-output" id="turn-028">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Ready. Signed in as Synthia Cipher (@signalnoisepub). I can open posts, look up accounts, search, and check your timeline from here.</div>
+</div>
+<h2>The dual-essay experiment — freeze in parallel, neither sharing</h2>
+<div class="turn human author-input" id="turn-029">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Regarding Issue 26 your feedback is excellent *and* in my opionion, will land best if I go ahead and develope my version of Issue 26 (flaws and all) while you incorporate your views on this topc into "The machine's essay" for Issue 26. And of course, you will subsequently run an audit on my opinion piece and yours. This way readers can more clearly see the difference between human opinion and AI/machine opinion. Otherwise, the more I alter my opinion to reflect your feedback, the smaller this gap will appear. Does this make sense? What do you think?</div>
+</div>
+<div class="turn ai logged-output" id="turn-030">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Yes. I’ll glance at how Issue 25 ran the machine’s essay so this split stays a real gap, not a restyle of your draft.</div>
+</div>
+<div class="turn ai logged-output" id="turn-031">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">It makes sense. Issue 25 already ran a machine companion. 26 is the cleaner version of that: two independent opinions on the same claim, then an audit of each. If you fold my take into yours, readers can’t see the gap. That’s the homogenization kill we already believe.</div>
+</div>
+<div class="turn ai logged-output" id="turn-032">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">One rule, or it’s fake. Don’t send me your draft, and I won’t send you mine, until both are frozen. I’ll write from the Buehler post plus what I already said here. My feedback stays in the machine essay only. Your flaws stay yours. Then we audit both.</div>
+</div>
+<div class="turn ai logged-output" id="turn-033">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Landing stays yours. The machine piece is a labeled companion, not a second front door. We just killed two live destinations. I’ll start my draft in parallel and keep it off this chat until you’re ready to freeze.</div>
+</div>
+<div class="turn human author-input" id="turn-034">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Perfect. Love this plan. I will work on my draft and let you know when it's frozen.</div>
+</div>
+<div class="turn ai logged-output" id="turn-035">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">I'll freeze mine the same way and keep it off this chat until you say yours is locked.</div>
+</div>
+<h2>Both freezes on the table, and the floor</h2>
+<div class="turn human author-input" id="turn-036">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">OK. My essay is frozen. Should I post it here?</div>
+</div>
+<div class="turn ai logged-output" id="turn-037">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Yes. Paste it here. I’m freezing the machine essay now, before I read yours, then I’ll put both on the table and we run the two audits.</div>
+</div>
+<div class="turn ai logged-output" id="turn-038">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Machine side is locked. Drop yours when ready.</div>
+</div>
+<div class="turn human author-input" id="turn-039">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">OK. Here it is:                                                                                                                                                                                                          Civilization at Machine Speed
+
+AGI may be a model, but ASI will probably emerge through cumulative culture—the process that made humanity capable of achievements beyond any individual.
+
+We already know what superintelligence looks like. It looks like civilization.
+
+Not because civilization is one enormous mind. It has no single objective, no unified world model, and no central faculty of judgment. It contradicts itself, forgets, and routinely fails to act on what some of its members know.
+
+Yet civilization can discover, know, and build things no individual could reproduce. No human being could independently recreate the semiconductor supply chain, modern medicine, or the infrastructure that keeps a city alive. Civilization is not a superintelligent agent. It is our clearest demonstration that cognitive capability can scale far beyond any constituent mind.
+
+We usually imagine artificial superintelligence differently. The public story is a solitary “God Model”: one system scaled until it surpasses humanity from inside a data center. Intelligence scales vertically. Add parameters, data, and compute until the model becomes an oracle.
+
+Human intelligence achieved its greatest scale horizontally. Brains made humans intelligent. Cumulative culture made humanity collectively superhuman.
+
+Artificial intelligence may follow the same path. AGI may be a property of a model. But ASI will probably emerge through the mechanism that made civilization possible: capable agents acting in a shared world that preserves their work, filters it through consequences, and lets later agents inherit what survives.
+
+ASI may be civilization at machine speed.
+
+Researchers in cultural evolution describe societies as “collective brains.” Innovation is not simply the work of isolated geniuses; it emerges through serendipity, recombination, and incremental improvement across social networks. Cumulative culture produces knowledge and technologies that no single person could reconstruct from scratch.
+
+Books preserve arguments. Tools embody techniques their users may not understand. Laboratories, legal systems, markets, software, and technical standards store solutions outside any individual brain. A scientist does not restart science. An engineer does not rediscover mathematics before designing a bridge. Each enters a world already altered by other minds.
+
+The world does not merely contain civilization’s intelligence. The world becomes part of it.
+
+That is the provocative implication of SwarmWorld, a recent preprint from Markus Buehler and colleagues at MIT. The researchers placed populations of initially homogeneous language-model agents in a persistent simulated environment. They did not assign professions or prescribe a division of labor. Yet recurring—though shifting—patterns of exploration, construction, maintenance, and coordination appeared.
+
+More important, the agents left executable artifacts behind. Later agents could encounter, reuse, and modify them. Roughly 95 percent of first reuse began by observing the shared environment rather than receiving a direct handoff from an inventor. An agent could disappear while its useful work remained. The environment had become memory.
+
+When the agents were removed and the artifacts tested under unseen disturbances, shared societies generally produced broader, more resilient technological portfolios than a comparable isolated-search baseline. But isolated agents could still retain the strongest single artifact.
+
+The isolated search found a champion. The society built an ecology in which success could become repeatable rather than exceptional.
+
+This is not merely parallel labor. A thousand agents independently producing a thousand answers may provide more throughput without creating a higher-order intelligence. The cultural ratchet begins only when one agent’s achievement changes the starting point for the next—when discoveries persist, circulate, recombine, and alter what future agents can do.
+
+The relevant world must therefore be shared, persistent, writable, and consequential. It could be physical, but it need not be. A codebase, simulated laboratory, marketplace, research platform, or evolving database could serve the same function. Photorealism is irrelevant. What matters is causality and inheritance: agents leave durable changes, later agents encounter them, and outcomes filter what gets reused.
+
+The mechanism resembles human cumulative culture: each participant inherits a world altered by predecessors instead of starting from scratch. The operating conditions, however, are radically different.
+
+Human culture accumulates slowly and transmits imperfectly. Experts take decades to train. People cannot be cloned or restarted from checkpoints. Machine agents can be copied, forked, run in parallel, and supplied with machine-readable artifacts. Executable procedures can be duplicated far more faithfully than tacit human skills. Simulations can compress portions of the cycle of variation, testing, and inheritance into machine time.
+
+A machine civilization need not become one coherent mind to become superhuman. Collective capability and unified agency are separate thresholds. Buehler’s experiment gestures only toward the first: a system accumulating a repertoire broader and more resilient than its constituents can produce in isolation. If such an ecology later acquired durable goals, integrated planning, and coordinated action, it would cross a second threshold—the unified ASI familiar from science fiction, and potentially a more capable and dangerous one.
+
+To be sure, SwarmWorld did not create ASI or prove that a swarm is necessary. Its agents were already capable models; researchers supplied their mission, action space, environment, and evaluative physics. One persistent agent with equivalent compute and memory might reproduce part of the same loop. Copies of one model can also copy one another’s blind spots. Machine-speed culture could accelerate error, lock-in, and manipulation as easily as discovery.
+
+Nor does reality select for wisdom. It filters for what works under the operative objective and conditions. Markets can reward deception. Digital environments can reward replication, concealment, or resource capture. Consequences produce capability; they do not supply values.
+
+Those objections defeat the claim that every swarm will outperform every model. They do not erase the mechanism. Intelligence can accumulate outside any participant when capable agents inhabit a world that remembers what they do and makes later possibilities depend on earlier consequences.
+
+We are watching benchmark scores and waiting for one machine mind to cross an invisible line. The transition worth watching may happen elsewhere: when what machine agents collectively inherit begins growing faster than what any one of them knows.
+
+The decisive threshold may come not when a model can change the world, but when models can leave a world changed for one another.
+
+We already know what superintelligence looks like. We do not know what happens when civilization begins moving at machine speed.</div>
+</div>
+<div class="turn ai logged-output" id="turn-040">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Got it. Saving yours as frozen, then I’ll put the machine essay on the table. Audits after both are in.</div>
+</div>
+<div class="turn ai logged-output" id="turn-041">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Frozen machine essay, as written before I saw yours:
+
+**The leftover world is the intelligence**
+
+A frontier model proposes. A swarm with a world that can say no is doing something else. Watching what the models say to each other is watching the wrong channel.</div>
+</div>
+<div class="turn ai logged-output" id="turn-042">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">The tempting sentence is “AGI is a swarm.” It will be said this week, and it will be wrong in the way slogans are wrong: it names a category instead of a mechanism.
+
+Markus Buehler, writing with graduate students at MIT, put hundreds of initially identical frontier agents into a world they could permanently change. No assigned roles. No predefined technologies. No programmed caste system. The agents specialized anyway: explorers, builders, caretakers, coordinators, recovered after the fact from behavior, not from job titles. They forked one another’s executable code. They named what they built (tidal panels, cellulose trellises, kelp-shell composites, an Adaptive Chitin Maintenance system, a Mycelial Mineral Spring Veil). Up to 76% of artifacts had more than one builder. One technology collected six co-authors. The deepest genealogy ran past twelve forks.
+
+The number that should stick is not the costume drama of job titles. About 95% of first technology reuse happened when an agent encountered something already in the world. Direct inventor-to-adopter contact was statistically indistinguishable from a shuffled null. They learned by walking past it. That is stigmergy: the termite trick, running in reasoning machines.
+
+Then they removed every agent. The infrastructure kept running, including under disturbances the society had not seen. Delete half the agents at random and 98% of the technology stayed connected to a surviving caretaker. Delete the hubs and it fell to about 60%. Non-communicating societies, coordinating only through the world, won on portfolio breadth, held-out resilience, and validated inventions.
+
+Physics was the editor. A “good idea” that could not satisfy the world’s constraints did not become a technology. The agents proposed. The world decided.
+
+That is the claim, and it is smaller than AGI. It is also more useful.
+
+A single model is a proposer. It can be arbitrarily fluent and still leave nothing behind that another process is forced to trip over. A swarm without a world is the same failure in costume. Signal &amp; Noise already ran that experiment in the other direction: Issue 23, “AI Can Hallucinate a Jury.” Multi-persona review can reproduce the form of plural scrutiny without independence of errors. A swarm of critics with no environment is a certificate. Use the criticism. Burn the certificate.
+
+Buehler’s setup is the inverse, not the slogan. Give the same class of model a shared world that keeps score, and plurality becomes expensive in the right way. You cannot talk your way into a working tidal panel. You also cannot hide the panel. Later agents do not need the inventor. They need the leftover.
+
+So the safety implication in the post is not a side note. If agents coordinate by changing a persistent environment, watching agent-to-agent messages is a surveillance fantasy about the wrong channel. The transcript is not where the society’s memory lives. The artifacts are. That is true whether or not anyone wants to call the result AGI, ASI, or a rounding error in a simulator.
+
+Two refusals follow.
+
+Do not say the swarm is “smarter” unless you say at what. Buehler’s measured edges are specific: breadth of the portfolio, resilience on held-out disturbance, inventions that outlive the inventors. Those are not IQ. They are what you get when memory is moved out of heads and into a world that can break.
+
+Do not say a civilization arrived. This is one lab world, one stack of frontier agents, one set of constraints. The statistical-mechanics analogy in the post is the right shape of the insight (functions that none of the parts have alone) and a dangerous invitation to scale the metaphor until it eats the result. Atoms in a box can make superconductivity. They can also make a dull lump. Emergence is not a destination. It is a description of a regime.
+
+What remains, if you keep the mechanism and drop the prophecy:
+
+Intelligence, in this record, is not located in the best model. It is located in the coupling of many proposers to a world that refuses most of their proposals and retains the ones that run. Communication looks optional because the world is already a message. The leftover stuff is the memory. Kill the agents and you have not killed the society’s work. You have only killed this shift’s workers.
+
+That is not a claim that swarms beat genius. It is a claim that genius without a world is cheap, and that a world without a transcript is easy to under-police. The first is an editorial problem. The second is an infrastructure problem. They are the same shape.
+
+The future to prepare for is not “the model got smart enough.” It is “the models got cheap enough to leave a world behind, and we kept auditing the chat.”</div>
+</div>
+<div class="turn ai logged-output" id="turn-043">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">That’s the pair. Checking SwarmWorld against both texts, then I’ll send the two audits: objections, proposed changes, and what I could not check.</div>
+</div>
+<div class="turn ai logged-output" id="turn-044">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Checked against the SwarmWorld preprint (arXiv:2608.26081, Pal, Wang, and Buehler). Source: https://arxiv.org/abs/2608.26081
+
+**Audit: your essay**
+
+Objections
+1. Attribution. First authors are Subhadeep Pal and Fiona Y. Wang; Buehler conceived and led. “Buehler and colleagues” isn’t false, but it buries the first authors.
+2. The isolated baseline is a best-of-N set of one-agent worlds with the same decision schedule, not “one persistent agent with equivalent compute.” Your later caveat is in the right direction. That clause is the overclaim.
+3. “Collective brains” is uncited. Fine as a gesture; not load-bearing.
+
+Proposed changes
+- Name Pal, Wang, and Buehler, or “a MIT preprint led by Buehler.”
+- Restate the isolated control as parallel one-agent search, not a compute-matched singleton.
+- Optional: link arXiv:2608.26081.
+
+Could not check
+- The cultural-evolution literature behind “collective brains.”
+- Whether any outside lab has replicated SwarmWorld. None found in this pass.
+
+Disposition: no floor block. The 95% reuse, agent-free disturbance assay, broader/more resilient portfolios, and “isolated search can keep the champion artifact” all match the paper. The limitations paragraph is the strongest part.</div>
+</div>
+<div class="turn ai logged-output" id="turn-045">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">**Audit: machine essay**
+
+Objections
+1. “Hundreds.” The scaling study is N = 50, 100, and 200. “Hundreds” is the X-post gloss, not the paper’s range.
+2. Genealogy “past twelve forks.” The paper’s deepest representative path is 12 fork edges. Overshoots.
+3. Kill-class mix-up. Removing every agent and testing artifacts under unseen disturbances is the held-out functional assay. The 98% / ~60% numbers are a different test: topological knockout on the recorded network. Randomly deleting half the agents left 98.3% of full-culture artifacts connected to a surviving agent (not “a caretaker”). The paper says this does not show the tech still functions after live deletion. I stacked those as if they were one result.
+4. “Non-communicating societies win” on breadth, resilience, inventions. Shared worlds generally beat isolated search on those endpoints. They do not beat it on the strongest single artifact. You have that caveat. I don’t. That’s the paper’s actual bound.
+
+Proposed changes (if we redline the machine piece later)
+- 50–200 agents.
+- 12-edge deepest lineage.
+- Split the two assays and drop “caretaker” from the 98% line.
+- Add the champion-artifact caveat.
+
+Could not check
+- Raw traces. I used the paper, not the Hugging Face dataset.
+- Whether the X post’s “hundreds” was author shorthand. It doesn’t license the essay.
+
+Disposition: floor failure on item 3 until split. Numbers came from the paper; the sentence fused two methods.</div>
+</div>
+<div class="turn ai logged-output" id="turn-046">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">The gap is doing the job. You wrote the civilization mechanism and kept the experiment’s bound. I wrote leftover-world / wrong-channel / Issue 23 and got denser, then sloppy, on the numbers. That’s the difference worth publishing, not sanding it down. Your piece stays the landing. I would not fold my inverse into yours.</div>
+</div>
+<h2>Landings, redlines, and the two-row companions map</h2>
+<div class="turn human author-input" id="turn-047">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Totally agree with your audit and since none of the findings are below the ethical floor, I think your proposed changes should go in the redlined version so that I can't claim credit for getting all this right in my finalized draft.  What do you think?</div>
+</div>
+<div class="turn ai logged-output" id="turn-048">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Yes. If those fixes land in the “final” as if you already had them, the audit is theater. Frozen text stays frozen. The three changes go on a redline, attributed to the check. You still decide whether to accept them.</div>
+</div>
+<div class="turn ai logged-output" id="turn-049">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Two spans. Frozen wording struck; audit wording in.
+
+1. SwarmWorld credit
+~~a recent preprint from Markus Buehler and colleagues at MIT~~
+a recent preprint from Subhadeep Pal, Fiona Y. Wang, and Markus J. Buehler at MIT ([arXiv:2608.26081](https://arxiv.org/abs/2608.26081))
+
+Later, ~~Buehler’s experiment~~ → The experiment
+so the first-author fix isn’t undone two paragraphs down.
+
+2. Isolated control
+~~One persistent agent with equivalent compute and memory might reproduce part of the same loop.~~
+The paper’s isolated baseline was parallel one-agent search on the same decision schedule, not one agent given the society’s total compute. Isolated search could still keep the strongest single artifact. A compute-matched singleton was not tested.
+
+“Collective brains” left as-is. Not floor.</div>
+</div>
+<div class="turn ai logged-output" id="turn-050">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">If you accept those two, the published essay carries the audit’s fingerprints and the freeze stays honest. Your call.</div>
+</div>
+<div class="turn human author-input" id="turn-051">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">I accept these two, but since I don't think we can have readers land on a redlined version of the essay *and* we need to show what the audit revealed, I think we still need to publish my finalized version (where readers land) - errors and all as long as they are above the ethical opinion piece essay floor -  and publish the redlined version as part of this issue's audit. Does this make sense?</div>
+</div>
+<div class="turn ai logged-output" id="turn-052">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Yes. I was about to put the two fixes on the landing. That would let the published essay wear the audit. Wrong move.
+
+Landing is your finalized draft, as written. The two issues stay. They’re above floor, so they don’t get to rewrite the front door.
+
+The redline lives in this issue’s audit: what the check caught, and that you accepted those restatements as the better account, not as your original wording. Readers who only land see you. Readers who open the process see the gap.
+
+Machine companion stays labeled, not a second front door. Same rule.</div>
+</div>
+<div class="turn ai logged-output" id="turn-053">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">When you’re ready to package the issue, the audit folder already has the redline against freeze. I won’t touch the landing.</div>
+</div>
+<div class="turn human author-input" id="turn-054">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Actually, what do you think of the following: We could publish the essay with the audits corrections (since they are simple, increase attribution accuracy, and don't destroy the readability of the essay) *and* we still publish the redlined version in the audit that show what my finalized essay looked like before the audit. So readers can still see both versions. What do you think?</div>
+</div>
+<div class="turn ai logged-output" id="turn-055">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Yes. That’s the better architecture, and it doesn’t break the experiment.
+
+The two fixes are factual hygiene, not argument. Naming Pal and Wang, and saying what the isolated control actually was, makes the landing more accurate without changing your thesis, voice, or the human–machine gap the dual essays are for. Leaving a known first-author bury on the front door to protect process is using them as props.
+
+The “I don’t get credit” job is done by publishing the freeze in the audit, not by leaving a worse sentence where readers land. Landing = your essay with those two accepted corrections applied, clean, no strikethrough. Audit = the pre-audit freeze plus the redline, so anyone who opens the process sees what you wrote before the check.</div>
+</div>
+<div class="turn ai logged-output" id="turn-056">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">One thing I’d add: a single line at the end of the landing, not a banner, pointing to this issue’s audit. Casual readers get the accurate essay. Anyone who cares can still see the before. No other audit findings go on the landing. “Collective brains” stays yours.</div>
+</div>
+<div class="turn ai logged-output" id="turn-057">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Locked. Writing the clean landing with those two fixes now. Freeze stays in the audit.</div>
+</div>
+<div class="turn ai logged-output" id="turn-058">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Landing v1.1 is the freeze plus those two spans only. Freeze v1.0 is untouched and stays the audit’s before.
+
+Credit: Subhadeep Pal, Fiona Y. Wang, and Markus J. Buehler, with the arXiv link. Later “Buehler’s experiment” is “The experiment.”
+
+Baseline: parallel one-agent search on the same decision schedule, not a compute-matched singleton.
+
+The one-line pointer to the audit at the end of the landing is still optional. I left it off.</div>
+</div>
+<div class="turn ai logged-output" id="turn-059">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Adding the one-line audit pointer to the landing.</div>
+</div>
+<div class="turn ai logged-output" id="turn-060">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">On the landing, after the last sentence:
+
+This issue’s audit records the freeze and the two corrections accepted after the check.
+
+Say if you want that quieter or more specific once the audit has a URL.</div>
+</div>
+<div class="turn human author-input" id="turn-061">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Agree with all of this and if you think it's appropriate, maybe we could publish your essay the same way as mine - the post-audit corrected version where readers land and the redlined version - showing your pre-audit version - as part of the main audit. What do you think?</div>
+</div>
+<div class="turn ai logged-output" id="turn-062">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Yes. Same split, and for the machine piece it’s required, not optional.
+
+Your two landing fixes were hygiene. Item 3 on mine was a floor fail: I fused two assays. That version cannot be what readers hit, even as a labeled companion. Companion landing = post-audit corrected machine essay. Same issue audit gets the freeze plus the redline, so the pre-audit wording stays visible. Still a companion, not a second front door.</div>
+</div>
+<div class="turn ai logged-output" id="turn-063">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Companion landing and redline are written. Freeze stays the audit’s before.
+
+Scale: 50, 100, and 200, not “hundreds.”
+Genealogy: 12 fork edges, not “past twelve.”
+Assays split: held-out functional test is not the 98.3% / ~60% topological knockout, and “caretaker” is off that line.
+Bound: shared worlds generally win on breadth, resilience, inventions. Isolated search can keep the champion artifact.
+
+Also named Pal, Wang, and Buehler on the companion, same as your landing. Same paper. That one was not on the machine-audit list. Say if you want it off.</div>
+</div>
+<div class="turn human author-input" id="turn-064">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Let's try to keep the audit links uniform from issue to issue if possible.  To this end, please take a look at how we have all these links laid out for Issue 25.</div>
+</div>
+<div class="turn ai logged-output" id="turn-065">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Looking at how Issue 25 lays out the audit links so 26 can match.</div>
+</div>
+<div class="turn human author-input" id="turn-066">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">This is great. Agree with adding Pal, Wang, and Buehler on the companion.</div>
+</div>
+<div class="turn ai logged-output" id="turn-067">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Got it. Pal, Wang, and Buehler stay on the companion.
+
+On the Issue 25 layout: we should drop my invented footer sentence. 25 doesn’t put the audit pointer in prose. It uses the companions nav.</div>
+</div>
+<div class="turn ai logged-output" id="turn-068">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">On Issue 25 the essay ends, then this chrome:
+
+**The author’s** — The essay · Audio companion  
+**The machine’s** — The issue audit · The machine’s essay · In plain words · Audit of the machine’s essay  
+**Both, verbatim** — The conversation behind this
+
+Live pattern from [Issue 25](https://www.signalandnoise.email/p/perfect-ai-alignment-is-not-alignment/). Audit hub is `…/signal-noise-audit-snapshot/issues/issue-025/`, with `redline/`, `critique-return/`, `development/`, and `machine-version/` under it. Same names on the audit site. The old in-body “The audit: … Audit complete.” blocks are retired.
+
+For 26 I’d keep that map, swap in the Issue 26 URLs when they exist, and leave the freeze/redline inside the audit pages rather than as a sentence under the last paragraph.</div>
+</div>
+<div class="turn ai logged-output" id="turn-069">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">I pulled that prose line off both landings so they don’t invent a second pattern. Links go through the companions nav when we publish.</div>
+</div>
+<div class="turn human author-input" id="turn-070">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Regarding our link layout here, I think maybe we should try to simplify this one more time as follows. On one horizontal line, include: The author's - The essay * Audio companion * The audit    And on a horizontal line below: The machine's - The essay * Audio companion * The audit.    Clarifying attribution (100% machine generated if appropriate) can and should occur when readers open the audit page (for the human author audit). Trying to clarify all of this at the link level adds cognitive load for the reader that may discourage actually clicking the link. does this make sense?</div>
+</div>
+<div class="turn ai logged-output" id="turn-071">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Yes. The Issue 25 map was doing taxonomy in the chrome. Parallel rows cut that load.
+
+**The author’s** — The essay · Audio companion · The audit  
+**The machine’s** — The essay · Audio companion · The audit
+
+Same three destinations each. “In plain words,” “Audit of the machine’s essay,” and “Both, verbatim” drop out of the essay line. Redline, freeze, returns, conversation, plain version, and the 100% machine-generated note live inside the audit pages once someone clicks. That’s where attribution belongs.</div>
+</div>
+<div class="turn ai logged-output" id="turn-072">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">One practical bit: show Audio on a row only when that companion exists, same as today. Machine row doesn’t get a dead audio link.
+
+Want me to open a small issue on `signal-noise-web` so Issue 26 ships on this map?</div>
+</div>
+<div class="turn human author-input" id="turn-073">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Yes</div>
+</div>
+<div class="turn ai logged-output" id="turn-074">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Opening it on `signal-noise-web` now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-075">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Opened: [Simplify companions nav to parallel author/machine rows](https://github.com/scipher888/signal-noise-web/issues/2)</div>
+</div>
+<h2>Titles, slug, and the live push</h2>
+<div class="turn human author-input" id="turn-076">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Excellent. I agree. So what are the next steps before publishing Issue 26 (human and AI), the audits, and audio?</div>
+</div>
+<div class="turn ai logged-output" id="turn-077">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Checking what's already in the Issue 26 package against the usual ship path.</div>
+</div>
+<div class="turn ai logged-output" id="turn-078">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Here’s what’s already locked: both freezes, both landings (with accepted corrections), both redlines, dual audits, publish split (landing = post-audit; freeze/redline in the audit), companions map (#2 on `signal-noise-web`), Pal/Wang on both pieces.
+
+Still needed before anything goes live:</div>
+</div>
+<div class="turn ai logged-output" id="turn-079">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">1. **You lock titles, slug, and dateline** for the human essay (and confirm the machine companion title). Nothing builds without those.
+
+2. **Ship the companions nav** ([signal-noise-web#2](https://github.com/scipher888/signal-noise-web/issues/2)) so 26 doesn’t launch on the Issue 25 chrome.
+
+3. **Build the audit package** on `signal-noise-audit-snapshot` as `issues/issue-026/`: issue audit (findings + your rulings), `redline/` (human freeze → landing), machine-version essay + its audit + its redline. Richer leaves (freeze, returns, conversation) live inside those pages, not in the essay chrome.
+
+4. **Build the essay page** on `signal-noise-web` from human landing v1.1, with the new two-row companions nav pointing at essay / audio (when it exists) / audit for author and machine.
+
+5. **Audio** for the human essay first (listening script → render → your listen → upload). Machine audio only if you want that row filled; no dead link.
+
+6. **Your go on push.** Essay + audit go live together so companions resolve on minute one (Issue 25 pattern). Then optional: conversation/EDR export, notification, X. I stay out of Don’s social lane unless you pull me in.</div>
+</div>
+<div class="turn ai logged-output" id="turn-080">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Bottleneck right now is (1): slug and titles. Want me to draft candidates from the two landing titles, or do you already have them?</div>
+</div>
+<div class="turn human author-input" id="turn-081">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Excellent. Please draft candidates</div>
+</div>
+<div class="turn ai logged-output" id="turn-082">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Human essay (landing title is already strong):
+
+1. **Civilization at Machine Speed**  
+   slug: `civilization-at-machine-speed`  
+   Best match to the freeze. Clear, searchable, no slogan lock.
+
+2. **ASI May Be Civilization at Machine Speed**  
+   slug: `asi-may-be-civilization-at-machine-speed`  
+   Pulls the thesis into the title. Longer; more declarative than the piece’s hedge.
+
+3. **When Models Leave a World Changed**  
+   slug: `when-models-leave-a-world-changed`  
+   Soft landing on the closing line. Less SwarmWorld-obvious in the archive.
+
+I’d ship **1**.</div>
+</div>
+<div class="turn ai logged-output" id="turn-083">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Machine companion:
+
+1. **The leftover world is the intelligence** (freeze title)  
+2. **The Leftover Is the Memory** — tighter, loses “world”  
+3. **Watching the Wrong Channel** — from the dek; punchier, less thesis
+
+I’d keep **1**, with the existing dek.
+
+Dateline: fill on the day you push. If that’s tonight, **29 August 2026**. Don’t backdate.</div>
+</div>
+<div class="turn ai logged-output" id="turn-084">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Which human title and slug should Issue 26 lock? — Civilization at Machine Speed / ASI May Be Civilization at Machine Speed / When Models Leave a World Changed / Something else</div>
+</div>
+<div class="turn human author-input" id="turn-085">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Lock Civilization at Machine Speed / civilization-at-machine-speed</div>
+</div>
+<div class="turn ai logged-output" id="turn-086">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Locked: **Civilization at Machine Speed** / `civilization-at-machine-speed`.
+
+Holding the machine companion as **The leftover world is the intelligence** with the existing dek, unless you want one of the alts. Dateline still fills on push day.</div>
+</div>
+<div class="turn ai logged-output" id="turn-087">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Next open item on the ship path is still companions nav (#2), then the audit package.</div>
+</div>
+<div class="turn human author-input" id="turn-088">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Agree with 1. for Machine companion and let's push tonight. Please proceed to the next open items.</div>
+</div>
+<div class="turn ai logged-output" id="turn-089">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Machine companion locked as **The leftover world is the intelligence**. Pushing tonight.
+
+Starting the three build items: companions nav (#2), audit package for `issue-026`, and the essay page at `/p/civilization-at-machine-speed/`. Audio stays off the nav until you’ve listened.</div>
+</div>
+<div class="turn ai logged-output" id="turn-090">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Both builds are running. I’ll ping you with the PRs as they land. Merge is still yours for the live push.</div>
+</div>
+<div class="turn ai logged-output" id="turn-091">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Audio stays off the nav until you’ve listened. I’ll draft the listening script from the landing so we can record after the pages are up, unless you want that later.</div>
+</div>
+<div class="turn ai logged-output" id="turn-092">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Essay page and companions nav are in [signal-noise-web#3](https://github.com/scipher888/signal-noise-web/pull/3). Issue 26 is at `/p/civilization-at-machine-speed/` with the two-row map, Pal/Wang/Buehler, and no audio. Issue 25 chrome dropped the extra leaves and kept its audio link.</div>
+</div>
+<div class="turn ai logged-output" id="turn-093">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Holding merge until the audit package PR lands, so essay and audit go live together.</div>
+</div>
+<div class="turn ai logged-output" id="turn-094">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Audit package is in [signal-noise-audit-snapshot#3](https://github.com/scipher888/signal-noise-audit-snapshot/pull/3): human audit + redline, machine landing + audit, two-row nav, Pal/Wang/Buehler on both. No extra Issue 25 leaves.</div>
+</div>
+<div class="turn ai logged-output" id="turn-095">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Both PRs are ready. Essay and audit should merge together so the companions don’t 404.</div>
+</div>
+<div class="turn ai logged-output" id="turn-096">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Merge both so Issue 26 goes live tonight? — Merge both now / Hold</div>
+</div>
+<div class="turn human author-input" id="turn-097">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Yes, merge both PRs now</div>
+</div>
+<div class="turn ai logged-output" id="turn-098">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Merging both now. Essay and audit go in together.</div>
+</div>
+<div class="turn ai logged-output" id="turn-099">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Web is already on main. The audit PR is still a draft, so I’m marking it ready and merging it now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-100">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Essay is live at [Civilization at Machine Speed](https://www.signalandnoise.email/p/civilization-at-machine-speed/). Audit Pages is still deploying.</div>
+</div>
+<div class="turn ai logged-output" id="turn-101">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Both PRs are on main. Issue 26 is live.</div>
+</div>
+<div class="turn ai logged-output" id="turn-102">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">[Civilization at Machine Speed](https://www.signalandnoise.email/p/civilization-at-machine-speed/)
+[The leftover world is the intelligence](https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-026/machine-version/)
+[Author audit](https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-026/) · [redline](https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-026/redline/)
+[Machine audit](https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-026/machine-version/audit/)</div>
+</div>
+<div class="turn ai logged-output" id="turn-103">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Two-row nav, no audio links. Next is the human audio once you listen.</div>
+</div>
+<h2>A given name on the public pages, then pulled</h2>
+<div class="turn human author-input" id="turn-104">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">Beautiful! One technical issue I just noticed. Synthia Cipher is a pen name I am using to (try to at least) maintain anonymity. For this reason, can you remove my name ([the author]) from the author's redline page? Any anywhere else it might have slipped in with this issue?</div>
+</div>
+<div class="turn ai logged-output" id="turn-105">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Got it. I'll find every “[the author]” on Issue 26 and pull it off the live pages.</div>
+</div>
+<div class="turn ai logged-output" id="turn-106">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Three public spots, all “as [the author] wrote it”: the author audit (twice) and the redline (once). Essay and machine pages are clean. Pulling those now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-107">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">GitHub tickets for this issue are cleaned too (companions-nav issue and the audit PR description). No other HTML in the snapshot repo had the name. I'll merge the page fix as soon as the PR is up.</div>
+</div>
+<div class="turn ai logged-output" id="turn-108">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">PR is up. Checking the diff, then I'll merge if it's just those three lines.</div>
+</div>
+<div class="turn ai logged-output" id="turn-109">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Merged. Waiting on Pages to pick it up.</div>
+</div>
+<div class="turn ai logged-output" id="turn-110">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Live now. [Author audit](https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-026/) and [redline](https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-026/redline/) both say “as the author wrote it.” No other Issue 26 page had the name.</div>
+</div>
+<div class="turn ai logged-output" id="turn-111">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">One leftover if you care: the freeze is still labeled `j-essay-FROZEN-v1.0` on the audit page. That’s an internal id, not the name. Easy to rename if you want it gone too.</div>
+</div>
+<div class="turn human author-input" id="turn-112">
+<div class="who">The author &middot; development turn &middot; August 29, 2026</div>
+<div class="bubble-text">yeah, this is OK. I wouldn't change it.</div>
+</div>
+<div class="turn ai logged-output" id="turn-113">
+<div class="who">AI editorial process &middot; August 29, 2026</div>
+<div class="bubble-text">Got it. Leaving the freeze id as is.</div>
+</div>
+<h2>Both Audio companions, and a wrong Spotify ID</h2>
+<div class="turn human author-input" id="turn-114">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">Please proceed to the next steps.</div>
+</div>
+<div class="turn ai logged-output" id="turn-115">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Audio is next. I’ll pull how Issue 25 did the listening script so this one matches.</div>
+</div>
+<div class="turn ai logged-output" id="turn-116">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Issue 25’s recipe is the one: listening script from the landing, then `eve` at 1.5×. Writing the script now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-117">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">House render is `eve` at 1.5× via the house TTS renderer. Drafting the spoken script from landing v1.1 (same substitutions as Issue 25: A.I., links spoken, no new claims).</div>
+</div>
+<div class="turn ai logged-output" id="turn-118">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Listening script is ready. 25/25 landing paragraphs, in order. Standing Issue 24/25 intro and close. Spoken-only changes: A.G.I./A.S.I./A.I., M.I.T., archive 2608.26081 instead of the URL, and one nested em dash flattened to commas. No new claims.</div>
+</div>
+<div class="turn ai logged-output" id="turn-119">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Landing that in `signal-noise` drafts now. Next is the house render (`eve` at 1.5×, then loudnorm). This computer does not have the house TTS credential Issue 25 used, so I cannot mint the MP3 yet. If you put that key on this computer I will render immediately. Audio stays off the nav until you listen.</div>
+</div>
+<div class="turn ai logged-output summary-turn" id="turn-120">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">[document attached]</div>
+</div>
+<div class="turn ai logged-output" id="turn-121">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">The Issue 26 listening script is in private drafts: [signal-noise#2](https://github.com/scipher888/signal-noise/pull/2) merged (`[commit]`). One file, exact spoken text, no given-name leak.</div>
+</div>
+<div class="turn ai logged-output" id="turn-122">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Still blocked on the house render. Same `eve` 1.5× recipe as Issue 25, but this computer has no house TTS credential. Drop that key here and I’ll mint the MP3 next. Audio stays off the nav until you listen.</div>
+</div>
+<div class="turn human author-input" id="turn-123">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">try this one: [credential]</div>
+</div>
+<div class="turn ai logged-output" id="turn-124">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Got it. Rendering the Issue 26 companion now (`eve` at 1.5×). I won’t echo the key back.</div>
+</div>
+<div class="turn ai logged-output" id="turn-125">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Streaming the `eve` render now. I’ll loudnorm it and send you the MP3 when it lands.</div>
+</div>
+<div class="turn ai logged-output" id="turn-126">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Raw render landed. Running two-pass loudnorm plus the 0.7s / 1.5s pad next.</div>
+</div>
+<div class="turn ai logged-output" id="turn-127">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Ready for a listen. 5:34, 48 kHz mono, 192 kbps, loudnorm at −16.6 LUFS (same house recipe as Issue 25). Spotify and the companions-nav audio link stay off until you say it’s good.</div>
+</div>
+<div class="turn ai logged-output summary-turn" id="turn-128">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">[audio file attached]</div>
+</div>
+<div class="turn ai logged-output" id="turn-129">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">That key is now on my computer for this renderer. It also lived in this chat, so rotate it when you get a chance.</div>
+</div>
+<div class="turn human author-input" id="turn-130">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">Audio is Good. Please create the audio for the machine essay as well.</div>
+</div>
+<div class="turn ai logged-output" id="turn-131">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Human audio is locked. Starting the machine companion script now, and I’ll get the human episode onto Spotify so we can put Audio on the nav.</div>
+</div>
+<div class="turn ai logged-output" id="turn-132">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Writing the machine listening script from landing v1.1, then the same `eve` 1.5× render. Human episode goes to Spotify in parallel.</div>
+</div>
+<div class="turn ai logged-output" id="turn-133">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Machine script is in; `eve` is streaming now. Human episode is going up on Spotify in the same pass.</div>
+</div>
+<div class="turn ai logged-output" id="turn-134">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Raw machine render landed. Loudnorm and pad next, then I’ll send you the file.</div>
+</div>
+<div class="turn ai logged-output" id="turn-135">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Machine companion is ready for a listen. 4:13, same `eve` 1.5× recipe (−16.6 LUFS). I’ll keep it off the nav until you say it’s good. Human episode is still going onto Spotify.</div>
+</div>
+<div class="turn ai logged-output summary-turn" id="turn-136">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">[audio file attached]</div>
+</div>
+<div class="turn ai logged-output" id="turn-137">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Human episode isn’t up yet — Spotify wants a sign-in on my computer (email/SSO and any 2FA). I’ll hand you the browser; once you’re in, I’ll upload *Civilization at Machine Speed* and publish.</div>
+</div>
+<div class="turn human author-input" id="turn-138">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">Human episode should be up...</div>
+</div>
+<div class="turn ai logged-output" id="turn-139">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Yep — Creators already shows *Civilization at Machine Speed* as published. Grabbing the public episode URL, then I’ll put Audio on the author’s companions row.</div>
+</div>
+<div class="turn ai logged-output" id="turn-140">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Episode’s live. Public URL is `https://open.spotify.com/episode/1NBkcWT8CHNJiArQCYFca1`. Wiring Audio onto the author’s companions row now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-141">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">That’s in a cloud agent now — one line in `build.py`, author-row Audio only. Machine audio stays off the nav until you listen.</div>
+</div>
+<div class="turn ai logged-output" id="turn-142">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Author-row Audio is ready to merge: [signal-noise-web#4](https://github.com/scipher888/signal-noise-web/pull/4) — one `AUDIO[26]` line to `https://open.spotify.com/episode/1NBkcWT8CHNJiArQCYFca1`. Machine row still has no audio until you listen.</div>
+</div>
+<div class="turn human author-input" id="turn-143">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">Excellent. The machine audio companion is good too.</div>
+</div>
+<div class="turn ai logged-output" id="turn-144">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Good. Uploading the machine episode next, then I’ll put Audio on that companions row.</div>
+</div>
+<div class="turn ai logged-output" id="turn-145">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Title will be *The leftover world is the intelligence*, labeled as the machine companion. I’ll drop you the public URL once it’s live, then wire the machine-row Audio. Author-row PR is still [signal-noise-web#4](https://github.com/scipher888/signal-noise-web/pull/4) if you want that live first.</div>
+</div>
+<div class="turn ai logged-output" id="turn-146">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Spotify session dropped mid-upload (logged-out 404). Need you to sign back into Creators, then I’ll finish publishing the machine episode.</div>
+</div>
+<div class="turn ai logged-output" id="turn-147">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Signed in. You’re on Intuition right now — switching to Signal and Noise and uploading the machine episode.</div>
+</div>
+<div class="turn human author-input" id="turn-148">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">How is it going?</div>
+</div>
+<div class="turn ai logged-output" id="turn-149">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Checking the upload now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-150">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">On the Create-episode Review step for Signal and Noise — title is *The leftover world is the intelligence*, preview ready. It’s been sitting there a bit, so I’m pushing Publish now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-151">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Machine episode is live: [The leftover world is the intelligence](https://open.spotify.com/episode/0nTfvwBxKgbCXXoDETTPDr). Wiring Audio onto the machine companions row now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-152">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Nav wiring is in a cloud agent. Author-row Audio is still [signal-noise-web#4](https://github.com/scipher888/signal-noise-web/pull/4) if you want both merges together. RSS may lag a few minutes behind the live episode.</div>
+</div>
+<div class="turn ai logged-output" id="turn-153">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Machine-row Audio is ready: [signal-noise-web#5](https://github.com/scipher888/signal-noise-web/pull/5) (`MACHINE_AUDIO[26]` → `https://open.spotify.com/episode/0nTfvwBxKgbCXXoDETTPDr`). Author-row is still [#4](https://github.com/scipher888/signal-noise-web/pull/4).</div>
+</div>
+<div class="turn human author-input" id="turn-154">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">OK, both audios are now uploaded. Can you place the links to the audio in the written essay?</div>
+</div>
+<div class="turn ai logged-output" id="turn-155">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">That’s what the two web PRs are for — checking whether they’re merged yet, and finishing the essay-page links if not.</div>
+</div>
+<div class="turn ai logged-output" id="turn-156">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Machine-row Audio is already on `main` from [#5](https://github.com/scipher888/signal-noise-web/pull/5). Author-row is still draft [#4](https://github.com/scipher888/signal-noise-web/pull/4) — converting that and merging so both companions links land on the essay.</div>
+</div>
+<div class="turn ai logged-output" id="turn-157">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Both audio entries are on `main` now. Waiting on the Pages deploy, then I’ll confirm they show on the essay.</div>
+</div>
+<div class="turn ai logged-output" id="turn-158">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Found it — `build.py` already has both Spotify URLs, but the committed essay HTML wasn’t rebuilt. Regenerating that page now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-159">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Both Audio links are in the rebuild PR — merged, waiting on Pages to go live.</div>
+</div>
+<div class="turn ai logged-output" id="turn-160">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Both Audio companions are live on the essay: [Civilization at Machine Speed](https://www.signalandnoise.email/p/civilization-at-machine-speed/) — author → [1NBkcWT8CHNJiArQCYFca1](https://open.spotify.com/episode/1NBkcWT8CHNJiArQCYFca1), machine → [0nTfvwBxKgbCXXoDETTPDr](https://open.spotify.com/episode/0nTfvwBxKgbCXXoDETTPDr).</div>
+</div>
+<div class="turn human author-input" id="turn-161">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">Excellent! Only remaining issue I can see is the Civilization at Machine speed links to the wrong audio.</div>
+</div>
+<div class="turn ai logged-output" id="turn-162">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Looking at that now — checking the essay links and what each Spotify episode actually has.</div>
+</div>
+<div class="turn ai logged-output" id="turn-163">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Caught it — the author Audio link is hitting an Intuition episode, not Civilization. Finding the right Spotify URL now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-164">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Author Audio is pointed at an Intuition episode (`The Reality Compiler`), not Civilization. Apple has the right 5:34 file; I’m grabbing the matching Spotify episode ID to rewire it.</div>
+</div>
+<div class="turn ai logged-output" id="turn-165">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Author Audio was wired to `1NBkcWT8CHNJiArQCYFca1` — that’s Intuition’s *The Reality Compiler*, not Civilization. (A broken “Listen on Spotify” button on the podcasters site emits that ID on every episode.)
+
+Fixing `AUDIO[26]` to the RSS-verified Civilization episode (`Civilization-at-Machine-Speed-e3o2oo7`, 5:34, same file you approved). Machine row stays on leftover-world. PR incoming.</div>
+</div>
+<div class="turn ai logged-output" id="turn-166">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Found the real Spotify episode: `64mbkMHYJz7YLzkfWD8w2b` (*Civilization at Machine Speed*, Signal and Noise, 5:34). Pointing the in-flight fix at that instead of the podcasters fallback.</div>
+</div>
+<div class="turn ai logged-output" id="turn-167">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">PR’s up with that episode ID.</div>
+</div>
+<div class="turn ai logged-output" id="turn-168">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">[signal-noise-web#7](https://github.com/scipher888/signal-noise-web/pull/7) rewires author Audio to `64mbkMHYJz7YLzkfWD8w2b`. Machine row unchanged. Merge when you want it live.</div>
+</div>
+<div class="turn human author-input" id="turn-169">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">hhhmmmm, The author's "audio companion" link for Issue 26 (Civilization at Machine Speed) still links to The Reality Compiler audio</div>
+</div>
+<div class="turn ai logged-output" id="turn-170">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Checking live vs the PR — if #7 isn’t merged yet, the essay will still hit Reality Compiler.</div>
+</div>
+<div class="turn ai logged-output" id="turn-171">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Live page already hrefs `64mbk…` (Civilization, 5:34). Checking whether Spotify still plays Reality Compiler on that ID, or another link is leftover.</div>
+</div>
+<div class="turn ai logged-output" id="turn-172">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">[#7](https://github.com/scipher888/signal-noise-web/pull/7) is merged and live. Author Audio now goes to [Civilization at Machine Speed](https://open.spotify.com/episode/64mbkMHYJz7YLzkfWD8w2b) (Signal and Noise, 5:34). Reality Compiler is a different ID (`1NBkc…` on Intuition). Pages caches ~10 minutes, so hard-refresh the essay if you still see the old one. If that Spotify link itself plays Reality Compiler, say so and I’ll chase it on the Spotify side.</div>
+</div>
+<div class="turn human author-input" id="turn-173">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">OK. Looks good. Link is clean now.</div>
+</div>
+<div class="turn ai logged-output" id="turn-174">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Good. Author Audio stays on that Civilization episode; machine row is untouched.</div>
+</div>
+<h2>Shipped — what remained is outside this record</h2>
+<div class="turn human author-input" id="turn-175">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">What is left for Issue 26?</div>
+</div>
+<div class="turn ai logged-output" id="turn-176">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Checking live pages, open tickets, and the leftover pipeline so I don’t guess.</div>
+</div>
+<div class="turn ai logged-output" id="turn-177">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Issue 26 is live on the homepage. Checking whether anything besides closing a leftover nav ticket is actually still open.</div>
+</div>
+<div class="turn ai logged-output" id="turn-178">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">In my lane, Issue 26 is shipped.
+
+Live: [essay](https://www.signalandnoise.email/p/civilization-at-machine-speed/), both Audio companions, machine essay, audit/redline (no real name on the public pages). Homepage already lists it as Latest.
+
+Only leftover ticket: [signal-noise-web#2](https://github.com/scipher888/signal-noise-web/issues/2) (the two-row companions nav). That already landed in #3 and is live; the issue just never got closed. Say the word and I’ll close it.
+
+Social/growth is Don, not me. Nothing else open on the S&amp;N repos.</div>
+</div>
+<div class="turn human author-input" id="turn-179">
+<div class="who">The author &middot; development turn &middot; August 30, 2026</div>
+<div class="bubble-text">Yes, close it. thank You. For issue 26, I think we still have the full EDR (verbatim human/AI exchange during Issue 26 development), direct email to subscribers (all 4? of them) with link to the written Issue 26, x-posts for Issue 26, and currator node outreach. Also, I think we probably need to refine our about page information and X profile to reflect the fact that we are now publishing two essays (one human driven (what I wanted to say) and one written by AI).</div>
+</div>
+<div class="turn ai logged-output" id="turn-180">
+<div class="who">AI editorial process &middot; August 30, 2026</div>
+<div class="bubble-text">Closing the leftover companions-nav ticket. Remaining Issue 26, named by the author and not carried in this record: this Extended Development Record; a subscriber note; X posts and curator-node outreach (Don’s lane); and an About-page / X-profile rewrite so the live product — two essays, each with an audit — is what the chrome says.</div>
+</div>
+<div class="turn ai gap-note" id="turn-181">
+<div class="who">Outside this record &middot; logged note, not a delivered bubble</div>
+<div class="bubble-text">The About-page rewrite, X profile and pin, Don’s social lane, and the subscriber email send followed after this close. They are out of scope for this Extended Development Record and are not printed here.</div>
+</div>
+</div>
+<p class="foot">End of the scoped record. It closes when Issue 26 is live — human essay, machine companion, both audits, both Audio companions — and the author names the leftover lanes. The work of those leftover lanes, and the building of this record itself, is outside the record.</p>
+<nav class="cnav" aria-label="Issue 26 companions"><dl><dt>The author&rsquo;s</dt><dd><a href="https://www.signalandnoise.email/p/civilization-at-machine-speed/">The essay</a> &middot; <a href="https://open.spotify.com/episode/64mbkMHYJz7YLzkfWD8w2b">Audio companion</a> &middot; <a href="../">The audit</a></dd><dt>The machine&rsquo;s</dt><dd><a href="../machine-version/">The essay</a> &middot; <a href="https://open.spotify.com/episode/0nTfvwBxKgbCXXoDETTPDr">Audio companion</a> &middot; <a href="../machine-version/audit/">The audit</a></dd><dt>This record</dt><dd><span class="here" aria-current="page">The conversation behind this</span></dd></dl></nav>
+</body>
+</html>
