@@ -35,6 +35,8 @@ Preferred framing:
 
 > The process creates an audit surface. It does not create certainty.
 
+Issue 26+ published-audit chrome uses “machine companion,” not “labeled.”
+
 ## 3. Link check
 
 Verify all public links resolve:
