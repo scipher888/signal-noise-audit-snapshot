@@ -7,7 +7,7 @@ Author essays on [signalandnoise.email](https://www.signalandnoise.email/) alrea
 Fill three values from the page itself:
 
 - `og:title` and `twitter:title`: the machine essay title (the page `h1`).
-- `og:description` and `twitter:description`: the page's existing meta description, copied verbatim.
+- `og:description` and `twitter:description`: the page's standfirst (the visible dek under the title), copied verbatim. Strip any HTML tags and decode entities, then escape `&` as `&amp;` and quotes for the attribute. Leave `<meta name="description">` unchanged. If a page has no standfirst, use the first sentence or sentences of the essay body, trimmed to about 200 characters at a sentence boundary.
 - `og:url`: `https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-NNN/machine-version/` with a trailing slash.
 
 `og:image` and `twitter:image` reuse the essay site's 1200×630 share image:
@@ -20,7 +20,7 @@ Before reusing it, confirm that URL returns HTTP 200 with an image content type.
 <meta property="og:site_name" content="Signal &amp; Noise">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ESSAY TITLE">
-<meta property="og:description" content="META DESCRIPTION">
+<meta property="og:description" content="STANDFIRST">
 <meta property="og:url" content="https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-NNN/machine-version/">
 <meta property="og:image" content="https://www.signalandnoise.email/assets/preview.png?v=09b48f76">
 <meta property="og:image:width" content="1200">
@@ -28,6 +28,6 @@ Before reusing it, confirm that URL returns HTTP 200 with an image content type.
 <meta property="og:image:alt" content="Signal &amp; Noise share image: a dark field, a pale arch, and a small amber square.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ESSAY TITLE">
-<meta name="twitter:description" content="META DESCRIPTION">
+<meta name="twitter:description" content="STANDFIRST">
 <meta name="twitter:image" content="https://www.signalandnoise.email/assets/preview.png?v=09b48f76">
 ```
