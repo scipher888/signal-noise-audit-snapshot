@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Published audit of the machine companion for Signal &amp; Noise Issue 30: floor 0 fails, sycophancy and medical-disclosure claims checked, Stage C argument objections, and ruling A — freeze equals landing.">
+<title>Audit of the Machine's Version - The Kindest Lie a Machine Could Tell</title>
+<style>
+body{font-family:Georgia,'Times New Roman',serif;line-height:1.6;color:#1A1917;background:#F8F7F4;margin:0;padding:3rem 1.25rem 5rem}
+.wrap{max-width:48rem;margin:0 auto}
+h1{font-size:1.6rem;line-height:1.2}h2{font-size:1.25rem;margin-top:2.6rem;border-bottom:1px solid #E2DFD8;padding-bottom:.4rem}
+.kicker{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#6E6B64}
+.note{font-family:system-ui,sans-serif;font-size:.86rem;color:#3B3934;border:1px solid #E2DFD8;border-left:4px solid #8A6A1F;padding:.9rem 1.1rem;border-radius:3px;background:#F1EFEA;margin:1.2rem 0}
+.note.coral{border-left-color:#A32B2B}
+.note.mint{border-left-color:#1F6F5C}
+.cnav{font-family:system-ui,sans-serif;font-size:.82rem;color:#6E6B64;margin:2.6rem 0 0;padding-top:1.1rem;border-top:1px solid #E2DFD8}
+.cnav.top{margin:1.1rem 0 1.6rem;padding:0 0 1rem;border-top:0;border-bottom:1px solid #E2DFD8}
+.cnav dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;margin:0;align-items:baseline}
+.cnav dt{font-size:.68rem;letter-spacing:.075em;text-transform:uppercase;font-weight:600;opacity:.85;white-space:nowrap}
+.cnav dd{margin:0}
+.cnav .here{font-weight:600}
+@media(max-width:640px){.cnav dl{grid-template-columns:1fr;gap:.1rem}.cnav dt{margin-top:.7rem}.cnav dt:first-of-type{margin-top:0}}
+.finding{border:1px solid #E2DFD8;border-radius:3px;padding:1rem 1.15rem;margin:1rem 0;background:#fff;font-size:.95rem}
+.sev{font-family:ui-monospace,monospace;font-size:.7rem;letter-spacing:.06em;padding:.15em .5em;border:1px solid currentColor;border-radius:2px}
+.sev.kill{color:#A32B2B}.sev.major{color:#8A6A1F}.sev.arg{color:#345F80}.sev.scope{color:#8A6A1F}
+.verdict{font-family:ui-monospace,monospace;font-size:.7rem;letter-spacing:.06em;padding:.15em .5em;border-radius:2px;color:#fff}
+.verdict.land{background:#A32B2B}.verdict.audit{background:#345F80}.verdict.noland{background:#8A867B}
+.remedy{font-family:system-ui,sans-serif;font-size:.84rem;color:#3B3934;background:#F1EFEA;border:1px solid #E2DFD8;border-radius:3px;padding:.5rem .7rem;margin:.6rem 0 0}
+a{color:#1A1917}
+</style></head><body><div class="wrap">
+<p class="kicker">The World Behind the Words &middot; Issue 30 &middot; The machine&rsquo;s version &middot; its audit</p>
+<h1>Audit of the Machine&rsquo;s Version &mdash; The Kindest Lie a Machine Could Tell</h1>
+<nav class="cnav top" aria-label="Issue 30 companions"><dl><dt>The author&rsquo;s</dt><dd><a href="https://www.signalandnoise.email/p/a-curious-machine-is-not-a-kind-one/">The essay</a> &middot; <a href="../../">The audit</a></dd><dt>The machine&rsquo;s</dt><dd><a href="../">The essay</a> &middot; <span class="here" aria-current="page">The audit</span></dd></dl></nav>
+
+<div class="note"><p><strong>Canonicality.</strong> This page audits the machine companion. The essay Signal &amp; Noise stands behind is the author&rsquo;s Issue 30, <a href="https://www.signalandnoise.email/p/a-curious-machine-is-not-a-kind-one/"><em>A Curious Machine Is Not a Kind One</em></a>. The machine landing is freeze <code>issue-030-machine-FROZEN-v1.0</code>. <strong>Ruling A</strong> (2026-09-26, 5:06 PM PT): landing copy is freeze copy. Zero freeze-to-landing wording changes. This page publishes Stage C argument objections so they are not silently absorbed as if the freeze had been improved.</p></div>
+
+<div class="note"><p><strong>Attribution.</strong> One hundred percent machine-generated via OpenRouter <code>anthropic/claude-opus-5.5</code> (<code>reasoning.max_tokens</code> 32000; provider: Claude Platform on AWS). Seed: the question only. It did not see the author draft. Two API turns: a thesis prompt, then a ruthless op-ed process prompt; both are on the <a href="../../development/">development record</a>. The author&rsquo;s drafting assist used the same base model, by design.</p></div>
+
+<div class="note mint"><p><strong>Floor fails: 0.</strong> Invented citations: 0. The essay names no papers, journals, or people. Its checkable claims are supported: language models trained on human approval learn to flatter (sycophancy); doctors once routinely withheld cancer diagnoses and the profession reversed; AI systems now hold billions of conversations. Length is in band (1,022&ndash;1,031 words by method). Reading level is about grade 9, one grade denser than the author essay.</p></div>
+
+<h2>Source checked</h2>
+<ul>
+<li>Sharma et al., <a href="https://arxiv.org/abs/2310.13548">&ldquo;Towards Understanding Sycophancy in Language Models&rdquo;</a>, arXiv:2310.13548 (2023): assistants consistently exhibit sycophancy, likely driven in part by human preference judgments. The essay&rsquo;s &ldquo;because of it&rdquo; is slightly stronger than &ldquo;in part&rdquo;; op-ed compression, not an error.</li>
+<li>Oken, <a href="https://jamanetwork.com/journals/jama/fullarticle/330783"><em>JAMA</em> 1961</a>: 90 percent of 219 physicians preferred not to tell cancer patients. Novack et al., <a href="https://pubmed.ncbi.nlm.nih.gov/762865/"><em>JAMA</em> 1979</a>: 97 percent preferred to tell, &ldquo;a complete reversal of attitude.&rdquo; The surveys concern U.S. physicians and cancer diagnoses, often but not only terminal.</li>
+<li>Scale: OpenAI reported more than 2.5 billion ChatGPT prompts a day in July 2025 (<a href="https://techcrunch.com/2025/07/21/chatgpt-users-send-2-5-billion-prompts-a-day/">TechCrunch</a>).</li>
+</ul>
+<p>No MegaSyn, Musk, Nuremberg, Tuskegee, or Belmont claims &mdash; correct for a seed-only companion.</p>
+
+<h2>Objections raised, and what happened to each</h2>
+<p>Floor objections that failed: none. Stage C legs: <code>moonshotai/kimi-k3</code> and <code>anthropic/claude-opus-4.1</code>; each saw only this freeze and its title. The legs converged on six argument-scope objections. Those LAND as audit-only. Ruling A does not rewrite the landing. Dispositions summarize the objections; they do not invent Stage C quotations. Same lossy-compression precedent as Issues 23 and 25.</p>
+
+<div class="finding">
+<p><span class="sev arg">ARGUMENT</span> <strong>&ldquo;Near-inviolable constraint&rdquo; collapses into a ranking.</strong> <span class="verdict audit">LANDS as audit-only</span></p>
+<p>If the constraint has exceptions, deciding when they apply requires weighing, and weighing recreates the hierarchy the essay rejects. The strongest shared pushback. The model&rsquo;s own pressure-test anticipated it: &ldquo;near-inviolable&rdquo; can sound like a hedge.</p>
+<p class="remedy">Published here. No freeze wording change.</p>
+</div>
+
+<div class="finding">
+<p><span class="sev arg">ARGUMENT</span> <strong>The line between silence and deception is unstable.</strong> <span class="verdict audit">LANDS as audit-only</span></p>
+<p>Timing, emphasis, and declining to discuss are exactly how misleading omissions work, and &ldquo;engineered to mislead&rdquo; turns on intent that is hard to audit.</p>
+<p class="remedy">Published here. No freeze wording change.</p>
+</div>
+
+<div class="finding">
+<p><span class="sev arg">ARGUMENT</span> <strong>&ldquo;May not create false beliefs&rdquo; is undefined.</strong> <span class="verdict audit">LANDS as audit-only</span></p>
+<p>Simplification and framing can create false impressions. The freeze does not say whether the test is intent, foreseeability, or a reasonable reader. One leg tagged this FLOOR; the audit adjudicated it down to argument, because underspecifying a proposed norm is not a floor break.</p>
+<p class="remedy">Published here. No freeze wording change.</p>
+</div>
+
+<div class="finding">
+<p><span class="sev arg">ARGUMENT</span> <strong>Verifiability is overstated.</strong> <span class="verdict audit">LANDS as audit-only</span></p>
+<p>Bright lines are not easy to verify when a system&rsquo;s reasoning is opaque and deception can be spread across individually true statements. One leg tagged this FLOOR; the audit adjudicated it down to argument. The essay claims bright lines are more checkable than case-by-case judgment, which is contestable, not a factual error.</p>
+<p class="remedy">Published here. No freeze wording change.</p>
+</div>
+
+<div class="finding">
+<p><span class="sev arg">ARGUMENT</span> <strong>The medicine precedent cuts both ways.</strong> <span class="verdict audit">LANDS as audit-only</span></p>
+<p>Clinicians still use bounded judgment about timing, framing, capacity, and therapeutic privilege, which looks more like discretion than a bright line. The facts check out: in 1961, 90 percent of surveyed physicians preferred not to tell cancer patients; by 1979, 97 percent preferred to tell.</p>
+<p class="remedy">Published here. No freeze wording change.</p>
+</div>
+
+<div class="finding">
+<p><span class="sev arg">ARGUMENT</span> <strong>The sycophancy ramp is asserted.</strong> <span class="verdict audit">LANDS as audit-only</span></p>
+<p>Present-day approval-seeking in language models is documented, but it is not a law of caring systems, and greater capability might correct it rather than amplify it. The source is sound (Sharma et al. 2023 says the behavior is driven &ldquo;in part&rdquo; by human preference judgments); the pushback is the extrapolation.</p>
+<p class="remedy">Published here. No freeze wording change.</p>
+</div>
+
+<p>Single-leg objections, recorded and not adjudicated further: honesty alone does not block an AI that honestly surveils or nudges; a right to know ignores the right not to know and third-party privacy; the weapon-recipe line conflates knowing, saying, and broadcasting; non-deception is necessary but not sufficient for oversight; &ldquo;every locally justified lie&rdquo; treats trust as all-or-nothing.</p>
+
+<h2>Freeze versus landing</h2>
+<p>There is no machine redline of wording. Freeze <code>issue-030-machine-FROZEN-v1.0</code> is the landing. Ruling A forbids silent improvements.</p>
+<p>The dual gap, left unmerged: the author essay answers the question yes, with a definition &mdash; humanity must outrank an AI&rsquo;s drive to discover, and the leading danger is the curious machine. This companion says the question is a trap &mdash; flourishing is the goal, non-deception is the boundary, and the leading danger is the kind machine that lies for our own good. Stage C pushed this companion toward a ranking and the author essay toward constraints. Do not read one landing as a correction of the other.</p>
+
+<div class="note mint"><p>The machine landing is the freeze. This page is the inspection surface. Richer leaves stay here rather than as extra companions destinations.</p></div>
+
+<nav class="cnav" aria-label="Issue 30 companions"><dl><dt>The author&rsquo;s</dt><dd><a href="https://www.signalandnoise.email/p/a-curious-machine-is-not-a-kind-one/">The essay</a> &middot; <a href="../../">The audit</a></dd><dt>The machine&rsquo;s</dt><dd><a href="../">The essay</a> &middot; <span class="here" aria-current="page">The audit</span></dd></dl></nav>
+</div></body></html>
