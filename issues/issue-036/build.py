@@ -420,11 +420,13 @@ def nav_bottom(page: str) -> str:
     return cnav(page).replace("{klass}", "")
 
 
-PENDING = (
-    "<p><strong>Publication approval is still pending.</strong> "
-    "Ruling A is recorded. These pages are the inspection record prepared for the author. "
-    "They do not publish the newsletter, merge anything, send mail, or upload audio. "
-    "The three web addresses below are the proposed companions. They are not claimed live.</p>"
+LIVE_NOTE = (
+    "<p><strong>The essay companions are live.</strong> "
+    "Signal &amp; Noise web pull request 43 was merged November 8, 2026, 12:19:33 PM PST, "
+    "commit <code>697a6da0fd1526d9912b01848b9aebbb5d43c007</code>. "
+    "Rechecked for this record: each of the three pages returned HTTP 200, and the frozen prose on the page matches the freeze. "
+    "The written-without-AI page keeps one template sentence outside that prose. "
+    "This audit record is the inspection surface for those live pages. No audio has been added.</p>"
 )
 
 TESTIMONY = (
@@ -494,9 +496,9 @@ def site_footer(depth: str) -> str:
         </div>
         <div class="footer-column">
           <h3>Issue 36</h3>
-          <a href="{AUTHOR_WEB}">Proposed author essay</a>
+          <a href="{AUTHOR_WEB}">Read the issue</a>
           <a href="machine-version/">The machine&rsquo;s version</a>
-          <a href="{UNAIDED_WEB}">Proposed written-without-AI page</a>
+          <a href="{UNAIDED_WEB}">The unaided piece</a>
           <a href="development/">The conversation behind this</a>
         </div>
         <div class="footer-column">
@@ -508,7 +510,7 @@ def site_footer(depth: str) -> str:
       </div>
       <div class="footer-bottom">
         <a class="author-byline" href="https://scipher888.github.io/synthia-cipher/"><span class="cipher-glyph" aria-hidden="true"></span> by Synthia Cipher</a>
-        <span>Public snapshot &middot; prepared November 2026 &middot; publication approval pending</span>
+        <span>Public snapshot &middot; November 2026 &middot; essay companions live</span>
       </div>
     </div>
   </footer>"""
@@ -533,7 +535,7 @@ def author_page() -> str:
   <link rel="icon" href="../../favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Published audit for Signal &amp; Noise Issue 36, {html.escape(AUTHOR_TITLE)}: Ruling A, floor support gaps, testimony limits, and Stage C objections. Publication approval pending.">
+  <meta name="description" content="Published audit for Signal &amp; Noise Issue 36, {html.escape(AUTHOR_TITLE)}: Ruling A, floor support gaps, testimony limits, and Stage C objections. Essay companions are live.">
   <title>Issue 36 Published Audit - {html.escape(AUTHOR_TITLE)}</title>
   <link rel="stylesheet" href="../../assets/styles.css?v={CSS_V}">
   <script src="../../assets/site.js?v={JS_V}" defer></script>
@@ -554,7 +556,7 @@ def author_page() -> str:
         <div>
           <div class="issue-eyebrow"><p class="eyebrow">Issue 36 &middot; November 8, 2026 &middot; Synthia Cipher</p></div>
           <h1 class="page-title">{html.escape(AUTHOR_TITLE)}</h1>
-          <p class="lede">Audit for Issue 36. Intended issue date: November 8, 2026. Byline: Synthia Cipher. Proposed companions, not yet a claim that those pages are live: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{UNAIDED_WEB}">written-without-AI page</a>. No dek on the author essay. No audio.</p>
+          <p class="lede">Audit for Issue 36. Intended issue date: November 8, 2026. Byline: Synthia Cipher. Live companions: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{UNAIDED_WEB}">written-without-AI page</a>. No dek on the author essay. No audio.</p>
           {nav_top("author-audit")}
         </div>
       </div>
@@ -565,8 +567,8 @@ def author_page() -> str:
           <section class="content-section" id="start">
             <p class="eyebrow">Published audit</p>
             <h2>The essay is the judgment. This page is the inspection surface.</h2>
-            {PENDING}
-            <div class="callout mint"><p><strong>Canonicality.</strong> The essay Signal &amp; Noise stands behind is Issue 36, <em>{html.escape(AUTHOR_TITLE)}</em>, by Synthia Cipher, November 8, 2026. This page is its audit, not a second edition and not a corrected essay. The machine essay, <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>, is a companion. It is not a correction of the author’s essay and not a second front door. The inspection copy is <a href="machine-version/">on this record</a>. The written-without-AI page is the author’s raw prose, proposed at its own address. The machine generations did not see it. Author freeze sha256 <code>{AUTHOR_HASH}</code> ({author_words} whitespace-delimited words in the Markdown file, title included, no dek). Machine freeze sha256 <code>{MACHINE_HASH}</code> ({machine_words} whitespace-delimited words in the Markdown file, title and dek included).</p></div>
+            {LIVE_NOTE}
+            <div class="callout mint"><p><strong>Canonicality.</strong> The essay Signal &amp; Noise stands behind is Issue 36, <em>{html.escape(AUTHOR_TITLE)}</em>, by Synthia Cipher, November 8, 2026. This page is its audit, not a second edition and not a corrected essay. The machine essay, <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>, is a companion. It is not a correction of the author’s essay and not a second front door. The inspection copy is <a href="machine-version/">on this record</a>. The written-without-AI page is the author’s raw prose, live at its own address. The machine generations did not see it. Author freeze sha256 <code>{AUTHOR_HASH}</code> ({author_words} whitespace-delimited words in the Markdown file, title included, no dek). Machine freeze sha256 <code>{MACHINE_HASH}</code> ({machine_words} whitespace-delimited words in the Markdown file, title and dek included).</p></div>
             {RULING_BLOCK}
             <div class="callout coral" id="testimony">{TESTIMONY}</div>
             <div class="callout" id="attestations"><h2>Factual attestations</h2>
@@ -610,7 +612,7 @@ def author_page() -> str:
           </section>
           <section class="content-section" id="unaided">
             <h2>Written without AI</h2>
-            <p>The proposed page uses the editorial display label “Written without AI — Issue 36.” That label is not an author-chosen title. The prose is <a href="source/essays/human-only-VERBATIM.md">human-only-VERBATIM.md</a>, sha256 <code>{HUMAN_ONLY_HASH}</code>, including the original typos. It is the author’s own account. It is not medical advice and not a model draft. No separate health-safety note was added. The development record renders it in full and explains the transcript truncation.</p>
+            <p>The live page uses the editorial display label “Written without AI — Issue 36.” That label is not an author-chosen title. The prose is <a href="source/essays/human-only-VERBATIM.md">human-only-VERBATIM.md</a>, sha256 <code>{HUMAN_ONLY_HASH}</code>, including the original typos. It is the author’s own account. It is not medical advice and not a model draft. No separate health-safety note was added. The development record renders it in full and explains the transcript truncation.</p>
           </section>
           <section class="content-section" id="closing">
             <div class="callout mint"><p>What this audit did: kept both freezes unchanged under Ruling A; published every logged author finding H1–H14 and machine finding M1–M12; published the Stage C returns and their dispositions, including objections that land and objections that do not; published the source log, the rejected edits, the testimony limit, and the $2.37967004 cost. It did not certify safety or alignment.</p></div>
@@ -687,8 +689,8 @@ def machine_essay_page() -> str:
 <h1>{html.escape(MACHINE_TITLE)}</h1>
 <p class="dek"><em>{html.escape(MACHINE_DEK)}</em></p>
 {nav_top("machine-essay")}
-<div class="note"><p><strong>About this piece.</strong> This is a machine essay, not a second front door and not a correction of the author’s essay. Signal &amp; Noise stands behind the human/AI essay <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>. This page is the inspection copy of freeze <code>machine-essay-FROZEN-v1.0</code>. Under Ruling A (November 8, 2026, 11:47 AM PST), the landing copy is the freeze copy. Findings live on <a href="audit/">its audit</a>. The development record is <a href="../development/">the conversation behind this</a>. The proposed public page, not claimed live, is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>. No audio.</p></div>
-<div class="note"><p>{html.escape(RULING)} Publication of the newsletter page is still pending. The text below is the freeze, with Markdown heading and dek markers removed and no other wording change.</p></div>
+<div class="note"><p><strong>About this piece.</strong> This is a machine essay, not a second front door and not a correction of the author’s essay. Signal &amp; Noise stands behind the human/AI essay <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>. This page is the inspection copy of freeze <code>machine-essay-FROZEN-v1.0</code>. Under Ruling A (November 8, 2026, 11:47 AM PST), the landing copy is the freeze copy. Findings live on <a href="audit/">its audit</a>. The development record is <a href="../development/">the conversation behind this</a>. The live public page is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>. No audio.</p></div>
+<div class="note"><p>{html.escape(RULING)} The newsletter page is live and matches this freeze. The text below is the freeze, with Markdown heading and dek markers removed and no other wording change.</p></div>
 {body}
 <div class="note"><p><strong>Attribution.</strong> Machine essay. Written by GPT-6 Astra (<code>openai/gpt-6-astra</code> via OpenRouter, reasoning effort max), from the question and the neutral format instructions only, in one single-turn run. Grok Bot selected this essay unchanged from four isolated generations and did not edit it. Run cost $0.437170. The four message arrays were identical and contained no author prose. Freeze machine-essay-FROZEN-v1.0 (sha256 {MACHINE_HASH}) is the inspection copy. Opus 5.5, Gemini 4 Argon, and Muse Wonder each wrote a separate answer; those are in <a href="../development/#alternatives">the development record</a>.</p></div>
 {nav_bottom("machine-essay")}
@@ -713,7 +715,8 @@ def machine_audit_page() -> str:
 <title>Audit of the Machine's Version - {html.escape(MACHINE_TITLE)}</title>
 <style>{AUDIT_CSS}</style></head><body><div class="wrap">
 {nav_top("machine-audit")}
-<div class="note mint"><p><strong>Canonicality.</strong> This page audits the machine essay. The essay Signal &amp; Noise stands behind is the human/AI Issue 36, <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>, by Synthia Cipher, November 8, 2026. The machine landing is freeze <code>machine-essay-FROZEN-v1.0</code> (sha256 <code>{MACHINE_HASH}</code>). The proposed public page is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>. The inspection copy is <a href="../">on this record</a>. The author audit is <a href="../../">here</a>. The development record is <a href="../../development/">the conversation behind this</a>. Publication approval is pending. No audio.</p></div>
+<div class="note mint"><p><strong>Canonicality.</strong> This page audits the machine essay. The essay Signal &amp; Noise stands behind is the human/AI Issue 36, <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>, by Synthia Cipher, November 8, 2026. The machine landing is freeze <code>machine-essay-FROZEN-v1.0</code> (sha256 <code>{MACHINE_HASH}</code>). The live public page is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>. The inspection copy is <a href="../">on this record</a>. The author audit is <a href="../../">here</a>. The development record is <a href="../../development/">the conversation behind this</a>. No audio.</p></div>
+<div class="note">{LIVE_NOTE}</div>
 {ruling}
 <div class="note coral" id="testimony">{TESTIMONY}</div>
 <h2 id="audit">Dual audit, unchanged findings</h2>
@@ -732,7 +735,7 @@ def machine_audit_page() -> str:
 <h2 id="credits">Credits and cost</h2>
 <p>Actual API-reported total <strong>$2.37967004</strong>. Astra’s machine run was $0.437170 of that. Critics of this freeze: Kimi K3 $0.05006028 and Claude Opus 4.1 $0.085470.</p>
 {credits}
-<p><a href="../">The machine essay on this record</a> · <a href="{MACHINE_WEB}">proposed machine essay</a> · <a href="../../development/">the development record</a> · <a href="../../">the author audit</a>.</p>
+<p><a href="../">The machine essay on this record</a> · <a href="{MACHINE_WEB}">the live machine essay</a> · <a href="../../development/">the development record</a> · <a href="../../">the author audit</a>.</p>
 {nav_bottom("machine-audit")}
 </div></body></html>
 """
@@ -867,12 +870,12 @@ def development_page() -> str:
 <body>
 <p class="kicker">The World Behind the Words &middot; Issue 36 &middot; Extended Development Record</p>
 <h1>Extended Development Record — {html.escape(AUTHOR_TITLE)}</h1>
-<p class="lede">Issue 36, November 8, 2026, by Synthia Cipher. This page holds the visible conversation through Ruling A, the coverage note, both comparisons, the four author alternatives, the four machine alternatives, the freezes, the prompts, the credits, and links to every public source file. Publication approval is pending. No audio.</p>
+<p class="lede">Issue 36, November 8, 2026, by Synthia Cipher. This page holds the visible conversation through Ruling A, the coverage note, both comparisons, the four author alternatives, the four machine alternatives, the freezes, the prompts, the credits, and links to every public source file. The essay companions are live. No audio.</p>
 {nav_top("development")}
 <div class="frame"><span class="frame-name">Read first — what this record is</span>
 <p><strong>This is the development record that is public, not a claim that hidden process turns live here.</strong></p>
 <p>Issue 36 is two essays. The machine essay answers one question, sent in identical messages to four models, and never saw the author’s prose. Grok Bot chose GPT-6 Astra’s “Alignment at Human Scale” and left it unchanged. The human/AI essay starts from Muse Wonder. The author chose Gemini 4 Argon’s title and Astra’s closing pair, revised the landing, and rejected four other insertions. Grok Bot assembled only the approved edits. Critics were Kimi K3 and Claude Opus 4.1, each shown one freeze.</p>
-{PENDING}
+{LIVE_NOTE}
 <p>This record shows process and constraint. It does not prove that the essays are true, safe, or a settled theory of alignment.</p>
 <p>{html.escape(RULING)}</p>
 </div>
@@ -931,7 +934,7 @@ def development_page() -> str:
 """
 
 
-INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="complete" data-search="36 issue 36 my son his calorie tracker and the tyranny of the nanny bot alignment at human scale ruling a findings recorded floor support gaps pending publication approval machine companion machine-version written without ai issue-036-written-without-ai">
+INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="complete" data-search="36 issue 36 my son his calorie tracker and the tyranny of the nanny bot alignment at human scale ruling a findings recorded floor support gaps companions live no audio machine companion machine-version written without ai issue-036-written-without-ai">
             <div class="issue-index">36</div>
             <div class="issue-copy"><a href="https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-036/">My Son, His Calorie Tracker, and the Tyranny of the Nanny Bot</a></div>
           </article>
@@ -952,6 +955,14 @@ def patch_index() -> None:
         text = text.replace(needle, INDEX_ROW + needle, 1)
     elif text.count("issues/issue-036/") != 1:
         raise SystemExit("unexpected issue-036 index entries")
+    else:
+        text = re.sub(
+            r'          <article class="issue-row" data-issue-row data-status="complete" data-search="36 issue 36.*?</article>\n',
+            INDEX_ROW,
+            text,
+            count=1,
+            flags=re.S,
+        )
     ISSUES_INDEX.write_text(text, encoding="utf-8")
 
 
@@ -982,6 +993,25 @@ def check_pages() -> None:
             raise SystemExit(f"Joel appears in {name}")
         if "spotify.com" in blob or "Audio companion" in blob:
             raise SystemExit(f"audio link in {name}")
+        for stale in (
+            "not claimed live",
+            "Publication approval is still pending",
+            "Publication approval is pending",
+            "Proposed companions",
+            "publication approval pending",
+            "The proposed public page",
+            "proposed at its own address",
+            "The proposed page uses",
+            "proposed machine essay",
+            "Publication of the newsletter page is still pending",
+        ):
+            if stale in blob:
+                raise SystemExit(f"stale status wording {stale!r} in {name}")
+    for name, blob in (("author", author), ("maudit", maudit), ("dev", dev)):
+        if "697a6da0fd1526d9912b01848b9aebbb5d43c007" not in blob or "The essay companions are live." not in blob:
+            raise SystemExit(f"live-companion status missing in {name}")
+    if "The live public page" not in machine or "The newsletter page is live" not in machine:
+        raise SystemExit("machine inspection page still describes the companion as unpublished")
         if "sk-or-" in blob or "OPENROUTER_API" in blob or "/Users/" in blob:
             raise SystemExit(f"secret-like string in {name}")
         if "11:47 AM PST" not in blob:
@@ -1020,6 +1050,8 @@ def check_pages() -> None:
         raise SystemExit("Muse pressure-test list was split or shortened")
     if "issue-036/" not in index or ">36 issues shown<" not in index:
         raise SystemExit("index not updated")
+    if "companions live" not in index or "pending publication approval" in index:
+        raise SystemExit("index still describes publication as pending")
     if "issues/issue-035/" not in index:
         raise SystemExit("index lost issue 35")
     # internal links
