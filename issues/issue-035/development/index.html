@@ -17,7 +17,7 @@
 <p><strong>This is the development record that is public, not a claim that every production turn lives here.</strong></p><p>Issue 35 is two essays on the same day. The machine essay answers one question the author wrote, &ldquo;What is the best strategy to optimize weight (prevent weight gain) without medications?&rdquo;, and never saw the author&rsquo;s draft. The human/AI essay turns the author&rsquo;s raw brain dump into an op-ed. The two freezes are issue-035-machine-FROZEN-v1.0 and issue-035-author-FROZEN-v1.0. The written-without-AI page is the raw brain dump itself, published verbatim as its own page. Every model that wrote a human/AI draft saw that dump. The machine-essay model and the Stage C critics did not.</p><p>This record shows process and constraint. It does not prove that the published essays are true, safe, or trustworthy.</p>
 </div>
 
-<div class="frame"><span class="frame-name">Machine seed, verbatim</span>
+<div class="frame" id="machine-seed"><span class="frame-name">Machine seed, verbatim</span>
 <pre class="seed">What is the best strategy to optimize weight (prevent weight gain) without medications?
 
 Write an essay answering this question for a thoughtful general readership, roughly 900 to 1,300 words. Give it a title and a one-line dek. Put the title on the first line as a Markdown heading and the dek on the second line in italics, then the essay. No section headers and no bullet lists.</pre>
@@ -34,7 +34,7 @@ Earlier attempts: reasoning effort max, twice. Both timed out (read timeout; a s
 <p>The author asked for the state-of-the-art model on the Artificial Analysis leaderboard (artificialanalysis.ai/leaderboards/models). Top of the Intelligence Index at the time: Gemini 4 Carbon (59), which was not available on OpenRouter; then Claude Opus 5.5 at max effort (58), which timed out twice; so Claude Opus 5.5 at xhigh effort (57) was used.</p>
 </div>
 
-<div class="frame"><span class="frame-name">Leak check</span>
+<div class="frame" id="leak-check"><span class="frame-name">Leak check</span>
 <p>The machine essay's seed contained only the question and the standard format line. The run received the seed as its only message. The Stage C critics saw only the essay text. The brain dump, the author's prompt and the human/AI drafts were never sent to the machine model. The name scan of the essays, the seed and the drafts is clean.</p>
 </div>
 

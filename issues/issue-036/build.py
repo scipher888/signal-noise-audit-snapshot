@@ -702,10 +702,16 @@ def machine_essay_page() -> str:
 <meta name="twitter:title" content="{html.escape(MACHINE_TITLE, quote=True)}">
 <meta name="twitter:description" content="{dek_attr}">
 <meta name="twitter:image" content="https://www.signalandnoise.email/assets/preview.png?v=09b48f76">
-<style>{MACHINE_CSS}</style></head><body><div class="wrap">
+<style>{MACHINE_CSS}
+.provenance{{font-family:system-ui,sans-serif;font-size:.92rem;line-height:1.45;color:#1A1917;border:1px solid #C5D4DE;border-left:4px solid #1F4E79;background:#F4F8FB;padding:.85rem 1rem;margin:.2rem 0 1.1rem;border-radius:3px}}
+.provenance p{{margin:.4rem 0}}
+.provenance-label{{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:#1F4E79;margin:0}}
+.provenance-question{{font-family:Georgia,'Times New Roman',serif;font-size:1.02rem;line-height:1.45}}
+</style></head><body><div class="wrap">
 <p class="kicker">The World Behind the Words &middot; Issue 36 &middot; The machine&rsquo;s version &middot; a machine essay</p>
 <h1>{html.escape(MACHINE_TITLE)}</h1>
 <p class="dek"><em>{html.escape(MACHINE_DEK)}</em></p>
+<aside class="provenance" aria-label="Origin of this machine essay"><p class="provenance-label">The question given to the AI:</p><p class="provenance-question">{html.escape("What core alignment failures do everyday users currently encounter when interacting with agentic AI systems, and what implications do these practical misalignments have for future alignment frameworks—specifically regarding the balance between user intent, safety guardrails, and broader moral frameworks?")}</p><p>That sentence is the substantive prompt. The same message also instructed the model to write an essay of roughly 900 to 1,300 words, with a title and a one-line dek, and no section headers or bullet lists. That format line is not part of the question. <a href="../development/#machine-question">Full prompt</a>. Four identical requests were checked; none contained the author’s essay (<a href="../source/metadata/isolation.json">isolation record</a>). Grok Bot selected this essay unchanged.</p></aside>
 {nav_top("machine-essay")}
 <div class="note"><p><strong>About this piece.</strong> This is a machine essay, not a second front door and not a correction of the author’s essay. Signal &amp; Noise stands behind the human/AI essay <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>. This page is the inspection copy of freeze <code>machine-essay-FROZEN-v1.0</code>. Under Ruling A (November 8, 2026, 11:47 AM PST), the landing copy is the freeze copy. Findings live on <a href="audit/">its audit</a>. The development record is <a href="../development/">the conversation behind this</a>. The live public page is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>. The audio companion is linked above.</p></div>
 <div class="note"><p>{html.escape(RULING)} The newsletter page is live and matches this freeze. The text below is the freeze, with Markdown heading and dek markers removed and no other wording change.</p></div>
@@ -1049,6 +1055,8 @@ def check_pages() -> None:
         raise SystemExit("audio verification note missing from the author audit")
     if "upload to Spotify" not in dev:
         raise SystemExit("historical Spotify sentence was removed from the development record")
+    import subprocess
+    subprocess.check_call([sys.executable, str(REPO / "issues" / "check_machine_provenance.py")])
     for token in ["H6", "H7", "H11", "H1", "H14", "M1", "M8", "M12", "FLOOR"]:
         if token not in author or token not in maudit:
             raise SystemExit(f"finding {token} missing from an audit page")
