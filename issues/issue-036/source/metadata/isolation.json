@@ -1,0 +1,10 @@
+{
+  "machine_generations": 4,
+  "identical_parsed_message_arrays_verified": true,
+  "machine_messages_contain_author_content": false,
+  "selected": "openai/gpt-6-astra",
+  "selected_unchanged": true,
+  "selector": "Grok Bot",
+  "criterion": "Question coverage and comparative editorial quality, not matching author preferences",
+  "review": "Critics saw only respective frozen essay, not other essay, brain dump or other critic output."
+}

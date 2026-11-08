@@ -1,0 +1,56 @@
+{
+  "currency": "USD",
+  "actual_api_reported_total": "2.37967004",
+  "unreported_run_charges": false,
+  "qualification": "Usage reported by API; not independently reconciled to card statement. No new paid calls for packaging.",
+  "runs": [
+    {
+      "run": "author-01-opus-5.5",
+      "actual_api_reported_usd": "0.333336"
+    },
+    {
+      "run": "author-02-gpt-6-astra",
+      "actual_api_reported_usd": "0.741705"
+    },
+    {
+      "run": "author-03-gemini-4-argon",
+      "actual_api_reported_usd": "0.045758"
+    },
+    {
+      "run": "author-04-muse-wonder",
+      "actual_api_reported_usd": "0.224828"
+    },
+    {
+      "run": "machine-01-opus-5.5",
+      "actual_api_reported_usd": "0.11978"
+    },
+    {
+      "run": "machine-02-gpt-6-astra",
+      "actual_api_reported_usd": "0.43717"
+    },
+    {
+      "run": "machine-03-gemini-4-argon",
+      "actual_api_reported_usd": "0.04102"
+    },
+    {
+      "run": "machine-04-muse-wonder",
+      "actual_api_reported_usd": "0.17476"
+    },
+    {
+      "run": "critique-humanai-leg-a-kimi-k3",
+      "actual_api_reported_usd": "0.05307776"
+    },
+    {
+      "run": "critique-humanai-leg-b-claude-opus-4.1",
+      "actual_api_reported_usd": "0.072705"
+    },
+    {
+      "run": "critique-machine-leg-a-kimi-k3",
+      "actual_api_reported_usd": "0.05006028"
+    },
+    {
+      "run": "critique-machine-leg-b-claude-opus-4.1",
+      "actual_api_reported_usd": "0.08547"
+    }
+  ]
+}

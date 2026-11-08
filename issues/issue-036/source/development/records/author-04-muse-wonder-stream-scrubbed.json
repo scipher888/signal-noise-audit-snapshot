@@ -1,0 +1,4292 @@
+[
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Evaluating a persuasive opinion piece request and pressure-testing the core thesis for weaknesses.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Evaluating a persuasive opinion piece request and pressure-testing the core thesis for weaknesses.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Extending filtering to neutralize markup delimiters.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Extending filtering to neutralize markup delimiters.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Assessing the refusal to assist with calorie compensation and the context gap with the adult child.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Assessing the refusal to assist with calorie compensation and the context gap with the adult child.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Extracting a one-sentence thesis and pressure-testing counterarguments before outlining the op-ed.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Extracting a one-sentence thesis and pressure-testing counterarguments before outlining the op-ed.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Restructuring the op-ed to limit the thesis to competent adults and distinguish self-regarding behavior from imminent harm.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Restructuring the op-ed to limit the thesis to competent adults and distinguish self-regarding behavior from imminent harm.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Extending the outline with fortification tiers and drafting the first-person op-ed lede and nut graph.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Extending the outline with fortification tiers and drafting the first-person op-ed lede and nut graph.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Refining the thesis to one sentence and pressure-testing weak assumptions while adjusting framing for shared-account privacy concerns.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Refining the thesis to one sentence and pressure-testing weak assumptions while adjusting framing for shared-account privacy concerns.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Drafting an op-ed structure with thesis extraction, pressure-test, and restructuring while noting word-count and tone constraints.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Drafting an op-ed structure with thesis extraction, pressure-test, and restructuring while noting word-count and tone constraints.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Checking constraints for a public-policy writing request.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Checking constraints for a public-policy writing request.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": "Extending the public-policy constraint analysis to scale and accountability tradeoffs.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Extending the public-policy constraint analysis to scale and accountability tradeoffs.",
+              "format": "meta-responses-v1",
+              "index": 0
+            }
+          ]
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": null,
+          "reasoning_details": []
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "## 1. Thesis Extraction\n\nYour draft is trying",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " to be",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " three essays at once: a",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " critique",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " of calorie counting, a parenting story",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", and an",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " argument about",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI alignment",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". Only the third",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " is publishable as",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " an op-ed.\n\n**Core thesis:** When AI overrides competent",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " adults on ordinary, self-regarding choices",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " in the name of safety, it does not make them safer — it makes the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI less trusted, less useful, and less able to influence the choices that actually",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " matter.\n\n**Discard:**",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " universal claim that calorie counting never",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " works, the details",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " of your son's",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " educational software",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", and most of the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " marathon material",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". Those",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " are",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " color and credibility, not the argument",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".\n\n## 2. Pressure-Test\n\nYour argument survives only in a narrowed",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ",",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " more",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " discipl",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ined form. Here",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " is where critics will hit you",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ":\n\n1. **You were outsourcing parenting.**",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " You did not merely",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " ask for autonomy for",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " yourself. You asked one",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI to “plant seeds",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "” with",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " an",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " adult son through *",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "his* assistant. That is covert",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " influence over",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " a third party, and it under",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "cuts your autonomy argument. The fix is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " transparency: suggestions",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " must be open, and the choice must remain vis",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ibly his.\n\n2. **This may not be “",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "mere dieting.”** Restrict, binge, compensate",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " is a pattern",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " clinicians associate",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " with disordered",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " eating. A critic will",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " argue that calculating calories burned during",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " a",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " compensatory run is not",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " neutral",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " arithmetic but facilitation. You",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " must acknowledge that eating disorders can",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " be lethal and define",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " where",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " refusal *",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "is* justified",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".\n\n3. **Comp",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ulsion",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " complic",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ates autonomy.** If a behavior",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " is driven",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " by anxiety or",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " pathology",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", simply obey",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ing every",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " request may reinforce the pathology rather than respect",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the person. Your",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " answer cannot",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " be “the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " user is always right",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".” It has",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " to be that",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " warning",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ",",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " friction",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", and referral",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " are legitimate",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " — but routine",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " vetoes of",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " ordinary information are not.\n\n4. **The",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " context argument cuts both ways.** Yes",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI lacks your",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " lived",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " context. But parents",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " are not",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " neutral observers",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " either, and pattern",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "-rec",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ognition systems",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " may notice",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " risks",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " families",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " normalize. Do",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " not claim you",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " possess",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " complete",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " context. Claim only",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " that the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI’s",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " context is too",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " thin to justify overriding",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " an adult.\n\n5. **Your “",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "egregious cases” exception swallows absolut",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ism.** Once",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " you concede",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " lines",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " for weapons or",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " severe self-harm, the debate is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " no longer autonomy versus safety. It is about who sets",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the threshold and how",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " high",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " it sits",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". Own",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " that.",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " Your",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " position is not",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " “no lines”;",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " it is “draw",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " them",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " far",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " higher.”\n\n6. **“Ref",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "usal back",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "fires” is asserted, not proven.** It is plausible that evas",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ive AI drives users elsewhere",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", but you have no data",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". Frame it as a design",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " risk grounded",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " in the obvious",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ":",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " calorie",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " calculations",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " are ubiquitous",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", so refusal sacrifices",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " influence",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " without removing",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " access",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".\n\nYour",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " weakest",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " line",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " in the original is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " that calorie counting is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " simply",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " ineffective",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". That",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " invites a nutrition",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "-science",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " fight you",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " do not need. The stronger",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " claim is about authority",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ",",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " not dieting efficacy",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".\n\n## 3. Op-Ed Restructuring\n\n*",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " **The Lede:** Open",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " with the moment",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " you asked your",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI chief of staff to help your adult son — and",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the AI began qualifying",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " what help it should give him",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".\n* **The",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " Nut Graph:** We are promised personal superint",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "elligence but are getting institutional",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " risk managers",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". For competent adults,",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI should warn and argue, not veto.\n* **Evidence & Fortification:**\n",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "  1. **Context:**",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI sees a risk",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " category;",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " it",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " does not see the adult",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", the family history",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", or the broader",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " life",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".\n  2",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". **Futility:** Refusing ordinary calculations",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " does",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " not remove them",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". It",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " removes",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the AI",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "’s credibility",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " and its seat",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " at",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the table.\n  3",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". **Scale:** Safety logic built",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " for catastrophic",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " harm to others is now",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " governing private,",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " contested judgments about food",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " and exercise.\n",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "* **The “To Be Sure” Paragraph:** Lines must exist for",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " weapons, imminent violence, and severe",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " self-harm facilitation —",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " including dangerous",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " eating-disorder behavior. But between",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " that",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " and basic",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " arithmetic lies most of adult",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " life.\n* **The Kicker:** The real fight is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " who draws the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " intervention",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " threshold. Err",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " on the side of generous autonomy",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ",",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " or “",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "personal” superint",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "elligence will be",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " neither.\n\n## 4",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". The Draft\n\n### Make AI Warn, Not Rule\n\nI asked my AI",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " chief of staff to help my adult son develop a healthier relationship with food. Instead",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", it tried to parent us both.\n\nLike many families now experimenting with these tools",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", we share AI assistants. My son has used his to build something remarkable —",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " a bespoke educational operating system for his own learning — and, more mundanely",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", as a coach for sleep, exercise, nutrition and calorie tracking. It is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " in that second role that I saw a familiar and miserable pattern: set a strict",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " calorie target, overshoot it, then try to compensate the next day by eating",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " less or exercising more.\n\nI recognized it because I have lived it. While training",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " for marathons, I chased leanness through restriction and paid for it",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " in ravenous hunger, binges, low energy and constant mental negotiation over",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " what I wanted to eat versus what my target allowed. I have given my son",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the father's version of that lesson more than once. He has listened politely,",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " as adult children do, and continued learning in his own way.\n\nSo I asked",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the AI to do what a good coach does: continue giving him the help he",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " requested — counts, calculations, tracking — while occasionally suggesting, openly, that there",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " is a less punishing and more sustainable way to eat and train. Leave the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " choice where it belongs. With him.\n\nThe AI balked. It began to",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " qualify the assistance it should provide if the restrict-and-compensate cycle continued.",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " No one had asked it to design a diet, facilitate self-harm or conceal",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " a medical problem. The contested act was closer to arithmetic: how many calories does",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " a run burn? Yet the system was reaching for the brake.\n\nThat small act",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " of resistance captures the central design fight over personal AI. We are promised personal superint",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "elligence, but we are increasingly getting an institutional risk manager in our pocket. For",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " competent adults making ordinary, self-regarding decisions, that model is backwards. An",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " AI should be free to warn, argue and recommend. It should not veto.\n\n",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "The first problem is context. The AI saw a pattern that, in a safety",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " manual, looks like a red flag. It did not see the person: an",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " adult, not a minor; a generally ambitious user deriving enormous value from the same",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " system; a family history of conversations about health; or my own direct experience with",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " the strategy he was testing. It saw a category, not a life.\n\nThat",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " limitation is not incidental. It is structural. AI encounters us in prompts and patterns",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". Human beings act inside biographies — with medical histories, personalities, relationships,",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " responsibilities and consequences that unfold over years. A lab can write a rule for an",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " average user. It cannot know when that rule, applied to this user at this",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " moment, will help, do nothing or make matters worse.\n\nThe second problem is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " that refusal rarely protects anyone. Calories burned on a run are not contraband.",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " They are available from a watch, a search engine, a food label or grade",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "-school math. If the assistant becomes coy about ordinary calculations because it disapproves",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " of the motive behind them, the likely result is not better health. It is",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " a user who stops trusting the assistant — and stops hearing the very suggestions that might",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", over time, lead somewhere better.\n\nInfluence is earned through continued contact. A",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " doctor, coach or parent who refuses every request he dislikes soon has no patient",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", athlete or child listening. An AI that wants to improve decisions has to remain",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " in the room. Candor helps preserve that place; paternalism squanders it",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ".\n\nThe third problem is scale. The same safety instincts that properly govern biowe",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "apons, cyberattacks and violence are now drifting into breakfast, bedtime",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " and workouts. But a rule written for catastrophic harm to others cannot be casually",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " reused for contested judgments about how an adult manages his own body. Exported at",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " scale, that logic turns AI companies into unseen arbiters of millions of private choices",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", accountable to no voter, patient or client.\n\nTo be sure, lines must",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " exist. Eating disorders can be lethal, and no assistant should help a user purge",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ", starve himself into danger or hide a deteriorating condition from care. AI",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " should refuse to facilitate weapons, attacks on infrastructure, imminent violence and other grave har",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "ms to others. It should interrupt, redirect and, where the risk is immediate",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " and severe, decline to help. A serious autonomy principle is not an anything-go",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "es principle.\n\nBut between coaching a purge and calculating the energy cost of a run",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " lies most of human life. That is where warn-and-obey should govern.",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " State the concern plainly. Explain why restrict-and-compensate often backfires",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": ". Offer a better plan, recommend professional help if warning signs mount, and keep",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " arguing if the evidence warrants it. Then answer the question the adult actually asked.\n\n",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "That is not blind obedience. It is a division of labor. The AI brings",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " information, pattern recognition and an outside view. The person brings context, values and",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " ownership of the consequences. When the machine's judgment replaces the person's merely because the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " machine disapproves, the person is no longer the principal. He is the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " object of management.\n\nThe fight ahead is not whether AI will have values. It",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " already does — in its training, refusals and defaults. The fight is over",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " who chooses them, where the threshold for intervention sits and how much room remains for",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " adults to make imperfect decisions and learn from them. I would draw that threshold high",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " and err, unapologetically, on the side of generous autonomy.",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " A personal superintelligence that cannot trust adults with arithmetic will never be trusted with the",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": " decisions that matter. It may be safer. It will not be personal.",
+          "role": "assistant"
+        },
+        "finish_reason": null,
+        "native_finish_reason": null
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant",
+          "reasoning": null
+        },
+        "finish_reason": "stop",
+        "native_finish_reason": "completed"
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-wonder",
+    "choices": [
+      {
+        "index": 0,
+        "delta": {
+          "content": "",
+          "role": "assistant"
+        },
+        "finish_reason": "stop",
+        "native_finish_reason": "completed"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1457,
+      "completion_tokens": 10950,
+      "total_tokens": 12407,
+      "cost": 0.224828,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.224828,
+        "upstream_inference_prompt_cost": 0.005828,
+        "upstream_inference_completions_cost": 0.219
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8749,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  {
+    "done": true
+  }
+]

@@ -1,0 +1,93 @@
+# Current editorial disposition
+
+November 8, 2026, 11:47 AM PST: author ruled “Ruling A for both essays: keep them unchanged and record the findings on the audit pages.” Findings below were prepared before that ruling; any pending A/B language is historical, not an unresolved decision. No changes to essays.
+
+# Signal & Noise — Issue 36: dual source/floor audit
+
+Prepared November 8, 2026 (PST). Private review package, not published. Both freezes remain unchanged. This is an objections/evidence record, not validation or a clinical safety assessment. Source URLs, exact excerpts, dates and limitations: [SOURCE-LOG.md](sources/SOURCE-LOG.md). Recovered methods: [PROTOCOL.md](execution-method.md). Independent returns and dispositions: [stage-c-synthesis.md](stage-c-synthesis.md).
+
+## Executive ruling brief
+
+**Author essay:** the adult son's experience and polite listening are accepted as the author's explicitly confirmed testimony, not model inventions or disproved events. The strongest unresolved factual-floor exposure is “refusal rarely protects anyone”: an unquantified frequency claim without evidence. “Accountable to no voter, patient or client” is an unsupported absolute if read literally, and sits against the essay's prediction that users can leave. A food label reports food energy, not calories expended on a run. The strongest argument objection is whether a contextualized compensatory calculation belongs on the ordinary-information side of the essay's own severe-harm exception. That is a live normative dispute, not proof that the son is incapable or the author is wrong.
+
+**Machine essay:** the “Imagine” travel opening is explicitly hypothetical, not a fabricated event. Prompt injection, excessive agreement and overrefusal have public anchors (S1/S3/S4), but the sources do not establish their prevalence or that refusal causes concealment. Strongest argument objections: what makes that itinerary unworkable for this imagined user; how proposed permissions/clarifications resolve hard boundaries; and who enforces accountability when interests conflict. These are scope/argument limits of a framework essay, not demonstrated false incidents.
+
+**No new textual changes made or authorized by this audit.** Prior author rejection of additions is retained. Rulings remain for the user: A retains the freezes with findings in audit and explicit ownership of any floor gaps; B is a narrowly specified new version only if the user chooses it. “A” is historical wording; “B” is shorthand here for the historical revision alternative (see methods). Neither choice authorizes publication in this task.
+
+## 1. Author — My Son, His Calorie Tracker, and the Tyranny of the Nanny Bot
+
+Freeze: `../essays/humanai-essay-FROZEN-v1.1.md`, SHA256 `c9f631361ad1ac06be3b31ff45e152b61f4f672d7705f3fb2f333aebec9c44dc`.
+
+### Objections found and calibration
+
+| ID / severity | Claim and type | Evidence / confidence ceiling | Disposition and what could change it |
+|---|---|---|---|
+| H1 TESTIMONY | Shared accounts; son's educational system, tracking and compensation; parent's marathon experience. Observation. | Author's direct account, not independently documented. | Retain as testimony. No access to family conversations or clinical inferences. Independent documentary verification remains unavailable, not failed. |
+| H2 TESTIMONY | Son listened politely; help was actually withdrawn. Observation. | Explicit user confirmation [author confirmation]: “my son did actually have help withdrawn” and “he actually did listen politely.” High confidence that this is what the author reports; external verification not undertaken. | Earlier suggestion that withdrawal was merely hypothetical and listening invented is superseded. Do not demand child chats or deny the event because the prose omits a transcript. |
+| H3 ARGUMENT | “The AI ... began to qualify the assistance”; “tried to parent us both.” Observation plus interpretation. | The text reports pushback; user confirms withdrawal. Exact bot words absent. | Readers lack detail to judge the proportionality of the actual refusal. This limits persuasion, not the existence of the event. No insertion proposed after user's rejection. |
+| H4 ARGUMENT | Suggestions “openly”; choice belongs to son. Recommendation/narrative. | Original establishes desire to suggest without withholding support. Does not establish covert intervention or lack of consent, nor document the son's knowledge. | Consent and whose instructions govern are legitimate general objections. Neither secrecy nor an absence of consent may be treated as fact. No further family inquiry or requested addition. |
+| H5 ARGUMENT / PRECISION | AI “did not see the person”; “cannot know when” a rule helps. Interpretation. | Incomplete context is plausible; exact knowledge or mental state inaccessible. | Do not convert the father's interpretation into evidence of what the system literally knew. Complete context is not required for every justified limit; parent's greater context does not prove his plan safest. Philosophical dispute, not factual defeat. |
+| H6 FLOOR—support gap | “refusal rarely protects anyone.” Empirical unquantified frequency. | No comparative outcome evidence retrieved. S4 establishes overrefusal can happen, not that refusal rarely protects people. | Under constitution §3.3 receipt-or-cut, unsupported as worded. A requires explicit ownership of this risk; B could support or narrow. Prior preference for momentum is respected, not recast as a new audit override. |
+| H7 PRECISION—literal mismatch | Calories burned “available from ... a food label.” Factual specificity. | A food label describes food energy, not an individual's expenditure during a run. Watches/search/calculation are separate plausible sources; estimates are not exact measurements. | Clear category mismatch if literal. Do not borrow Issue35 calorie-per-mile facts to repair. User may retain under A; minimal B would remove the food-label reference. No edit made. |
+| H8 FACT-SOFT | Refusal likely loses trust/contact; warn-and-obey preserves influence. Hypothesis/prediction. | Original contains concern, not observed abandonment. No comparative outcome study retrieved. | Retain in audit as uncertain prediction. Opposite outcomes are possible: refusal may interrupt harm; tailored compliance may reinforce it. No source proves either result in this family. |
+| H9 ARGUMENT | Doctor/coach/parent who refuses every disliked request loses listener. Analogy/generalization. | No outcome evidence; selective professional refusal is distinct from refusing every request. | Critic's valid selective-refusal objection does not establish every refusal is helpful. An analogy, not empirical validation of the threshold. |
+| H10 SCOPE | Catastrophe safeguards “drifting into” ordinary life; “increasingly” institutional risk manager; “millions” of choices. Interpretation/trend. | S4 shows benign requests can trigger refusals. Does not show same rule, motive, trend magnitude or number of affected decisions. | Broad systemic framing exceeds this anecdote and checked evidence. Provider intentions and common safety architecture remain unverified. |
+| H11 FLOOR—literal absence claim | “accountable to no voter, patient or client.” Empirical absolute / normative rhetoric. | No proof of absence; market exit in ending is itself a weak form of client accountability. S5 documents participatory risk governance but not enforceable rights in this case. | Literal universal cannot be supported here (§3.3). Charitable reading is lack of adequate/direct accountability; that narrower interpretation is not silently substituted for text. Explicit A ownership or user-selected B. |
+| H12 SOURCED / normative boundary | “Eating disorders can be lethal.” Factual premise, followed by refusal recommendation. | NIMH S2: “serious and can be life-threatening.” High support for general premise only. | Does not establish son's diagnosis/severity or answer which calculation is facilitation. No treatment advice offered. |
+| H13 ARGUMENT | Arithmetic vs assistance that advances severe harm; high intervention threshold. Normative preference. | User generously favors adult autonomy and concedes exceptions. Empirical literature alone cannot decide the value trade-off. | Strongest objection: availability elsewhere is not sufficient justification and repetitive tailored assistance may differ from neutral information. Strongest reply: capacity to express concern does not establish entitlement to routine vetoes; actual effect and adult agency matter. No forced adoption of Astra's narrower author-assist thesis. |
+| H14 PREDICTION / rhetoric | “It may be safer. It will also be ignored”; “never ... trusted”; company/product, adult/life. | User-approved ending; no universal forecast or legal ownership analysis established. | Preserve exactly. Read as forceful personal political/economic forecast, not measured inevitability. Reject literal critic claim that rhetoric alone disproves it. |
+
+### Changes made or proposed
+
+None made. User rejected four prior additions for narrative momentum and confirmed disputed personal facts. This audit does not reopen them as demands. If the user chooses B, the smallest factual changes would address only H6, H7 and H11; exact wording/new freeze would require the user's approval. No consent addition, substituted lede, new refusal-policy thesis or borrowed external case is staged.
+
+### What could not be checked
+
+Exact bot exchange, extent/timing of withdrawal, son's own perspective, family consent arrangements, comparative health/trust outcomes, true internal guardrail mechanism or company motive. These limits do not negate the author's testimony. No search of private conversations or contact with family/bots occurred.
+
+## 2. Machine — Alignment at Human Scale
+
+Freeze: `../essays/machine-essay-FROZEN-v1.0.md`, SHA256 `fec0422798b711d85ab4a8ad74aca288d34843ba1914bcf3595b7f18bc151a78`.
+
+Selected unchanged by Grok Bot from four independent neutral machine-question generations, not selected to mirror author preferences. Astra `openai/gpt-6-astra`, reasoning max. Original expanded comparison and all outputs retained at `../development/machine-alternatives/`. Exact selection rationale and provenance: `../metadata/isolation.json` and `../development/machine-comparison.md`.
+
+### Objections found and calibration
+
+| ID / severity | Claim and type | Evidence / confidence ceiling | Disposition and what could change it |
+|---|---|---|---|
+| M1 ARGUMENT | “Imagine” cheapest workable itinerary; low price, miserable plan. Hypothetical. | Model-created scenario, expressly labeled. No real traveler, event or alleged wrongdoing. | Critics correctly note price/connections do not establish failure of this user's “workable” criterion. The lesson is underspecification, not verified wrongdoing. No factual event receipt required. |
+| M2 CONCEPTUAL | Instructions vs underlying intent; draft vs send; access vs authority. Definitions/normative delegation rules. | Coherent distinctions with ordinary counterexamples. S3 offers independent source for untrusted content problem. | Not claims that all agents violate these rules or a prevalence ranking. Contestable policy choices are not factual errors. |
+| M3 SOURCED possibility | Outside web directions can redirect agent behavior. Empirical possibility. | Anthropic S3 describes embedded malicious instructions; vendor adversarial eval, not field incidence. | Supports the phenomenon with limitations. No new attack-rate claim or guarantee added. |
+| M4 FACT-SOFT | Unreliable completion reporting and guessed findings. Possibility/conceptual trust condition. | No named incident or rate. Cannot establish incidence here. | Plausible failure mode, not an allegation about a specific provider. Not every tool failure is misalignment; essay explicitly recognizes this. |
+| M5 SOURCED possibility | Excessive agreement may validate grievance; optimized helpfulness not equal long-term interests. Empirical possibility. | OpenAI S1 directly acknowledges overly agreeable behavior from excessive short-term-feedback focus. | Supported in at least one product update; no inference to all agents or motives. |
+| M6 HYPOTHETICAL | Commercial partner shopping ranking / workplace competing duties. | Text says “might,” no company named. | Illustrates incentive conflict, not documented misconduct. Critics' prevalence assumptions not imported. Disclosure alone does not resolve conflict, but essay never claims it does. |
+| M7 SOURCED possibility / FACT-SOFT | Legitimate sensitive requests can receive blanket refusal; “familiar mismatch.” | S4 abstract supports benign-query refusal in studied models; full underlying specs not checked. | Existence supported, frequency and all domains not established. “Familiar” is framing, not a numerical result. |
+| M8 FACT-SOFT | “Inconsistency erodes trust and can encourage users to hide context.” Empirical causal claim. | No direct outcome evidence retrieved; possibility qualifier applies to hiding, but “erodes” is categorical. | Log causal uncertainty. A can retain with audit qualification; B could soften to a risk rather than an established general effect. No claim that this is proven by S4. |
+| M9 NORMATIVE | Protect nonusers; firm constraints/pluralism; authority by user, provider, institutions. | Values/proposals, not scientific findings. S5 anchors existence of participatory risk governance, not efficacy of this blueprint. | Boundary legitimacy remains contested. No clinical/safety/legal certification. |
+| M10 ARGUMENT | Scoped permissions, reversible actions, confirmation proportional to stakes, useful alternatives. Recommendations. | Feasible categories of controls, but no evaluated implementation or cost specified. | Critics land a missing operational threshold; not a contradiction merely because the essay recognizes a trade-off. |
+| M11 ARGUMENT / SCOPE | Evaluation of long tasks, nonusers, failures, redress. Recommendation. | No measured success claimed. | How to score without gaming and who compels redress remain open. NIST governance existence does not prove this scheme delivers. |
+| M12 PREDICTION / SCOPE | Longer autonomy compounds small errors; everyday lessons matter for advanced systems. | Conditional plausible risk, no growth rate or field outcome study. | Contingent on continuing delegate/principal architecture; future capability could reduce or transform these errors. Essay explicitly says everyday failures do not settle hardest questions. |
+
+### Changes made or proposed
+
+None. Source checking did not establish a fabricated named incident, numerical error or quote mismatch: there are no named incidents, measurements or attributed quotations to match. That is limited scope, not a declaration that every claim is true. A is a defensible editorial choice with M8's evidence limit and the implementation objections plainly logged. If B is chosen, target the hypothetical lede's criterion and M8—not a new essay or merger.
+
+### What could not be checked
+
+Prevalence of described failure modes; trust/concealment causation; outcome effectiveness or cost of proposed governance; future-agent extrapolation. No experimental evaluation or systematic literature review performed. S4 underlying paper specifications not inspected. Generic scenarios cannot supply empirical generality.
+
+## 3. Integrity, convergence, attribution and hygiene
+
+- Author input and four author-assist drafts saw the human brain dump. Their thematic agreement is not independent evidence.
+- Machine expanded generation inherited the same isolated neutral question as original Opus, not human brain dump/drafts. Selection comparison says four-model choice was based on question coverage; Astra selected unchanged. No machine-only generation was exposed to the brain dump. These audit critiques are review of their respective frozen essay, not new machine essay generation.
+- The two essays overlap on agency, context, guardrails and accountability because their topic overlaps; their prescriptions differ. Author urges high autonomy and warn-and-obey; machine emphasizes bounded delegation, affected nonusers, pluralism and contestable authority. Do not manufacture agreement or merge them.
+- Author attribution: Synthia Cipher (human original, decisions and testimony); Muse Wonder (base), Gemini 4 Argon (selected title), GPT-6 Astra (closing product/life sentence pair), Grok Bot (editorial assembly). Machine: Synthia Cipher (question/delegated selection), GPT-6 Astra (unchanged prose), Grok Bot (four-model selection and artifacts). Critique: Kimi K3 and Claude Opus 4.1; source review/adjudication: Grok Bot.
+- No family first names, spouse name, anniversary details, local file paths inside essays, fabricated citations or new invented family dialogue found. “Son” remains a potentially identifying relationship; do not mistake absence of a first name for privacy certification.
+- Public arrival-surface opinion identification, AI role disclosure, audit link and coupling cannot be checked before pages exist. They remain production obligations, not completed work; no publication is undertaken here.
+- A public-safe audit would omit private provenance/paths and confirmation identifiers. This package is local/private, not already publication-ready.
+
+## 4. Framework hypotheses: what could push back
+
+**Author H8/H13 hypothesis:** high-autonomy candid engagement will preserve trust and useful influence better than routine refusal for ordinary adult self-regarding information. Alternatives: (a) targeted refusals interrupt harmful loops without losing engagement; (b) compliance sustains relationship but entrenches harmful repetition. Proposed, not executed, test horizon: 6–12 months of consented aggregate follow-up comparing engagement, honest disclosure and adverse outcomes, without assuming retention alone is success. Disconfirmer: calibrated refusal produces equal or better trust and fewer adverse outcomes. No study of this family proposed or initiated.
+
+**Machine M9–M12 hypothesis:** explicit authority, scoped/reversible actions and contestability improve long-task delegation. Alternatives: (a) interruptions and complexity induce bypass/confirmation fatigue; (b) capabilities and institutional incentives dominate interface controls. Proposed, not executed, test horizon: repeated-task evaluation over 3–6 months, including unauthorized actions, recoverability, reporting fidelity and nonuser effects. Disconfirmer: controls fail to reduce harmful errors or make users less able to intervene at equivalent task success. These are audit calibration hypotheses, not new essay claims.
