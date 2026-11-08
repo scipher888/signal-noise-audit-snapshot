@@ -1,0 +1,56 @@
+{
+  "purpose": "Verified originating questions for machine inspection copies. Editorial notes sit outside the frozen essay. Pass this file to the newsletter worker; do not infer a question from an essay or a title.",
+  "generated_from": "signal-noise-audit-snapshot main 1da8824, plus this change",
+  "public_byline": "Synthia Cipher",
+  "selected": [
+    {
+      "issue": 34,
+      "machine_title": "The Machinery of Being Wrong",
+      "inspection_path": "issues/issue-034/machine-version/index.html",
+      "exact_question": "What single element is most vital to protecting humanity's long-term quality of life? What primary action should we take to safeguard it?",
+      "question_count": 2,
+      "full_prompt_source": "issues/issue-034/development/index.html#machine-seed",
+      "isolation_evidence": "issues/issue-034/development/index.html#leak-check",
+      "independent_generation_of_published_text": false,
+      "author_essay_absent_from_generation_input": true,
+      "editorial_note": "The question given to the AI is the two-question line above. The same message also carried essay-format instructions, which are not the question; the full prompt is the linked seed. The leak check states both runs received that seed as their only message and did not receive the author's draft. The published inspection copy is the second Opus run plus one paragraph from the first, not one unchanged generation."
+    },
+    {
+      "issue": 35,
+      "machine_title": "The Long Game of Not Gaining",
+      "inspection_path": "issues/issue-035/machine-version/index.html",
+      "exact_question": "What is the best strategy to optimize weight (prevent weight gain) without medications?",
+      "question_count": 1,
+      "full_prompt_source": "issues/issue-035/development/index.html#machine-seed",
+      "isolation_evidence": "issues/issue-035/development/index.html#leak-check",
+      "independent_generation_of_published_text": true,
+      "author_essay_absent_from_generation_input": true,
+      "editorial_note": "The question given to the AI is the sentence above. The same message also carried essay-format instructions, which are not the question; the full prompt is the linked seed. The leak check states the seed was the only message and that the run did not receive the author's brain dump, editorial prompt, or human/AI drafts. The returned essay was not edited."
+    },
+    {
+      "issue": 36,
+      "machine_title": "Alignment at Human Scale",
+      "inspection_path": "issues/issue-036/machine-version/index.html",
+      "exact_question": "What core alignment failures do everyday users currently encounter when interacting with agentic AI systems, and what implications do these practical misalignments have for future alignment frameworks—specifically regarding the balance between user intent, safety guardrails, and broader moral frameworks?",
+      "question_count": 1,
+      "full_prompt_source": "issues/issue-036/source/development/machine-question.md",
+      "full_prompt_rendered": "issues/issue-036/development/index.html#machine-question",
+      "isolation_evidence": "issues/issue-036/source/metadata/isolation.json",
+      "request_records": [
+        "issues/issue-036/source/development/records/machine-01-opus-5.5-request.json",
+        "issues/issue-036/source/development/records/machine-02-gpt-6-astra-request.json",
+        "issues/issue-036/source/development/records/machine-03-gemini-4-argon-request.json",
+        "issues/issue-036/source/development/records/machine-04-muse-wonder-request.json"
+      ],
+      "independent_generation_of_published_text": true,
+      "author_essay_absent_from_generation_input": true,
+      "editorial_note": "The question given to the AI is the sentence above. The same message also carried essay-format instructions, which are not the question; the full prompt is the linked file, and the four request records are identical to it. Those requests contain no author essay. Grok Bot selected the Astra essay unchanged. isolation.json records that check."
+    }
+  ],
+  "skipped": [
+    {
+      "issue": 33,
+      "reason": "Not needed. Issues 34 and 35 both had a verbatim machine seed and a leak check, so the look-back stopped there."
+    }
+  ]
+}
