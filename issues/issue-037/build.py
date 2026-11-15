@@ -3,7 +3,7 @@
 
 Adapted from issues/issue-036/build.py (same Markdown renderer and page
 shells). Frozen Markdown hashes are checked and never rewritten. Issue 37 has
-no audio. Its three newsletter companions are live (web PR 51), and Ruling A
+two Spotify audio companions. Its three newsletter companions are live (web PR 51), and Ruling A
 is confirmed. The written-without-AI page is replaced by a source-material
 page that marks the author's own words apart from Grok Heavy research.
 
@@ -35,6 +35,8 @@ AUDIT_COST = "0.365082"
 AUTHOR_WEB = "https://www.signalandnoise.email/p/what-spacex-caught-in-those-mechanical-arms-is-bigger-than-a-rocket/"
 MACHINE_WEB = "https://www.signalandnoise.email/p/where-the-starship-catch-ranks-and-what-it-could-change/"
 SOURCE_WEB = "https://www.signalandnoise.email/p/issue-037-source-material/"
+AUTHOR_AUDIO = "https://open.spotify.com/episode/678mAUkmd2Z3YoZOYcJuNh"
+MACHINE_AUDIO = "https://open.spotify.com/episode/2zg6tctAs33svf2M8ktwmO"
 FLIGHT_SOURCE = "https://www.space.com/space-exploration/launches-spacecraft/spacex-chopsticks-catch-starship-upper-stage-flight-14"
 CSS_V = "de2cc137"
 JS_V = "0c872f22"
@@ -347,7 +349,7 @@ def prose_html(rel: str, page_dir: str) -> str:
 
 
 def cnav(page: str) -> str:
-    """Companion nav. Same labels on every Issue 37 surface. No audio."""
+    """Companion nav. Same labels on every Issue 37 surface."""
 
     def item(key: str, href: str, label: str) -> str:
         if key == page:
@@ -361,8 +363,8 @@ def cnav(page: str) -> str:
         "development": {"author-audit": "../", "machine-essay": "../machine-version/", "machine-audit": "../machine-version/audit/", "development": ""},
     }[page]
     sep = " &middot; "
-    author = sep.join([item("essay", AUTHOR_WEB, "The essay"), item("author-audit", rel["author-audit"], "The audit")])
-    machine = sep.join([item("machine-essay", rel["machine-essay"], "The essay"), item("machine-audit", rel["machine-audit"], "The audit")])
+    author = sep.join([item("essay", AUTHOR_WEB, "The essay"), f'<a href="{AUTHOR_AUDIO}">Audio companion</a>', item("author-audit", rel["author-audit"], "The audit")])
+    machine = sep.join([item("machine-essay", rel["machine-essay"], "The essay"), f'<a href="{MACHINE_AUDIO}">Audio companion</a>', item("machine-audit", rel["machine-audit"], "The audit")])
     source = item("source", SOURCE_WEB, "The piece")
     convo = item("development", rel["development"], "The conversation behind this")
     return (
@@ -389,7 +391,21 @@ PREP_NOTE = (
     f"commit <code>{WEB_MERGE}</code>. "
     "Rechecked for this record at 10:41 PM PST: each of the three pages returned HTTP 200, and the essay text on each live page "
     "rebuilds to its freeze hash. The source page reproduces the verbatim source. "
-    "This audit record is the inspection surface for those live pages. Issue 37 has no audio companion.</p>"
+    "This audit record is the inspection surface for those live pages.</p>"
+)
+
+AUDIO_NOTE = (
+    "<p><strong>Audio companions are published Spotify episodes.</strong> "
+    "These are plain canonical links. This record does not embed a player and does not store audio files. "
+    f'Author: <a href="{AUTHOR_AUDIO}">{html.escape(AUTHOR_TITLE)}</a>. '
+    "oEmbed, the canonical page, the embed, and a headless browser load each returned that title on November 15, 2026, about 7:00 AM PST. "
+    "The embed duration field is 225625 ms, which rounds to 3:46. "
+    f'Machine: <a href="{MACHINE_AUDIO}">{html.escape(MACHINE_TITLE)}</a>. '
+    "oEmbed, the canonical page, the embed, and a headless browser load each returned that title at the same time. "
+    "The embed duration field is 275127 ms, which rounds to 4:35. "
+    "Both narrations are xAI eve voice at 1.5&times;: title, the machine essay&rsquo;s dek, and the full frozen text, with no added intro or outro. "
+    "As in Issue 36, the machine essay&rsquo;s question note and editor&rsquo;s note are not spoken; the editor&rsquo;s note confirming the flight is on the page. "
+    "The reported API total does not include text-to-speech charges, which the service did not report, and none are added here.</p>"
 )
 LIVE_MARK = "The essay companions are live."
 
@@ -407,6 +423,7 @@ RULING_BLOCK = f"""<div class="callout coral" id="ruling"><p>{html.escape(STATUS
 <li>Author freeze <code>author-essay-FROZEN.md</code>, sha256 <code>{AUTHOR_HASH}</code>. It is Claude Fable 5.2's draft, with Gemini 4 Carbon's title and three edits the author approved. The development record lists every difference.</li>
 <li>Machine freeze <code>machine-essay-FROZEN-v1.0</code>, sha256 <code>{MACHINE_HASH}</code>. It is Claude Fable 5.2's essay, selected unchanged by Grok Bot. Its bytes match machine alternative 01.</li>
 <li>The fact checks the author asked to keep out of the essay are findings A1–A18 and M1–M11 below. None is blocking, and none is described as a pass.</li>
+<li>Audio companions are the two published Spotify episode links in the navigation. This repository does not store an audio file.</li>
 <li>The dual audit, Stage C synthesis and execution method were written before publication. Their pre-publication status sentences (review draft, pending ruling, unmerged branches) are historical. The ruling closed that choice; it did not withdraw any finding.</li>
 </ul>
 <p>This is an editorial disposition. It does not certify that the essays are true or that their forecasts will happen.</p></div>"""
@@ -564,7 +581,7 @@ def author_page() -> str:
         <div>
           <div class="issue-eyebrow"><p class="eyebrow">Issue 37 &middot; November 14, 2026 &middot; Synthia Cipher</p></div>
           <h1 class="page-title">{html.escape(AUTHOR_TITLE)}</h1>
-          <p class="lede">Audit for Issue 37. Intended issue date: November 14, 2026. Byline: Synthia Cipher. Live companions: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{SOURCE_WEB}">source material</a>, which this issue publishes instead of a written-without-AI page. No dek on the author essay. No audio.</p>
+          <p class="lede">Audit for Issue 37. Intended issue date: November 14, 2026. Byline: Synthia Cipher. Live companions: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{SOURCE_WEB}">source material</a>, which this issue publishes instead of a written-without-AI page. No dek on the author essay. Audio companions are linked above.</p>
           {nav_top("author-audit")}
         </div>
       </div>
@@ -576,6 +593,7 @@ def author_page() -> str:
             <p class="eyebrow">Published audit</p>
             <h2>The essay is the judgment. This page is the inspection surface.</h2>
             {PREP_NOTE}
+            {AUDIO_NOTE}
             <div class="callout mint"><p><strong>Canonicality.</strong> The essay Signal &amp; Noise stands behind is Issue 37, <em>{html.escape(AUTHOR_TITLE)}</em>, by Synthia Cipher. This page is its audit, not a second edition and not a corrected essay. The fact checks live here, at the author&rsquo;s request, so the essay reads cleanly. The machine essay, <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>, is a companion; its inspection copy is <a href="machine-version/">on this record</a>. Author freeze sha256 <code>{AUTHOR_HASH}</code> ({author_words} whitespace-delimited words in the Markdown file, title included, no dek). Machine freeze sha256 <code>{MACHINE_HASH}</code> ({machine_words} whitespace-delimited words, title and dek included).</p></div>
             <div class="callout">{FLIGHT_NOTE}</div>
             {RULING_BLOCK}
@@ -697,7 +715,7 @@ def machine_essay_page() -> str:
 <p class="dek"><em>{html.escape(MACHINE_DEK)}</em></p>
 {provenance_aside("../")}
 {nav_top("machine-essay")}
-<div class="note"><p><strong>About this piece.</strong> This is a machine essay. It is not a second front door, and it is not a correction of the author&rsquo;s essay. Signal &amp; Noise stands behind the human/AI essay <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>. This page is the inspection copy of freeze <code>machine-essay-FROZEN-v1.0</code>. Findings live on <a href="audit/">its audit</a>. The development record is <a href="../development/">the conversation behind this</a>. The live public page is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>.</p></div>
+<div class="note"><p><strong>About this piece.</strong> This is a machine essay. It is not a second front door, and it is not a correction of the author&rsquo;s essay. Signal &amp; Noise stands behind the human/AI essay <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>. This page is the inspection copy of freeze <code>machine-essay-FROZEN-v1.0</code>. Findings live on <a href="audit/">its audit</a>. The development record is <a href="../development/">the conversation behind this</a>. The live public page is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>. The audio companion is linked above.</p></div>
 <div class="note"><p>{html.escape(RULING)} The newsletter page is live and matches this freeze. The text below is the freeze, with the Markdown heading and dek markers removed and no other wording change.</p></div>
 {body}
 <div class="note"><p><strong>Attribution.</strong> Machine essay. Written by Claude Fable 5.2 (<code>anthropic/claude-fable-5.2</code> via OpenRouter, reasoning effort max) from the questions and format instructions alone, in one single-turn run. This was the second attempt; the first returned no essay. Grok Bot selected this essay unchanged from four isolated generations and did not edit it. Run cost $1.879704, plus $1.282784 for the failed first attempt. Freeze sha256 <code>{MACHINE_HASH}</code>. Gemini 4 Carbon, GPT-6 Astra, and Muse Wonder each wrote a separate answer; those are in <a href="../development/#alternatives">the development record</a>.</p></div>
@@ -721,8 +739,9 @@ def machine_audit_page() -> str:
 <title>Audit of the Machine's Version - {html.escape(MACHINE_TITLE)}</title>
 <style>{AUDIT_CSS}</style></head><body><div class="wrap">
 {nav_top("machine-audit")}
-<div class="note mint"><p><strong>Canonicality.</strong> This page audits the machine essay. The essay Signal &amp; Noise stands behind is the human/AI Issue 37, <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>, by Synthia Cipher. The machine landing is freeze <code>machine-essay-FROZEN-v1.0</code> (sha256 <code>{MACHINE_HASH}</code>). The inspection copy is <a href="../">on this record</a>. The author audit is <a href="../../">here</a>. The development record is <a href="../../development/">the conversation behind this</a>.</p></div>
+<div class="note mint"><p><strong>Canonicality.</strong> This page audits the machine essay. The essay Signal &amp; Noise stands behind is the human/AI Issue 37, <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>, by Synthia Cipher. The machine landing is freeze <code>machine-essay-FROZEN-v1.0</code> (sha256 <code>{MACHINE_HASH}</code>). The inspection copy is <a href="../">on this record</a>. The author audit is <a href="../../">here</a>. The development record is <a href="../../development/">the conversation behind this</a>. The audio companion is linked above.</p></div>
 <div class="note">{PREP_NOTE}</div>
+<div class="note">{AUDIO_NOTE}</div>
 <div class="note">{FLIGHT_NOTE}</div>
 {ruling}
 <h2 id="audit">Dual audit</h2>
@@ -803,11 +822,12 @@ def development_page() -> str:
 <body>
 <p class="kicker">The World Behind the Words &middot; Issue 37 &middot; Extended Development Record</p>
 <h1>Extended Development Record — {html.escape(AUTHOR_TITLE)}</h1>
-<p class="lede">Issue 37, November 14, 2026, by Synthia Cipher. This page holds the decision record, the source material with the author&rsquo;s words marked, both comparisons, the four author alternatives, the four machine alternatives (and the failed run), the revision options, the freeze, the prompts, the credits, and links to every public source file.</p>
+<p class="lede">Issue 37, November 14, 2026, by Synthia Cipher. This page holds the decision record, the source material with the author&rsquo;s words marked, both comparisons, the four author alternatives, the four machine alternatives (and the failed run), the revision options, the freeze, the prompts, the credits, and links to every public source file. The essay companions are live. Audio companions are linked above.</p>
 {nav_top("development")}
 <div class="frame"><span class="frame-name">Read first — what this record is</span>
 <p>Issue 37 is two essays and a source page. The machine essay answers two questions, sent in identical messages to four models; none of the four saw the author&rsquo;s source. Grok Bot chose Claude Fable 5.2&rsquo;s essay and left it unchanged. The human/AI essay starts from Claude Fable 5.2&rsquo;s draft, with Gemini 4 Carbon&rsquo;s title and three edits the author approved. The critics were Kimi K3 and Claude Opus 4.1, each shown one freeze.</p>
 {PREP_NOTE}
+{AUDIO_NOTE}
 <p>This record shows process and constraint. It does not prove the essays or their forecasts.</p>
 <p>{html.escape(STATUS)}</p>
 <p><strong>Coverage.</strong> This is a decision record, not a full conversation transcript. Owner messages are quoted where they decided something; two are described rather than quoted, and the record says which. Exact assistant timestamps are not given.</p>
@@ -856,7 +876,7 @@ def development_page() -> str:
 """
 
 
-INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="complete" data-search="37 issue 37 what spacex caught in those mechanical arms is bigger than a rocket where the starship catch ranks and what it could change starship flight 15 culture iain banks musk source material grok heavy ruling a findings recorded companions live machine companion machine-version issue-037-source-material">
+INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="complete" data-search="37 issue 37 what spacex caught in those mechanical arms is bigger than a rocket where the starship catch ranks and what it could change starship flight 15 culture iain banks musk source material grok heavy ruling a findings recorded companions live audio companion spotify machine companion machine-version issue-037-source-material">
             <div class="issue-index">37</div>
             <div class="issue-copy"><a href="https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-037/">What SpaceX Caught in Those Mechanical Arms Is Bigger Than a Rocket</a></div>
           </article>
@@ -912,8 +932,15 @@ def check_pages() -> None:
             raise SystemExit(f"private name in {name}")
         if "sk-or-" in blob or "OPENROUTER_API" in blob or "/Users/" in blob or "/workspace/" in blob or "/home/box" in blob:
             raise SystemExit(f"secret-like or local path in {name}")
-        if "spotify.com" in blob or "Audio companion" in blob:
-            raise SystemExit(f"audio link in {name}; Issue 37 has no audio")
+        if blob.count(f'href="{AUTHOR_AUDIO}"') < 2 or blob.count(f'href="{MACHINE_AUDIO}"') < 2:
+            raise SystemExit(f"audio companion links missing in {name}")
+        if blob.count(">Audio companion</a>") != 4:
+            raise SystemExit(f"audio nav count drifted in {name}")
+        if "open.spotify.com/embed" in blob or "spotify.com/episode/" in blob.replace(AUTHOR_AUDIO, "").replace(MACHINE_AUDIO, ""):
+            raise SystemExit(f"unexpected Spotify URL in {name}")
+        for stale_audio in ("No audio has been added", "No audio exists", "No audio.", "no audio companion", "Issue 37 has no audio"):
+            if stale_audio in blob:
+                raise SystemExit(f"stale no-audio status {stale_audio!r} in {name}")
         current = blob
         for hist in HISTORICAL:
             for page_dir in ("", "machine-version/audit", "development"):
@@ -940,6 +967,8 @@ def check_pages() -> None:
     for name, blob in (("author", author), ("maudit", maudit), ("dev", dev)):
         if LIVE_MARK not in blob or WEB_MERGE not in blob:
             raise SystemExit(f"live-companion status missing in {name}")
+    if "225625" not in author or "275127" not in author:
+        raise SystemExit("audio verification note missing from the author audit")
     if "The newsletter page is live" not in machine or "The live public page is" not in machine:
         raise SystemExit("machine inspection page still describes the companion as unpublished")
     if "prepared for review" in index.split("data-search=\"37 issue 37", 1)[-1].split("</article>", 1)[0]:
