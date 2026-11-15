@@ -1,0 +1,63 @@
+/* Signal & Noise — "The conversation behind this" chat layout.
+   Shared, opt-in stylesheet for development records. Loaded after the
+   issue's conversation.css. Human turns sit right in blue; AI turns sit left
+   in grey; process steps are centred notes. Every turn also carries a text
+   label, so colour and position are never the only cue. */
+:root{
+  --chat-human:#1f5fbf; --chat-human-ink:#fff; --chat-human-soft:#dbe7fb;
+  --chat-ai:#eef0f3; --chat-ai-edge:#d9dde3; --chat-ai-ink:#1a1a1a;
+  --chat-note:#6b6b6b; --chat-note-edge:#dedede;
+}
+.chat-legend{display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:center;margin:.6rem 0 1.4rem;padding:.6rem .8rem;border:1px solid var(--line,#e4e4e4);border-radius:10px;font-size:.84rem;color:#333}
+.chat-legend span{display:inline-flex;align-items:center;gap:.4rem}
+.chat-legend i{display:inline-block;width:1.6rem;height:.95rem;border-radius:7px;font-style:normal}
+.chat-legend .k-human{background:var(--chat-human)}
+.chat-legend .k-ai{background:var(--chat-ai);border:1px solid var(--chat-ai-edge)}
+.chat-legend .k-note{border:1px dashed var(--chat-note-edge);border-radius:20px}
+
+.thread{display:flex;flex-direction:column;margin:1.2rem 0}
+.thread .turn{position:relative;max-width:min(78%,40rem);margin:.5rem 0;padding:.7rem .95rem .8rem;border:1px solid transparent;border-radius:18px;box-shadow:none}
+.thread .turn.human{align-self:flex-end;margin-left:auto;margin-right:0;background:var(--chat-human);border-color:var(--chat-human);color:var(--chat-human-ink);border-bottom-right-radius:5px}
+.thread .turn.ai{align-self:flex-start;margin-right:auto;margin-left:0;background:var(--chat-ai);border-color:var(--chat-ai-edge);color:var(--chat-ai-ink);border-bottom-left-radius:5px}
+.thread .turn .who{font-size:.72rem;font-weight:650;letter-spacing:.05em;text-transform:uppercase;margin:0 0 .35rem;color:inherit;opacity:.9}
+.thread .turn.human .who{text-align:right}
+.thread .turn.human a{color:#fff;text-decoration:underline}
+.thread .turn.human .ctx,.thread .turn.human .span-note,.thread .turn.human .span-note b{color:#e6eefc}
+.thread .turn blockquote{margin:.5rem 0;padding-left:.7rem;border-left:3px solid currentColor;opacity:.95}
+.thread .turn .bubble-text{overflow-wrap:anywhere}
+.thread .turn .bubble-text p{margin:.45rem 0}
+.thread .turn .meta-line{font-size:.8rem;opacity:.85;margin:.35rem 0 0}
+.thread .turn.summary-turn .who::after,.thread .turn.described .who::after{content:" · described, not verbatim";text-transform:none;letter-spacing:0;font-weight:400;font-style:italic}
+
+/* process / system steps */
+.thread .step{align-self:center;max-width:min(90%,36rem);margin:.7rem auto;padding:.35rem .9rem;border:1px dashed var(--chat-note-edge);border-radius:999px;font-size:.8rem;line-height:1.45;color:var(--chat-note);text-align:center;background:#fff}
+.thread .step b{color:#444;font-weight:600}
+.thread .step.block{border-radius:12px;text-align:left}
+.thread .day{align-self:center;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--chat-note);margin:1.2rem 0 .3rem}
+
+/* collapsible artifacts */
+.thread details.artifact{margin:.55rem 0 0;border-radius:10px;background:#fff;color:#1a1a1a;border:1px solid var(--chat-ai-edge)}
+.thread .turn.human details.artifact{border-color:var(--chat-human-soft)}
+.thread details.artifact>summary{cursor:pointer;padding:.45rem .7rem;font-size:.84rem;font-weight:600;list-style-position:inside}
+.thread details.artifact>summary:focus-visible{outline:3px solid #f5b400;outline-offset:2px}
+.thread details.artifact[open]>summary{border-bottom:1px solid var(--chat-ai-edge)}
+.thread details.artifact .artifact-body{padding:.4rem .9rem .7rem;font-size:.92rem;line-height:1.58;max-height:none}
+.thread details.artifact .artifact-body a{color:#1a4f7a}
+.thread .step details.artifact{text-align:left}
+
+@media (max-width:640px){
+  .thread .turn{max-width:92%;padding:.6rem .8rem .7rem}
+  .thread .step{max-width:100%}
+}
+@media print{
+  .thread .turn{max-width:85%;break-inside:auto;box-shadow:none}
+  .thread .turn.human{background:#fff !important;color:#000 !important;border:2px solid #1f5fbf}
+  .thread .turn.human a{color:#000}
+  .thread .turn.human .ctx,.thread .turn.human .span-note{color:#333}
+  .thread .turn.ai{background:#fff !important;border:1px solid #888}
+  .thread .turn.human .who::before{content:"▶ "}
+  .thread .turn.ai .who::before{content:"◀ "}
+  .thread details.artifact>summary{list-style:none}
+  .cnav,.chat-legend .k-note{display:none}
+}
+@media (prefers-reduced-motion:no-preference){.thread details.artifact>summary{transition:background .15s}}
