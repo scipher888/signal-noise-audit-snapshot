@@ -1,0 +1,131 @@
+{
+  "issue": 37,
+  "currency": "USD",
+  "basis": "OpenRouter API-reported usage cost per call; not a reconciled card statement",
+  "runs": [
+    {
+      "stage": "author-assist",
+      "model": "Claude Fable 5.2",
+      "slug": "anthropic/claude-fable-5.2",
+      "reasoning": "max",
+      "generation_id": "gen-1794716576-jybeZ0zWeiBwOgoGykhr",
+      "actual_api_reported_usd": "1.270520",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "author-assist",
+      "model": "GPT-6 Astra",
+      "slug": "openai/gpt-6-astra",
+      "reasoning": "max",
+      "generation_id": "gen-1794716576-yshW3WJM6sVizene8f2q",
+      "actual_api_reported_usd": "0.9846425",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "author-assist",
+      "model": "Gemini 4 Carbon",
+      "slug": "google/gemini-4-carbon",
+      "reasoning": "high",
+      "generation_id": "gen-1794716576-v2BJi55XvgpDtVnRcG6R",
+      "actual_api_reported_usd": "0.085188",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "author-assist",
+      "model": "Muse Wonder",
+      "slug": "meta/muse-wonder",
+      "reasoning": "max",
+      "generation_id": "gen-1794716576-6KlGgYwO8Dzd4N5U4X5R",
+      "actual_api_reported_usd": "0.109564",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine",
+      "model": "Claude Fable 5.2 (attempt 1, failed: no essay)",
+      "slug": "anthropic/claude-fable-5.2",
+      "reasoning": "max",
+      "generation_id": "gen-1794716868-7gHTjEIVgihzQJxmm7yr",
+      "actual_api_reported_usd": "1.282784",
+      "finish_reason": "length"
+    },
+    {
+      "stage": "machine",
+      "model": "Claude Fable 5.2 (attempt 2, selected)",
+      "slug": "anthropic/claude-fable-5.2",
+      "reasoning": "max",
+      "generation_id": "gen-1794717315-A15Xj0cM9zjN7MWDuf8A",
+      "actual_api_reported_usd": "1.879704",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine",
+      "model": "Gemini 4 Carbon",
+      "slug": "google/gemini-4-carbon",
+      "reasoning": "high",
+      "generation_id": "gen-1794716868-CokNc84Skm1DO5cGi5Wk",
+      "actual_api_reported_usd": "0.159456",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine",
+      "model": "GPT-6 Astra",
+      "slug": "openai/gpt-6-astra",
+      "reasoning": "max",
+      "generation_id": "gen-1794716869-JUJlfFQxjAEji8MtyUnM",
+      "actual_api_reported_usd": "0.71811",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine",
+      "model": "Muse Wonder",
+      "slug": "meta/muse-wonder",
+      "reasoning": "max",
+      "generation_id": "gen-1794716868-QaWOQ9WouKyGiYf8VLD0",
+      "actual_api_reported_usd": "0.167556",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c humanai",
+      "model": "Kimi K3",
+      "slug": "moonshotai/kimi-k3",
+      "reasoning": "high",
+      "generation_id": "gen-1794723750-BPMtCFNUHci1okBonuH7",
+      "actual_api_reported_usd": "0.119001",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c humanai",
+      "model": "Claude Opus 4.1",
+      "slug": "anthropic/claude-opus-4.1",
+      "reasoning": "default",
+      "generation_id": "gen-1794723750-6SIZLrpQ7uX0bcCgbh0E",
+      "actual_api_reported_usd": "0.084930",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c machine",
+      "model": "Kimi K3",
+      "slug": "moonshotai/kimi-k3",
+      "reasoning": "high",
+      "generation_id": "gen-1794723750-tgrqo9VkalIq56Xpj6mv",
+      "actual_api_reported_usd": "0.064116",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c machine",
+      "model": "Claude Opus 4.1",
+      "slug": "anthropic/claude-opus-4.1",
+      "reasoning": "default",
+      "generation_id": "gen-1794723750-xJQOlukTSIRHURhaUfPg",
+      "actual_api_reported_usd": "0.097035",
+      "finish_reason": "stop"
+    }
+  ],
+  "subtotals": {
+    "author_assist": "2.4499145",
+    "machine": "4.20761",
+    "stage_c": "0.365082"
+  },
+  "actual_api_reported_total": "7.0226065",
+  "caps": "$5 per stage; each stage stayed under its cap"
+}
