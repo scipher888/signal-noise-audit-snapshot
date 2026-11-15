@@ -1001,9 +1001,27 @@ INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="
 """
 
 
+def sync_issue_count(text: str) -> str:
+    """Set the "N issues shown" line to the number of issue rows actually listed."""
+    rows = text.count("data-issue-row")
+    return re.sub(r">\d+ issues shown<", f">{rows} issues shown<", text)
+
+
+def index_lists_issue(index: str, number: int) -> bool:
+    """True when the index links this issue once and its count matches the rows (never fewer than this issue)."""
+    shown = re.search(r">(\d+) issues shown<", index)
+    rows = index.count("data-issue-row")
+    return (
+        index.count(f"issues/issue-{number:03d}/\"") == 1
+        and shown is not None
+        and int(shown.group(1)) == rows
+        and rows >= number
+    )
+
+
 def patch_index() -> None:
     text = ISSUES_INDEX.read_text(encoding="utf-8")
-    text = text.replace(">36 issues shown<", ">37 issues shown<")
+    # issue count is derived from the rows below (sync_issue_count)
     if "issues/issue-037/" not in text:
         needle = '          <article class="issue-row" data-issue-row data-status="complete" data-search="36 issue 36'
         if needle not in text:
@@ -1017,7 +1035,7 @@ def patch_index() -> None:
             count=1,
             flags=re.S,
         )
-    ISSUES_INDEX.write_text(text, encoding="utf-8")
+    ISSUES_INDEX.write_text(sync_issue_count(text), encoding="utf-8")
 
 
 # Written before publication; rendered unchanged, with a page note that their status lines are historical.
@@ -1127,7 +1145,7 @@ def check_pages() -> None:
             raise SystemExit(f"missing development section {anchor}")
     if str(COST_TOTAL) not in author or str(COST_TOTAL) not in dev or AUDIT_COST not in author:
         raise SystemExit("cost missing")
-    if "issue-037/" not in index or ">37 issues shown<" not in index or "issues/issue-036/" not in index:
+    if not index_lists_issue(index, 37) or not index_lists_issue(index, 36):
         raise SystemExit("index not updated")
     missing = []
     page_paths = {(ROOT / p).resolve(): p for p in PAGES}
