@@ -96,7 +96,11 @@ Each stage stayed under its own $5 cap. Source checking, comparison, revision dr
 
 ## 8. Coverage and gaps
 
-- Owner messages t292u, t295u, t296u and t297u are quoted verbatim from the session.
+- Owner messages t292u (the attribution excerpt and the machine questions), t295u, t296u, t297u and t298u are quoted verbatim from the session.
 - t293u and the author's Fable-selection message are described from the session record, not quoted. Their exact text is not reproduced here.
 - Assistant timestamps are approximate.
 - Hidden or internal reasoning is excluded.
+
+## 9. After publication
+
+- **t298u (verbatim), November 14, after the 10:40 PM merges:** "Merged, and Confirming you’ve marked the correct passages as mine in the source page preview." This confirmed the source page's attribution: the highlighted passages are the author's, and the rest is Grok Heavy research.

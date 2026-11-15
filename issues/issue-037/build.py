@@ -778,37 +778,167 @@ def source_index(page_dir: str) -> str:
     return "<ul>" + "\n".join(rows) + "</ul>"
 
 
+DECISION_QUOTES = {
+    "t292u": "only these parts \"The successful capture of Starship Fight 15 is the #1 greatest engineering achievement of all time\" and \"For context, I would rank the following to round out the top 5 achievements:\" and \"But who cares? What does proof of concept of fully reusable large payload spaceships of imply about your future? I'm so glad you asked.\" and \"In short, Elon Musk has repeatedly told audiences to read Ian Banks culture series. …\" are from my raw brain dump. Everything else is from my research with Grok Heavy",
+    "t295u": "The fact checks are great, but let's keep the fact checks in the audit (for readability sake). So let's keep this: \"To some, there is an awkward fact at the center of his enthusiasm. The Culture has no billionaires. Banks himself wondered aloud how his libertarian admirers had managed to miss that his paradise abolished private property.\"  And perhaps this \"Musk, though, has not missed it. He predicts that, with enough AI and robotics, money \"will stop being relevant.\" In a civilization so rich that money has withered away, nobody is a billionaire, and nobody needs to be.\" needs to go in the following (new?) paragraph since I don't think is fits cleanly in the \"To be sure\" paragraph.",
+    "t296u": "Yeah, I noticed that one small thing too. Could we say \"And the remaining objections strengthen the case\"",
+    "t297u": "Excellent. Please proceed.",
+    "t298u": "Merged, and Confirming you’ve marked the correct passages as mine in the source page preview.",
+}
+
+AUTHOR_LABEL = "Synthia Cipher · author"
+GROK = "Grok Bot · editor"
+
+
+def _quote_ok() -> None:
+    record = read_src("development/DECISION-RECORD.md")
+    for key, quote in DECISION_QUOTES.items():
+        if quote not in record:
+            raise SystemExit(f"{key} quote is not verbatim in DECISION-RECORD.md")
+    machine_verbatim = read_src("development/machine-questions-VERBATIM.md")
+    for q in QUESTIONS:
+        if q not in machine_verbatim:
+            raise SystemExit("machine question not verbatim in machine-questions-VERBATIM.md")
+
+
+def _esc_quote(text: str) -> str:
+    return "<p>" + html.escape(text, quote=False) + "</p>"
+
+
+def _artifact(summary: str, body: str, anchor: str | None = None, is_open: bool = False) -> str:
+    aid = f' id="{anchor}"' if anchor else ""
+    op = " open" if is_open else ""
+    return f'<details class="artifact"{aid}{op}><summary>{summary}</summary><div class="artifact-body">{body}</div></details>'
+
+
+def _human(when: str, body: str, described: bool = False, anchor: str | None = None) -> str:
+    cls = "turn human described" if described else "turn human"
+    aid = f' id="{anchor}"' if anchor else ""
+    label = f"{AUTHOR_LABEL} · {when}"
+    return f'<div class="{cls}"{aid} role="group" aria-label="{html.escape(label, quote=True)}"><div class="who">{html.escape(label)}</div><div class="bubble-text">{body}</div></div>'
+
+
+def _ai(who: str, body: str, anchor: str | None = None) -> str:
+    aid = f' id="{anchor}"' if anchor else ""
+    return f'<div class="turn ai"{aid} role="group" aria-label="{html.escape(who, quote=True)}"><div class="who">{html.escape(who)}</div><div class="bubble-text">{body}</div></div>'
+
+
+def _step(body: str, block: bool = False, anchor: str | None = None) -> str:
+    aid = f' id="{anchor}"' if anchor else ""
+    cls = "step block" if block else "step"
+    return f'<div class="{cls}"{aid} role="note"><span class="visually-hidden">Process step: </span>{body}</div>'
+
+
+def conversation_thread(page: str) -> str:
+    _quote_ok()
+    P = lambda rel: prose_html(rel, page)  # noqa: E731
+    src = lambda rel: html.escape(public_href(rel, page), quote=True)  # noqa: E731
+    parts: list[str] = []
+    parts.append('<div class="day">Saturday, November 14, 2026 · times PST</div>')
+    # 1. the author's source message (t292u)
+    parts.append(_human(
+        "t292u · about 8:20 PM",
+        "<p class=\"ctx\">One message, shown here in parts. Verbatim excerpt of the author&rsquo;s attribution note:</p>"
+        + "<blockquote>" + _esc_quote(DECISION_QUOTES["t292u"]) + "</blockquote>"
+        + "<p class=\"ctx\">The same message carried the source material, the editorial prompt and the two machine questions:</p>"
+        + _artifact("Source material, verbatim (author&rsquo;s passages marked; the rest is Grok Heavy research the author pasted)",
+                    "<div id=\"source-material\"></div>" + source_material_html())
+        + _artifact("Editorial prompt (verbatim)", P("development/editorial-prompt.md"), "editorial-prompt")
+        + _artifact("Machine-only questions (verbatim, typos kept)", P("development/machine-questions-VERBATIM.md")),
+        anchor="t292u",
+    ))
+    parts.append(_step(
+        "Grok Bot filed this as <b>Issue 37</b> (the message said &ldquo;Issue 36&rdquo;, which was already published) and preserved the source byte for byte. "
+        f'Four isolated single-turn requests, identical <a href="{src("development/submitted-prompt.md")}">submitted prompt</a> '
+        "(editorial prompt + mixed source), no tools, max_tokens 32,000, no retries.",
+        block=True, anchor="submitted-prompt"))
+    # 2. four author-assist drafts
+    drafts = [
+        ("author-fable", "Claude Fable 5.2 · reasoning max", "“Musk’s Blueprint Is Shelved Under Science Fiction” · 929 words · $1.270520", "development/author-alternatives/01-claude-fable-5.2-full.md"),
+        ("author-astra", "GPT-6 Astra · reasoning max", "“Starship’s Real Test Isn’t the Catch” · 903 words · $0.984643", "development/author-alternatives/02-gpt-6-astra-full.md"),
+        ("author-carbon", "Gemini 4 Carbon · reasoning high", "“What SpaceX Caught in Those Mechanical Arms Is Bigger Than a Rocket” · 980 words · $0.085188", "development/author-alternatives/03-gemini-4-carbon-full.md"),
+        ("author-muse", "Muse Wonder · reasoning max", "“Catching a Rocket Is the First Step Toward a Post-Scarcity World” · 899 words · $0.109564", "development/author-alternatives/04-muse-wonder-full.md"),
+    ]
+    for anchor, who, meta, rel in drafts:
+        parts.append(_ai(who + " · author-assist draft",
+                         f'<p class="meta-line">{html.escape(meta)}</p>'
+                         + _artifact("Full output: thesis, pressure-test, outline, draft", P(rel), anchor)))
+    parts.append(_ai(GROK + " · comparison",
+                     "<p>Side-by-side comparison of the four drafts, with cautions: Muse&rsquo;s lede describes a booster catch; Gemini claims full two-stage reuse; Fable opens by saying it cannot confirm the flight.</p>"
+                     + _artifact("Author comparison (as written, before the machine runs)", P("development/author-comparison.md"), "author-comparison")))
+    # 3. machine runs
+    parts.append(_human(
+        "t293u",
+        "<p>The author added constraints for the machine essay (rank only the top five; state Flight 15&rsquo;s rank if it falls outside them) and left the choice of machine essay to the editor.</p>",
+        described=True))
+    parts.append(_step(
+        "Machine prompt = the author&rsquo;s two questions verbatim + a format paragraph (900–1,300 words, title and dek, top five only). "
+        f'One message, no system prompt, no tools, no source, no drafts (<a href="{src("metadata/isolation.json")}">isolation record</a>).'
+        + _artifact("Full machine prompt as sent", P("development/machine-question.md"), "machine-question"),
+        block=True, anchor="alternatives"))
+    parts.append(_step(
+        "<b>Claude Fable 5.2, attempt 1 failed</b>: <code>finish_reason: length</code>, all 32,000 tokens spent on reasoning, no essay ($1.282784). "
+        f'Retried once with the identical message and max_tokens 64,000 (<a href="{src("development/records/machine-01-claude-fable-5.2-attempt1-length-result-scrubbed.json")}">record</a>).'))
+    machine = [
+        ("machine-fable", "Claude Fable 5.2 · reasoning max · attempt 2", "“Where the Starship Catch Ranks, and What It Could Change” · ranks Flight 15 6th · 1,192 words · $1.879704 · selected unchanged; same bytes as the freeze", "development/machine-alternatives/01-claude-fable-5.2.md"),
+        ("machine-carbon", "Gemini 4 Carbon · reasoning high", "“Catching Fire, Opening the Sky” · 7th (lists five) · 1,143 words · $0.159456", "development/machine-alternatives/02-gemini-4-carbon.md"),
+        ("machine-astra", "GPT-6 Astra · reasoning max", "“What a Starship Catch Could Change” · 6th · 1,073 words · $0.718110", "development/machine-alternatives/03-gpt-6-astra.md"),
+        ("machine-muse", "Muse Wonder · reasoning max", "“Catching the Future” · 6th · 1,112 words · $0.167556", "development/machine-alternatives/04-muse-wonder.md"),
+    ]
+    for anchor, who, meta, rel in machine:
+        parts.append(_ai(who + " · machine-only essay",
+                         f'<p class="meta-line">{html.escape(meta)}</p>' + _artifact("Full essay as returned", P(rel), anchor)))
+    parts.append(_ai(GROK + " · machine selection (delegated)",
+                     "<p>Chose Claude Fable 5.2, attempt 2, unchanged and not combined. Muse Wonder was a close second.</p>"
+                     + _artifact("Selection note", P("development/machine-comparison.md"), "machine-comparison")))
+    # 4. author choice and revisions
+    parts.append(_human(
+        "Fable-selection message",
+        "<p>The author picked Claude Fable 5.2 for the human/AI essay (Muse second), because it &ldquo;brilliantly incorporates parts of the culture series&rdquo;. Use Gemini 4 Carbon&rsquo;s title. Fix or replace the &ldquo;awkward fact … libertarian admirers&rdquo; passage, since Musk aims for a post-monetary society.</p>",
+        described=True))
+    parts.append(_ai(GROK + " · revision options",
+                     '<p>Offered Option A (rewrite with a verified Musk quote) and Option B (replace with &ldquo;to be sure&rdquo; material from other drafts), plus a fact check of the rest of the essay. '
+                     f'<a href="{src("development/revision-history/ISSUE-037-revision-options-tracked.pdf")}">Tracked PDF</a>.</p>'
+                     + _artifact("Fable 5.2 draft as returned", P("development/revision-history/original-fable-essay.md"), "rev-original")
+                     + _artifact("Option A (offered, not chosen)", P("development/revision-history/option-A.md"), "rev-a")
+                     + _artifact("Option B (offered, not chosen)", P("development/revision-history/option-B.md"), "rev-b"),
+                     anchor="revisions"))
+    parts.append(_human("t295u", _esc_quote(DECISION_QUOTES["t295u"]), anchor="t295u"))
+    parts.append(_ai(GROK + " · Option C",
+                     "<p>Applied as Option C: Fable&rsquo;s sentences kept, &ldquo;And there is&rdquo; became &ldquo;To some, there is&rdquo;, and the Musk lines moved to a new paragraph after &ldquo;To be sure&rdquo;.</p>"
+                     + _artifact("Option C (before the last tweak)", P("development/revision-history/option-C.md"), "rev-c")))
+    parts.append(_human("t296u", _esc_quote(DECISION_QUOTES["t296u"]), anchor="t296u"))
+    parts.append(_step(
+        f"<b>Author essay frozen</b>, 970 words, sha256 <code>{AUTHOR_HASH}</code>. Differences from Fable&rsquo;s draft: the title, &ldquo;To some, there is&rdquo;, the new Musk paragraph, and &ldquo;And the remaining objections strengthen the case.&rdquo;"
+        + _artifact("Frozen author essay", P("essays/author-essay-FROZEN.md"), "freeze"),
+        block=True))
+    parts.append(_step(f"<b>Machine essay frozen</b> about 10:25 PM, byte-identical to the model output, sha256 <code>{MACHINE_HASH}</code>."))
+    parts.append(_human("t297u", _esc_quote(DECISION_QUOTES["t297u"]), anchor="t297u"))
+    parts.append(_step("Stage C critique: four calls, each critic shown one freeze; $0.365082, no retries. Findings stay in the audit, not the essays."))
+    critics = [
+        ("Kimi K3 · reasoning high · critic of the author essay", "audit/stage-c/humanai-leg-a-kimi-k3.md"),
+        ("Claude Opus 4.1 · critic of the author essay", "audit/stage-c/humanai-leg-b-claude-opus-4.1.md"),
+        ("Kimi K3 · reasoning high · critic of the machine essay", "audit/stage-c/machine-leg-a-kimi-k3.md"),
+        ("Claude Opus 4.1 · critic of the machine essay", "audit/stage-c/machine-leg-b-claude-opus-4.1.md"),
+    ]
+    for who, rel in critics:
+        parts.append(_ai(who, _artifact("Objections as returned", P(rel))))
+    parts.append(_step("Grok Bot prepared the audit, source page and editorial note. Audit PR 49 merged 10:39 PM and web PR 51 merged 10:40 PM: Issue 37 is live."))
+    parts.append(_human("t298u · after the 10:40 PM merges", _esc_quote(DECISION_QUOTES["t298u"]), anchor="t298u"))
+    parts.append(_step("Post-publication status and Ruling A for both essays recorded (audit PR 50, 10:48 PM)."))
+    parts.append('<div class="day">Sunday, November 15, 2026 · times PST</div>')
+    parts.append(_step("Audio companions linked from both essays (audit PR 51 and web PR 52, 7:02 AM)."))
+    return '<div class="thread" aria-label="Conversation, start to finish">' + "\n".join(parts) + "</div>"
+
+
 def development_page() -> str:
     page = "development"
     decision = prose_html("development/DECISION-RECORD.md", page)
     credits = prose_html("metadata/CREDITS.md", page)
     isolation = html.escape(read_src("metadata/isolation.json"))
     costs = html.escape(read_src("metadata/costs.json"))
-    sections = [
-        ("author-fable", "Author alternative — Claude Fable 5.2, full output (selected base)", "development/author-alternatives/01-claude-fable-5.2-full.md"),
-        ("author-astra", "Author alternative — GPT-6 Astra, full output", "development/author-alternatives/02-gpt-6-astra-full.md"),
-        ("author-carbon", "Author alternative — Gemini 4 Carbon, full output (title used)", "development/author-alternatives/03-gemini-4-carbon-full.md"),
-        ("author-muse", "Author alternative — Muse Wonder, full output", "development/author-alternatives/04-muse-wonder-full.md"),
-        ("machine-fable", "Machine alternative — Claude Fable 5.2, “Where the Starship Catch Ranks, and What It Could Change” (selected unchanged; same bytes as the freeze)", "development/machine-alternatives/01-claude-fable-5.2.md"),
-        ("machine-carbon", "Machine alternative — Gemini 4 Carbon, “Catching Fire, Opening the Sky”", "development/machine-alternatives/02-gemini-4-carbon.md"),
-        ("machine-astra", "Machine alternative — GPT-6 Astra, “What a Starship Catch Could Change”", "development/machine-alternatives/03-gpt-6-astra.md"),
-        ("machine-muse", "Machine alternative — Muse Wonder, “Catching the Future”", "development/machine-alternatives/04-muse-wonder.md"),
-    ]
-    rendered_alts = [f'<h2 id="{a}">{html.escape(t)}</h2>\n{prose_html(r, page)}' for a, t, r in sections]
-    revisions = [
-        ("rev-original", "Fable 5.2 draft as returned", "development/revision-history/original-fable-essay.md"),
-        ("rev-a", "Option A (offered, not chosen)", "development/revision-history/option-A.md"),
-        ("rev-b", "Option B (offered, not chosen)", "development/revision-history/option-B.md"),
-        ("rev-c", "Option C (author's direction, before the last tweak)", "development/revision-history/option-C.md"),
-    ]
-    rendered_revs = [f'<h3 id="{a}">{html.escape(t)}</h3>\n<div class="frame">{prose_html(r, page)}</div>' for a, t, r in revisions]
-    author_compare = prose_html("development/author-comparison.md", page)
-    machine_compare = prose_html("development/machine-comparison.md", page)
-    submitted = prose_html("development/submitted-prompt.md", page)
-    editorial = prose_html("development/editorial-prompt.md", page)
-    question = prose_html("development/machine-question.md", page)
-    freeze = prose_html("essays/author-essay-FROZEN.md", page)
     index = source_index(page)
+    thread = conversation_thread(page)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -817,47 +947,35 @@ def development_page() -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Extended Development Record - {html.escape(AUTHOR_TITLE)}</title>
 <link rel="stylesheet" href="../conversation/conversation.css">
-<style>body{{max-width:900px}}.frame{{border:1px solid var(--line);border-radius:10px;padding:.95rem 1.05rem;margin:1.2rem 0 1.6rem;background:#fcfcfc}}.frame p{{margin:.45rem 0}}.frame .frame-name{{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}}.session{{border-top:1px solid var(--line);padding-top:1.15rem;margin-top:2.1rem;color:#333}}.cnav{{font-size:.84rem;color:var(--muted);margin:2.6rem 0 0;padding-top:1.1rem;border-top:1px solid var(--line)}}.cnav.top{{margin:1.4rem 0 1.6rem;padding:0 0 1rem;border-top:0;border-bottom:1px solid var(--line)}}.cnav dl{{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;margin:0;align-items:baseline}}.cnav dt{{font-size:.68rem;letter-spacing:.075em;text-transform:uppercase;font-weight:600;opacity:.85;white-space:nowrap}}.cnav dd{{margin:0}}.cnav .here{{font-weight:600;color:var(--ink)}}@media(max-width:640px){{.cnav dl{{grid-template-columns:1fr;gap:.1rem}}.cnav dt{{margin-top:.7rem}}.cnav dt:first-of-type{{margin-top:0}}}}.table-scroll{{overflow-x:auto}}table{{width:100%;border-collapse:collapse;font-size:.92rem;margin:1rem 0}}th,td{{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--line);vertical-align:top}}hr{{border:0;border-top:1px solid var(--line);margin:1.4rem 0}}pre.seed{{white-space:pre-wrap;font-family:inherit;margin:.4rem 0}}@media(max-width:720px){{body{{padding-left:1rem;padding-right:1rem}}}}{SRC_CSS}</style>
+<link rel="stylesheet" href="../../edr-chat.css">
+<script src="../../edr-chat.js" defer></script>
+<style>body{{max-width:900px}}.frame{{border:1px solid var(--line);border-radius:10px;padding:.95rem 1.05rem;margin:1.2rem 0 1.6rem;background:#fcfcfc}}.frame p{{margin:.45rem 0}}.frame .frame-name{{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}}.session{{border-top:1px solid var(--line);padding-top:1.15rem;margin-top:2.1rem;color:#333}}.cnav{{font-size:.84rem;color:var(--muted);margin:2.6rem 0 0;padding-top:1.1rem;border-top:1px solid var(--line)}}.cnav.top{{margin:1.4rem 0 1.6rem;padding:0 0 1rem;border-top:0;border-bottom:1px solid var(--line)}}.cnav dl{{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;margin:0;align-items:baseline}}.cnav dt{{font-size:.68rem;letter-spacing:.075em;text-transform:uppercase;font-weight:600;opacity:.85;white-space:nowrap}}.cnav dd{{margin:0}}.cnav .here{{font-weight:600;color:var(--ink)}}@media(max-width:640px){{.cnav dl{{grid-template-columns:1fr;gap:.1rem}}.cnav dt{{margin-top:.7rem}}.cnav dt:first-of-type{{margin-top:0}}}}.table-scroll{{overflow-x:auto}}table{{width:100%;border-collapse:collapse;font-size:.92rem;margin:1rem 0}}th,td{{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--line);vertical-align:top}}hr{{border:0;border-top:1px solid var(--line);margin:1.4rem 0}}pre.seed{{white-space:pre-wrap;font-family:inherit;margin:.4rem 0}}.visually-hidden{{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}@media(max-width:720px){{body{{padding-left:1rem;padding-right:1rem}}}}{SRC_CSS}</style>
 </head>
 <body>
 <p class="kicker">The World Behind the Words &middot; Issue 37 &middot; Extended Development Record</p>
 <h1>Extended Development Record — {html.escape(AUTHOR_TITLE)}</h1>
-<p class="lede">Issue 37, November 14, 2026, by Synthia Cipher. This page holds the decision record, the source material with the author&rsquo;s words marked, both comparisons, the four author alternatives, the four machine alternatives (and the failed run), the revision options, the freeze, the prompts, the credits, and links to every public source file. The essay companions are live. Audio companions are linked above.</p>
+<p class="lede">Issue 37, November 14, 2026, by Synthia Cipher. The conversation behind both essays, start to finish: what the author said, what each model returned, and what the editor did. The essay companions are live. Audio companions are linked above.</p>
 {nav_top("development")}
 <div class="frame"><span class="frame-name">Read first — what this record is</span>
-<p>Issue 37 is two essays and a source page. The machine essay answers two questions, sent in identical messages to four models; none of the four saw the author&rsquo;s source. Grok Bot chose Claude Fable 5.2&rsquo;s essay and left it unchanged. The human/AI essay starts from Claude Fable 5.2&rsquo;s draft, with Gemini 4 Carbon&rsquo;s title and three edits the author approved. The critics were Kimi K3 and Claude Opus 4.1, each shown one freeze.</p>
+<p>Issue 37 is two essays and a source page. The human/AI essay starts from Claude Fable 5.2&rsquo;s draft, with Gemini 4 Carbon&rsquo;s title and three edits the author approved. The machine essay is Claude Fable 5.2&rsquo;s answer to the author&rsquo;s two questions, selected unchanged by Grok Bot; none of the machine runs saw the author&rsquo;s source. The critics were Kimi K3 and Claude Opus 4.1, each shown one freeze.</p>
 {PREP_NOTE}
 {AUDIO_NOTE}
-<p>This record shows process and constraint. It does not prove the essays or their forecasts.</p>
 <p>{html.escape(STATUS)}</p>
-<p><strong>Coverage.</strong> This is a decision record, not a full conversation transcript. Owner messages are quoted where they decided something; two are described rather than quoted, and the record says which. Exact assistant timestamps are not given.</p>
+<p><strong>Coverage.</strong> The author&rsquo;s turns marked verbatim are quoted exactly from the session (t292u excerpt, t295u, t296u, t297u, t298u). Two author turns are marked &ldquo;described, not verbatim&rdquo; because their exact text is not in the record. Model turns are the full outputs as returned. Grok Bot&rsquo;s turns are its delivered artifacts and a one-line summary of each; its chat replies are not reproduced. Exact assistant timestamps are not available. This record shows process and constraint. It does not prove the essays or their forecasts.</p>
 </div>
-<div class="frame" id="decision"><span class="frame-name">Decisions, runs, revisions, costs</span>
+<div class="chat-legend" aria-label="Legend">
+<span><i class="k-human" aria-hidden="true"></i> Right, blue: <b>Synthia Cipher (author)</b></span>
+<span><i class="k-ai" aria-hidden="true"></i> Left, grey: <b>AI</b>, labeled by model (Fable, Astra, Gemini, Muse, Kimi, Opus) or Grok Bot</span>
+<span><i class="k-note" aria-hidden="true"></i> Centre: process steps (runs, freezes, hashes, audits)</span>
+<span>Inside the source material: highlighted text is the author&rsquo;s; plain text is Grok Heavy research</span>
+</div>
+<h2 class="session" id="conversation">The conversation, start to finish</h2>
+<p class="meta">Long artifacts are collapsed; open any of them to read the full text. Printing expands them all.</p>
+{thread}
+<h2 class="session" id="decision-record">Reference</h2>
+<div class="frame" id="decision"><span class="frame-name">Decision record: decisions, runs, revisions, costs</span>
 {decision}
 </div>
-<h2 class="session" id="source-material">Source material — Issue 37</h2>
-<p class="meta">Verbatim with typos. This is the text the author gave to the four human/AI editorial runs. The highlighted passages are the author&rsquo;s own; the rest is Grok Heavy research the author included. The machine runs and the critics never saw it.</p>
-<div class="frame">{source_material_html()}</div>
-<h2 class="session" id="submitted-prompt">Submitted prompt (author-assist runs)</h2>
-<div class="frame">{submitted}</div>
-<h2 class="session" id="editorial-prompt">Editorial prompt</h2>
-<div class="frame">{editorial}</div>
-<h2 class="session" id="machine-question">Machine questions and full prompt</h2>
-<p class="meta">Identical single-message requests went to Claude Fable 5.2 (twice), Gemini 4 Carbon, GPT-6 Astra, and Muse Wonder. The two questions and the format paragraph are the whole input. No source. No author essay.</p>
-<div class="frame">{question}</div>
-<h2 class="session" id="alternatives">Four author alternatives and four machine alternatives</h2>
-<p class="meta">Full model outputs. Essay-only extracts and PDFs are in the <a href="#files">source index</a>. The Fable machine run&rsquo;s failed first attempt returned no essay; its record is in the source index.</p>
-{chr(10).join(rendered_alts)}
-<h2 class="session" id="author-comparison">Author comparison</h2>
-<div class="frame">{author_compare}</div>
-<h2 class="session" id="machine-comparison">Machine comparison and selection</h2>
-<div class="frame">{machine_compare}</div>
-<h2 class="session" id="revisions">Revision history of the author essay</h2>
-<p class="meta">Tracked PDF of options A and B: <a href="../source/development/revision-history/ISSUE-037-revision-options-tracked.pdf">ISSUE-037-revision-options-tracked.pdf</a>. Diffs: <a href="../source/development/revision-history/option-A.diff">A</a>, <a href="../source/development/revision-history/option-B.diff">B</a>, <a href="../source/development/revision-history/option-C.diff">C</a>.</p>
-{chr(10).join(rendered_revs)}
-<h2 class="session" id="freeze">Author freeze</h2>
-<p class="meta">sha256 <code>{AUTHOR_HASH}</code>. The machine freeze is on <a href="../machine-version/">the machine essay page</a> (sha256 <code>{MACHINE_HASH}</code>).</p>
-<div class="frame">{freeze}</div>
 <div class="frame" id="credits"><span class="frame-name">Credits, cost, isolation</span>
 <p>Actual API-reported total <strong>${COST_TOTAL}</strong>.</p>
 {credits}
