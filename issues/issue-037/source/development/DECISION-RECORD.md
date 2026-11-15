@@ -22,7 +22,7 @@ The four models received the identical submitted prompt: the editorial prompt ve
 | Muse Wonder (max) | Catching a Rocket Is the First Step Toward a Post-Scarcity World | 899 | 0.109564 |
 | **Subtotal** | | | **2.449915** |
 
-All four drafts and their full outputs, including each model's thesis, pressure-test and outline steps, are kept in [author-alternatives/](author-alternatives/). The comparison is in [author-comparison.md](author-comparison.md). Cautions logged before selection:
+All four drafts and their full outputs, including each model's thesis, pressure-test and outline steps, are in the [author alternatives](#author-fable) section of the development record. The comparison is in [author-comparison.md](author-comparison.md). Cautions logged before selection:
 - Muse Wonder's lede describes a *booster* catch. On Flight 15 the booster catch was aborted; the ship was the stage that was caught.
 - Gemini Carbon claims "full, two-stage reusability" was demonstrated.
 - Fable opens by saying it cannot confirm the flight, and ends with its own "verify before filing" list.

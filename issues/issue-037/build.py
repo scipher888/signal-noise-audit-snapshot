@@ -3,9 +3,9 @@
 
 Adapted from issues/issue-036/build.py (same Markdown renderer and page
 shells). Frozen Markdown hashes are checked and never rewritten. Issue 37 has
-no audio and no live companions yet: every status line says "prepared, not
-published". The written-without-AI page is replaced by a source-material page
-that marks the author's own words apart from Grok Heavy research.
+no audio. Its three newsletter companions are live (web PR 51), and Ruling A
+is confirmed. The written-without-AI page is replaced by a source-material
+page that marks the author's own words apart from Grok Heavy research.
 
     python3 issues/issue-037/build.py
     python3 issues/issue-037/build.py --check
@@ -50,11 +50,13 @@ QUESTIONS = (
     "2. Taking on optimistic but realistic/possible view, what does this proof of concept of fully reusable large payload spaceships imply about the future for ordinary people over the next 10, 25, 50, and 100 years?",
 )
 
-STATUS = (
-    "Prepared November 14, 2026 (PST) for the author's review. Not published. "
-    "Rulings pending: A (keep both freezes, findings on these pages) is recorded provisionally from the "
-    "author's instruction to keep the fact checks in the audit, and awaits confirmation."
+RULING = (
+    "Ruling A for both essays, confirmed November 14, 2026: keep both freezes unchanged and record the "
+    "findings on the audit pages. The author asked to keep the fact checks in the audit, then merged the "
+    "Issue 37 pull requests (this record, PR 49, at 10:39:47 PM PST; the newsletter pages, PR 51, at 10:40:15 PM PST)."
 )
+STATUS = RULING
+WEB_MERGE = "d040e51ec8255b3ccf9f8f32c1759a81e528eb40"
 
 
 def sha256(path: Path) -> str:
@@ -382,11 +384,14 @@ def nav_bottom(page: str) -> str:
 
 
 PREP_NOTE = (
-    "<p><strong>Prepared, not published.</strong> "
-    "The three newsletter pages linked here are on an unmerged Signal &amp; Noise web branch. "
-    "Until the author approves publication and that change is merged, those links do not resolve. "
-    "No audio exists for Issue 37.</p>"
+    "<p><strong>The essay companions are live.</strong> "
+    "Signal &amp; Noise web pull request 51 was merged November 14, 2026, 10:40:15 PM PST, "
+    f"commit <code>{WEB_MERGE}</code>. "
+    "Rechecked for this record at 10:41 PM PST: each of the three pages returned HTTP 200, and the essay text on each live page "
+    "rebuilds to its freeze hash. The source page reproduces the verbatim source. "
+    "This audit record is the inspection surface for those live pages. Issue 37 has no audio companion.</p>"
 )
+LIVE_MARK = "The essay companions are live."
 
 FLIGHT_NOTE = (
     "<p><strong>The event both essays rest on happened.</strong> On November 14, 2026, at about 1:20 PM PST, "
@@ -402,6 +407,7 @@ RULING_BLOCK = f"""<div class="callout coral" id="ruling"><p>{html.escape(STATUS
 <li>Author freeze <code>author-essay-FROZEN.md</code>, sha256 <code>{AUTHOR_HASH}</code>. It is Claude Fable 5.2's draft, with Gemini 4 Carbon's title and three edits the author approved. The development record lists every difference.</li>
 <li>Machine freeze <code>machine-essay-FROZEN-v1.0</code>, sha256 <code>{MACHINE_HASH}</code>. It is Claude Fable 5.2's essay, selected unchanged by Grok Bot. Its bytes match machine alternative 01.</li>
 <li>The fact checks the author asked to keep out of the essay are findings A1–A18 and M1–M11 below. None is blocking, and none is described as a pass.</li>
+<li>The dual audit, Stage C synthesis and execution method were written before publication. Their pre-publication status sentences (review draft, pending ruling, unmerged branches) are historical. The ruling closed that choice; it did not withdraw any finding.</li>
 </ul>
 <p>This is an editorial disposition. It does not certify that the essays are true or that their forecasts will happen.</p></div>"""
 
@@ -457,7 +463,7 @@ def site_footer(depth: str) -> str:
       </div>
       <div class="footer-bottom">
         <a class="author-byline" href="https://scipher888.github.io/synthia-cipher/"><span class="cipher-glyph" aria-hidden="true"></span> by Synthia Cipher</a>
-        <span>Public snapshot &middot; November 2026 &middot; prepared for review</span>
+        <span>Public snapshot &middot; November 2026 &middot; essay companions live</span>
       </div>
     </div>
   </footer>"""
@@ -537,8 +543,8 @@ def author_page() -> str:
   <link rel="icon" href="../../favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Audit for Signal &amp; Noise Issue 37, {html.escape(AUTHOR_TITLE)}: source checks, Stage C objections, and the Flight 15 confirmation. Prepared for review.">
-  <title>Issue 37 Audit - {html.escape(AUTHOR_TITLE)}</title>
+  <meta name="description" content="Audit for Signal &amp; Noise Issue 37, {html.escape(AUTHOR_TITLE)}: source checks, Stage C objections, and the Flight 15 confirmation. Ruling A. Essay companions are live.">
+  <title>Issue 37 Published Audit - {html.escape(AUTHOR_TITLE)}</title>
   <link rel="stylesheet" href="../../assets/styles.css?v={CSS_V}">
   <script src="../../assets/site.js?v={JS_V}" defer></script>
   <style>
@@ -558,7 +564,7 @@ def author_page() -> str:
         <div>
           <div class="issue-eyebrow"><p class="eyebrow">Issue 37 &middot; November 14, 2026 &middot; Synthia Cipher</p></div>
           <h1 class="page-title">{html.escape(AUTHOR_TITLE)}</h1>
-          <p class="lede">Audit for Issue 37. Intended issue date: November 14, 2026. Byline: Synthia Cipher. Companions: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{SOURCE_WEB}">source material</a>, which this issue publishes instead of a written-without-AI page. No dek on the author essay. No audio.</p>
+          <p class="lede">Audit for Issue 37. Intended issue date: November 14, 2026. Byline: Synthia Cipher. Live companions: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{SOURCE_WEB}">source material</a>, which this issue publishes instead of a written-without-AI page. No dek on the author essay. No audio.</p>
           {nav_top("author-audit")}
         </div>
       </div>
@@ -567,7 +573,7 @@ def author_page() -> str:
       <div class="shell reading-layout">
         <article class="reading-content issue-record-content">
           <section class="content-section" id="start">
-            <p class="eyebrow">Audit</p>
+            <p class="eyebrow">Published audit</p>
             <h2>The essay is the judgment. This page is the inspection surface.</h2>
             {PREP_NOTE}
             <div class="callout mint"><p><strong>Canonicality.</strong> The essay Signal &amp; Noise stands behind is Issue 37, <em>{html.escape(AUTHOR_TITLE)}</em>, by Synthia Cipher. This page is its audit, not a second edition and not a corrected essay. The fact checks live here, at the author&rsquo;s request, so the essay reads cleanly. The machine essay, <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>, is a companion; its inspection copy is <a href="machine-version/">on this record</a>. Author freeze sha256 <code>{AUTHOR_HASH}</code> ({author_words} whitespace-delimited words in the Markdown file, title included, no dek). Machine freeze sha256 <code>{MACHINE_HASH}</code> ({machine_words} whitespace-delimited words, title and dek included).</p></div>
@@ -691,8 +697,8 @@ def machine_essay_page() -> str:
 <p class="dek"><em>{html.escape(MACHINE_DEK)}</em></p>
 {provenance_aside("../")}
 {nav_top("machine-essay")}
-<div class="note"><p><strong>About this piece.</strong> This is a machine essay. It is not a second front door, and it is not a correction of the author&rsquo;s essay. Signal &amp; Noise stands behind the human/AI essay <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>. This page is the inspection copy of freeze <code>machine-essay-FROZEN-v1.0</code>. Findings live on <a href="audit/">its audit</a>. The development record is <a href="../development/">the conversation behind this</a>. The newsletter page will be <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>.</p></div>
-<div class="note">{PREP_NOTE} <p>The text below is the freeze, with the Markdown heading and dek markers removed and no other wording change.</p></div>
+<div class="note"><p><strong>About this piece.</strong> This is a machine essay. It is not a second front door, and it is not a correction of the author&rsquo;s essay. Signal &amp; Noise stands behind the human/AI essay <a href="{AUTHOR_WEB}"><em>{html.escape(AUTHOR_TITLE)}</em></a>. This page is the inspection copy of freeze <code>machine-essay-FROZEN-v1.0</code>. Findings live on <a href="audit/">its audit</a>. The development record is <a href="../development/">the conversation behind this</a>. The live public page is <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>.</p></div>
+<div class="note"><p>{html.escape(RULING)} The newsletter page is live and matches this freeze. The text below is the freeze, with the Markdown heading and dek markers removed and no other wording change.</p></div>
 {body}
 <div class="note"><p><strong>Attribution.</strong> Machine essay. Written by Claude Fable 5.2 (<code>anthropic/claude-fable-5.2</code> via OpenRouter, reasoning effort max) from the questions and format instructions alone, in one single-turn run. This was the second attempt; the first returned no essay. Grok Bot selected this essay unchanged from four isolated generations and did not edit it. Run cost $1.879704, plus $1.282784 for the failed first attempt. Freeze sha256 <code>{MACHINE_HASH}</code>. Gemini 4 Carbon, GPT-6 Astra, and Muse Wonder each wrote a separate answer; those are in <a href="../development/#alternatives">the development record</a>.</p></div>
 {nav_bottom("machine-essay")}
@@ -850,7 +856,7 @@ def development_page() -> str:
 """
 
 
-INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="complete" data-search="37 issue 37 what spacex caught in those mechanical arms is bigger than a rocket where the starship catch ranks and what it could change starship flight 15 culture iain banks musk source material grok heavy prepared for review machine companion machine-version issue-037-source-material">
+INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="complete" data-search="37 issue 37 what spacex caught in those mechanical arms is bigger than a rocket where the starship catch ranks and what it could change starship flight 15 culture iain banks musk source material grok heavy ruling a findings recorded companions live machine companion machine-version issue-037-source-material">
             <div class="issue-index">37</div>
             <div class="issue-copy"><a href="https://scipher888.github.io/signal-noise-audit-snapshot/issues/issue-037/">What SpaceX Caught in Those Mechanical Arms Is Bigger Than a Rocket</a></div>
           </article>
@@ -875,6 +881,9 @@ def patch_index() -> None:
         )
     ISSUES_INDEX.write_text(text, encoding="utf-8")
 
+
+# Written before publication; rendered unchanged, with a page note that their status lines are historical.
+HISTORICAL = ("audit/dual-audit.md", "audit/execution-method.md", "audit/stage-c-synthesis.md", "development/DECISION-RECORD.md", "development/machine-comparison.md", "development/author-comparison.md")
 
 PAGES = ["index.html", "machine-version/index.html", "machine-version/audit/index.html", "development/index.html"]
 
@@ -905,12 +914,36 @@ def check_pages() -> None:
             raise SystemExit(f"secret-like or local path in {name}")
         if "spotify.com" in blob or "Audio companion" in blob:
             raise SystemExit(f"audio link in {name}; Issue 37 has no audio")
-        if "Prepared, not published." not in blob:
-            raise SystemExit(f"prepared status missing in {name}")
+        current = blob
+        for hist in HISTORICAL:
+            for page_dir in ("", "machine-version/audit", "development"):
+                current = current.replace(prose_html(hist, page_dir), "")
+        for stale in (
+            "Prepared, not published",
+            "prepared for review",
+            "Prepared for review",
+            "do not resolve",
+            "unmerged Signal",
+            "awaits confirmation",
+            "recorded provisionally",
+            "Rulings pending",
+            "The newsletter page will be",
+        ):
+            if stale in current:
+                raise SystemExit(f"stale status wording {stale!r} in {name}")
+        if "Ruling A for both essays, confirmed November 14, 2026" not in blob:
+            raise SystemExit(f"confirmed ruling missing in {name}")
         if blob.count("The conversation behind this") < 2 or blob.count("Source material") < 2:
             raise SystemExit(f"nav incomplete in {name}")
         if "Written without AI</dt>" in blob:
             raise SystemExit(f"wrong companion label in {name}")
+    for name, blob in (("author", author), ("maudit", maudit), ("dev", dev)):
+        if LIVE_MARK not in blob or WEB_MERGE not in blob:
+            raise SystemExit(f"live-companion status missing in {name}")
+    if "The newsletter page is live" not in machine or "The live public page is" not in machine:
+        raise SystemExit("machine inspection page still describes the companion as unpublished")
+    if "prepared for review" in index.split("data-search=\"37 issue 37", 1)[-1].split("</article>", 1)[0]:
+        raise SystemExit("index keywords still say prepared for review")
     # machine essay: two exact questions, editor's note, unchanged paragraphs
     for q in QUESTIONS:
         if f'<p class="provenance-question">{html.escape(q)}</p>' not in machine:
@@ -950,14 +983,24 @@ def check_pages() -> None:
     if "issue-037/" not in index or ">37 issues shown<" not in index or "issues/issue-036/" not in index:
         raise SystemExit("index not updated")
     missing = []
+    page_paths = {(ROOT / p).resolve(): p for p in PAGES}
     for rel in PAGES:
         html_path = ROOT / rel
-        for href in re.findall(r'href="([^"]+)"', blobs[rel]):
-            if href.startswith(("http://", "https://", "mailto:", "#")):
+        for href in re.findall(r'(?:href|src)="([^"]+)"', blobs[rel]):
+            href = html.unescape(href)
+            if href.startswith(("http://", "https://", "mailto:", "data:")):
                 continue
-            path_only = href.split("#", 1)[0].split("?", 1)[0]
-            if path_only and not (html_path.parent / path_only).resolve().exists():
+            path_only, _, frag = href.partition("#")
+            path_only = path_only.split("?", 1)[0]
+            target = (html_path.parent / path_only).resolve() if path_only else html_path.resolve()
+            # GitHub Pages serves no folder listings: a folder link needs an index.html.
+            if target.is_dir():
+                target = target / "index.html"
+            if not target.is_file():
                 missing.append(f"{rel} -> {href}")
+                continue
+            if frag and target in page_paths and f'id="{frag}"' not in blobs[page_paths[target]]:
+                missing.append(f"{rel} -> {href} (no such anchor)")
     if missing:
         raise SystemExit("missing internal links:\n" + "\n".join(missing[:30]))
     print("issue 37 check ok")

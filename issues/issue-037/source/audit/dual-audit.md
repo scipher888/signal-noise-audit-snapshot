@@ -1,5 +1,7 @@
 # Signal & Noise — Issue 37: dual source/floor audit
 
+*Update after publication: Ruling A was confirmed on November 14, 2026, and the essays are live. The status sentences in this document were written before that and are kept as written.*
+
 Prepared November 14, 2026 (PST). This record is prepared for review and has not been published. Both freezes are unchanged. It is a record of objections and evidence, not a validation or certification. Source URLs, exact excerpts, dates and limits are in [SOURCE-LOG.md](sources/SOURCE-LOG.md). Methods are in [execution-method.md](execution-method.md). Independent critic returns and how each was handled are in [stage-c-synthesis.md](stage-c-synthesis.md).
 
 The author has asked that fact checks stay in the audit, not in the essay, for readability (owner message, November 14, 2026: "let's keep the fact checks in the audit"). So every factual finding below is logged here and none is applied to either text.
