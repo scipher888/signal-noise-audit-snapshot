@@ -969,13 +969,31 @@ INDEX_ROW = """          <article class="issue-row" data-issue-row data-status="
 """
 
 
+def sync_issue_count(text: str) -> str:
+    """Set the "N issues shown" line to the number of issue rows actually listed."""
+    rows = text.count("data-issue-row")
+    return re.sub(r">\d+ issues shown<", f">{rows} issues shown<", text)
+
+
+def index_lists_issue(index: str, number: int) -> bool:
+    """True when the index links this issue once and its count matches the rows (never fewer than this issue)."""
+    shown = re.search(r">(\d+) issues shown<", index)
+    rows = index.count("data-issue-row")
+    return (
+        index.count(f"issues/issue-{number:03d}/\"") == 1
+        and shown is not None
+        and int(shown.group(1)) == rows
+        and rows >= number
+    )
+
+
 def patch_index() -> None:
     text = ISSUES_INDEX.read_text(encoding="utf-8")
     text = text.replace(
         'href="../assets/styles.css?v=5c17dc47"',
         f'href="../assets/styles.css?v={CSS_V}"',
     )
-    text = text.replace(">35 issues shown<", ">36 issues shown<")
+    # issue count is derived from the rows below (sync_issue_count)
     if "issues/issue-036/" not in text:
         needle = '          <article class="issue-row" data-issue-row data-status="complete" data-search="35 issue 35'
         if needle not in text:
@@ -991,7 +1009,7 @@ def patch_index() -> None:
             count=1,
             flags=re.S,
         )
-    ISSUES_INDEX.write_text(text, encoding="utf-8")
+    ISSUES_INDEX.write_text(sync_issue_count(text), encoding="utf-8")
 
 
 def write_pages() -> None:
@@ -1089,7 +1107,7 @@ def check_pages() -> None:
     pressure = dev.split('id="04-muse-wonder-full-2-pressure-test"', 1)[1].split("<h2", 1)[0]
     if pressure.count("<ol>") != 1 or pressure.count("<li>") != 6:
         raise SystemExit("Muse pressure-test list was split or shortened")
-    if "issue-036/" not in index or ">36 issues shown<" not in index:
+    if not index_lists_issue(index, 36):
         raise SystemExit("index not updated")
     if "companions live" not in index or "pending publication approval" in index:
         raise SystemExit("index still describes publication as pending")
