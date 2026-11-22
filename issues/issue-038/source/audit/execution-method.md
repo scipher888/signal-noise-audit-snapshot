@@ -1,7 +1,7 @@
 # Audit protocol and execution disclosure: Issue 38
 
 **Inherited without change from Issue 37:**
-- The Stage C wrapper is a copy of Issue 37's. Only the paths, the essay titles, the X-Title header and the budget label changed.
+- The Stage C wrapper is a copy of Issue 37's. Only the paths, the essay titles, a request label and the budget label changed.
 - It imports the Issue 34 Stage C script unchanged for:
   - the system prompt;
   - the models: `moonshotai/kimi-k3` with reasoning effort high, and `anthropic/claude-opus-4.1` with no reasoning configuration;
@@ -16,7 +16,7 @@
 
 **Source checking** was Grok Bot's own review of public pages and of the X posts read with the X read tool (sources/SOURCE-LOG.md). It is not a paid model protocol.
 
-**Ruling A:** fact checks stay in the audit, not the essays, as the author asked (Issue 37 standing preference; t321u for Issue 38).
+**Ruling A:** fact checks stay in the audit, not the essays, as the author asked (Issue 37 standing preference, restated for Issue 38).
 
 **Not done during the audit:** no new essay generation, no changes to the freezes, no publication, no audio and no sends.
 

@@ -2,10 +2,10 @@
 
 Prepared Nov 21, 2026 (PST) for the author's review. Both freezes are unchanged. This is a record of objections and evidence, not a validation.
 - Sources: [SOURCE-LOG.md](sources/SOURCE-LOG.md). Methods: [execution-method.md](execution-method.md). Critic returns: [stage-c-synthesis.md](stage-c-synthesis.md).
-- Per the author's standing request and t321u ("The other issues should probably be rolled into the audit"), every factual finding is logged here, and none is applied to either text (Ruling A).
+- Per the author's standing request and the author's redline message ("The other issues should probably be rolled into the audit"), every factual finding is logged here, and none is applied to either text (Ruling A).
 
 **Freezes**
-- Author/AI essay (v3, refrozen Nov 21, 2026, about 9:14 PM PST, after the author's approval t326s2085): `essays/author-essay-FROZEN.md`, sha256 `7fb4fac57b37dc59fd13dd94ee3dba5aad6f3d26ea8054d0e70a203c7678bdb7`, 1,066 words of body.
+- Author/AI essay (v3, refrozen Nov 21, 2026, about 9:14 PM PST, after the author's follow-up approval): `essays/author-essay-FROZEN.md`, sha256 `7fb4fac57b37dc59fd13dd94ee3dba5aad6f3d26ea8054d0e70a203c7678bdb7`, 1,066 words of body.
   - It differs from v1 only in "staffers at OpenAI" → "staffers at top AI labs".
   - v2 ("top AI lab staffers", sha256 `3587b03b33de5eb961c6c74feb93379c73cf23e95dc2c68c4d0545aaee037270`) is kept as `essays/author-essay-FROZEN-v2.md`.
   - v1 (sha256 `48d3a7271fd878c6f39eeb4e4083c68037ecb7daf3877ec9e78b0d02243554ff`) is kept as `essays/author-essay-FROZEN-v1.md`.
@@ -16,7 +16,7 @@ Prepared Nov 21, 2026 (PST) for the author's review. Both freezes are unchanged.
 
 **Blocking defects under the Issue 34–37 floor definition: none.** The floor means a fabricated event, quote or number. No essay invents an event or a quote. Every study the machine essay names exists, and each is characterized fairly.
 
-**Author rulings received (t326u):** A1 was fixed narrowly in the prose (Ruling B, one phrase). A2–A8 stay in the audit (Ruling A). The original framing follows.
+**Author rulings received:** A1 was fixed narrowly in the prose (Ruling B, one phrase). A2–A8 stay in the audit (Ruling A). The original framing follows.
 
 **Two HIGH items in the author essay needed the author's explicit ruling.** Both concern a living person or a named company, and both are misstatements of real reporting rather than fabrications:
 - **A1:** the "consensual non-consent" reporting concerns an *Anthropic* researcher, not "staffers at OpenAI".
@@ -28,7 +28,7 @@ Ruling A (keep the freeze and disclose in the audit) was the author's stated pre
 
 | ID | Essay text | Finding | Evidence | Severity |
 |---|---|---|---|---|
-| A1 | v3: "Recent reporting on subcultures among staffers at top AI labs—arguably home to some of the most intellectually gifted people alive—highlighted the embrace of practices like 'consensual non-consent.'" (v1 said "staffers at OpenAI"; v2 said "top AI lab staffers") | **Resolved in part by Ruling B (t326u).** The company misnaming is gone. Remaining points stay under Ruling A; see note A1. | C1–C4 | ~~HIGH~~ → LOW (resolved in part) |
+| A1 | v3: "Recent reporting on subcultures among staffers at top AI labs—arguably home to some of the most intellectually gifted people alive—highlighted the embrace of practices like 'consensual non-consent.'" (v1 said "staffers at OpenAI"; v2 said "top AI lab staffers") | **Resolved in part by Ruling B.** The company misnaming is gone. Remaining points stay under Ruling A; see note A1. | C1–C4 | ~~HIGH~~ → LOW (resolved in part) |
 | A2 | "According to the report, Huang engaged in extramarital affairs—including one with a Chinese woman with whom he was doing business." | Misattribution and omission. See note A2. | H1–H5 | **HIGH** |
 | A3 | "Consider recent *Washington Post* reporting on Nvidia CEO Jensen Huang…" | Out of date: he resigned Nov 12, 2026. | H1–H3 | MEDIUM |
 | A4 | "Set aside, for a moment, the obvious personal devastation infidelity inflicts on a marriage." | Speculation about a private family. The only record is Huang's own apology. | H5 | MEDIUM |
@@ -39,7 +39,7 @@ Ruling A (keep the freeze and disclose in the audit) was the author's stated pre
 | A9 | Haidt paragraph ("our intellect behaves far more like a defense attorney") | Fair paraphrase of *The Righteous Mind*. | P1 | OK |
 | A10 | "An ordinary person produces an excuse. A gifted person produces a philosophy." (Muse insertion) | An aphorism, opinion. The Perkins finding Haidt reports (P1) gives it partial support, though the essay doesn't cite it. | P1 | OK (opinion) |
 
-**Note A1** (updated after t326u).
+**Note A1** (updated after the author's rulings).
 - The Free Beacon report, via Sibarium on Nov 16, concerns an *Anthropic* cybersecurity researcher listed in a 2023 filing as a manager of a business that hosts "consensual non-consent" parties.
 - The parties reportedly draw "a disproportionate number of employees at Anthropic and OpenAI".
 - The researcher is not accused of the alleged assault. The reporting does not show that either company organized, sponsored or endorsed the events.

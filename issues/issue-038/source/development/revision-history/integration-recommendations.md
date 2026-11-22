@@ -1,6 +1,6 @@
 # Issue 38: what to fold into the Neon draft (recommendation memo, Grok Bot, Nov 21, 2026, PST)
 
-Base: Gemini 4 Neon, "The Smartest People in the Room Are the Easiest to Fool" (`author/read/03-gemini-4-neon.md`). This is a memo only: nothing has been revised or frozen. Word counts count words in the draft body, excluding the title and the dek.
+Base: Gemini 4 Neon, "The Smartest People in the Room Are the Easiest to Fool" (author alternative 03). This is a memo only: nothing has been revised or frozen. Word counts count words in the draft body, excluding the title and the dek.
 
 ## 1. Ranked additions from the other drafts
 
@@ -67,7 +67,7 @@ Base: Gemini 4 Neon, "The Smartest People in the Room Are the Easiest to Fool" (
 
 ## 2. Factual corrections Neon itself needs
 
-These were rechecked against `review/factual-risks.md`, the two source JSONs (`source/x-post-*.json`), and AP, Reuters, BBC and NPR (Nov 12–13). The suggested replacements are minimal, and the author's own phrasing is kept where possible.
+These were rechecked against the earlier factual-risk notes, the two X posts, and AP, Reuters, BBC and NPR (Nov 12–13). The suggested replacements are minimal, and the author's own phrasing is kept where possible.
 
 1. **Huang is now former CEO, and the attribution is off.**
    > Neon: "Consider recent *Washington Post* reporting on Nvidia CEO Jensen Huang, widely regarded as one of the most formidable strategic minds in modern business."

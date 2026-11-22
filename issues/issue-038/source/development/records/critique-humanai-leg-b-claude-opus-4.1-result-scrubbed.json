@@ -4,7 +4,6 @@
  "model_requested": "anthropic/claude-opus-4.1",
  "started_pt": "2026-11-21T20:58:17.411071-08:00",
  "http": 200,
- "id": "gen-1795323497-zZqCCRkU46hTLlU5bia0",
  "model": "anthropic/claude-opus-4.1",
  "provider": "Amazon Bedrock",
  "usage": {

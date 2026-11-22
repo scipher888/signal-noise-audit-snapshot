@@ -392,30 +392,11 @@ PREP_NOTE = (
     "No audio exists for Issue 38.</p>"
 )
 
-# The editor's note shown above the author essay on the newsletter page (outside the frozen prose).
-AUTHOR_EDITOR_NOTE = (
-    "Editor&rsquo;s note: Under this newsletter&rsquo;s audit convention, fact checks appear in the audit, not in the essay. "
-    "Two clarifications. Jensen Huang resigned as Nvidia&rsquo;s CEO on November 12, 2026, amid reports of two affairs, "
-    "one with a woman The Washington Post reported was suspected of being a Chinese spy. China denies the allegation, "
-    "the Justice Department has reached no conclusion, and Nvidia says it has no reason to believe national security or "
-    "company secrets were compromised. The &ldquo;consensual non-consent&rdquo; reporting the essay refers to "
-    "(Washington Free Beacon, November 16) concerns an Anthropic researcher listed as a manager of a business that hosts "
-    "such parties, which reportedly draw employees of Anthropic and OpenAI. The reporting does not show that either "
-    "company organized or endorsed the events."
-)
-
-EDITOR_NOTE_BLOCK = (
-    "<p><strong>The editor&rsquo;s note on the newsletter page.</strong> At the author&rsquo;s ruling, the essay keeps its wording "
-    "and these corrections sit above it, outside the prose:</p>"
-    f"<blockquote><p>{AUTHOR_EDITOR_NOTE}</p></blockquote>"
-    "<p>It carries findings A2&ndash;A5 and the remaining part of A1. Every finding stays on this page.</p>"
-)
-
 RULING_BLOCK = f"""<div class="callout coral" id="ruling"><p>{html.escape(STATUS)}</p>
 <ul>
 <li>Author freeze <code>author-essay-FROZEN.md</code> (v3), sha256 <code>{AUTHOR_HASH}</code>. It is Gemini 4 Neon&rsquo;s draft with two Muse Wonder insertions the author approved, plus one phrase the author changed after the audit: &ldquo;staffers at OpenAI&rdquo; became &ldquo;staffers at top AI labs&rdquo;. v1 (<code>{AUTHOR_V1_HASH[:12]}&hellip;</code>, the text the critics saw) and v2 (<code>{AUTHOR_V2_HASH[:12]}&hellip;</code>) are kept in the source tree.</li>
 <li>Machine freeze <code>machine-essay-FROZEN-v1.0</code>, sha256 <code>{MACHINE_HASH}</code>. It is Claude Fable 5.2&rsquo;s essay, unchanged. Its bytes match machine alternative 01.</li>
-<li>The fact checks the author kept out of the essay are findings A1&ndash;A10 and M1&ndash;M9 below. None is blocking under the floor definition, and none is described as a pass.</li>
+<li>The fact checks the author kept out of the essay are findings A1&ndash;A10 and M1&ndash;M9 below. At the author&rsquo;s ruling they appear only in this audit; the newsletter page carries no corrective note above the essay. None is blocking under the floor definition, and none is described as a pass.</li>
 <li>No audio exists for Issue 38.</li>
 </ul>
 <p>This is an editorial disposition. It does not certify that the essays are true.</p></div>"""
@@ -570,7 +551,6 @@ def author_page() -> str:
             <h2>The essay is the judgment. This page is the inspection surface.</h2>
             {PREP_NOTE}
             <div class="callout mint"><p><strong>Canonicality.</strong> The essay Signal &amp; Noise stands behind is Issue 38, <em>{html.escape(AUTHOR_TITLE)}</em>, by Synthia Cipher. This page is its audit, not a second edition and not a corrected essay. The fact checks live here, at the author&rsquo;s request, so the essay reads as the author chose. The machine essay, <a href="{MACHINE_WEB}">{html.escape(MACHINE_TITLE)}</a>, is a companion; its inspection copy is <a href="machine-version/">on this record</a>. Author freeze sha256 <code>{AUTHOR_HASH}</code> ({author_words} whitespace-delimited words in the Markdown file, title and dek included). Machine freeze sha256 <code>{MACHINE_HASH}</code> ({machine_words} whitespace-delimited words, title and dek included).</p></div>
-            <div class="callout">{EDITOR_NOTE_BLOCK}</div>
             {RULING_BLOCK}
           </section>
           <section class="content-section" id="assembly">
@@ -753,10 +733,10 @@ def source_index(page_dir: str) -> str:
 
 
 DECISION_QUOTES = {
-    "t318u": "my brain dump is even more random, unorganized, and haphazard than usual, and it\u2019s based almost entirely on intuition since I haven\u2019t done the research to prove or disprove any of this.",
-    "t320u": "the Gemini article is the only one that includes the culturally relevant Huang and consensual non consent references that are \u201chot topics\u201d today, and although the riskiest, is also closest to what I want to say",
-    "t321u": "can I see a redlined version with the 5 short priced (from the other models) folded in? So I can see how they land? The other issues should probably be rolled into the audit imo.",
-    "t323u": "Yes",
+    "request": "my brain dump is even more random, unorganized, and haphazard than usual, and it\u2019s based almost entirely on intuition since I haven\u2019t done the research to prove or disprove any of this.",
+    "selection": "the Gemini article is the only one that includes the culturally relevant Huang and consensual non consent references that are \u201chot topics\u201d today, and although the riskiest, is also closest to what I want to say",
+    "redline": "can I see a redlined version with the 5 short priced (from the other models) folded in? So I can see how they land? The other issues should probably be rolled into the audit imo.",
+    "approval": "Yes",
 }
 
 AUTHOR_LABEL = "Synthia Cipher · author"
@@ -810,15 +790,15 @@ def conversation_thread(page: str) -> str:
     parts: list[str] = []
     parts.append('<div class="day">Saturday, November 21, 2026 · times PST</div>')
     parts.append(_human(
-        "t318u · about 4:24 PM",
+        "issue request · about 4:24 PM",
         "<p class=\"ctx\">One message, shown here in parts. Verbatim excerpt of the author&rsquo;s note on the source:</p>"
-        + "<blockquote>" + _esc_quote(DECISION_QUOTES["t318u"]) + "</blockquote>"
+        + "<blockquote>" + _esc_quote(DECISION_QUOTES["request"]) + "</blockquote>"
         + "<p class=\"ctx\">The same message carried the brain dump, the editorial prompt and the machine question:</p>"
         + _artifact("Source material: the author&rsquo;s brain dump, all written without AI (private link removed)",
                     "<div id=\"source-material\"></div>" + source_material_html())
         + _artifact("Editorial prompt (verbatim)", P("development/editorial-prompt.md"), "editorial-prompt")
         + _artifact("Machine-only question (verbatim)", P("development/machine-question-VERBATIM.md")),
-        anchor="t318u",
+        anchor="request",
     ))
     parts.append(_step(
         "Grok Bot preserved the source byte for byte and read the two X posts for the audit. "
@@ -856,22 +836,22 @@ def conversation_thread(page: str) -> str:
     parts.append(_ai(GROK + " · machine recommendation",
                      "<p>Recommended Claude Fable 5.2, unchanged and not combined. Muse Wonder was a close second.</p>"
                      + _artifact("Recommendation note", P("development/machine-comparison.md"), "machine-comparison")))
-    parts.append(_human("t320u · about 8:28 PM", "<p class=\"ctx\">Verbatim excerpt:</p><blockquote>" + _esc_quote(DECISION_QUOTES["t320u"]) + "</blockquote>"
-                        "<p class=\"ctx\">The author chose Gemini 4 Neon&rsquo;s draft and asked whether anything from the other drafts should be folded in.</p>", anchor="t320u"))
+    parts.append(_human("selection · about 8:28 PM", "<p class=\"ctx\">Verbatim excerpt:</p><blockquote>" + _esc_quote(DECISION_QUOTES["selection"]) + "</blockquote>"
+                        "<p class=\"ctx\">The author chose Gemini 4 Neon&rsquo;s draft and asked whether anything from the other drafts should be folded in.</p>", anchor="selection"))
     parts.append(_ai(GROK + " · integration memo",
                      "<p>Ranked short passages from Fable, Muse and Astra that could patch Neon&rsquo;s weak spots, and listed factual corrections.</p>"
                      + _artifact("Integration recommendations", P("development/revision-history/integration-recommendations.md"), "revisions")))
-    parts.append(_human("t321u · about 8:36 PM", _esc_quote(DECISION_QUOTES["t321u"]), anchor="t321u"))
+    parts.append(_human("redline request · about 8:36 PM", _esc_quote(DECISION_QUOTES["redline"]), anchor="redline-request"))
     parts.append(_ai(GROK + " · redline v1",
                      f'<p>Neon with five short passages folded in, each tagged by source. <a href="{src("development/revision-history/redline-v1-five-additions.pdf")}">Redline v1 (PDF)</a>.</p>'))
-    parts.append(_human("t322u · about 8:54 PM",
+    parts.append(_human("redline review · about 8:54 PM",
                         "<p>Keep only the two Muse additions, exactly where they sit: the Chesterton&rsquo;s fence passage, and &ldquo;An ordinary person produces an excuse. A gifted person produces a philosophy.&rdquo; Revert everything else to Neon&rsquo;s text.</p>",
                         described=True))
     parts.append(_ai(GROK + " · redline v2",
                      f'<p>Only the two Muse insertions; a diff against Neon&rsquo;s draft confirms nothing else changed. <a href="{src("development/revision-history/redline-v2-two-muse-additions.pdf")}">Redline v2 (PDF)</a>.</p>'
                      + _artifact("Neon&rsquo;s draft as returned", P("development/revision-history/neon-draft-as-returned.md"), "rev-neon")
                      + _artifact("Clean v2 (two Muse insertions)", P("development/revision-history/neon-clean-v2.md"), "rev-v2")))
-    parts.append(_human("t323u · about 8:57 PM", _esc_quote(DECISION_QUOTES["t323u"]) + "<p class=\"ctx\">Approval to freeze clean v2 as the author essay and Fable 5.2 as the machine essay, and to run the audit.</p>", anchor="t323u"))
+    parts.append(_human("approval · about 8:57 PM", _esc_quote(DECISION_QUOTES["approval"]) + "<p class=\"ctx\">Approval to freeze clean v2 as the author essay and Fable 5.2 as the machine essay, and to run the audit.</p>", anchor="approval"))
     parts.append(_step(
         f"<b>Author essay frozen (v1)</b> about 8:58 PM, 1,064 words of body, sha256 <code>{AUTHOR_V1_HASH}</code>. "
         f"<b>Machine essay frozen</b>, byte-identical to the model output, sha256 <code>{MACHINE_HASH}</code>."))
@@ -884,13 +864,13 @@ def conversation_thread(page: str) -> str:
     ]
     for who, rel in critics:
         parts.append(_ai(who, _artifact("Objections as returned", P(rel))))
-    parts.append(_step("Grok Bot prepared the audit, the source page and the editor&rsquo;s notes. Two HIGH findings needed a ruling: A1 (the company named in the &ldquo;consensual non-consent&rdquo; reporting) and A2 (the Post attribution)."))
-    parts.append(_human("t326u · about 9:10 PM",
+    parts.append(_step("Grok Bot prepared the audit and the source page. Two HIGH findings needed a ruling: A1 (the company named in the &ldquo;consensual non-consent&rdquo; reporting) and A2 (the Post attribution)."))
+    parts.append(_human("rulings · about 9:10 PM",
                         "<p>Change &ldquo;staffers at OpenAI&rdquo; to &ldquo;top AI lab staffers&rdquo; and nothing else. A2 and A3&ndash;A8 stay unmodified in the essay, with the corrections in the audit. On the source page, remove only the private link and strip tracking parameters from the X links.</p>",
-                        described=True, anchor="t326u"))
+                        described=True, anchor="rulings-message"))
     parts.append(_step(f"<b>Author essay refrozen (v2)</b> about 9:11 PM, sha256 <code>{AUTHOR_V2_HASH}</code>. "
                        f'<a href="{src("development/revision-history/freeze-v1-to-v2.diff")}">One-line diff</a>.'))
-    parts.append(_human("t326s2085 · about 9:13 PM",
+    parts.append(_human("follow-up approval · about 9:13 PM",
                         "<p>Approved: change &ldquo;top AI lab staffers&rdquo; to &ldquo;staffers at top AI labs&rdquo;, nothing else, which fixes the grammar seam. Then prepare the pull requests, without merging.</p>",
                         described=True))
     parts.append(_step(
@@ -931,7 +911,7 @@ def development_page() -> str:
 <p>Issue 38 is two essays and a source page. The human/AI essay is Gemini 4 Neon&rsquo;s draft with two Muse Wonder insertions the author approved, plus one phrase the author changed after the audit. The machine essay is Claude Fable 5.2&rsquo;s answer to the author&rsquo;s question, unchanged; none of the machine runs saw the author&rsquo;s brain dump. The critics were Kimi K3 and Claude Opus 4.1, each shown one freeze.</p>
 {PREP_NOTE}
 <p>{html.escape(STATUS)}</p>
-<p><strong>Coverage.</strong> The author&rsquo;s turns marked verbatim are quoted exactly (t318u excerpt, t320u excerpt, t321u, t323u). Three author turns are marked &ldquo;described, not verbatim&rdquo; because they reached the editor as relayed instructions rather than verbatim text. Model turns are the full outputs as returned. Grok Bot&rsquo;s turns are its delivered artifacts and a one-line summary of each; its chat replies are not reproduced. Exact assistant timestamps are not available. This record shows process and constraint. It does not prove the essays.</p>
+<p><strong>Coverage.</strong> The author&rsquo;s turns marked verbatim are quoted exactly (the issue-request and selection excerpts, the redline request, and the approval). Three author turns are marked &ldquo;described, not verbatim&rdquo; because they reached the editor as relayed instructions rather than verbatim text. Model turns are the full outputs as returned. Grok Bot&rsquo;s turns are its delivered artifacts and a one-line summary of each; its chat replies are not reproduced. Exact assistant timestamps are not available. This record shows process and constraint. It does not prove the essays.</p>
 </div>
 <div class="chat-legend" aria-label="Legend">
 <span><i class="k-human" aria-hidden="true"></i> Right, blue: <b>Synthia Cipher (author)</b></span>
@@ -1076,8 +1056,11 @@ def check_pages() -> None:
             raise SystemExit(f"finding {token} missing from an audit page")
     if "floor pass" in author.lower() or "floor pass" in maudit.lower():
         raise SystemExit("floor pass language slipped in")
-    if "Editor&rsquo;s note: Under this newsletter" not in author:
-        raise SystemExit("author editor's note missing from the audit page")
+    if "Editor&rsquo;s note: Under this newsletter" in author or "ednote" in author:
+        raise SystemExit("an above-essay corrective note slipped back into the audit page")
+    for blob in blobs.values():
+        if re.search(r"\bt3\d\d[us]\d*\b|gen-\d{6,}", blob):
+            raise SystemExit("internal message or generation id in a page")
     for anchor in ["author-fable", "author-astra", "author-neon", "author-muse", "machine-fable", "machine-astra", "machine-neon", "machine-muse", "machine-question", "revisions", "source-material", "alternatives", "decision", "freeze"]:
         if f'id="{anchor}"' not in dev:
             raise SystemExit(f"missing development section {anchor}")

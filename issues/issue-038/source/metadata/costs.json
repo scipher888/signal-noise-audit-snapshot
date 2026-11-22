@@ -8,7 +8,6 @@
       "model": "Claude Fable 5.2",
       "slug": "anthropic/claude-fable-5.2",
       "reasoning": "max",
-      "generation_id": "gen-1795307177-qptlcTzAx4U46RY7ON7o",
       "actual_api_reported_usd": "1.169816",
       "finish_reason": "stop"
     },
@@ -17,7 +16,6 @@
       "model": "GPT-6.2 Astra",
       "slug": "openai/gpt-6.2-astra",
       "reasoning": "max",
-      "generation_id": "gen-1795307177-ThG3FehptQ9jIjWshpk6",
       "actual_api_reported_usd": "0.990544",
       "finish_reason": "stop"
     },
@@ -26,7 +24,6 @@
       "model": "Gemini 4 Neon",
       "slug": "google/gemini-4-neon",
       "reasoning": "xhigh",
-      "generation_id": "gen-1795307177-EvLydoUm0bCCntHopP0L",
       "actual_api_reported_usd": "0.191217",
       "finish_reason": "stop"
     },
@@ -35,7 +32,6 @@
       "model": "Muse Wonder",
       "slug": "meta/muse-wonder",
       "reasoning": "max",
-      "generation_id": "gen-1795307177-dSSOhqu24SDPQRdtfcV4",
       "actual_api_reported_usd": "0.128936",
       "finish_reason": "stop"
     },
@@ -44,7 +40,6 @@
       "model": "Claude Fable 5.2",
       "slug": "anthropic/claude-fable-5.2",
       "reasoning": "max",
-      "generation_id": "gen-1795307177-HII7ub82cPeAXP7T112D",
       "actual_api_reported_usd": "1.6568",
       "finish_reason": "stop"
     },
@@ -53,7 +48,6 @@
       "model": "GPT-6.2 Astra",
       "slug": "openai/gpt-6.2-astra",
       "reasoning": "max",
-      "generation_id": "gen-1795307177-IB90K5x9JAdyjoIFaKtP",
       "actual_api_reported_usd": "0.553296",
       "finish_reason": "stop"
     },
@@ -62,7 +56,6 @@
       "model": "Gemini 4 Neon",
       "slug": "google/gemini-4-neon",
       "reasoning": "xhigh",
-      "generation_id": "gen-1795307177-20UUbRyp4sw93pYtyAz6",
       "actual_api_reported_usd": "0.192954",
       "finish_reason": "stop"
     },
@@ -71,7 +64,6 @@
       "model": "Muse Wonder",
       "slug": "meta/muse-wonder",
       "reasoning": "max",
-      "generation_id": "gen-1795307177-RFCktHzeZZUsfmaOdpHZ",
       "actual_api_reported_usd": "0.143924",
       "finish_reason": "stop"
     },
@@ -80,7 +72,6 @@
       "model": "Kimi K3",
       "slug": "moonshotai/kimi-k3",
       "reasoning": "high",
-      "generation_id": "gen-1795323497-mgbq3LHMdnKBp3a1HqNH",
       "actual_api_reported_usd": "0.039963",
       "finish_reason": "stop"
     },
@@ -89,7 +80,6 @@
       "model": "Claude Opus 4.1",
       "slug": "anthropic/claude-opus-4.1",
       "reasoning": null,
-      "generation_id": "gen-1795323497-zZqCCRkU46hTLlU5bia0",
       "actual_api_reported_usd": "0.09171",
       "finish_reason": "stop"
     },
@@ -98,7 +88,6 @@
       "model": "Kimi K3",
       "slug": "moonshotai/kimi-k3",
       "reasoning": "high",
-      "generation_id": "gen-1795323497-fbyNqMMOI7LqiVKQ4xIU",
       "actual_api_reported_usd": "0.040926",
       "finish_reason": "stop"
     },
@@ -107,7 +96,6 @@
       "model": "Claude Opus 4.1",
       "slug": "anthropic/claude-opus-4.1",
       "reasoning": null,
-      "generation_id": "gen-1795323497-qEZEODrYah0rGUGANkLM",
       "actual_api_reported_usd": "0.084315",
       "finish_reason": "stop"
     }

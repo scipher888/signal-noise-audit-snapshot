@@ -11,7 +11,6 @@
  "prompt_sha256": "9fada1cc1b7f94a3b784b1106245e9ae05157607cdefa90f954ca6959ee88132",
  "started_at_PT": "2026-11-21T16:26:17.011408-08:00",
  "http_status": 200,
- "id": "gen-1795307177-HII7ub82cPeAXP7T112D",
  "model": "anthropic/claude-fable-5.2",
  "provider": "Google",
  "finish_reason": "stop",

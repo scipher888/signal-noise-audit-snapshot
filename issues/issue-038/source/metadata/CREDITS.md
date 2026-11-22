@@ -11,7 +11,7 @@
 - **Synthia Cipher** wrote the question.
 - **Claude Fable 5.2** (`anthropic/claude-fable-5.2`, reasoning max) wrote the essay. It is published unchanged.
 - **GPT-6.2 Astra**, **Gemini 4 Neon** and **Muse Wonder** wrote alternatives.
-- **Grok Bot** recommended the essay. The author approved it (t323u).
+- **Grok Bot** recommended the essay. The author approved it.
 
 **Audit:**
 - **Kimi K3** (`moonshotai/kimi-k3`, reasoning high) and **Claude Opus 4.1** (`anthropic/claude-opus-4.1`) were the Stage C critics. Each saw only one essay.
