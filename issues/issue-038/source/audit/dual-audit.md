@@ -1,5 +1,7 @@
 # Signal & Noise, Issue 38: dual source and floor audit
 
+*Update after publication: the rulings were confirmed on November 21, 2026, and the essays are live. The status sentences in this document were written before that and are kept as written; the author freeze published is v3 (see the ruling box).*
+
 Prepared Nov 21, 2026 (PST) for the author's review. Both freezes are unchanged. This is a record of objections and evidence, not a validation.
 - Sources: [SOURCE-LOG.md](sources/SOURCE-LOG.md). Methods: [execution-method.md](execution-method.md). Critic returns: [stage-c-synthesis.md](stage-c-synthesis.md).
 - Per the author's standing request and the author's redline message ("The other issues should probably be rolled into the audit"), every factual finding is logged here, and none is applied to either text (Ruling A).
