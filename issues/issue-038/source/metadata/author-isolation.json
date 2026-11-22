@@ -1,0 +1,45 @@
+{
+  "issue": 38,
+  "stage": "author",
+  "prompt_sha256": "5a1193d200e31c7bbc7ec7cc2a3635a443c41db97c8347c5191132d21855b0b8",
+  "messages_per_request": 1,
+  "system_prompt": null,
+  "tools": null,
+  "web_search": null,
+  "provider_fallbacks": false,
+  "included": [
+    "user editorial prompt verbatim, with the user brain dump verbatim in place of the placeholder"
+  ],
+  "excluded": [
+    "X posts",
+    "ENGAGEMENT-HIERARCHY.md content (only its URL appears inside the brain dump; no tools to fetch it)",
+    "other model outputs"
+  ],
+  "runs": [
+    {
+      "label": "claude-fable-5.2",
+      "model": "anthropic/claude-fable-5.2",
+      "reasoning_effort": "max",
+      "max_tokens": 48000
+    },
+    {
+      "label": "gpt-6.2-astra",
+      "model": "openai/gpt-6.2-astra",
+      "reasoning_effort": "max",
+      "max_tokens": 32000
+    },
+    {
+      "label": "gemini-4-neon",
+      "model": "google/gemini-4-neon",
+      "reasoning_effort": "xhigh",
+      "max_tokens": 32000
+    },
+    {
+      "label": "muse-wonder",
+      "model": "meta/muse-wonder",
+      "reasoning_effort": "max",
+      "max_tokens": 32000
+    }
+  ],
+  "created_at_PT": "2026-11-21T16:26:17.004491-08:00"
+}

@@ -1,0 +1,122 @@
+## 1. Thesis Extraction
+
+**Core thesis:** High intelligence does not protect people from catastrophic folly in love, sex, money, and meaning — it makes them better at rationalizing that folly — so genuine wisdom is learning when to distrust your own reasoning and defer to moral traditions tested across millions of lives.
+
+That is the publishable idea. Everything else is either support, repetition, or liability.
+
+## 2. Pressure-Test
+
+Your draft has one strong argument and several ways to destroy its credibility.
+
+### Kill your examples before an editor does
+
+Your Jensen Huang and ChatGPT anecdotes are your weakest evidence, not your strongest. They rest on social-media links, concern private sexual behaviour, and invite readers to dispute the gossip rather than engage with the argument. The Huang allegation in particular is potentially defamatory unless it has been rigorously reported and independently verified.
+
+Worse, the logic is anecdotal. Brilliant people having affairs or unconventional sex lives does not prove intelligence causes self-deception. Less intelligent people do the same things with less publicity. Famous people’s failures are simply more visible.
+
+**Editorial ruling:** discard both examples. The idea is larger than the latest scandal.
+
+### Your central empirical claim is overstated
+
+“The higher your IQ, the worse your judgment” is provocative but false as a general proposition. Higher intelligence is broadly associated with educational attainment, income, health, and other positive outcomes.
+
+Your defensible claim is narrower and more interesting:
+
+> Intelligence improves your ability to defend a conclusion, but it does not guarantee that the conclusion began in a search for truth.
+
+That distinction matters most when desire, status, lust, resentment, greed, or ideology are involved. In those domains, cognitive horsepower can become rationalization horsepower.
+
+### “Tradition survived, therefore it works” is vulnerable
+
+This is the argument most easily demolished. Slavery, caste, foot-binding, and the subjugation of women also survived for centuries. Survival can reflect power, coercion, or institutional inertia — not truth or human flourishing.
+
+Your argument about institutions is similarly weak. The absence of a large institution devoted to a private sexual practice proves almost nothing. Beneficial practices can be suppressed; destructive ones can be institutionalized.
+
+Tradition therefore cannot be treated as infallible authority. It works better in the essay as a **prior**: accumulated evidence that deserves a heavy presumption, especially when your proposed exception conveniently serves your appetite.
+
+### You conflate five different things
+
+Your draft lumps together IQ, professional expertise, wealth, fame, and status. They are distinct mechanisms:
+
+- Intelligence improves rationalization.
+- Expertise creates false confidence outside its domain.
+- Wealth increases opportunity and reduces consequences.
+- Power removes people who might say no.
+- Status creates moral licensing: *Someone like me must be justified.*
+
+Name those mechanisms separately. Together they form a stronger causal account than “smart people are dumb.”
+
+### Progress is your obvious counterexample
+
+Every reformer, inventor, and founder has violated inherited wisdom. If readers think you are asking intelligent people to submit mechanically to tradition, they will stop listening.
+
+You need a distinction between the **reformer** and the **rationalizer**. The reformer understands why a rule exists, pays a price for challenging it, and offers something better. The rationalizer discovers a sophisticated philosophy precisely when an old rule becomes inconvenient.
+
+Finally, kill the Dropbox “Engagement Hierarchy.” Readers have not read it, the levels are undefined, and imported jargon will make a clean argument feel like a consulting deck.
+
+## 3. Op-Ed Restructuring
+
+### The Lede
+Open with the paradox, not tabloid gossip: the smarter you are, the more sophisticated your self-deception can become.
+
+### The Nut Graph
+Intelligence transfers badly from technical domains with clear feedback into moral and existential domains where desire can corrupt reasoning.
+
+### Evidence & Fortification
+1. **Haidt’s lawyer:** Reason often acts as a press secretary for prior desires. Brighter people produce better briefs for worse conclusions. Research on motivated reasoning supports this.
+2. **Success creates licence:** Wealth, power, and mastery in one field produce confidence, opportunity, insulation, and flattery in every other field.
+3. **Tradition is distributed evidence:** Customs surrounding fidelity, restraint, family, duty, and humility encode lessons learned by millions of people. They are not always right, but they are rarely information-free.
+
+### The “To Be Sure” Paragraph
+Traditions can preserve injustice and must sometimes be overturned. The question is the burden of proof — particularly when breaking the rule gives the rule-breaker exactly what he already wants.
+
+### The Kicker
+The highest intelligence is not the ability to out-argue inherited wisdom. It is knowing when your ability to out-argue it is precisely the danger.
+
+---
+
+## 4. The Draft
+
+# Smart Enough to Fool Yourself
+
+The smarter you are, the more elaborate the lie you can tell yourself — and the more likely you are to believe it.
+
+That is the paradox at the heart of modern meritocracy. We assume good judgment follows intelligence the way heat follows fire. Get into the right school, master a difficult field, build a company or accumulate wealth, and we presume wisdom will spill naturally into marriage, money, sex, friendship, and meaning.
+
+It does not. Often, it does the opposite.
+
+Intelligence is not a general-purpose virtue. In the domains where brilliant people earn their status, feedback is usually fast, rules are relatively clear, and reality keeps score. A bridge stands or falls. Code runs or crashes. A product sells or fails. Human desire offers no such clean scoreboard. It offers only rationalizations, delivered on demand.
+
+In *The Righteous Mind*, Jonathan Haidt argues that human reason often works less like a scientist searching for truth than like a press secretary defending decisions already made by intuition and appetite. That should terrify high achievers, because a press secretary’s effectiveness depends on verbal and analytical skill.
+
+An ordinary person produces an excuse. A gifted person produces a philosophy. He constructs historical precedents, ethical distinctions, psychological theories, and first-principles arguments proving that the thing he wanted to do was not merely permissible but enlightened. He does not simply break the rule. He repeals it — provisionally, brilliantly, and usually just long enough to get what he wants.
+
+Research on motivated reasoning points in the same direction. Greater cognitive sophistication does not consistently make people more impartial. On identity-laden questions, more numerate and scientifically literate people can become *better* at interpreting evidence in whatever direction protects their commitments. Intelligence sharpens the instrument; it does not choose the target.
+
+Success compounds the problem. Mastery in one domain creates the illusion of mastery in all domains. The engineer who can model complex systems assumes he can improvise a marriage. The investor who understands markets assumes she understands human nature. The founder celebrated for defying experts in business concludes that experts on family, faith, sex, and character are merely obstacles placed before exceptional minds.
+
+Wealth adds opportunity. Power adds insulation. Fame ensures that fewer people are willing to say, “This is stupid, and you know it.” Isaac Newton helped invent calculus and still lost a fortune speculating during the South Sea Bubble. Every generation produces its own “smartest guys in the room,” from Enron to FTX: people capable of modelling risk for everyone except themselves.
+
+This is where tradition deserves a second hearing — not as nostalgia, not as blind obedience, and certainly not as proof that everything old is good.
+
+Tradition is information compressed by time. A practice surrounding marital fidelity, sexual restraint, parental duty, humility, sobriety, religious observance, or care for one’s reputation may encode knowledge that no individual could derive from first principles during a moment of temptation. It represents an experiment run across millions of lives, often with the results recorded in wrecked families, squandered fortunes, broken communities, and lives that quietly worked.
+
+Chesterton’s famous fence applies here. Do not tear down a fence until you understand why it was built. The smarter you are, the easier it becomes to invent a reason the fence is unnecessary. That does not mean you have understood it. It may mean only that you are standing on the other side of something you want.
+
+Your private reasoning, conducted while hungry, lonely, resentful, ambitious, or aroused, is a sample size of one under compromised conditions. Inherited wisdom is imperfect, sometimes badly so. But dismissing it because you can construct a clever argument over a weekend is not intellectual independence. It is epistemic arrogance.
+
+To be sure, traditions can entrench cruelty. They have defended slavery, bigotry, and needless repression. Human progress depends upon people willing to challenge inherited arrangements. A serious essay about tradition must concede that age alone confers no moral authority.
+
+But there is a difference between a reformer and a rationalizer. The reformer studies the old rule, understands the human problem it attempted to solve, accepts personal cost, and proposes a better answer. The rationalizer encounters a rule just when it obstructs appetite and suddenly discovers that the rule was primitive all along.
+
+When breaking a norm primarily liberates the breaker, the burden of proof should rise, not fall.
+
+Intelligent people therefore need an unfashionable discipline: self-distrust. When the question is technical, trust your analysis. When the question involves status, lust, money, resentment, or the longing to consider yourself exceptional, distrust your first brilliant explanation.
+
+Do not ask, “Can I make a persuasive case for this?” If you are intelligent, the answer will almost always be yes. Ask instead: “What would I tell a friend doing exactly this?” “What have ordinary, decent people generally concluded about this behaviour?” “Would I find this principle convincing if it denied me what I want?” And, most uncomfortably: “Am I discovering a truth, or dressing appetite in philosophical clothing?”
+
+The highest form of intelligence is not the ability to out-argue the accumulated wisdom of cultures, families, faiths, and institutions. It is the ability to recognize when out-arguing them is exactly the problem.
+
+A smart person believes he can design a life from scratch. A wise person asks why so many equally smart people, armed with better arguments than everyone around them, have talked themselves into ruin.
+
+Sometimes the most intelligent act is to subordinate your intellect to wisdom you did not invent — especially when your intellect is working hardest to tell you what you want to hear.

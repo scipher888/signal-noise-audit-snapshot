@@ -1,0 +1,105 @@
+{
+  "issue": 38,
+  "currency": "USD",
+  "basis": "OpenRouter API-reported usage cost per call; not a reconciled card statement",
+  "runs": [
+    {
+      "stage": "author-assist",
+      "model": "Claude Fable 5.2",
+      "slug": "anthropic/claude-fable-5.2",
+      "reasoning": "max",
+      "actual_api_reported_usd": "1.169816",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "author-assist",
+      "model": "GPT-6.2 Astra",
+      "slug": "openai/gpt-6.2-astra",
+      "reasoning": "max",
+      "actual_api_reported_usd": "0.990544",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "author-assist",
+      "model": "Gemini 4 Neon",
+      "slug": "google/gemini-4-neon",
+      "reasoning": "xhigh",
+      "actual_api_reported_usd": "0.191217",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "author-assist",
+      "model": "Muse Wonder",
+      "slug": "meta/muse-wonder",
+      "reasoning": "max",
+      "actual_api_reported_usd": "0.128936",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine-only",
+      "model": "Claude Fable 5.2",
+      "slug": "anthropic/claude-fable-5.2",
+      "reasoning": "max",
+      "actual_api_reported_usd": "1.6568",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine-only",
+      "model": "GPT-6.2 Astra",
+      "slug": "openai/gpt-6.2-astra",
+      "reasoning": "max",
+      "actual_api_reported_usd": "0.553296",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine-only",
+      "model": "Gemini 4 Neon",
+      "slug": "google/gemini-4-neon",
+      "reasoning": "xhigh",
+      "actual_api_reported_usd": "0.192954",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "machine-only",
+      "model": "Muse Wonder",
+      "slug": "meta/muse-wonder",
+      "reasoning": "max",
+      "actual_api_reported_usd": "0.143924",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c-critique-author",
+      "model": "Kimi K3",
+      "slug": "moonshotai/kimi-k3",
+      "reasoning": "high",
+      "actual_api_reported_usd": "0.039963",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c-critique-author",
+      "model": "Claude Opus 4.1",
+      "slug": "anthropic/claude-opus-4.1",
+      "reasoning": null,
+      "actual_api_reported_usd": "0.09171",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c-critique-machine",
+      "model": "Kimi K3",
+      "slug": "moonshotai/kimi-k3",
+      "reasoning": "high",
+      "actual_api_reported_usd": "0.040926",
+      "finish_reason": "stop"
+    },
+    {
+      "stage": "stage-c-critique-machine",
+      "model": "Claude Opus 4.1",
+      "slug": "anthropic/claude-opus-4.1",
+      "reasoning": null,
+      "actual_api_reported_usd": "0.084315",
+      "finish_reason": "stop"
+    }
+  ],
+  "actual_api_reported_total": "5.284401",
+  "notes": "Eight generation calls and four Stage C calls. No retries. Text-to-speech, if any is made later, is not included."
+}

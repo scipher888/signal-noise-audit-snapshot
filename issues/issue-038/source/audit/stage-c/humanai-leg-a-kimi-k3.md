@@ -1,0 +1,53 @@
+# Stage C — humanai-leg-a-kimi-k3
+
+1. **“According to the report, Huang engaged in extramarital affairs…”**  
+   **Objection:** The essay uses a contested personal allegation as a load-bearing example while only thinly attributing it to “recent Washington Post reporting.” A careful reader may grant the attribution but still balk at how quickly the piece moves from report to settled moral portrait to symbol of technocratic hubris.  
+   **Why it lands:** The Huang paragraph does real argumentative work: it is the clearest “formidable mind fails basic risk assessment” case. If the factual grounding is shaky, the example feels less like evidence and more like a convenient morality tale.  
+   **Severity:** ARGUMENT
+
+2. **“Entangling romantic indiscretion with a cross-border business relationship invites catastrophic conflict-of-interest scrutiny.”**  
+   **Objection:** The essay asserts a national-security risk but never explains the mechanism: what access was compromised, what decision changed, what Nvidia interest conflicted with what U.S. interest? As written, “Chinese woman with whom he was doing business” risks converting an ethics lapse into geopolitical suspicion by adjacency.  
+   **Why it lands:** The phrase “Chinese woman” is doing suggestive work the argument has not earned. A reader need not be defensive of Huang to ask why nationality/race-adjacent framing is relevant absent specific conflict facts.  
+   **Severity:** HYGIENE
+
+3. **“Again and again, some of the sharpest minds on earth are stumbling into traps…”**  
+   **Objection:** The piece never establishes base rates. It names vivid elite failures, gestures at headlines, and infers a reliable pattern, while conceding that “mediocre men in corner offices” do the same things. That concession undercuts the claim unless the essay shows elites fail more often, more consequentially, or more predictably.  
+   **Why it lands:** Availability bias is the obvious reader response: famous geniuses generate famous scandals. The essay needs comparative incidence, not just memorable anecdotes.  
+   **Severity:** ARGUMENT
+
+4. **“A higher IQ doesn’t make you a better scientist of your own life. It just buys you a better lawyer.”**  
+   **Objection:** Haidt’s defense-attorney model explains motivated reasoning generally, not why intelligence specifically worsens judgment. The essay adds wealth/status insulation, but that is a separate mechanism from IQ and could apply to powerful mediocrities too.  
+   **Why it lands:** The title promises a paradox about *the smartest* people; the mechanism mostly proves *all* people rationalize, with elites having bigger amplification systems. That is weaker than the headline.  
+   **Severity:** ARGUMENT
+
+5. **“Ultra-clever communities increasingly assume that human psychology can be neatly managed through bespoke rules and contractual cleverness…”**  
+   **Objection:** The OpenAI “consensual non-consent” example is under-argued. The essay disavows prudishness but does not show harm, coercion, institutional capture, or a rule being discarded with bad results. Consensual adult practices may be distasteful to some readers without evidencing civilizational hubris.  
+   **Why it lands:** Because the piece says “the point here isn’t mere prudishness,” the reader is entitled to ask: then what exactly is the point? Without a demonstrated cost, the paragraph reads like culture-war signal boosting.  
+   **Severity:** ARGUMENT
+
+6. **“Human flourishing is not a technical optimization problem.” / fence passage**  
+   **Objection:** The Chesterton’s-fence move is strong rhetoric but weak epistemology. It treats inherited norms as “distilled, battle-tested residue” while offering no reliable way to distinguish accumulated wisdom from accumulated power, except a diagnostic that risks circularity.  
+   **Why it lands:** The essay anticipates the aristocracy/subjugation objection, but its test—costly and protective = principled; self-flattering = sophistry—doesn’t fully work. Some self-benefiting norm violations are just; some costly ones are fanatical.  
+   **Severity:** ARGUMENT
+
+7. **“When your bold rejection of a long-standing guardrail just so happens to flatter your ego, indulge your appetites, or exempt you from accountability…”**  
+   **Objection:** This diagnostic proves too little because it judges motives rather than reasons. A reader can imagine cases where appetite and validity coincide—leaving a repressive tradition both liberates the dissenter and is morally right. Motive purity is a tempting but unreliable test.  
+   **Why it lands:** The essay wants a clean separator between courage and rationalization, but its separator is psychologistic: if it benefits you, suspect it. That can indict reformers as easily as libertines.  
+   **Severity:** ARGUMENT
+
+8. **“At a moment when society is handing unprecedented economic, cultural, and geopolitical influence to a high-IQ technocracy…”**  
+   **Objection:** The leap from private sexual/moral lapses to public governance danger is asserted more than bridged. Infidelity and subculture sexual norms may reveal poor judgment, but the essay does not show how the same failures transfer into chip policy, model safety, deployment decisions, or institutional design.  
+   **Why it lands:** The stakes claim is public—“we are all left exposed”—while much of the evidence is private. A careful reader may accept “these people are flawed” yet resist “therefore their technical governance is suspect” without causal links.  
+   **Severity:** SCOPE
+
+9. **“The habits, taboos, and institutions preserved across generations—fidelity, institutional accountability, durable family and civic bonds…”**  
+   **Objection:** The list bundles unlike things. Fidelity, accountability, family, and civic bonds have different histories, justifications, and failure modes. Treating them as one inherited bundle lets the essay defend “tradition” while avoiding which norms are load-bearing and which are contingent.  
+   **Why it lands:** A reader sympathetic to accountability may not think sexual fidelity belongs in the same evidentiary class; a reader skeptical of traditional family forms may see smuggling. The category is too smooth.  
+   **Severity:** HYGIENE
+
+10. **“In an age increasingly governed by cognitive elites…”**  
+   **Objection:** “Cognitive elite,” “high-IQ technocracy,” “architects of our future,” and “Silicon Valley” are used almost interchangeably, but they are not coextensive. Some powerful technologists are not especially abstract-thinking; some brilliant researchers hold little power; many decision-makers are neither.  
+   **Why it lands:** The essay’s sociology is vaguer than its psychology. If the target is power plus insulation, say that; if it is IQ, prove relevance. The sliding target weakens both diagnosis and prescription.  
+   **Severity:** SCOPE
+
+**Objections: 10**
