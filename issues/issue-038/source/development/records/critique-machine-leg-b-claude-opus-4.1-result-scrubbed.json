@@ -1,0 +1,38 @@
+{
+ "essay": "machine",
+ "source_sha256": "0a62289067f3645965fccf1cdfddf35a5f97d470cc413ca53bb3ae4188f21800",
+ "model_requested": "anthropic/claude-opus-4.1",
+ "started_pt": "2026-11-21T20:58:17.412347-08:00",
+ "http": 200,
+ "id": "gen-1795323497-qEZEODrYah0rGUGANkLM",
+ "model": "anthropic/claude-opus-4.1",
+ "provider": "Amazon Bedrock",
+ "usage": {
+  "prompt_tokens": 1701,
+  "completion_tokens": 784,
+  "total_tokens": 2485,
+  "cost": 0.084315,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.084315,
+   "upstream_inference_prompt_cost": 0.025515,
+   "upstream_inference_completions_cost": 0.0588
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "error": null,
+ "finish_reason": "stop",
+ "content": "## Objections\n\n1. **Quote:** \"People who score higher on cognitive tests live longer on average, earn more, have fewer accidents, and are somewhat more willing to wait for a larger reward. They do not, however, report much greater satisfaction with their lives; that correlation is weak.\"\n   **Objection:** The essay treats life satisfaction self-reports as meaningful evidence while simultaneously arguing that people are poor at self-knowledge and self-reporting.\n   **Why it lands:** The essay's core argument is that we're bad at knowing ourselves and predicting our feelings, yet it uncritically accepts satisfaction surveys as evidence that intelligence doesn't improve life outcomes.\n   **Severity:** ARGUMENT\n\n2. **Quote:** \"Lewis Terman's long-running study of about 1,500 high-IQ California children, begun in the 1920s, found that they went on to do well in school and work, yet by most accounts their rates of divorce, alcoholism, and suicide were close to the national average.\"\n   **Objection:** \"Close to the national average\" for negative life outcomes doesn't support the claim that intelligence provides limited help with personal decisions - it could mean intelligence helped them avoid worse outcomes given other factors.\n   **Why it lands:** The essay presents this as evidence that intelligence doesn't help with personal decisions, but matching national averages doesn't establish this, especially without controlling for other variables.\n   **Severity:** ARGUMENT\n\n3. **Quote:** \"Emotions are among the best sources of that information, and people who prize their reasoning are often inclined to treat them as interference.\"\n   **Objection:** The essay assumes without evidence that valuing reasoning correlates with dismissing emotions, creating a false dichotomy between intelligence and emotional awareness.\n   **Why it lands:** No evidence is provided that intelligent people systematically ignore emotions more than others, yet this assumption underlies much of the argument.\n   **Severity:** ARGUMENT\n\n4. **Quote:** \"A highly able person can perform well for twenty years at work that does not suit them, and every promotion looks like confirmation that the choice was sound.\"\n   **Objection:** This assumes promotions and performance are disconnected from suitability, but performing well for twenty years might indicate the work actually does suit them in important ways.\n   **Why it lands:** The essay treats extended success as a trap rather than potential evidence of fit, without establishing why we should view it this way.\n   **Severity:** FLOOR\n\n5. **Quote:** \"In studies by Keith Stanovich and his colleagues, people with higher cognitive ability were no better than others at recognizing their own biases, and on some measures slightly worse.\"\n   **Objection:** The essay uses this to argue intelligence is a liability but doesn't address that being equally bad (or slightly worse) at bias recognition still leaves intelligent people with better overall decision-making given their other cognitive advantages.\n   **Why it lands:** The essay implies this neutralizes intelligence advantages without considering that equal bias plus superior analysis might still yield better outcomes.\n   **Severity:** ARGUMENT\n\n6. **Quote:** \"Give more weight to the record of what you have done and felt than to your account of who you are\"\n   **Objection:** The essay doesn't address how to interpret past behavior when circumstances, constraints, or personal growth may have changed what's possible or desirable now.\n   **Why it lands:** Readers following this advice might over-anchor on past patterns that no longer apply, but the essay presents it as straightforward guidance.\n   **Severity:** SCOPE\n\n**Total objections: 6**",
+ "ok": true,
+ "finished_pt": "2026-11-21T20:59:08.079206-08:00"
+}

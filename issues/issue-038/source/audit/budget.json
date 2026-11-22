@@ -1,0 +1,8 @@
+{
+  "cap_usd": 5,
+  "conservative_catalog_maximum_usd": 2.6824497119999995,
+  "calls": 4,
+  "retries": 0,
+  "max_tokens_each": 12000,
+  "protocol": "Issue37 wrapper (= Issue36) (Issue34 unchanged prompts, models, effort) with Issue38 essays only"
+}
