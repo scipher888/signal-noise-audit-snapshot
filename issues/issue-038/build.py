@@ -589,7 +589,7 @@ def author_page() -> str:
         <div>
           <div class="issue-eyebrow"><p class="eyebrow">Issue 38 &middot; November 21, 2026 &middot; Synthia Cipher</p></div>
           <h1 class="page-title">{html.escape(AUTHOR_TITLE)}</h1>
-          <p class="lede">Audit for Issue 38. Intended issue date: November 21, 2026. Byline: Synthia Cipher. Companions: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{SOURCE_WEB}">source material</a>, which is the author&rsquo;s own brain dump, written without AI. Video shorts and audio companions are linked above.</p>
+          <p class="lede">Audit for Issue 38. Intended issue date: November 21, 2026. Byline: Synthia Cipher. Companions: the <a href="{AUTHOR_WEB}">human/AI essay</a>, the <a href="{MACHINE_WEB}">machine essay</a>, and the <a href="{SOURCE_WEB}">source material</a>, which is the author&rsquo;s own brain dump, written without AI. Video shorts and audio companions are linked below.</p>
           {nav_top("author-audit")}
         </div>
       </div>
